@@ -6,3 +6,8 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
+@font-face {
+  font-family: Merriweather;
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+}
