@@ -1,8 +1,10 @@
-
+import element from'./useRouterElement/index'
 function App() {
-
+ const useElemen=element()
   return (
-    <h1>maaa</h1>
+    <div>
+       {useElemen}
+    </div>
   )
 }
 
