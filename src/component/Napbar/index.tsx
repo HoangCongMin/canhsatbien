@@ -34,11 +34,11 @@ export default function Napbar() {
         <div className='w-full'>
           <img className='w-full' src={BG_Image} alt='' />
         </div>
-        <div className='w-full border-t-[1px]	 mt-5 max-[1300px]:hidden '>
-          <div className='w-full border-b-[1.5px] border-slate-300		 '>
+        <div className='w-full 	 mt-5 max-[1300px]:hidden'>
+          <div className='w-full border-slate-300 '>
             <div className='flex justify-between w-[90%] m-auto'>
               {narBarItemAll.map((item) => (
-                <div className='uppercase text-sm	leading-10	'>{item.title}</div>
+                <div className='uppercase text-sm	leading-10 w-[20%] flex justify-center hover:text-white hover:bg-[#7f0000q] hover:duration-700 '>{item.title}</div>
               ))}
             </div>
           </div>

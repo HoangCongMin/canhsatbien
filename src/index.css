@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Merriweather' ,'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'Merriweather', serif;
   font-weight: 400;
 }

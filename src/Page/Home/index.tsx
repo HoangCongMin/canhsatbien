@@ -277,15 +277,15 @@ export default function Home() {
         ))}
       </div>
       <div className='w-[80%] m-auto mt-7 max-w-screen-2xl'>
-        <div className='w-full border-t-[2px] border-[#DA251C]'>
-          <div className='w-full border-t-[2px] border-[#DA251C]'>
+        <div className='w-full border-t-[1px] border-[#DA251C]'>
+          <div className='w-full border-t-[1px] border-[#DA251C]'>
             <div className='border-b-[1px] border-stale-300 py-3'>
               <h1 className='font-bold	text-[17px] uppercase text-[#031739]'>xây dựng chính sách</h1>
             </div>
           </div>
           <div className='flex justify-between max-[850px]:flex-col'>
             {policyDevelopmentAll.map((item) => (
-              <div className='w-[48.5%] max-[850px]:w-[100%] first:border-r-[1px] first:border-stale-300'>
+              <div className='w-[47%] max-[850px]:w-[100%]'>
                 <PolicyDevelopment
                   itemAll_id={item.id}
                   itemAll_RelatedNews={item.RelatedNews}
