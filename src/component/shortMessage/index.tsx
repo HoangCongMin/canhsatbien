@@ -4,6 +4,7 @@ interface conTentShortMessageAll {
   conTentShortMessage: string
   classItiem:string
   classItiemAll?:string
+  
 }
 
 export default function shortMessage({ conTentShortMessage ,classItiem,classItiemAll}: conTentShortMessageAll) {

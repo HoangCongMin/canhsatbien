@@ -36,11 +36,13 @@ export default function Napbar() {
         </div>
         <div className='w-full 	 mt-5 max-[1300px]:hidden'>
           <div className='w-full border-slate-300 '>
-            <div className='flex justify-between w-[90%] m-auto'>
+            <ul className='flex justify-between w-[90%] m-auto'>
               {narBarItemAll.map((item) => (
-                <div className='uppercase text-sm	leading-10 w-[20%] flex justify-center hover:text-white hover:bg-[#7f0000] hover:duration-700 '>{item.title}</div>
+                <li className='uppercase text-sm	leading-10 flex justify-center hover:text-white hover:bg-[#7f0000] hover:duration-700 '>
+                  {item.title}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>
