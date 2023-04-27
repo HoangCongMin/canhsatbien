@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NewsCsb from './NewsCsb'
 import Posts from '../../component/posts'
 import ShortMessage from '../../component/shortMessage'
@@ -11,6 +11,8 @@ import ElecTriCiPyprice from '../../assets/2-can-bo-doan-dac-nhiem-pctp-ma-tuy-s
 import InternationalCooperation from '../../assets/csb3-071712441.jpeg'
 import SportsCulture from '../../assets/sc3a1ch-101432661.jpeg'
 import CoastGuardwork from '../../assets/tang-qua-180746147.jpeg'
+import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
+import { narBarItemAll } from '../../component/Napbar'
 
 export default function Home() {
   const contentAll = [
@@ -191,23 +193,40 @@ export default function Home() {
     }
   ]
 
+  const [close, setClose] = useState(false)
+
+  const handleClose = () => {
+    setClose((pre) => !pre)
+  }
+
   return (
     <div className='w-full mt-4 mb-10'>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl	'>
-        <div className=' w-[60%] rounded-sm	'>
+        <div className=' w-[60%] rounded-sm	max-[1300px]:hidden'>
           <input placeholder='Nhập từ khoá' type='text' className='w-[100%] outline-none bg-[#F6F6F6] px-3 py-2' />
         </div>
-        <div className='w-[38%] bg-[#F6F6F6]'>
-          <div className='w-[90%] m-auto flex justify-between h-[100%]'>
+        <div className='w-[38%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5'>
+          <div className='w-[90%] m-auto flex justify-between h-[100%] max-[500px]:justify-end '>
             {contentAll.map((item) => (
-              <NewsCsb contentItem={item.content} />
+              <NewsCsb classItem={'max-[500px]:hidden'} contentItem={item.content} />
             ))}
+            <div className='hidden max-[1300px]:block relative'>
+              {close ? <AiOutlineClose onClick={handleClose} /> : <AiOutlineBars onClick={handleClose} />}
+
+              {close && (
+                <div className='absolute w-[250px] z-[1] right-5 top-0 p-4 bg-white '>
+                  {narBarItemAll.map((item) => (
+                    <div className='pt-2'>{item.title}</div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl'>
-        <div className='w-[72%] flex justify-between'>
-          <div className='w-[70%] border-r-[1px]'>
+      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col '>
+        <div className='w-[72%] flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%]'>
+          <div className='w-[70%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	'>
             <div className='w-[97%]'>
               <Posts />
               {ShortMessageItem.map((item) => (
@@ -219,13 +238,13 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className='w-[28%] overflow-y-auto	'>
-            <div className='scrollbar h-[80vh]'>
+          <div className='w-[28%] overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
+            <div className='scrollbar h-[80vh] max-[1300px]:h-[100%]'>
               {Theoguongbac.map((item) => (
                 <ShortMessage
                   classItiemAll={'text-[15px] font-bold'}
                   classItiem={
-                    "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0"
+                    "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 "
                   }
                   conTentShortMessage={item.content}
                 />
@@ -233,7 +252,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='w-[26%] border-slate-400'>
+        <div className='w-[26%] border-slate-400 max-[850px]:w-[100%]'>
           <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	'>BẢN ĐỒ HÀNH CHÍNH</h1>
           <img src={Map} alt='' />
           <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
@@ -241,7 +260,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl'>
+      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
         {NewPost_Item_All.map((item) => (
           <NewPost_Item
             itemAll_id={item.id}
@@ -260,9 +279,9 @@ export default function Home() {
               <h1 className='font-bold	text-[17px] uppercase text-[#031739]'>xây dựng chính sách</h1>
             </div>
           </div>
-          <div className='flex justify-between'>
+          <div className='flex justify-between max-[850px]:flex-col'>
             {policyDevelopmentAll.map((item) => (
-              <div className='w-[48.5%] first:border-r-[1px] first:border-stale-300'>
+              <div className='w-[48.5%] max-[850px]:w-[100%] first:border-r-[1px] first:border-stale-300'>
                 <PolicyDevelopment
                   itemAll_id={item.id}
                   itemAll_RelatedNews={item.RelatedNews}
@@ -275,7 +294,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl'>
+      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
         {NewPost_Item_All_One.map((item) => (
           <NewPost_Item
             itemAll_id={item.id}

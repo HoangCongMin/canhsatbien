@@ -23,7 +23,7 @@ export default function NewPost_Item({
   itemAll_Name
 }: item_All) {
   return (
-    <div className='w-[47%]'>
+    <div className='w-[47%]  max-[850px]:w-[100%]'>
       <div className='w-full border-t-[2px] border-[#DA251C]'>
         <div className='border-b-[1px] border-stale-300 py-3'>
           <h1 className='font-bold	text-[17px] uppercase text-[#031739]'>{itemAll_title}</h1>
