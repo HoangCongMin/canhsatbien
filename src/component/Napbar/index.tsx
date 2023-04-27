@@ -29,8 +29,8 @@ export const narBarItemAll = [
 ]
 export default function Napbar() {
   return (
-    <div className='w-full bg-white sticky top-0 z-10'>
-      <div className='w-[80%] m-auto max-w-screen-2xl '>
+    <div className='w-full bg-white sticky top-0 z-10 '>
+      <div className='w-[80%] m-auto max-w-screen-2xl cursor-pointer '>
         <div className='w-full'>
           <img className='w-full' src={BG_Image} alt='' />
         </div>

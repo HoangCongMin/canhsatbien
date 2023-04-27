@@ -11,7 +11,7 @@ export default function PolicyDevelopment({
   itemAll_Name
 }: item_All) {
   return (
-    <div className='w-[100%]'>
+    <div className='w-[100%] cursor-pointer	'>
       <div className='w-[93%]'>
         <div className='mt-4 flex justify-between'>
           <div className='w-[50%]'>

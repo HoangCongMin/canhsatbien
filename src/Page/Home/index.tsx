@@ -205,18 +205,22 @@ export default function Home() {
         <div className=' w-[60%] rounded-sm	max-[1300px]:hidden'>
           <input placeholder='Nhập từ khoá' type='text' className='w-[100%] outline-none bg-[#F6F6F6] px-3 py-2' />
         </div>
-        <div className='w-[38%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5'>
-          <div className='w-[90%] m-auto flex justify-between h-[100%] max-[500px]:justify-end '>
+        <div className='w-[38%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 relative'>
+          <div className='w-[90%] m-auto flex justify-between h-[100%] max-[500px]:justify-end  '>
             {contentAll.map((item) => (
-              <NewsCsb classItem={'max-[500px]:hidden'} contentItem={item.content} />
+              <NewsCsb classItem={'max-[500px]:hidden cursor-pointer'} contentItem={item.content} />
             ))}
-            <div className='hidden max-[1300px]:block relative'>
-              {close ? <AiOutlineClose onClick={handleClose} /> : <AiOutlineBars onClick={handleClose} />}
+            <div className='hidden max-[1300px]:block '>
+              {!close && <AiOutlineBars onClick={handleClose} />}
 
               {close && (
-                <div className='absolute w-[250px] z-[1] right-5 top-0 p-4 bg-white '>
+                <div className='absolute w-[100%] z-[1] right-0 left-0 top-0 p-4 bg-white '>
+                  <div className='flex justify-between bg-[#F6F6F6] items-center p-[10px]'>
+                    <h3>Menu</h3>
+                    {close && <AiOutlineClose className='bg-[#F6F6F6] p-[3px]' onClick={handleClose} />}
+                  </div>
                   {narBarItemAll.map((item) => (
-                    <div className='pt-2'>{item.title}</div>
+                    <div className='pt-2 px-[10px]'>{item.title}</div>
                   ))}
                 </div>
               )}
@@ -232,7 +236,7 @@ export default function Home() {
               {ShortMessageItem.map((item) => (
                 <ShortMessage
                   classItiemAll={'line-clamp-1'}
-                  classItiem={"text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex"}
+                  classItiem={"text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer	"}
                   conTentShortMessage={item.content}
                 />
               ))}
@@ -244,7 +248,7 @@ export default function Home() {
                 <ShortMessage
                   classItiemAll={'text-[15px] font-bold'}
                   classItiem={
-                    "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 "
+                    "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 cursor-pointer	 "
                   }
                   conTentShortMessage={item.content}
                 />
@@ -254,7 +258,7 @@ export default function Home() {
         </div>
         <div className='w-[26%] border-slate-400 max-[850px]:w-[100%]'>
           <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	'>BẢN ĐỒ HÀNH CHÍNH</h1>
-          <img src={Map} alt='' />
+          <img src={Map} alt='' className='cursor-pointer	' />
           <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
             © Cổng TTĐT Cảnh sát biển
           </p>
