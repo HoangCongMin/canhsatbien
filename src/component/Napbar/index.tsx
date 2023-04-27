@@ -38,7 +38,7 @@ export default function Napbar() {
           <div className='w-full border-slate-300 '>
             <div className='flex justify-between w-[90%] m-auto'>
               {narBarItemAll.map((item) => (
-                <div className='uppercase text-sm	leading-10 w-[20%] flex justify-center hover:text-white hover:bg-[#7f0000q] hover:duration-700 '>{item.title}</div>
+                <div className='uppercase text-sm	leading-10 w-[20%] flex justify-center hover:text-white hover:bg-[#7f0000] hover:duration-700 '>{item.title}</div>
               ))}
             </div>
           </div>
