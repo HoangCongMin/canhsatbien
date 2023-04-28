@@ -14,6 +14,14 @@ import CoastGuardwork from '../../assets/tang-qua-180746147.jpeg'
 import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
 import { narBarItemAll } from '../../component/Napbar'
 import List_leaDer from '../../component/List_leaDer'
+import Video_media from '../../assets/Video/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
+import Video_Title from '../../component/video_Title'
+import Image_csb from '../../assets/cover canh sat bien vn.jpg'
+import Title_media from '../../component/Title_media'
+import {Link} from'react-router-dom'
+import BG_IMG from'../../assets/bnqc-6-095527762.jpg'
+import BG_IMG_TWO from'../../assets/media-qdndvn-133303282.jpg'
+import BG_IMG_THREE from'../../assets/duong-day-nong-090912604-150007571-080459585.jpg'
 
 export default function Home() {
   const contentAll = [
@@ -273,6 +281,11 @@ export default function Home() {
     setClose((pre) => !pre)
   }
 
+  const media_all = {
+    title: 'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
+    video: Video_media
+  }
+
   return (
     <div className='w-full mt-4 mb-10'>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl	'>
@@ -347,7 +360,6 @@ export default function Home() {
         <List_leaDer />
       </div>
       <div className='w-[80%] m-auto max-w-screen-2xl mt-7 justify-between flex'>
-
         <div className=' w-[70%] flex flex-col max-[850px]:flex-col'>
           {NewPost_Item_All.map((item) => (
             <NewPost_Item
@@ -363,11 +375,23 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className='w-[25%] border-t-[2px] border-[#DA251C]'>
-          <div className='flex justify-between items-center w-[80%] m-auto py-3'>
-            <div className='font-bold	 hover:text-[#191970] uppercase text-[17px]'>Video - Clip</div>
-            <div className='w-[1px] h-[12px] bg-black'></div>
-            <div className=' font-bold	hover:text-[#191970] uppercase text-[17px]'>Thư viện ảnh</div>
+        <div className='w-[25%]'>
+          <div className='w-[100%] border-t-[2px] border-[#DA251C]  '>
+            <Title_media title_Clip={'Video - Clip'} libari_image={'Thư viện ảnh'} />
+            <div className='w-[95%] m-auto mt-4'>
+              <Video_Title
+                Image_csb_All={Image_csb}
+                Video_media_title={media_all.title}
+                Video_media_video={media_all.video}
+              />
+            </div>
+          </div>
+          <div>
+            <Title_media title_Clip={'Thông tin thời tiết'} Title={'m-auto'} />
+            <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
+            <Link to={''} >Bản tin thủy văn</Link>
+            </div>
+            
           </div>
         </div>
       </div>
