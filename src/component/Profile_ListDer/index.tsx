@@ -18,7 +18,7 @@ export default function Profile_ListDer({ user_leader_image, user_leader_id, use
             </div>
             <div className='w-[35%]'>
                 <img
-                    className='w-[93px] h-[95px] object-cover  max-[1300px]:rounded-full w-36  h-36 m-auto w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50   max-[550px]:w-[83px] max-[550px]:h-[85px] 	'
+                    className='w-[93px] h-[95px] object-cover  max-[1300px]:rounded-full  max-[1300px]:w-36   max-[1300px]:h-36 m-auto w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50   max-[550px]:w-[83px] max-[550px]:h-[85px]'
                     src={user_leader_image}
                     alt=''
                 />
