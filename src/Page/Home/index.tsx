@@ -13,6 +13,7 @@ import SportsCulture from '../../assets/sc3a1ch-101432661.jpeg'
 import CoastGuardwork from '../../assets/tang-qua-180746147.jpeg'
 import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
 import { narBarItemAll } from '../../component/Napbar'
+import List_leaDer from '../../component/List_leaDer'
 
 export default function Home() {
   const contentAll = [
@@ -340,6 +341,10 @@ export default function Home() {
             © Cổng TTĐT Cảnh sát biển
           </p>
         </div>
+      </div>
+
+      <div className='w-[80%] m-auto max-w-screen-2xl '>
+        <List_leaDer />
       </div>
       <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
         {NewPost_Item_All.map((item) => (
