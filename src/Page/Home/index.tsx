@@ -318,7 +318,7 @@ export default function Home() {
             </div>
           </div>
           <div className='w-[28%] overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
-            <div className='scrollbar h-[80vh] max-[1300px]:h-[100%]'>
+            <div className='scrollbar h-[22vh] max-[1300px]:h-[100%]'>
               {Theoguongbac.map((item) => (
                 <ShortMessage
                   classItiemAll={'text-[15px] font-bold hover:text-[#191970]'}
