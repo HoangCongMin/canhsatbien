@@ -14,14 +14,15 @@ import CoastGuardwork from '../../assets/tang-qua-180746147.jpeg'
 import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
 import { narBarItemAll } from '../../component/Napbar'
 import List_leaDer from '../../component/List_leaDer'
-import Video_media from '../../assets/Video/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
+// import Video_media from '../../assets/Video/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
 import Video_Title from '../../component/video_Title'
 import Image_csb from '../../assets/cover canh sat bien vn.jpg'
 import Title_media from '../../component/Title_media'
-import {Link} from'react-router-dom'
-import BG_IMG from'../../assets/bnqc-6-095527762.jpg'
-import BG_IMG_TWO from'../../assets/media-qdndvn-133303282.jpg'
-import BG_IMG_THREE from'../../assets/duong-day-nong-090912604-150007571-080459585.jpg'
+import { Link } from 'react-router-dom'
+import BG_IMG from '../../assets/bnqc-6-095527762.jpg'
+import BG_IMG_TWO from '../../assets/media-qdndvn-133303282.jpg'
+import BG_IMG_THREE from '../../assets/duong-day-nong-090912604-150007571-080459585.jpg'
+import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
 
 export default function Home() {
   const contentAll = [
@@ -281,6 +282,9 @@ export default function Home() {
     setClose((pre) => !pre)
   }
 
+  const Video_media =
+    'https://canhsatbien.vn:443/upload/files/video/20221122/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
+
   const media_all = {
     title: 'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
     video: Video_media
@@ -359,10 +363,11 @@ export default function Home() {
       <div className='w-[80%] m-auto max-w-screen-2xl '>
         <List_leaDer />
       </div>
-      <div className='w-[80%] m-auto max-w-screen-2xl mt-7 justify-between flex'>
-        <div className=' w-[70%] flex flex-col max-[850px]:flex-col'>
+      <div className='w-[80%] m-auto max-w-screen-2xl mt-7 justify-between flex  max-[1160px]:flex-col'>
+        <div className=' w-[60%] flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
           {NewPost_Item_All.map((item) => (
             <NewPost_Item
+             class_Custom_layout={'first:pb-7'}
               class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer	'}
               itemAll_id={item.id}
               itemAll_RelatedNews={item.RelatedNews}
@@ -375,7 +380,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className='w-[25%]'>
+        <div className='w-[35%] max-[1160px]:w-[100%]'>
           <div className='w-[100%] border-t-[2px] border-[#DA251C]  '>
             <Title_media title_Clip={'Video - Clip'} libari_image={'Thư viện ảnh'} />
             <div className='w-[95%] m-auto mt-4'>
@@ -389,9 +394,12 @@ export default function Home() {
           <div>
             <Title_media title_Clip={'Thông tin thời tiết'} Title={'m-auto'} />
             <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
-            <Link to={''} >Bản tin thủy văn</Link>
+              <Link to={''}>Bản tin thủy văn</Link>
+              <img className='w-[95%] m-auto py-2' src={BG_IMG} alt='' />
+              <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto py-2' />
+              {/* <img src={BG_IMG_TWO} alt='' className='w-[95%] m-auto' /> */}
+              {/* <img src={BG_IMG_VietTell} alt='' className='w-[95%] m-auto' /> */}
             </div>
-            
           </div>
         </div>
       </div>
