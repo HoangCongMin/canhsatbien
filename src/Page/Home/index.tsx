@@ -346,19 +346,30 @@ export default function Home() {
       <div className='w-[80%] m-auto max-w-screen-2xl '>
         <List_leaDer />
       </div>
-      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
-        {NewPost_Item_All.map((item) => (
-          <NewPost_Item
-            itemAll_id={item.id}
-            itemAll_RelatedNews={item.RelatedNews}
-            itemAll_content={item.content}
-            itemAll_image={item.image}
-            itemAll_title={item.title}
-            itemAll_Name={item.name}
-            itemAll_Name_All={item.nameAll}
-            itemAll_content_All={item.contentAll}
-          />
-        ))}
+      <div className='w-[80%] m-auto max-w-screen-2xl mt-7 justify-between flex'>
+
+        <div className=' w-[70%] flex flex-col max-[850px]:flex-col'>
+          {NewPost_Item_All.map((item) => (
+            <NewPost_Item
+              class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer	'}
+              itemAll_id={item.id}
+              itemAll_RelatedNews={item.RelatedNews}
+              itemAll_content={item.content}
+              itemAll_image={item.image}
+              itemAll_title={item.title}
+              itemAll_Name={item.name}
+              itemAll_Name_All={item.nameAll}
+              itemAll_content_All={item.contentAll}
+            />
+          ))}
+        </div>
+        <div className='w-[25%] border-t-[2px] border-[#DA251C]'>
+          <div className='flex justify-between items-center w-[80%] m-auto py-3'>
+            <div className='font-bold	 hover:text-[#191970] uppercase text-[17px]'>Video - Clip</div>
+            <div className='w-[1px] h-[12px] bg-black'></div>
+            <div className=' font-bold	hover:text-[#191970] uppercase text-[17px]'>Thư viện ảnh</div>
+          </div>
+        </div>
       </div>
       <div className='w-[80%] m-auto mt-7 max-w-screen-2xl'>
         <div className='w-full border-t-[1px] border-[#DA251C]'>
@@ -373,6 +384,7 @@ export default function Home() {
             {policyDevelopmentAll.map((item) => (
               <div className='w-[47%] max-[850px]:w-[100%]'>
                 <PolicyDevelopment
+                  class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
                   itemAll_id={item.id}
                   itemAll_RelatedNews={item.RelatedNews}
                   itemAll_content={item.content}
@@ -389,6 +401,7 @@ export default function Home() {
       <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
         {NewPost_Item_All_One.map((item) => (
           <NewPost_Item
+            class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
             itemAll_id={item.id}
             itemAll_RelatedNews={item.RelatedNews}
             itemAll_content={item.content}

@@ -19,6 +19,7 @@ export interface item_All {
   itemAll_RelatedNews: item[]
   itemAll_Name_All: string
   itemAll_content_All: string
+  class_NewPost_Item: string
 }
 export default function NewPost_Item({
   itemAll_RelatedNews,
@@ -28,10 +29,11 @@ export default function NewPost_Item({
   itemAll_title,
   itemAll_Name,
   itemAll_Name_All,
-  itemAll_content_All
+  itemAll_content_All,
+  class_NewPost_Item
 }: item_All) {
   return (
-    <div className='w-[47%]  max-[850px]:w-[100%] cursor-pointer	'>
+    <div className={class_NewPost_Item}>
       <div className='w-full border-t-[2px] border-[#DA251C]'>
         <div className='border-b-[1px] border-stale-300 py-3'>
           <h1 className='font-bold	text-[17px] uppercase text-[#031739] hover:text-[#191970]'>{itemAll_title}</h1>

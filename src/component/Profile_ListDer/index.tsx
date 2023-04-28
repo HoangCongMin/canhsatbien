@@ -28,5 +28,3 @@ export default function Profile_ListDer({ user_leader_image, user_leader_id, use
 }
 
 
-// className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50'
-// className='overflow-hidden cursor-pointer relative group mt-2'
