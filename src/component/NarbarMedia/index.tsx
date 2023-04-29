@@ -13,17 +13,20 @@ import Image_Icon from '../../assets/icon-back-home.png'
 export default function NarbarMedia() {
   return (
     <div className='border-y	py-[3px] border-slate-300	 w-full'>
-      <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl py-7 '>
+      <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl py-7  '>
         <div className='flex w-[30%] items-center	 justify-between'>
-          <Link to={'/'} className='flex w-[32%] items-center	 bg-[#dc2c2c] rounded-lg'>
+          <Link to={'/'} className='flex w-[32%] items-center	 bg-[#dc2c2c] rounded-lg  max-[1400px]:hidden'>
             <div className='text-[#fff] py-2 px-2 h-[100%] w-[30%] bg-[orange] rounded-l-lg	' >
               <BiArrowBack />
             </div>
-            <div className='text-[13px]  font-bold	text-[#fff] font-[Roboto] w-[75%] ml-2'>Về trang chủ</div>
+            <div className='text-[13px]  font-bold	text-[#fff] font-[Roboto] w-[75%] ml-2 line-clamp-1'>Về trang chủ</div>
           </Link>
-          <Link to={'/media'} className='flex  w-[46%] items-center	justify-between uppercase'>
+          <Link to={'/media'} className='flex max-[1400px]:w-[100%]  w-[60%] items-center uppercase'>
+            <div className='w-20%'>
+
             <TfiYoutube className='w-[30px] h-[30px] text-[#dc2c2c]' />
-            <div className='text-[23px] text-[#182940] font-bold'>multimedia</div>
+            </div>
+            <div className='text-[23px] ml-2 text-[#182940] font-bold'>multimedia</div>
           </Link>
         </div>
         <div className='w-[60%] flex justify-between items-center'>
