@@ -20,6 +20,10 @@ export default {
         },
         boxShadow: {
           '3xl': '0 0.0625rem 20px 0 rgb(0 0 0 / 5%)'
+        },
+        backgroundImage: {
+          'hero-pattern': "url('/img/hero-pattern.svg')",
+          'footer-texture': "url('/img/footer-texture.png')",
         }
       },
       fontFamily: {
