@@ -27,11 +27,9 @@ export default function List_New_All_Item({
   return (
     <div
       className={classNames(
-        `grid grid-cols-${class_item ? class_item : '5'} grid-row-3 gap-6  max-[1440px]:${
-          responsive_1440px ? responsive_1440px : 'grid-cols-4'
-        } max-[1024px]:${responsive_1024px ? responsive_1024px : 'grid-cols-3'} max-[600px]:${
-          responsive_600px ? responsive_600px : 'grid-cols-2 max-[480px]:grid-cols-1'
-        }`
+        `grid grid-cols-${class_item ? class_item : 5} grid-row-3 gap-6 ${
+          responsive_1440px ? responsive_1440px : ' max-[1440px]:grid-cols-4'
+        } ${responsive_1024px ? responsive_1024px : 'max-[1024px]:grid-cols-3'} ${responsive_600px?responsive_600px:'max-[600px]:grid-cols-2'} max-[450px]:grid-cols-1`
       )}
     >
       {data.map((item: data_item) => (

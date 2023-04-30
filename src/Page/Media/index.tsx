@@ -50,9 +50,9 @@ export default function Media() {
             </div>
             <List_New_All_Item
               class_item={'4'}
-              responsive_1440px={'grid-cols-3'}
-              responsive_1024px={'grid-cols-2'}
-              responsive_600px={'grid-cols-1'}
+              responsive_1440px={'max-[1440px]:grid-cols-3'}
+              responsive_1024px={'max-[1024px]:grid-cols-2'}
+              responsive_600px={'max-[600px]:grid-cols-1'}
               data={images_all_items_media}
             />
           </div>
