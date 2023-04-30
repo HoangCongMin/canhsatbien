@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Data_item_cart } from '../../component/constant'
 import Video_Title from '../../component/video_Title'
 import Slider from 'react-slick'
+import classNames from 'classnames'
 
 export default class AutoSlice_cart_newsPlay extends Component {
   render() {
@@ -14,15 +15,16 @@ export default class AutoSlice_cart_newsPlay extends Component {
       speed: 3000,
       autoplaySpeed: 1000,
       cssEase: 'linear',
-      responsive:[{
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true
-        }
-      },
+      responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true
+          }
+        },
         {
           breakpoint: 1024,
           settings: {
@@ -48,16 +50,8 @@ export default class AutoSlice_cart_newsPlay extends Component {
           }
         }
       ],
-      appendDots: () => (
-        <div
-          style={{
-            backgroundColor: '#ddd',
-            borderRadius: '10px',
-            padding: '10px',
-            display: 'none'
-          }}
-        ></div>
-      )
+      
+      
     }
     return (
       <div className='pb-10 '>

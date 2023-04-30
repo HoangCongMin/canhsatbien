@@ -23,7 +23,7 @@ export default function Media() {
       </div>
       <div className='w-full border-t border-slate-300'>
         <div className='w-[80%] m-auto max-w-screen-2xl'>
-          <div className='text-center text-[30px] text-[#182940] font-bold	mt-20 mb-8'>Tiêu điểm</div>
+          <div className='text-center text-[30px] text-[#182940] font-bold	mt-10 mb-8'>Tiêu điểm</div>
           <Slice_cart_news />
         </div>
       </div>
@@ -51,7 +51,13 @@ export default function Media() {
             <div className='flex justify-between flex-wrap'>
               {images_all_items_media.map((idtem) => (
                 <div className='w-[23%] max-[1024px]:w-[30%] max-[1024px]:mt-3 max-[600px]:w-[48%] max-[500px]:w-[100%]'>
-                  <img className='w-full' src={idtem.image} alt='' />
+                  <div className="w-full overflow-hidden cursor-pointer relative group">
+                    <img
+                      className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50'
+                      src={idtem.image}
+                      alt=''
+                    />
+                  </div>
                   <div>
                     <div className='text-[13px] font-[Roboto] text-[#3B4E69BF] mt-2'>{idtem.time}</div>
                     <div className='text-[15px] text-[#182940] font-bold mt-1'>{idtem.title}</div>

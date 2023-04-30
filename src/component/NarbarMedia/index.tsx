@@ -25,10 +25,10 @@ export default function NarbarMedia() {
 
   const handleClose = () => SetHidden((pre) => !pre)
   return (
-    <div className='border-y	py-[3px] border-slate-300	 w-full  sticky top-0 z-10 '>
+    <div className='border-y	py-[3px] border-slate-300	 w-full  '>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl py-7 items-center relative   '>
         <div className='flex w-[30%] items-center	 justify-between'>
-          <Link to={'/'} className='flex w-[32%] items-center	 bg-[#dc2c2c] rounded-lg  max-[1400px]:hidden'>
+          <Link to={'/'} className='flex w-[32%] items-center	 bg-[#274c90] rounded-lg  max-[1400px]:hidden'>
             <div className='text-[#fff] py-2 px-2 h-[100%] w-[30%] bg-[orange] rounded-l-lg	'>
               <BiArrowBack />
             </div>
@@ -45,26 +45,26 @@ export default function NarbarMedia() {
         </div>
         <div className='w-[60%] flex justify-between items-center max-[1240px]:hidden'>
           <div className='flex items-center '>
-            <BsFillCameraVideoFill className='text-[#dc2c2c] text-[20px] ' />
+            <BsFillCameraVideoFill className='text-[#274c90] text-[20px] ' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium	'>Video</span>
           </div>
           <div className='flex items-center '>
-            <BsFillMicFill className='text-[#dc2c2c] text-[20px]' />
+            <BsFillMicFill className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Radio News</span>
           </div>
           <div className='flex items-center '>
-            <RiVoiceprintFill className='text-[#dc2c2c] text-[20px]' />
+            <RiVoiceprintFill className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Voices</span>
           </div>
           <div className='flex items-center '>
             <span className='text-[#182940] font-[Roboto] text-[15px] font-medium'>Longform</span>
           </div>
           <div className='flex items-center '>
-            <AiFillPieChart className='text-[#dc2c2c] text-[20px]' />
+            <AiFillPieChart className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>infographics</span>
           </div>
           <div className='flex items-center '>
-            <MdInsertPhoto className='text-[#dc2c2c] text-[20px]' />
+            <MdInsertPhoto className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Photos</span>
           </div>
           <div className='flex items-center '>
@@ -77,7 +77,7 @@ export default function NarbarMedia() {
         {hidden && (
           <div className='absolute top-0 right-0 w-full z-[1] p-4 bg-white  left-0  '>
             <div className='p-2 flex justify-end bg-[#F6F6F6] ' onClick={handleClose} >
-              <AiOutlineClose/>
+              <AiOutlineClose className='text-[#274c90]'/>
             </div>
             {menu_Media.map((item) => (
               <div className='p-2'>

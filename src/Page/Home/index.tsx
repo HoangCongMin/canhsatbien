@@ -388,6 +388,7 @@ export default function Home() {
                 Image_csb_All={Image_csb}
                 Video_media_title={media_all.title}
                 Video_media_video={media_all.video}
+                content={'Xem tất cả...'}
               />
             </div>
           </div>

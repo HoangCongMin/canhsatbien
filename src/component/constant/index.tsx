@@ -65,76 +65,77 @@ export const Data_item_cart = [
 
 export const List_Data_media_product = [
   {
+    time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
   },
-  {
+  {time:'03:35',
     title: 'Chiến sĩ Cảnh sát biển cùng đồng đội đạt giải Nhất Cuộc thi "Tổ quốc bên bờ sóng"',
     video: 'https://canhsatbien.vn:443/upload/files/video/20211115/1311-ps-media-trang-ttdt-csb-095158129.mp4',
     image: 'https://canhsatbien.vn:443/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120'
@@ -181,34 +182,35 @@ export const data_video_all = [
 
 export const data_video_all_item = [
   {
+    time:'03:35',
     title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 tham gia diễn tập huy động nhân lực, tàu thuyền và phương tiện dân sự',
     video:
       'https://canhsatbien.vn:443/upload/files/video/20180831/2018_08_24_gl_canhsatbiendonghanhvoingudan-162204380.mp4',
     image:
       'https://canhsatbien.vn:443/upload/files/image/20220831/20220831-quang-canh-dien-tap-le-ban-giao-153859126.jpg?w=281'
   },
-  {
+  {time:'03:35',
     title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 tham gia diễn tập huy động nhân lực, tàu thuyền và phương tiện dân sự',
     video:
       'https://canhsatbien.vn:443/upload/files/video/20180831/2018_08_24_gl_canhsatbiendonghanhvoingudan-162204380.mp4',
     image:
       'https://canhsatbien.vn:443/upload/files/image/20220831/20220831-quang-canh-dien-tap-le-ban-giao-153859126.jpg?w=281'
   },
-  {
+  {time:'03:35',
     title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 tham gia diễn tập huy động nhân lực, tàu thuyền và phương tiện dân sự',
     video:
       'https://canhsatbien.vn:443/upload/files/video/20180831/2018_08_24_gl_canhsatbiendonghanhvoingudan-162204380.mp4',
     image:
       'https://canhsatbien.vn:443/upload/files/image/20220831/20220831-quang-canh-dien-tap-le-ban-giao-153859126.jpg?w=281'
   },
-  {
+  {time:'03:35',
     title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 tham gia diễn tập huy động nhân lực, tàu thuyền và phương tiện dân sự',
     video:
       'https://canhsatbien.vn:443/upload/files/video/20180831/2018_08_24_gl_canhsatbiendonghanhvoingudan-162204380.mp4',
     image:
       'https://canhsatbien.vn:443/upload/files/image/20220831/20220831-quang-canh-dien-tap-le-ban-giao-153859126.jpg?w=281'
   },
-  {
+  {time:'03:35',
     title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 tham gia diễn tập huy động nhân lực, tàu thuyền và phương tiện dân sự',
     video:
       'https://canhsatbien.vn:443/upload/files/video/20180831/2018_08_24_gl_canhsatbiendonghanhvoingudan-162204380.mp4',

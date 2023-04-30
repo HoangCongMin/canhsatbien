@@ -59,7 +59,7 @@ export default function Video_Title({
           className={classNames(class_content_icon ? class_content_icon : 'text-[#b40000] text-right mt-3')}
           to={'/media'}
         >
-          {content ? content : 'Xem tất cả...'}
+          {content}
         </Link>
       </div>
     </div>

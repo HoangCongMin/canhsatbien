@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -21,8 +21,17 @@ export default function Slide_Media_all() {
     const newIndex = LastSlice ? 0 : currenIndex + 1
     setCurrenIndex(newIndex)
   }
-
-  
+console.log(currenIndex)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (currenIndex === (Data_Media.length -1)) {
+        setCurrenIndex(0)
+      } else {
+        setCurrenIndex(currenIndex + 1)
+      }
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [currenIndex])
   return (
     <div className='w-full h-[760px] max-[1250px]:h-[560px]  max-[875px]:h-[460px] max-[500px]:h-[350px] relative bg-cover bg-center py-6 duration-500 group'>
       <div
@@ -40,7 +49,11 @@ export default function Slide_Media_all() {
       </div>
       <div className='absolute bottom-[7%] left-[20%] flex w-[100px]  max-[700px]:bottom-[15%] justify-between'>
         {Data_Media.map((item, index) => (
-          <div className={classNames(`${currenIndex===index?'w-[30%]':'w-[10%]'} h-2 bg-[#fff] rounded-lg duration-500`)}></div>
+          <div
+            className={classNames(
+              `${currenIndex === index ? 'w-[30%]' : 'w-[10%]'} h-2 bg-[#fff] rounded-lg duration-500`
+            )}
+          ></div>
         ))}
       </div>
     </div>
