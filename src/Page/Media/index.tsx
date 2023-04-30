@@ -48,13 +48,24 @@ export default function Media() {
               <MdInsertPhoto className='text-[#dc2c2c]   w-[20px] h-[20px]' />
               <div className='ml-2 text-[#dc2c2c] uppercase text-[18px] font-black	'>Photos</div>
             </div>
-            <List_New_All_Item
-              class_item={'4'}
-              responsive_1440px={'max-[1440px]:grid-cols-3'}
-              responsive_1024px={'max-[1024px]:grid-cols-2'}
-              responsive_600px={'max-[600px]:grid-cols-1'}
+            {/* <List_New_All_Item
+              class_item={4}
+              responsive_1440px={3}
+              responsive_1024px={2}
+              responsive_600px={1}
               data={images_all_items_media}
-            />
+            /> */}
+            <div className='flex justify-between flex-wrap'>
+              {images_all_items_media.map((idtem) => (
+                <div className='w-[23%] max-[1024px]:w-[30%] max-[1024px]:mt-3 max-[600px]:w-[48%] max-[500px]:w-[100%]'>
+                  <img className='w-full' src={idtem.image} alt='' />
+                  <div>
+                    <div className='text-[13px] font-[Roboto] text-[#3B4E69BF] mt-2'>{idtem.time}</div>
+                    <div className='text-[15px] text-[#182940] font-bold mt-1'>{idtem.title}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           <div className='w-[20%] border-t-2 border-[#dc2c2c] max-[1300px]:w-[100%] max-[1300px]:mt-8'>
             <div className='w-full'>
