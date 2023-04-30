@@ -24,7 +24,7 @@ export default function Slide_Media_all() {
 
   
   return (
-    <div className='w-full h-[760px] relative bg-cover bg-center py-6 duration-500 group'>
+    <div className='w-full h-[760px] max-[1250px]:h-[560px]  max-[875px]:h-[460px] max-[500px]:h-[350px] relative bg-cover bg-center py-6 duration-500 group'>
       <div
         style={{ backgroundImage: `url(${Data_Media[currenIndex].image})` }}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500 brightness-[0.7]'
@@ -35,10 +35,10 @@ export default function Slide_Media_all() {
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactRight onClick={nextSlice} />
       </div>
-      <div className='absolute duration-500 bottom-[10%] left-[20%] text-white text-[36px] w-[50%] font-bold	line-clamp-2'>
+      <div className='absolute duration-500 bottom-[10%] left-[20%] max-[1250px]:text-[30px] max-[700px]:text-[20px] max-[700px]:bottom-[20%] text-white text-[36px] w-[50%] font-bold	line-clamp-2'>
         {Data_Media[currenIndex].title}
       </div>
-      <div className='absolute bottom-[7%] left-[20%] flex w-[5%] justify-between'>
+      <div className='absolute bottom-[7%] left-[20%] flex w-[100px]  max-[700px]:bottom-[15%] justify-between'>
         {Data_Media.map((item, index) => (
           <div className={classNames(`${currenIndex===index?'w-[30%]':'w-[10%]'} h-2 bg-[#fff] rounded-lg duration-500`)}></div>
         ))}
