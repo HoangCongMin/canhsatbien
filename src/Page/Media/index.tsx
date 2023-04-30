@@ -48,13 +48,6 @@ export default function Media() {
               <MdInsertPhoto className='text-[#dc2c2c]   w-[20px] h-[20px]' />
               <div className='ml-2 text-[#dc2c2c] uppercase text-[18px] font-black	'>Photos</div>
             </div>
-            {/* <List_New_All_Item
-              class_item={4}
-              responsive_1440px={3}
-              responsive_1024px={2}
-              responsive_600px={1}
-              data={images_all_items_media}
-            /> */}
             <div className='flex justify-between flex-wrap'>
               {images_all_items_media.map((idtem) => (
                 <div className='w-[23%] max-[1024px]:w-[30%] max-[1024px]:mt-3 max-[600px]:w-[48%] max-[500px]:w-[100%]'>
@@ -79,7 +72,7 @@ export default function Media() {
         </div>
       </div>
       <div className='w-full mt-6 mb-20'>
-        <div className='w-[80%] m-auto'>
+        <div className='w-[80%] m-auto max-w-screen-2xl'>
           <div className='w-[66%] grid gap-11 grid-cols-3 max-[1300px]:grid-cols-2  max-[1000px]:w-full max-[600px]:grid-cols-1'>
             <div className=' border-t-2  border-[#dc2c2c]'>
               <div className='w-full'>
