@@ -3,6 +3,8 @@ import Main from '../layout/Main'
 import Home from '../Page/Home'
 import Media from '../Page/Media'
 import MediaLayout from '../layout/MediaLayout'
+import Organization_Payroll from '../Page/Organization_Payroll'
+import GrassRootslevelundertheUnits from '../Page/GrassRootslevelundertheUnits'
 import React from 'react'
 
 export default function useRouterElement() {
@@ -21,6 +23,22 @@ export default function useRouterElement() {
         <MediaLayout>
           <Media />
         </MediaLayout>
+      )
+    },
+    {
+      path: '/Organization_Payroll',
+      element: (
+        <Main>
+          <Organization_Payroll />
+        </Main>
+      )
+    },
+    {
+      path: '/:name',
+      element: (
+        <Main>
+          <GrassRootslevelundertheUnits />
+        </Main>
       )
     }
   ])

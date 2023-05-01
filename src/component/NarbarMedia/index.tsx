@@ -36,7 +36,7 @@ export default function NarbarMedia() {
               Về trang chủ
             </div>
           </Link>
-          <Link to={'/media'} className='flex max-[1400px]:w-[100%]  w-[60%] items-center uppercase'>
+          <Link to={'/'} className='flex max-[1400px]:w-[100%]  w-[60%] items-center uppercase'>
             <div className='w-20%'>
               <TfiYoutube className='w-[30px] h-[30px] text-[#dc2c2c]' />
             </div>
@@ -44,30 +44,30 @@ export default function NarbarMedia() {
           </Link>
         </div>
         <div className='w-[60%] flex justify-between items-center max-[1240px]:hidden'>
-          <div className='flex items-center '>
+          <div className='flex items-center cursor-pointer'>
             <BsFillCameraVideoFill className='text-[#274c90] text-[20px] ' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium	'>Video</span>
           </div>
-          <div className='flex items-center '>
+          <div className='flex items-center cursor-pointer '>
             <BsFillMicFill className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Radio News</span>
           </div>
-          <div className='flex items-center '>
+          <div className='flex items-center cursor-pointer'>
             <RiVoiceprintFill className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Voices</span>
           </div>
-          <div className='flex items-center '>
+          <div className='flex items-center cursor-pointer '>
             <span className='text-[#182940] font-[Roboto] text-[15px] font-medium'>Longform</span>
           </div>
-          <div className='flex items-center '>
+          <div className='flex items-center cursor-pointer'>
             <AiFillPieChart className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>infographics</span>
           </div>
-          <div className='flex items-center '>
+          <div className='flex items-center cursor-pointer'>
             <MdInsertPhoto className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Photos</span>
           </div>
-          <div className='flex items-center '>
+          <div className='flex items-center  cursor-pointer'>
             <BsSearch />
           </div>
         </div>

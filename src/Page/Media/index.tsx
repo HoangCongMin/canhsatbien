@@ -60,7 +60,7 @@ export default function Media() {
                   </div>
                   <div>
                     <div className='text-[13px] font-[Roboto] text-[#3B4E69BF] mt-2'>{idtem.time}</div>
-                    <div className='text-[15px] text-[#182940] font-bold mt-1'>{idtem.title}</div>
+                    <div className='text-[15px] hover:text-[#182940] font-bold mt-1 cursor-pointer '>{idtem.title}</div>
                   </div>
                 </div>
               ))}
