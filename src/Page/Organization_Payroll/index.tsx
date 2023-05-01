@@ -1,12 +1,12 @@
 import React from 'react'
-import Chart_All_Item from '../../component/Chart_All_Item'
+// import Chart_All_Item from '../../component/Chart_All_Item'
 
 export default function Organization_Payroll() {
   return (
     <div className='w-full'>
       <div className='w-[80%] m-auto max-w-screen-2xl'>
 
-        <Chart_All_Item />
+        {/* <Chart_All_Item /> */}
         <div className='my-10'>
 
         <p className='text-[12px] font-[Arial] text-[#333] my-3'>

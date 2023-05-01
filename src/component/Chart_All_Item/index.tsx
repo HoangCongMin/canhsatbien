@@ -2,12 +2,11 @@ import React from 'react'
 import { Tree, TreeNode } from 'react-organizational-chart'
 import Item_In_Chart_Item from '../Chart_All_Item/Item_In_Chart_Item'
 import { Organization_Payroll_Data } from '../constant'
-import {Link} from'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Chart_All_Item() {
   return (
     <div className='w-full mt-4'>
-
       <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center'>
         <div className='bg-[#DA251C] h-7 w-1'></div>
         <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
@@ -29,16 +28,51 @@ export default function Chart_All_Item() {
             </div>
           }
         >
-          
           {Organization_Payroll_Data.child.map((item) => (
             <TreeNode
-            className ={'w-[23%]'}
+              className={'w-[20%]'}
               label={
                 <Link to={`/${item.title}`} className='w-full'>
-                  <Item_In_Chart_Item class_child={'w-full'} Img_Organization={item.img} title__Organization={item.title} />
+                  <Item_In_Chart_Item
+                    class_child={'w-full'}
+                    Img_Organization={item.img}
+                    title__Organization={item.title}
+                  />
                 </Link>
-              }/>
+              }
+            >
+              {/* {Organization_Payroll_Data.child.map((item) =>
+                item.child?.map((item) => (
+                  <TreeNode className={'w-[20%]'} label={<Link to={`/${item.title}`} className='w-full'>
+                    <Item_In_Chart_Item
+                    class_child={'w-full'}
+                    title__Organization={item.title}
+                  />
+                  </Link>} />
+                ))
+              )} */}
+            </TreeNode>
           ))}
+
+          <TreeNode
+            className={'w-[20%]'}
+            label={
+              <Link to={`/`} className='w-full'>
+                <Item_In_Chart_Item class_child={'w-full'} title__Organization={'ok'} />
+              </Link>
+            }
+          >
+            {/* {Organization_Payroll_Data.child.map((item) =>
+                item.child?.map((item) => (
+                  <TreeNode className={'w-[20%]'} label={<Link to={`/${item.title}`} className='w-full'>
+                    <Item_In_Chart_Item
+                    class_child={'w-full'}
+                    title__Organization={item.title}
+                  />
+                  </Link>} />
+                ))
+              )} */}
+          </TreeNode>
         </Tree>
       </div>
     </div>

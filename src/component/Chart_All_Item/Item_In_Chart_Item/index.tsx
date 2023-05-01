@@ -1,8 +1,8 @@
 import React from 'react'
 import classNames from 'classnames'
 interface Item_In_Chart_Item_all {
-  Img_Organization: string
-  title__Organization: string
+  Img_Organization?: string
+  title__Organization?: string
   class_child?: string
 }
 
@@ -13,7 +13,7 @@ export default function Item_In_Chart_Item({
 }: Item_In_Chart_Item_all) {
   return (
     <div
-      className={classNames(`${class_child ? class_child : 'w-[25%]'} m-auto bg-[#F6F6F6] py-4 font-bold rounded-lg`)}
+      className={classNames(`${class_child ? class_child : 'w-[20%] '} m-auto bg-[#F6F6F6] py-4 font-bold rounded-lg`)}
     >
       <div className='text-[#031739] hover:text-[#191970]  max-[1250px]:text-[12px] max-[800px]:text-[8px]'>{title__Organization}</div>
       <div className='w-[30%] m-auto max-[1250px]:w-[50%] max-[800px]:w-[70%] max-[600px]:w-[90%] '>
