@@ -10,25 +10,25 @@ export default function Chart_test_Item() {
           <li>
             <ul className='director'>
               <li>
-                <Link to={'/'}>
+                <Link to={'/ok'}>
                   <span className='line-clamp-1'  >Bộ Tư lệnh Cảnh sát biển Việt Nam</span>
                 </Link>
                   <ul className='subdirector'>
                     <li className='invisible'>
-                      <Link to={'/'}>
+                      <Link to={'/ok'}>
                         <span>Assistante Director</span>
                       </Link>
                     </li>
                   </ul>
                 <ul className='departments cf'>
                   <li className='invisible'>
-                    <Link to={'/'}>
+                    <Link to={'/ok'}>
                       <span>Administration</span>
                     </Link>
                   </li>
 
                   <li className='department dep-a'>
-                    <Link to={'/'}>
+                    <Link to={'/ok'}>
                       <span >Bộ Tư lệnh Vùng Cảnh sát biển 1</span>
                     </Link>
                     <ul className='sections'>
