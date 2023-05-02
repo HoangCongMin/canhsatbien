@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Chart_test_Item() {
   return (
-    <div className='content w-full  h-[74rem] max-[767px]:h-[320rem]  mt-10'>
+    <div className='content w-full  h-[74rem] max-[767px]:h-[320rem]  mt-10 '>
       <figure className='org-chart cf'>
         <ul className='administration'>
           <li>
@@ -356,3 +356,7 @@ export default function Chart_test_Item() {
     </div>
   )
 }
+
+
+
+// https://codepen.io/siiron/pen/DpJmwK
