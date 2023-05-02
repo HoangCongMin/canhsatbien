@@ -1,15 +1,18 @@
 import React from 'react'
-import Content_Same from'../../component/Content_Same'
+import Content_Same from '../../component/Content_Same'
 
 export default function GrassRootslevelundertheUnits() {
   return (
     <div className='w-full'>
-      <div className='w-[80%] m-auto max-w-screen-2xl mb-4'>
+      <div className='w-[80%] m-auto max-w-screen-2xl'>
         <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center mt-5'>
           <div className='bg-[#DA251C] h-7 w-1'></div>
           <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] hover:text-[#191970] cursor-pointer '>
             Cục Chính trị
           </div>
+        </div>
+        <div className='w-[80%] m-auto my-7'>
+          <img src={'https://cdn.lawnet.vn/uploads/tintuc/2022/11/29/canh-sat-bien-viet-nma.jpg'} alt='' />
         </div>
         <div className='text-[#838383] text-[15px] font-[Roboto] my-3'>08:48 | 09/02/2023</div>
         <p className='text-[14px] text-[#3B4E68]'>
@@ -42,11 +45,13 @@ export default function GrassRootslevelundertheUnits() {
           </p>
         </div>
         <div className='pt-3 pb-2'>
-          <p className='font-bold text-[16px] uppercase mt-[2px] hover:text-[#191970] cursor-pointer text-right'>Cổng TTĐT Cảnh Sát Biển</p>
+          <p className='font-bold text-[16px] uppercase mt-[2px] hover:text-[#191970] cursor-pointer text-right'>
+            Cổng TTĐT Cảnh Sát Biển
+          </p>
         </div>
       </div>
       <div className='w-[80%] m-auto mb-14 max-w-screen-2xl'>
-          <Content_Same/>
+        <Content_Same />
       </div>
     </div>
   )

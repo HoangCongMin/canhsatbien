@@ -1,5 +1,5 @@
 import React from 'react'
-// import Chart_All_Item from '../../component/Chart_All_Item'
+import Chart_All_Item from '../../component/Chart_All_Item'
 
 export default function Organization_Payroll() {
   return (

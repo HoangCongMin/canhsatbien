@@ -39,13 +39,13 @@ export default function Napbar() {
           </div>
           <div className='w-full 	 mt-5 max-[1300px]:hidden'>
             <div className='w-full border-slate-300 '>
-              <ul className='flex justify-between w-[95%] m-auto'>
+              <div className='flex justify-between w-[95%] m-auto'>
                 {narBarItemAll.map((item) => (
                   <li className='uppercase text-sm	leading-10 flex justify-center border-b-2 font-bold border-white  hover:text-[#015CA2] hover:duration-700 px-3 hover:border-b-2 hover:border-[#015CA2]'>
                     <Link to={'/Organization_Payroll'}>{item.title}</Link>
                   </li>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </Link>

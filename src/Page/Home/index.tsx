@@ -25,6 +25,7 @@ import BG_IMG_THREE from '../../assets/duong-day-nong-090912604-150007571-080459
 import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
 import Chart_All_Item from '../../component/Chart_All_Item'
 import Chart_test_Item from '../../component/Chart_test_Item'
+import { Organization_Payroll_Data } from '../../component/constant'
 
 export default function Home() {
   const contentAll = [
@@ -449,9 +450,17 @@ export default function Home() {
         ))}
       </div>
 
-      <div className='w-[80%] m-auto max-w-screen-2xl'>
+      <div className='w-[80%] m-auto max-w-screen-2xl mt-5'>
+      <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center'>
+        <div className='bg-[#DA251C] h-7 w-1'></div>
+        <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
+          Tổ chức - Biên chế
+        </div>
+      </div>
         {/* <Chart_All_Item /> */}
         <Chart_test_Item/>
+       
+
         <div className='my-10'>
           <p className='text-[12px] font-[Arial] text-[#333] my-3'>
             <span>

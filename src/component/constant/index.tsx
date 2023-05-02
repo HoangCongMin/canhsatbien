@@ -304,7 +304,7 @@ export const Organization_Payroll_Data = {
         { title: 'Phòng Kỹ thuật' },
         { title: 'Phòng Pháp luật' },
         { title: 'Phòng Trinh sát' },
-        { title: 'Phòng Phòng chống tội phạm và ma tuý' },
+        // { title: 'Phòng Phòng chống tội phạm và ma tuý' },
         { title: 'Ban Quan hệ quốc tế' },
         { title: 'Ban Tài chính' },
         { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 1' },
@@ -312,76 +312,139 @@ export const Organization_Payroll_Data = {
         { title: 'Hải đội 102' },
         { title: 'Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004' }
       ]
-    },
-    {
-      title: 'Bộ Tư lệnh Vùng Cảnh sát biển 2',
-      img: 'https://vnanet.vn/Data/Articles/2023/02/17/6589020/vna_potal_quang_nam_luc_luong_bao_ve_bo_bien_nhat_ban_tham_giao_luu_tai_bo_tu_lenh_vung_canh_sat_bien_2_stand.jpg',
-      child: [
-        { title: 'Phòng Tham mưu' },
-        { title: 'Phòng Chính trị' },
-        { title: 'Phòng Hậu cần' },
-        { title: 'Phòng Kỹ thuật' },
-        { title: 'Phòng Pháp luật' },
-        { title: 'Phòng Trinh sát' },
-        { title: 'Phòng Phòng chống tội phạm và ma tuý' },
-        { title: 'Ban Quan hệ quốc tế' },
-        { title: 'Ban Tài chính' },
-        { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 2' },
-        { title: 'Hải đoàn 21' },
-        { title: 'Hải đội 202' },
-        { title: 'Tàu Cảnh sát biển 2015 - 2016 - 4032 - 4033 - 4037 - 4038 - 8002 - 9002' },
-        { title: 'Trung tâm Huấn luyện thực hành số 2' }
-      ]
-    },
-    {
-      title: 'Bộ Tư lệnh Vùng Cảnh sát biển 3',
-      img: 'https://images.baoquangnam.vn/Storage/NewsPortal/2021/11/30/120636/TNB-48813.jpg',
-      child: [
-        { title: 'Phòng Tham mưu' },
-        { title: 'Phòng Chính trị' },
-        { title: 'Phòng Hậu cần' },
-        { title: 'Phòng Kỹ thuật' },
-        { title: 'Phòng Pháp luật' },
-        { title: 'Phòng Trinh sát' },
-        { title: 'Phòng Phòng chống tội phạm và ma tuý' },
-        { title: 'Ban Quan hệ quốc tế' },
-        { title: 'Ban Tài chính' },
-        { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 3' },
-        { title: 'Hải đoàn 32' },
-        { title: 'Hải đội 301,33' },
-        {
-          title:
-            'Tàu Cảnh sát biển 3001 - 2009 - 2010 - 2011 - 4031 - 4034 - 8001 - 8005 - 8020 - 8021 - 9001 - 9033 - 6007 - 6008 - 6011'
-        }
-      ]
-    },
-    {
-      title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4',
-      img: 'https://photo-cms-tpo.epicdn.me/w645/Uploaded/2023/xqeioxwsxr/2022_01_24/tp-phong-van-1-6926.jpg',
-
-      child: [
-        { title: 'Phòng Tham mưu' },
-        { title: 'Phòng Chính trị' },
-        { title: 'Phòng Hậu cần' },
-        { title: 'Phòng Kỹ thuật' },
-        { title: 'Phòng Pháp luật' },
-        { title: 'Phòng Trinh sát' },
-        { title: 'Phòng Phòng chống tội phạm và ma tuý' },
-        { title: 'Ban Quan hệ quốc tế' },
-        { title: 'Ban Tài chính' },
-        { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 3' },
-        { title: 'Hải đoàn  42' },
-        { title: 'Hải đội 401' },
-        {
-          title:
-            'Tàu Cảnh sát biển 3001 - 2009 - 2010 - 2011 - 4031 - 4034 - 8001 - 8005 - 8020 - 8021 - 9001 - 9033 - 6007 - 6008 - 6011'
-        },
-        { title: 'Trung tâm Huấn luyện thực hành số 4' }
-
-      ]
     }
+    // {
+    //   title: 'Bộ Tư lệnh Vùng Cảnh sát biển 2',
+    //   img: 'https://vnanet.vn/Data/Articles/2023/02/17/6589020/vna_potal_quang_nam_luc_luong_bao_ve_bo_bien_nhat_ban_tham_giao_luu_tai_bo_tu_lenh_vung_canh_sat_bien_2_stand.jpg',
+    //   child: [
+    //     { title: 'Phòng Tham mưu' },
+    //     { title: 'Phòng Chính trị' },
+    //     { title: 'Phòng Hậu cần' },
+    //     { title: 'Phòng Kỹ thuật' },
+    //     { title: 'Phòng Pháp luật' },
+    //     { title: 'Phòng Trinh sát' },
+    //     { title: 'Phòng Phòng chống tội phạm và ma tuý' },
+    //     { title: 'Ban Quan hệ quốc tế' },
+    //     { title: 'Ban Tài chính' },
+    //     { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 2' },
+    //     { title: 'Hải đoàn 21' },
+    //     { title: 'Hải đội 202' },
+    //     { title: 'Tàu Cảnh sát biển 2015 - 2016 - 4032 - 4033 - 4037 - 4038 - 8002 - 9002' },
+    //     { title: 'Trung tâm Huấn luyện thực hành số 2' }
+    //   ]
+    // },
+    // {
+    //   title: 'Bộ Tư lệnh Vùng Cảnh sát biển 3',
+    //   img: 'https://images.baoquangnam.vn/Storage/NewsPortal/2021/11/30/120636/TNB-48813.jpg',
+    //   child: [
+    //     { title: 'Phòng Tham mưu' },
+    //     { title: 'Phòng Chính trị' },
+    //     { title: 'Phòng Hậu cần' },
+    //     { title: 'Phòng Kỹ thuật' },
+    //     { title: 'Phòng Pháp luật' },
+    //     { title: 'Phòng Trinh sát' },
+    //     { title: 'Phòng Phòng chống tội phạm và ma tuý' },
+    //     { title: 'Ban Quan hệ quốc tế' },
+    //     { title: 'Ban Tài chính' },
+    //     { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 3' },
+    //     { title: 'Hải đoàn 32' },
+    //     { title: 'Hải đội 301,33' },
+    //     {
+    //       title:
+    //         'Tàu Cảnh sát biển 3001 - 2009 - 2010 - 2011 - 4031 - 4034 - 8001 - 8005 - 8020 - 8021 - 9001 - 9033 - 6007 - 6008 - 6011'
+    //     }
+    //   ]
+    // },
+    // {
+    //   title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4',
+    //   img: 'https://photo-cms-tpo.epicdn.me/w645/Uploaded/2023/xqeioxwsxr/2022_01_24/tp-phong-van-1-6926.jpg',
+
+    //   child: [
+    //     { title: 'Phòng Tham mưu' },
+    //     { title: 'Phòng Chính trị' },
+    //     { title: 'Phòng Hậu cần' },
+    //     { title: 'Phòng Kỹ thuật' },
+    //     { title: 'Phòng Pháp luật' },
+    //     { title: 'Phòng Trinh sát' },
+    //     { title: 'Phòng Phòng chống tội phạm và ma tuý' },
+    //     { title: 'Ban Quan hệ quốc tế' },
+    //     { title: 'Ban Tài chính' },
+    //     { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 3' },
+    //     { title: 'Hải đoàn  42' },
+    //     { title: 'Hải đội 401' },
+    //     {
+    //       title:
+    //         'Tàu Cảnh sát biển 3001 - 2009 - 2010 - 2011 - 4031 - 4034 - 8001 - 8005 - 8020 - 8021 - 9001 - 9033 - 6007 - 6008 - 6011'
+    //     },
+    //     { title: 'Trung tâm Huấn luyện thực hành số 4' }
+
+    //   ]
+    // }
     // { title: 'Cục Kỹ thuật', img: 'https://bcp.cdnchinhphu.vn/Uploaded/nguyenminhdiem/2021_08_24/CSBVN.png' }
   ]
 }
 
+export const Organization_Payroll_Data_two = {
+  title: 'Bộ Tư lệnh Vùng Cảnh sát biển 2',
+  img: 'https://vnanet.vn/Data/Articles/2023/02/17/6589020/vna_potal_quang_nam_luc_luong_bao_ve_bo_bien_nhat_ban_tham_giao_luu_tai_bo_tu_lenh_vung_canh_sat_bien_2_stand.jpg',
+  child: [
+    { title: 'Phòng Tham mưu' },
+    { title: 'Phòng Chính trị' },
+    { title: 'Phòng Hậu cần' },
+    { title: 'Phòng Kỹ thuật' },
+    { title: 'Phòng Pháp luật' },
+    { title: 'Phòng Trinh sát' },
+    { title: 'Phòng Phòng chống tội phạm và ma tuý' },
+    { title: 'Ban Quan hệ quốc tế' },
+    { title: 'Ban Tài chính' },
+    { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 2' },
+    { title: 'Hải đoàn 21' },
+    { title: 'Hải đội 202' },
+    { title: 'Tàu Cảnh sát biển 2015 - 2016 - 4032 - 4033 - 4037 - 4038 - 8002 - 9002' },
+    { title: 'Trung tâm Huấn luyện thực hành số 2' }
+  ]
+}
+
+export const Organization_Payroll_Data_three = {
+  title: 'Bộ Tư lệnh Vùng Cảnh sát biển 3',
+  img: 'https://images.baoquangnam.vn/Storage/NewsPortal/2021/11/30/120636/TNB-48813.jpg',
+  child: [
+    { title: 'Phòng Trinh sát' },
+    { title: 'Phòng Phòng chống tội phạm và ma tuý' },
+    { title: 'Ban Quan hệ quốc tế' },
+    { title: 'Ban Tài chính' },
+    { title: 'Phòng Tham mưu' },
+    { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 3' },
+    { title: 'Hải đội 301,33' },
+    {
+      title:
+        'Tàu Cảnh sát biển 3001 - 2009 - 2010 - 2011 - 4031 - 4034 - 8001 - 8005 - 8020 - 8021 - 9001 - 9033 - 6007 - 6008 - 6011'
+    }
+  ]
+}
+
+export const Organization_Payroll_Data_four = {
+  title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4',
+  img: 'https://photo-cms-tpo.epicdn.me/w645/Uploaded/2023/xqeioxwsxr/2022_01_24/tp-phong-van-1-6926.jpg',
+
+  child: [
+    { title: 'Phòng Tham mưu' },
+    { title: 'Phòng Chính trị' },
+    { title: 'Phòng Hậu cần' },
+    { title: 'Phòng Kỹ thuật' },
+    { title: 'Phòng Pháp luật' },
+    { title: 'Phòng Trinh sát' },
+    { title: 'Phòng Phòng chống tội phạm và ma tuý' },
+    { title: 'Ban Quan hệ quốc tế' },
+    { title: 'Ban Tài chính' },
+    { title: 'Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 3' },
+    { title: 'Hải đoàn  42' },
+    { title: 'Hải đội 401' },
+    {
+      title:
+        'Tàu Cảnh sát biển 3001 - 2009 - 2010 - 2011 - 4031 - 4034 - 8001 - 8005 - 8020 - 8021 - 9001 - 9033 - 6007 - 6008 - 6011'
+    },
+    { title: 'Trung tâm Huấn luyện thực hành số 4' }
+  ]
+}
 export default Data_Media

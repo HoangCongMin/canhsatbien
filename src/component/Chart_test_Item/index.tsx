@@ -1,29 +1,358 @@
 import React from 'react'
-import { Organization_Payroll_Data } from '../constant'
+import './Chart_test_Item.scss'
+import { Link } from 'react-router-dom'
 
 export default function Chart_test_Item() {
   return (
-    <div className='w-full'>
-      <ul className='text-center pt-5 relative duration-75'>
-        <li className='table text-center relative duration-75 p-2 before:content-[""] before:absolute before:w-[51%] before:h-[10px] before:only:hidden only:pt-[0px] before:first:border-none before:last:border-r-2 before:last:rounded-t-lg  before:border-black     after:absolute after:top-0 after:w-[51%] after:h-[10px] after:-[""] after:right-[auto] after:left-[50%]	after:border-l-2  after:border-black	after:only:hidden after:first:border-none after:first:rounded-l-lg  '>
-          <span>{Organization_Payroll_Data.title}</span>
-          <ul className='text-center pt-5 relative duration-75 before:content-[""] before:absolute before:top-0 before:left-[50%] before:border-l-2 before:border-black'>
-            {Organization_Payroll_Data.child.map((item) => (
-              <li className='table text-center relative duration-75 p-2 before:content-[""] before:absolute before:w-[51%] before:h-[10px] before:only:hidden only:pt-[0px] before:first:border-none before:last:border-r-2 before:last:rounded-t-lg before:border-black     after:absolute after:top-0 after:w-[51%] after:h-[10px]  after:-[""] after:right-[auto] after:left-[50%] after:border-l-2  after:border-black after:only:hidden after:first:border-none after:first:rounded-l-lg'>
-                {' '}
-                <span>{item.title}</span>
-                <ul className='text-center pt-5 relative duration-75'>
-                  {item.child.map((item) => (
-                    <li className='table text-center relative duration-75 p-2 before:content-[""] before:absolute before:w-[51%] before:h-[10px] before:only:hidden only:pt-[0px] before:first:border-none before:last:border-r-2 before:last:rounded-t-lg before:border-black    after:absolute after:top-0 after:w-[51%] after:h-[10px]  after:-[""] after:right-[auto] after:left-[50%] after:border-l-2  after:border-black after:only:hidden after:first:border-none after:first:rounded-l-lg'>
-                      {item.title}
+    <div className='content w-full  h-[74rem] max-[767px]:h-[320rem]  mt-10'>
+      <figure className='org-chart cf'>
+        <ul className='administration'>
+          <li>
+            <ul className='director'>
+              <li>
+                <Link to={'/'}>
+                  <span className='line-clamp-1'  >Bộ Tư lệnh Cảnh sát biển Việt Nam</span>
+                </Link>
+                  <ul className='subdirector'>
+                    <li className='invisible'>
+                      <Link to={'/'}>
+                        <span>Assistante Director</span>
+                      </Link>
                     </li>
-                  ))}
+                  </ul>
+                <ul className='departments cf'>
+                  <li className='invisible'>
+                    <Link to={'/'}>
+                      <span>Administration</span>
+                    </Link>
+                  </li>
+
+                  <li className='department dep-a'>
+                    <Link to={'/'}>
+                      <span >Bộ Tư lệnh Vùng Cảnh sát biển 1</span>
+                    </Link>
+                    <ul className='sections'>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Tham mưu</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Chính trị</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Hậu cần</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Kỹ thuật</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Trinh sát</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Quan hệ quốc tế</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Tài chính</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 1</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đoàn 112/Hải đoàn 11</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đội 102</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                        </Link>
+                      </li>
+                      
+                      
+                    </ul>
+                  </li>
+                  <li className='department dep-a'>
+                    <Link to={'/'}>
+                      <span>Bộ Tư lệnh Vùng Cảnh sát biển 2</span>
+                    </Link>
+                    <ul className='sections'>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Tham mưu</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Chính trị</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Hậu cần</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Kỹ thuật</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Trinh sát</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Quan hệ quốc tế</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Tài chính</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 1</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đoàn 112/Hải đoàn 11</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đội 102</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                        </Link>
+                      </li>
+                      
+                      
+                    </ul>
+                  </li>
+                  <li className='department dep-a'>
+                    <Link to={'/'}>
+                      <span>Bộ Tư lệnh Vùng Cảnh sát biển 3</span>
+                    </Link>
+                    <ul className='sections'>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Tham mưu</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Chính trị</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Hậu cần</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Kỹ thuật</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Trinh sát</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Quan hệ quốc tế</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Tài chính</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 1</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đoàn 112/Hải đoàn 11</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đội 102</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                        </Link>
+                      </li>
+                      
+                      
+                    </ul>
+                  </li>
+                  <li className='department dep-a'>
+                    <Link to={'/'}>
+                      <span>Bộ Tư lệnh Vùng Cảnh sát biển 4</span>
+                    </Link>
+                    <ul className='sections'>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Tham mưu</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Chính trị</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Hậu cần</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Kỹ thuật</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Trinh sát</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Quan hệ quốc tế</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Tài chính</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 1</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đoàn 112/Hải đoàn 11</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đội 102</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                        </Link>
+                      </li>
+                      
+                      
+                    </ul>
+                  </li>
+                  <li className='department dep-a'>
+                    <Link to={'/'}>
+                      <span>Bộ Tư lệnh Vùng Cảnh sát biển 5</span>
+                    </Link>
+                    <ul className='sections'>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Tham mưu</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Chính trị</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Hậu cần</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Kỹ thuật</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Phòng Trinh sát</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Quan hệ quốc tế</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Ban Tài chính</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Trung tâm HH Cứu nạn & Bảo vệ môi trường biển 1</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đoàn 112/Hải đoàn 11</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span>Hải đội 102</span>
+                        </Link>
+                      </li>
+                      <li className='section'>
+                        <Link to={'/'}>
+                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                        </Link>
+                      </li>
+                      
+                      
+                    </ul>
+                  </li>
                 </ul>
               </li>
-            ))}
-          </ul>
-        </li>
-      </ul>
+            </ul>
+          </li>
+        </ul>
+      </figure>
     </div>
   )
 }
