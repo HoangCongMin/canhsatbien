@@ -106,7 +106,7 @@ export default function Napbar() {
                 {!close && <AiOutlineBars className='text-white' onClick={handleClose} />}
                 {close && (
                   <>
-                    <li className='uppercase text-sm hidden	leading-10 text-white	items-center	 border-b-2 font-bold  bg-[#015CA2] max-[1316px]:block max-[1316px]:flex  hover:duration-700 px-3 hover:border-b-2  max-[1316px]:justify-between'>
+                    <li className='uppercase text-sm hidden	leading-10 text-white	items-center	  font-bold  bg-[#015CA2] max-[1316px]:block max-[1316px]:flex  hover:duration-700 px-3   max-[1316px]:justify-between'>
                       <p>mENU</p>
                       <AiOutlineClose onClick={handleClose} />
                     </li>
