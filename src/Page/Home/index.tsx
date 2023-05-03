@@ -26,15 +26,81 @@ import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
 import Chart_All_Item from '../../component/Chart_All_Item'
 import Chart_test_Item from '../../component/Chart_test_Item'
 import { Organization_Payroll_Data } from '../../component/constant'
-import {HiBookOpen} from'react-icons/hi'
-import {IoNewspaperSharp} from'react-icons/io5'
-
+import { HiBookOpen } from 'react-icons/hi'
+import { IoNewspaperSharp } from 'react-icons/io5'
+import Backfrond from '../../assets/background.png'
 
 export default function Home() {
+  const Theoguongbac = [
+    { id: 1, content: 'Hành động nhỏ, ý nghĩa lớn - góp phần bảo vệ môi trường biển' },
+    { id: 2, content: 'Tuyên dương Gương mặt trẻ tiêu biểu Cảnh sát biển năm 2022' },
+    { id: 3, content: 'Đại tướng Phan Văn Giang gửi thư khen ngợi, động viên Trung tâm Đào tạo và' },
+    { id: 4, content: 'HTuyên dương gương mặt trẻ tiêu biểu, gương mặt trẻ triển vọng toàn quân' },
+    { id: 5, content: '“Bông hồng trắng” của Lực lượng Cảnh sát biển Việt Nam' },
+    { id: 6, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
+  ]
+
+  const DocNhieu = [
+    {
+      id: 1,
+      content:
+        'Thư của Đảng ủy, Bộ Tư lệnh Cảnh sát biển Việt Nam gửi cán bộ, chiến sĩ nhân kỷ niệm 24 năm Ngày truyền thống'
+    },
+    {
+      id: 2,
+      content:
+        'Ban Liên lạc truyền thống Cảnh sát biển khu vực Hà Nội gặp mặt nhân kỷ niệm 24 năm Ngày thành lập Lực lượng'
+    },
+    {
+      id: 3,
+      content:
+        'Chính ủy Cảnh sát biển gửi Thư chúc mừng Bộ Tư lệnh Vùng Cảnh sát biển 2 nhân dịp kỷ niệm 18 năm Ngày thành lập'
+    },
+    {
+      id: 4,
+      content:
+        'Tư lệnh Cảnh sát biển gửi Thư chúc mừng Bộ Tư lệnh Vùng Cảnh sát biển 3 nhân dịp kỷ niệm 22 năm Ngày truyền trống'
+    },
+    { id: 5, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
+    { id: 6, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
+  ]
+
+  const TinMoi = [
+    {
+      id: 1,
+      content:
+        'Tàu CSB 3004 tuyên truyền, phổ biến pháp luật cho ngư dân'
+    },
+    {
+      id: 2,
+      content:
+        'Chú trọng tuyên truyền pháp luật tại các bến tàu'
+    },
+    {
+      id: 3,
+      content:
+        'Để mỗi người dân là một tuyên truyền viên về chống khai thác IUU'
+    },
+    {
+      id: 4,
+      content:
+        'Đẩy mạnh công tác truyền thông trong phòng chống IUU trên vùng biển Miền'
+    },
+    { id: 5, content: '“Tàu CSB 3004 tuyên truyền, phổ biến pháp luật cho ngư dân' },
+    { id: 6, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 tạm giữ tàu chở dầu không rõ nguồn gốc' }
+
+
+
+  ]
   const contentAll = [
-    { id: 1, content: 'TIN MỚI' ,icon: HiBookOpen},
-    { id: 2, content: 'ĐỌC NHIỀU' ,icon:IoNewspaperSharp},
-    { id: 3, content: 'THEO GƯƠNG BÁC', img: 'https://static.mediacdn.vn/baochinhphu/image/logo_bcp.png' }
+    { id: 1, content: 'TIN MỚI', icon: HiBookOpen ,Conten_all:Theoguongbac},
+    { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp ,Conten_all:DocNhieu},
+    {
+      id: 3,
+      content: 'THEO GƯƠNG BÁC',
+      img: 'https://static.wixstatic.com/media/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.png/v1/fill/w_500,h_750,al_c,q_90,usm_0.66_1.00_0.01/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.webp',
+      Conten_all:TinMoi
+    }
   ]
 
   const ShortMessageItem = [
@@ -61,15 +127,9 @@ export default function Home() {
     }
   ]
 
-  const Theoguongbac = [
-    { id: 1, content: 'Hành động nhỏ, ý nghĩa lớn - góp phần bảo vệ môi trường biển' },
-    { id: 2, content: 'Tuyên dương Gương mặt trẻ tiêu biểu Cảnh sát biển năm 2022' },
-    { id: 3, content: 'Đại tướng Phan Văn Giang gửi thư khen ngợi, động viên Trung tâm Đào tạo và' },
-    { id: 4, content: 'HTuyên dương gương mặt trẻ tiêu biểu, gương mặt trẻ triển vọng toàn quân' },
-    { id: 5, content: '“Bông hồng trắng” của Lực lượng Cảnh sát biển Việt Nam' },
-    { id: 6, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
-  ]
 
+
+  const[dataNews,setDataNews] =useState(Theoguongbac)
   const NewPost_Item_All = [
     {
       id: 1,
@@ -296,6 +356,10 @@ export default function Home() {
     video: Video_media
   }
 
+  const handle_New=(Conten_all:any)=>(
+    setDataNews(Conten_all)
+  )
+
   return (
     <div className='w-full mt-4 mb-10'>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl relative'>
@@ -305,19 +369,22 @@ export default function Home() {
         <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
           <div className='w-[90%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
             {contentAll.map((item) => (
-              <div className='flex items-center'>
+              <div className='flex items-center' onClick={()=>handle_New(item.Conten_all)}>
                 {item.img && (
-                  <div className='w-[20px] h-[20px]'>
-                    <img src={item.img} alt='' />
+                  <div className='w-[16px] h-[21px]'>
+                    <img className='w-full h-full' src={item.img} alt='' />
                   </div>
                 )}
-                 {item.icon && (
+                {item.icon && (
                   <div className='cursor-pointer text-[#DA251C]'>
-                    <item.icon/>
+                    <item.icon />
                   </div>
                 )}
 
-                <NewsCsb classItem={'max-[500px]:hidden cursor-pointer hover:[#191970] ml-[5px]'} contentItem={item.content} />
+                <NewsCsb
+                  classItem={'max-[500px]:hidden cursor-pointer hover:[#191970] ml-[5px]'}
+                  contentItem={item.content}
+                />
               </div>
             ))}
             {/* <div className='hidden max-[1300px]:block '>
@@ -356,7 +423,7 @@ export default function Home() {
           </div>
           <div className='w-[28%] overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
             <div className='scrollbar h-[22vh] max-[1300px]:h-[100%]'>
-              {Theoguongbac.map((item) => (
+              {dataNews.map((item) => (
                 <ShortMessage
                   classItiemAll={'text-[15px] font-bold hover:text-[#191970]'}
                   classItiem={

@@ -11,10 +11,10 @@ export default function Chart_test_Item() {
             <ul className='director'>
               <li>
                 <Link to={'/contact'}>
-                  <h1>
+                  
 
-                  <span className='line-clamp-1'  >Bộ Tư lệnh Cảnh sát biển Việt Nam</span>
-                  </h1>
+                  <span className='line-clamp-1 text-[17px]'  >Bộ Tư lệnh Cảnh sát biển Việt Nam</span>
+                  
                 </Link>
                   <ul className='subdirector'>
                     <li className='invisible'>
