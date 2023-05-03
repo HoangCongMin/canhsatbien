@@ -26,12 +26,15 @@ import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
 import Chart_All_Item from '../../component/Chart_All_Item'
 import Chart_test_Item from '../../component/Chart_test_Item'
 import { Organization_Payroll_Data } from '../../component/constant'
+import {HiBookOpen} from'react-icons/hi'
+import {IoNewspaperSharp} from'react-icons/io5'
+
 
 export default function Home() {
   const contentAll = [
-    { id: 1, content: 'TIN MỚI' },
-    { id: 2, content: 'ĐỌC NHIỀU' },
-    { id: 3, content: 'THEO GƯƠNG BÁC' }
+    { id: 1, content: 'TIN MỚI' ,icon: HiBookOpen},
+    { id: 2, content: 'ĐỌC NHIỀU' ,icon:IoNewspaperSharp},
+    { id: 3, content: 'THEO GƯƠNG BÁC', img: 'https://static.mediacdn.vn/baochinhphu/image/logo_bcp.png' }
   ]
 
   const ShortMessageItem = [
@@ -296,13 +299,26 @@ export default function Home() {
   return (
     <div className='w-full mt-4 mb-10'>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl relative'>
-        <div className=' w-[60%] rounded-sm	max-[1300px]:hidden'>
+        <div className=' w-[50%] rounded-sm	max-[1300px]:hidden'>
           <input placeholder='Nhập từ khoá' type='text' className='w-[100%] outline-none bg-[#F6F6F6] px-3 py-2' />
         </div>
-        <div className='w-[38%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
+        <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
           <div className='w-[90%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
             {contentAll.map((item) => (
-              <NewsCsb classItem={'max-[500px]:hidden cursor-pointer hover:[#191970]'} contentItem={item.content} />
+              <div className='flex items-center'>
+                {item.img && (
+                  <div className='w-[20px] h-[20px]'>
+                    <img src={item.img} alt='' />
+                  </div>
+                )}
+                 {item.icon && (
+                  <div className='cursor-pointer text-[#DA251C]'>
+                    <item.icon/>
+                  </div>
+                )}
+
+                <NewsCsb classItem={'max-[500px]:hidden cursor-pointer hover:[#191970] ml-[5px]'} contentItem={item.content} />
+              </div>
             ))}
             {/* <div className='hidden max-[1300px]:block '>
               {!close && <AiOutlineBars onClick={handleClose} />}
@@ -451,15 +467,14 @@ export default function Home() {
       </div>
 
       <div className='w-[80%] m-auto max-w-screen-2xl mt-5'>
-      <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center '>
-        <div className='bg-[#DA251C] h-7 w-1'></div>
-        <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
-          Tổ chức - Biên chế
+        <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center '>
+          <div className='bg-[#DA251C] h-7 w-1'></div>
+          <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
+            Tổ chức - Biên chế
+          </div>
         </div>
-      </div>
         {/* <Chart_All_Item /> */}
-        <Chart_test_Item/>
-       
+        <Chart_test_Item />
 
         <div className='my-10 '>
           <p className='  text-[#333] my-3 text-[15px]'>

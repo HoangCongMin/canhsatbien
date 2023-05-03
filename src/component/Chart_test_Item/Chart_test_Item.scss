@@ -52,11 +52,31 @@ ul{
 
 ul a{
 	display: block;
-	background: #ccc;
+	background: #AAD4E7;
+	// color: white;
 	// border: 4px solid #fff;
 	text-align: center;
 	overflow: hidden;
 	font-size: .7em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+	height: 70px;
+	margin-bottom: -26px;
+	box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.4);
+	-webkit-transition: all linear .1s;
+	-moz-transition: all linear .1s;
+	transition: all linear .1s;
+}
+
+ul a h1{
+	display: block;
+	background: #AAD4E7;
+	// color: white;
+	// border: 4px solid #fff;
+	text-align: center;
+	overflow: hidden;
+	font-size: 1.5em;
 	text-decoration: none;
 	font-weight: bold;
 	color: #333;
@@ -106,7 +126,7 @@ ul a span{
 	width: 0;
 	height: 130px;
 	background: red;
-	border-left: 4px solid #DA251C;
+	border-left: 4px solid #191970;
 	left: 49.8%;
 	position: relative;
 }
@@ -129,7 +149,7 @@ ul a span{
 	height: 64px;
 	margin: 0 auto 92px auto;		
 	padding-top: 25px;
-	border-bottom: 4px solid #DA251C;
+	border-bottom: 4px solid #191970;
 	z-index: 1;	
 }
 
@@ -143,7 +163,7 @@ ul a span{
 .subdirector > li:first-child{
 	float: right;
 	right: 27.2%;
-	border-left: 4px solid #DA251C;
+	border-left: 4px solid #191970;
 }
 
 @media print {
@@ -155,7 +175,7 @@ ul a span{
 .departments > li:first-child{	
 	float: left;
 	left: 27.2%;
-	border-right: 4px solid #DA251C;	
+	border-right: 4px solid #191970;	
 }
 
 @media print {
@@ -211,9 +231,9 @@ ul a span{
 	position: absolute;
 	width: 81.1%;
 	height: 22px;	
-	border-top: 4px solid #DA251C;
-	border-right: 4px solid #DA251C;
-	border-left: 4px solid #DA251C;
+	border-top: 4px solid #191970;
+	border-right: 4px solid #191970;
+	border-left: 4px solid #191970;
 	margin: 0 auto;
 	top: 130px;
 	left: 9.1%
@@ -248,7 +268,7 @@ ul a span{
 	position: absolute;
 	width: 0;
 	height: 22px;
-	border-left: 4px solid #DA251C;
+	border-left: 4px solid #191970;
 	z-index: 1;
 	top: -22px;
 	left: 50%;
@@ -262,7 +282,7 @@ ul a span{
 }
 
 .department{
-	border-left: 4px solid #DA251C;
+	border-left: 4px solid #191970;
 	width: 18.59894921190893%;
 	float: left;
 	margin-left: 1.751313485113835%;
@@ -292,7 +312,7 @@ ul a span{
 		position: absolute;
 		width: 0;
 		height: 60px;
-		border-left: 4px solid #DA251C;
+		border-left: 4px solid #191970;
 		z-index: 1;
 		top: -60px;
 		left: 0%;
@@ -320,7 +340,7 @@ ul a span{
 
 .department li{	
 	padding-left: 25px;
-	border-bottom: 4px solid #DA251C;
+	border-bottom: 4px solid #191970;
 	height: 80px;	
 }
 
@@ -331,7 +351,7 @@ ul a span{
 }
 
 .department li a{
-	background: #DA251C;
+	background: #191970;
 	top: 48px;	
 	position: absolute;
 	z-index: 1;
