@@ -102,17 +102,30 @@ export default function Napbar() {
                   // </Tippy>
                 ))}
               </div>
-              <div className='w-[95%] m-auto hidden max-[1316px]:block'>
-                {!close && <AiOutlineBars onClick={handleClose} />}
+              <div className='w-[95%] m-auto hidden max-[1316px]:block py-2'>
+                {!close && <AiOutlineBars className='text-white' onClick={handleClose} />}
                 {close && (
                   <>
-                    <li className='uppercase text-sm hidden	leading-10	items-center	 border-b-2 font-bold border-white bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 px-3 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-between'>
+                    <li className='uppercase text-sm hidden	leading-10 text-white	items-center	 border-b-2 font-bold  bg-[#015CA2] max-[1316px]:block max-[1316px]:flex  hover:duration-700 px-3 hover:border-b-2  max-[1316px]:justify-between'>
                       <p>mENU</p>
                       <AiOutlineClose onClick={handleClose} />
                     </li>
                     {narBarItemAll.map((item) => (
-                      <li className='uppercase text-sm	leading-10 flex justify-center border-b-2 font-bold border-white  hover:text-[#015CA2] hover:duration-700 px-3 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
+                      <li className='uppercase text-sm list-none	leading-10 flex-col  justify-center  font-bold   group  hover:duration-700 px-3 hover:border-b-2 text-white max-[1316px]:justify-start'>
                         <Link to={'/Organization_Payroll'}>{item.title}</Link>
+                        
+                       
+                        <div className='hidden group-hover:block  '>
+                          {
+                            item.menu_children.map((item_all)=>(
+
+                              <div className='group-hover:block text-[13px] font-medium	' >
+                                {item_all.title}
+                              </div>
+                            ))
+                          }
+                          </div>
+                        
                       </li>
                     ))}
                   </>

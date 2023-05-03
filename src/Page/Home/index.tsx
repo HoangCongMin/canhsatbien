@@ -371,12 +371,12 @@ export default function Home() {
             {contentAll.map((item) => (
               <div className='flex items-center' onClick={()=>handle_New(item.Conten_all)}>
                 {item.img && (
-                  <div className='w-[16px] h-[21px]'>
+                  <div className='w-[16px] h-[21px] max-[500px]:hidden'>
                     <img className='w-full h-full' src={item.img} alt='' />
                   </div>
                 )}
                 {item.icon && (
-                  <div className='cursor-pointer text-[#DA251C]'>
+                  <div className='cursor-pointer text-[#DA251C] max-[500px]:hidden'>
                     <item.icon />
                   </div>
                 )}
