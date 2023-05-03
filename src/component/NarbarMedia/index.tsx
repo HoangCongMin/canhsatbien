@@ -8,6 +8,9 @@ import { MdInsertPhoto } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import Image_Icon from '../../assets/icon-back-home.png'
 import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
+import { followCursor } from 'tippy.js'
 
 // style={{ backgroundImage: `url(${Image_Icon})` }}
 

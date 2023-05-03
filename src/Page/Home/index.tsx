@@ -461,8 +461,8 @@ export default function Home() {
         <Chart_test_Item/>
        
 
-        <div className='my-10'>
-          <p className='text-[12px] font-[Arial] text-[#333] my-3'>
+        <div className='my-10 '>
+          <p className='  text-[#333] my-3 text-[15px]'>
             <span>
               Theo đó, hệ thống tổ chức của Cảnh sát biển Việt Nam gồm: Bộ Tư lệnh Cảnh sát biển Việt Nam; các đơn vị
               trực thuộc Bộ Tư lệnh Cảnh sát biển Việt Nam; Các cơ quan, đơn vị đầu mối và cấp cơ sở trực thuộc các đơn
@@ -470,7 +470,7 @@ export default function Home() {
               và Pháp luật, Cục Hậu Cần, Cục Kỹ thuật, các cơ quan trực thuộc Tư lệnh Cảnh sát biển Việt Nam.
             </span>
           </p>
-          <p className='text-[12px] font-[Arial] text-[#333] my-3'>
+          <p className=' text-[#333] my-3 text-[15px]'>
             <span>
               Chức danh pháp lý của Cảnh sát biển Việt Nam là Cảnh sát viên, Trinh sát viên và Cán bộ điều tra, có nhiệm
               vụ phòng ngừa, ngăn chặn, phát hiện và đấu tranh phòng, chống tội phạm, vi phạm pháp luật. Cảnh sát viên,
@@ -478,7 +478,7 @@ export default function Home() {
               cấp; Cảnh sát viên, Trinh sát viên cao cấp.
             </span>
           </p>
-          <p className='text-[12px] font-[Arial] text-[#333] my-3'>
+          <p className=' text-[#333] my-3 text-[15px]'>
             <span>
               Bộ Quốc phòng quy định điều kiện, tiêu chuẩn, trình tự, thủ tục bổ nhiệm, miễn nhiệm, cách chức đối với
               Cảnh sát viên, Trinh sát viên của Cảnh sát biển Việt Nam. Tư lệnh Cảnh sát biển Việt Nam quyết định bổ
@@ -486,14 +486,14 @@ export default function Home() {
               Giấy chứng nhận Cảnh sát viên, Trinh sát viên của Cảnh sát biển Việt Nam.
             </span>
           </p>
-          <p className='text-[12px] font-[Arial] text-[#333] my-3'>
+          <p className=' text-[#333] my-3 text-[15px]'>
             <span>
               Cán bộ điều tra thuộc Cảnh sát biển Việt Nam khi được phân công điều tra vụ án hình sự theo quy định của
               Bộ luật Tố tụng hình sự, Luật Tổ chức cơ quan điều tra hình sự phải chịu trách nhiệm trước pháp luật và
               Thủ trưởng đã ra quyết định phân công về việc thực hiện nhiệm vụ, quyền hạn của mình.
             </span>
           </p>
-          <p className='text-[12px] font-[Arial] text-[#333] my-3'>
+          <p className=' text-[#333] my-3 text-[15px]'>
             <span>
               Cán bộ, chiến sỹ Cảnh sát biển Việt Nam được hưởng lương theo ngạch, bậc, chức vụ, chế độ trợ cấp; được
               hưởng chế độ phụ cấp thâm niên vượt khung, phụ cấp kiêm nhiệm chức danh lãnh đạo, phụ cấp khu vực, phụ cấp
