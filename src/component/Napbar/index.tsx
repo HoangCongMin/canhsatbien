@@ -5,7 +5,7 @@ import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import { followCursor } from 'tippy.js'
-import Backfrond from'../../assets/background.png'
+import Backfrond from'../../assets/6945360b9cf720aae6503466a56a5135.png'
 
 
 export const narBarItemAll = [
@@ -81,17 +81,17 @@ export default function Napbar() {
                   //   }
                   // >
                   <>
-                    <li   className=' group uppercase text-sm	leading-10 flex justify-center text-white font-bold   hover:duration-700 px-3  max-[1316px]:justify-start '>
+                    <li   className=' group uppercase text-sm	leading-10 flex justify-center text-black font-bold hover:text-[#003f7f]   hover:duration-700 px-3  max-[1316px]:justify-start '>
                       <div>
                         <Link to={'/Organization_Payroll'}>{item.title}</Link>
                       </div>
                       
                         
-                          <div className='absolute bg-[#003f7f] mt-10 w-[200%] px-3 py-2  pb-3 hidden group-hover:block z-10 left-0	'>
+                          <div className='absolute bg-white mt-10 w-[200%] px-3 py-2  pb-3 hidden group-hover:block z-10 left-0	'>
                             {item.menu_children.map((itemAll) => (
                               
                              
-                              <div className='w-[100%] bg-[#003f7f] hidden group-hover:block text-white   py-1 border-b-[2.5px] border-[#003f7f] hover:duration-700  hover:border-b-[2.5px] hover:border-white '>{itemAll.title}</div>
+                              <div className='w-[100%] bg-white hidden group-hover:block text-black   py-1 border-b-[2.5px] border-white hover:duration-700  hover:border-b-[2.5px] hover:text-[#003f7f] hover:border-[#ff7f00] '>{itemAll.title}</div>
                              
                             ))}
                           </div>
@@ -103,15 +103,15 @@ export default function Napbar() {
                 ))}
               </div>
               <div className='w-[95%] m-auto hidden max-[1316px]:block py-2'>
-                {!close && <AiOutlineBars className='text-white' onClick={handleClose} />}
+                {!close && <AiOutlineBars className='text-[#003f7f]' onClick={handleClose} />}
                 {close && (
                   <>
-                    <li className='uppercase text-sm hidden	leading-10 text-white	items-center	  font-bold  bg-[#015CA2] max-[1316px]:block max-[1316px]:flex  hover:duration-700 px-3   max-[1316px]:justify-between'>
+                    <li className='uppercase text-sm hidden	leading-10 text-[#003f7f]	items-center	  font-bold   max-[1316px]:block max-[1316px]:flex  hover:duration-700 px-3   max-[1316px]:justify-between'>
                       <p>mENU</p>
                       <AiOutlineClose onClick={handleClose} />
                     </li>
                     {narBarItemAll.map((item) => (
-                      <li className='uppercase text-sm list-none	leading-10 flex-col  justify-center  font-bold   group  hover:duration-700 px-3 hover:border-b-2 text-white max-[1316px]:justify-start'>
+                      <li className='uppercase text-sm list-none	leading-10 flex-col  justify-center  font-bold   group  hover:duration-700 px-3 hover:border-b-2 hover:border-[#ff7f00] text-[#003f7f] max-[1316px]:justify-start'>
                         <Link to={'/Organization_Payroll'}>{item.title}</Link>
                         
                        
