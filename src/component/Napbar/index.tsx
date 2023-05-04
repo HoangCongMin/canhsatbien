@@ -61,7 +61,7 @@ export default function Napbar() {
           <div className='w-full 	 mt-5 ' style={{backgroundImage:`url(${Backfrond})`}}>
             <div className='w-full  border-slate-300'  >
               <div className=' flex justify-between w-[95%] max-[1316px]:hidden m-auto  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full 	 max-[1316px]:bg-white'>
-                <li className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 px-3 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
+                <li  className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 px-3 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
                   <p>mENU</p>
                 </li>
                 {narBarItemAll.map((item) => (
@@ -87,11 +87,11 @@ export default function Napbar() {
                       </div>
                       
                         
-                          <div className='absolute bg-white mt-10 w-[200%] px-3 py-2  pb-3 hidden group-hover:block z-10 left-0	'>
+                          <div  className='absolute  mt-10 w-[200%] px-3   pb-3 hidden group-hover:block z-10 left-0	bg-[#dbebf5]'>
                             {item.menu_children.map((itemAll) => (
                               
                              
-                              <div className='w-[100%] bg-white hidden group-hover:block text-black   py-1 border-b-[2.5px] border-white hover:duration-700  hover:border-b-[2.5px] hover:text-[#003f7f] hover:border-[#ff7f00] '>{itemAll.title}</div>
+                              <div style={{backgroundImage:`url(${Backfrond})`}} className='w-[100%] hidden group-hover:block text-black  my-2 py-1 hover:duration-700  hover:text-[#003f7f] '>{itemAll.title}</div>
                              
                             ))}
                           </div>
@@ -102,7 +102,7 @@ export default function Napbar() {
                   // </Tippy>
                 ))}
               </div>
-              <div className='w-[95%] m-auto hidden max-[1316px]:block py-2'>
+              <div className='w-[95%] m-auto hidden max-[1316px]:block py-2' >
                 {!close && <AiOutlineBars className='text-[#003f7f]' onClick={handleClose} />}
                 {close && (
                   <>

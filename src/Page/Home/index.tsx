@@ -367,9 +367,9 @@ export default function Home() {
           <input placeholder='Nhập từ khoá' type='text' className='w-[100%] outline-none bg-[#F6F6F6] px-3 py-2' />
         </div>
         <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
-          <div className='w-[90%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
+          <div className='w-[95%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
             {contentAll.map((item) => (
-              <div className='flex items-center' onClick={()=>handle_New(item.Conten_all)}>
+              <div className='flex items-center px-3 border-b-[2px] hover:border-[#DA251C] border-[#F6F6F6] hover:duration-700 ' onClick={()=>handle_New(item.Conten_all)}>
                 {item.img && (
                   <div className='w-[16px] h-[21px] max-[500px]:hidden'>
                     <img className='w-full h-full' src={item.img} alt='' />
