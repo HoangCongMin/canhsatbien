@@ -11,7 +11,7 @@ import ElecTriCiPyprice from '../../assets/2-can-bo-doan-dac-nhiem-pctp-ma-tuy-s
 import InternationalCooperation from '../../assets/csb3-071712441.jpeg'
 import SportsCulture from '../../assets/sc3a1ch-101432661.jpeg'
 import CoastGuardwork from '../../assets/tang-qua-180746147.jpeg'
-import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineBars, AiOutlineClose,AiOutlineSearch } from 'react-icons/ai'
 import { narBarItemAll } from '../../component/Napbar'
 import List_leaDer from '../../component/List_leaDer'
 // import Video_media from '../../assets/Video/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
@@ -26,7 +26,7 @@ import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
 import Chart_All_Item from '../../component/Chart_All_Item'
 import Chart_test_Item from '../../component/Chart_test_Item'
 import { Organization_Payroll_Data } from '../../component/constant'
-import { BsFillBookFill } from 'react-icons/bs'
+import { FaBook } from 'react-icons/fa'
 import { IoNewspaperSharp } from 'react-icons/io5'
 import Backfrond from '../../assets/lopqqgk7.png'
 
@@ -93,7 +93,7 @@ export default function Home() {
 
   ]
   const contentAll = [
-    { id: 1, content: 'TIN MỚI', icon: BsFillBookFill ,Conten_all:Theoguongbac},
+    { id: 1, content: 'TIN MỚI', icon: FaBook ,Conten_all:Theoguongbac},
     { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp ,Conten_all:DocNhieu},
     {
       id: 3,
@@ -364,8 +364,10 @@ export default function Home() {
   return (
     <div className='w-full mt-4 mb-10'>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl relative'>
-        <div className=' w-[50%] rounded-sm	max-[1300px]:hidden'>
-          <input placeholder='Nhập từ khoá' type='text' className='w-[100%] outline-none bg-[#F6F6F6] px-3 py-2' />
+        <div className=' w-[50%] flex items-center max-[1300px]:hidden bg-white shadow-xl rounded-full  ' >
+          
+          <input placeholder='Nhập từ khoá' type='text'  className='w-[95%] outline-none rounded-full text-[15px]  px-3 py-2' />
+          <AiOutlineSearch className='w-[5%]'/>
         </div>
         <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
           <div className='w-[95%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
