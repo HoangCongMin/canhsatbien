@@ -30,6 +30,7 @@ import { FaBook } from 'react-icons/fa'
 import { IoNewspaperSharp } from 'react-icons/io5'
 import Backfrond from '../../assets/lopqqgk7.png'
 import classNames from 'classnames'
+import IconNews from'../../assets/png-clipart-kochers-computer-icons-new-label-leaf-text-thumbnail.png'
 
 export default function Home() {
   const Theoguongbac = [
@@ -94,7 +95,7 @@ export default function Home() {
 
   ]
   const contentAll = [
-    { id: 1, content: 'TIN MỚI', icon: FaBook ,Conten_all:Theoguongbac},
+    { id: 1, content: 'TIN MỚI', img: IconNews ,Conten_all:Theoguongbac},
     { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp ,Conten_all:DocNhieu},
     {
       id: 3,

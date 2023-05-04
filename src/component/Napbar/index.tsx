@@ -68,7 +68,7 @@ export default function Napbar() {
           <div className='w-full object-cover mt-5 ' style={{ backgroundImage: `url(${Backfrond})` }}>
             <div className='w-full flex items-center	shadow-lg  border-slate-300'>
               <div className='m-auto max-[1383px]:hidden'>
-               <AiFillHome className='mb-[5px] ml-4 text-[#015CA2]'/>
+               <AiFillHome className='mb-[5px] ml-4 text-[#015CA2] text-[20px]'/>
               </div>
               <div className=' flex justify-between w-[98%]  max-[1383px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full 	 max-[1316px]:bg-white'>
                
