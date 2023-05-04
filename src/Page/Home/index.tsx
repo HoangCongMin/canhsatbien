@@ -129,6 +129,7 @@ export default function Home() {
 
 
 
+
   const[dataNews,setDataNews] =useState(Theoguongbac)
   const NewPost_Item_All = [
     {
@@ -584,8 +585,11 @@ export default function Home() {
               lâu năm ở trên tàu, biển, đảo, phụ cấp ngày đi biển, phụ cấp đặc thù đi biển... phù hợp với khu vực địa
               bàn vùng biển, đảo công tác, yêu cầu nhiệm vụ và chế độ, chính sách khác như cán bộ, chiến sỹ lực lượng vũ
               trang và cán bộ, công chức, viên chức có cùng điều kiện, môi trường làm việc, khu vực địa bàn, biển đảo
-              công tác theo quy định của pháp luật.
+              công tác theo quy định của pháp .
             </span>
+            <p>
+              maaaasss
+            </p>
           </p>
         </div>
       </div>
