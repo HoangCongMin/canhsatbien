@@ -28,7 +28,7 @@ import Chart_test_Item from '../../component/Chart_test_Item'
 import { Organization_Payroll_Data } from '../../component/constant'
 import { BsFillBookFill } from 'react-icons/bs'
 import { IoNewspaperSharp } from 'react-icons/io5'
-import Backfrond from '../../assets/background.png'
+import Backfrond from '../../assets/lopqqgk7.png'
 
 export default function Home() {
   const Theoguongbac = [
