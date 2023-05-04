@@ -68,7 +68,7 @@ export default function Napbar() {
           <div className='w-full object-cover mt-5 ' style={{ backgroundImage: `url(${Backfrond})` }}>
             <div className='w-full flex items-center	shadow-lg  border-slate-300'>
               <div className='m-auto max-[1383px]:hidden'>
-               <AiFillHome className='mb-[5px] ml-4 text-[#015CA2] text-[20px]'/>
+               <AiFillHome className='mb-[5px] ml-4 text-[#015CA2] text-[25px]'/>
               </div>
               <div className=' flex justify-between w-[98%]  max-[1383px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full 	 max-[1316px]:bg-white'>
                
@@ -102,9 +102,9 @@ export default function Napbar() {
                         </div>
                       </div>
 
-                      <div className='absolute  mt-10 w-[200%] px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white'>
+                      <div className='absolute  mt-10 w-[200%] px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-[#f6f6f6]'>
                         {item.menu_children.map((itemAll) => (
-                          <div className='w-[100%] hidden group-hover:block text-black  h-[30px] hover:duration-700  hover:text-[#003f7f]  hover:filter  hover:brightness-50	 '>
+                          <div className='w-[100%] hidden group-hover:block text-black bg-[#F6F6F6]  h-[30px] hover:duration-700  hover:text-[#003f7f] 	 '>
                             {itemAll.title}
                           </div>
                         ))}

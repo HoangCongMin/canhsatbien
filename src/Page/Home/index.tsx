@@ -95,7 +95,7 @@ export default function Home() {
 
   ]
   const contentAll = [
-    { id: 1, content: 'TIN MỚI', img: IconNews ,Conten_all:Theoguongbac},
+    { id: 1, content: 'TIN MỚI', icon: FaBook ,Conten_all:Theoguongbac},
     { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp ,Conten_all:DocNhieu},
     {
       id: 3,
