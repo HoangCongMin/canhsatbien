@@ -26,7 +26,7 @@ import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
 import Chart_All_Item from '../../component/Chart_All_Item'
 import Chart_test_Item from '../../component/Chart_test_Item'
 import { Organization_Payroll_Data } from '../../component/constant'
-import { HiBookOpen } from 'react-icons/hi'
+import { BsFillBookFill } from 'react-icons/bs'
 import { IoNewspaperSharp } from 'react-icons/io5'
 import Backfrond from '../../assets/background.png'
 
@@ -93,7 +93,7 @@ export default function Home() {
 
   ]
   const contentAll = [
-    { id: 1, content: 'TIN MỚI', icon: HiBookOpen ,Conten_all:Theoguongbac},
+    { id: 1, content: 'TIN MỚI', icon: BsFillBookFill ,Conten_all:Theoguongbac},
     { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp ,Conten_all:DocNhieu},
     {
       id: 3,
@@ -383,7 +383,7 @@ export default function Home() {
                 )}
 
                 <NewsCsb
-                  classItem={'max-[500px]:hidden cursor-pointer hover:[#191970] ml-[5px]'}
+                  classItem={'max-[500px]:hidden cursor-pointer hover:[#191970] ml-[5px] text-[#000000]'}
                   contentItem={item.content}
                 />
               </div>
@@ -426,9 +426,9 @@ export default function Home() {
             <div className='scrollbar h-[22vh] max-[1300px]:h-[100%]'>
               {dataNews.map((item) => (
                 <ShortMessage
-                  classItiemAll={'text-[15px] font-bold hover:text-[#191970]'}
+                  classItiemAll={'text-[15px] text-black font-bold hover:text-[#191970]'}
                   classItiem={
-                    "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 cursor-pointer	 "
+                    "text-[15px] text-[#000] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 cursor-pointer	 "
                   }
                   conTentShortMessage={item.content}
                 />
