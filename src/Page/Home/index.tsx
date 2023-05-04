@@ -375,7 +375,7 @@ export default function Home() {
           <div className='w-[95%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
             {contentAll.map((item,index) => (
               
-              <div className={classNames(`flex items-center px-3 border-b-[2px] hover:border-[#DA251C]  hover:duration-700 ${item.Conten_all[index].id===dataNews.id ? 'border-[#DA251C]':'border-[#F6F6F6]' }`)}  onClick={()=>handle_New(item)}>
+              <div className={classNames(`flex items-center px-3 border-b-[2px] hover:border-[#DA251C]  max-[500px]:border-none	  hover:duration-700 ${item.Conten_all[index].id===dataNews.id ? 'border-[#DA251C]':'border-[#F6F6F6]' }`)}  onClick={()=>handle_New(item)}>
                 {item.img && (
                   <div className='w-[16px] h-[21px] max-[500px]:hidden'>
                     <img className='w-full h-full' src={item.img} alt='' />
