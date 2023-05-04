@@ -5,7 +5,7 @@ import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import { followCursor } from 'tippy.js'
-import Backfrond from'../../assets/dS1cy.png'
+import Backfrond from'../../assets/menubackground2.png'
 
 
 export const narBarItemAll = [
