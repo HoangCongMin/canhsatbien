@@ -87,11 +87,11 @@ export default function Napbar() {
                       </div>
                       
                         
-                          <div  className='absolute  mt-10 w-[200%] px-3   pb-3 hidden group-hover:block z-10 left-0	bg-[#dbebf5]'>
+                          <div   style={{backgroundImage:`url(${Backfrond})`}} className='absolute  mt-10 w-[200%] px-3   pb-3 hidden group-hover:block z-10 left-0'>
                             {item.menu_children.map((itemAll) => (
                               
                              
-                              <div style={{backgroundImage:`url(${Backfrond})`}} className='w-[100%] hidden group-hover:block text-black  my-2 py-1 hover:duration-700  hover:text-[#003f7f] '>{itemAll.title}</div>
+                              <div className='w-[100%] hidden group-hover:block text-black  my-2 py-1 hover:duration-700  hover:text-[#003f7f]  hover:filter  hover:brightness-50	 '>{itemAll.title}</div>
                              
                             ))}
                           </div>
@@ -121,6 +121,7 @@ export default function Napbar() {
 
                               <div className='group-hover:block text-[13px] font-medium	' >
                                 {item_all.title}
+                                
                               </div>
                             ))
                           }

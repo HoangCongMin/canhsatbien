@@ -587,9 +587,7 @@ export default function Home() {
               trang và cán bộ, công chức, viên chức có cùng điều kiện, môi trường làm việc, khu vực địa bàn, biển đảo
               công tác theo quy định của pháp .
             </span>
-            <p>
-              minh
-            </p>
+           
           </p>
         </div>
       </div>
