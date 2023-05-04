@@ -53,13 +53,13 @@ export default function Napbar() {
 
   return (
     <div className='w-full bg-white sticky top-0 z-10'>
-      <div className='w-[80%] m-auto max-w-screen-2xl cursor-pointer '>
+      <div className='w-[80%] m-auto max-w-screen-2xl cursor-pointer'>
         <Link to={'/'} className='w-full'>
           <div className='w-full'>
             <img className='w-full' src={BG_Image} alt='' />
           </div>
-          <div className='w-full object-cover		 mt-5 ' style={{backgroundImage:`url(${Backfrond})`}}>
-            <div className='w-full  border-slate-300'  >
+          <div className='w-full object-cover mt-5 ' style={{backgroundImage:`url(${Backfrond})`}}>
+            <div className='w-full 	shadow-lg  border-slate-300'  >
               <div className=' flex justify-between w-[95%] max-[1316px]:hidden m-auto  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full 	 max-[1316px]:bg-white'>
                 <li  className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 px-3 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
                   <p>mENU</p>
