@@ -29,6 +29,7 @@ import { Organization_Payroll_Data } from '../../component/constant'
 import { FaBook } from 'react-icons/fa'
 import { IoNewspaperSharp } from 'react-icons/io5'
 import Backfrond from '../../assets/lopqqgk7.png'
+import classNames from 'classnames'
 
 export default function Home() {
   const Theoguongbac = [
@@ -130,7 +131,7 @@ export default function Home() {
 
 
 
-  const[dataNews,setDataNews] =useState(Theoguongbac)
+  const[dataNews,setDataNews] =useState( { id: 1, content: 'TIN MỚI', icon: FaBook ,Conten_all:Theoguongbac})
   const NewPost_Item_All = [
     {
       id: 1,
@@ -364,15 +365,16 @@ export default function Home() {
   return (
     <div className='w-full mt-4 mb-10'>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl relative'>
-        <div className=' w-[50%] flex items-center max-[1300px]:hidden bg-white shadow-xl rounded-full  ' >
+        <div className=' w-[50.4%] flex items-center max-[1300px]:hidden bg-white shadow-xl border-[1px] border-[#F6F6F6] rounded-full  ' >
           
           <input placeholder='Nhập từ khoá' type='text'  className='w-[95%] outline-none rounded-full text-[15px]  px-3 py-2' />
           <AiOutlineSearch className='w-[5%]'/>
         </div>
         <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
           <div className='w-[95%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
-            {contentAll.map((item) => (
-              <div className='flex items-center px-3 border-b-[2px] hover:border-[#DA251C] border-[#F6F6F6] hover:duration-700 ' onClick={()=>handle_New(item.Conten_all)}>
+            {contentAll.map((item,index) => (
+              
+              <div className={classNames(`flex items-center px-3 border-b-[2px] hover:border-[#DA251C]  hover:duration-700 ${item.Conten_all[index].id===dataNews.id ? 'border-[#DA251C]':'border-[#F6F6F6]' }`)}  onClick={()=>handle_New(item)}>
                 {item.img && (
                   <div className='w-[16px] h-[21px] max-[500px]:hidden'>
                     <img className='w-full h-full' src={item.img} alt='' />
@@ -426,7 +428,7 @@ export default function Home() {
           </div>
           <div className='w-[28%] overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
             <div className='scrollbar h-[22vh] max-[1300px]:h-[100%]'>
-              {dataNews.map((item) => (
+              {dataNews.Conten_all.map((item) => (
                 <ShortMessage
                   classItiemAll={'text-[15px] text-black font-bold hover:text-[#191970]'}
                   classItiem={
