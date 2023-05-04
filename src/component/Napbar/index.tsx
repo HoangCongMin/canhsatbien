@@ -102,7 +102,7 @@ export default function Napbar() {
                         </div>
                       </div>
 
-                      <div className='absolute  mt-10 w-[200%] px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-[#f6f6f6]'>
+                      <div className='absolute  mt-10 w-[150%] px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-[#f6f6f6]'>
                         {item.menu_children.map((itemAll) => (
                           <div className='w-[100%] hidden group-hover:block text-black bg-[#F6F6F6]  h-[30px] hover:duration-700  hover:text-[#003f7f] 	 '>
                             {itemAll.title}
