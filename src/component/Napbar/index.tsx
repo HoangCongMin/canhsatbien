@@ -81,17 +81,17 @@ export default function Napbar() {
                   //   }
                   // >
                   <>
-                    <li   className=' group uppercase text-sm	leading-10 flex justify-center text-black font-bold hover:text-[#003f7f]   hover:duration-700 px-3  max-[1316px]:justify-start '>
+                    <li   className=' group uppercase text-sm	leading-10 flex justify-center text-black font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[white] hover:border-[#003f7f] hover:duration-700 px-3  max-[1316px]:justify-start '>
                       <div>
                         <Link to={'/Organization_Payroll'}>{item.title}</Link>
                       </div>
                       
                         
-                          <div   style={{backgroundImage:`url(${Backfrond})`}} className='absolute  mt-10 w-[200%] px-3   pb-3 hidden group-hover:block z-10 left-0'>
+                          <div className='absolute  mt-10 w-[200%] px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white'>
                             {item.menu_children.map((itemAll) => (
                               
                              
-                              <div className='w-[100%] hidden group-hover:block text-black  my-2 py-1 hover:duration-700  hover:text-[#003f7f]  hover:filter  hover:brightness-50	 '>{itemAll.title}</div>
+                              <div className='w-[100%] hidden group-hover:block text-black  h-[30px] hover:duration-700  hover:text-[#003f7f]  hover:filter  hover:brightness-50	 '>{itemAll.title}</div>
                              
                             ))}
                           </div>
