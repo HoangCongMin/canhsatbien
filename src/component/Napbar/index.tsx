@@ -91,7 +91,7 @@ export default function Napbar() {
                   //   }
                   // >
                   <>
-                    <li className=' group uppercase text-sm	leading-10 flex justify-center text-black font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#F6F6F6] hover:border-[#003f7f] hover:duration-700 px-3  max-[1316px]:justify-start '>
+                    <li className=' group uppercase text-sm	leading-10 flex justify-center text-black font-bold hover:text-[#003f7f]  border-b-[2.5px] border-white	 hover:border-[#003f7f] hover:duration-700 px-3  max-[1316px]:justify-start '>
                       <div className='flex items-center'>
                         <div>
                           <item.icon className='text-[#ff7f00]' />
@@ -102,9 +102,7 @@ export default function Napbar() {
                       </div>
 
                       <div
-                        className='absolute  mt-10 w-[200%] px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg
-
-border-[#1px] border-[]'
+                        className='absolute  mt-10 w-[200%] px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg  border-[#1px] border-[] shadow-2xl'
                       >
                         {item.menu_children.map((itemAll) => (
                           <div className='w-[100%] hidden group-hover:block text-black bg-white  h-[30px] hover:duration-700   hover:text-[#003f7f] 	 '>
