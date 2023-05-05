@@ -34,10 +34,11 @@ import IconNews from '../../assets/png-clipart-kochers-computer-icons-new-label-
 import { BsFacebook } from 'react-icons/bs'
 import { FiMessageSquare } from 'react-icons/fi'
 import { HiOutlineMinusCircle } from 'react-icons/hi'
-import { RiPrinterFill } from 'react-icons/ri'
+import { RiPrinterFill, RiRoadMapFill,RiSendPlaneFill } from 'react-icons/ri'
 import { IoMdAddCircleOutline } from 'react-icons/io'
-import { GoTextSize } from 'react-icons/go'
+import { GoTextSize, GoLaw } from 'react-icons/go'
 import List_item_all_new from '../../component/List_item_all_new'
+import{MdSportsGymnastics,MdLocalPolice} from'react-icons/md'
 
 export default function Home() {
   const Theoguongbac = [
@@ -132,6 +133,7 @@ export default function Home() {
   const [dataNews, setDataNews] = useState({ id: 1, content: 'TIN MỚI', icon: FaBook, Conten_all: Theoguongbac })
   const NewPost_Item_All = [
     {
+      icon: RiRoadMapFill,
       id: 1,
       title: 'Vì chủ quyền biển, đảo',
       image: New_image_Item,
@@ -167,6 +169,7 @@ export default function Home() {
       ]
     },
     {
+      icon: GoLaw,
       id: 2,
       title: 'Thực thi pháp luật',
       image: New_image_Item_law,
@@ -273,6 +276,7 @@ export default function Home() {
 
   const NewPost_Item_All_One = [
     {
+      icon:MdSportsGymnastics,
       id: 1,
       title: 'Văn hóa - Thể thao',
       image: SportsCulture,
@@ -308,6 +312,7 @@ export default function Home() {
       ]
     },
     {
+      icon:MdLocalPolice,
       id: 2,
       title: 'Công tác Cảnh sát biển',
       name_All: 'Đảng ủy Cảnh sát biển và Tỉnh ủy Thái Bình.',
@@ -342,7 +347,6 @@ export default function Home() {
     }
   ]
 
-  
   const [close, setClose] = useState(false)
 
   const handleClose = () => {
@@ -416,9 +420,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col '>
-        <div className='w-[72%] flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%]'>
-          <div className='w-[8%]'>
+      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col overflow-auto '>
+        <div className='w-[72%] flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%] '>
+          <div className='w-[8%] sticky top-0 z-10'>
             <div className='w-[90%] m-auto'>
               <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
                 <BsFacebook />
@@ -482,6 +486,13 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <div className='w-[80%] m-auto mt-9 pt-6 border-t-[1px] border-slate-300'>
+        <img
+          className='w-full'
+          src='https://canhsatbien.vn:443/upload/files/category/20210607/tuyen-truyen-luat-csb-2021-090548126.gif?h=165'
+          alt=''
+        />
+      </div>
 
       <div className='w-[80%] m-auto max-w-screen-2xl '>
         <List_leaDer />
@@ -490,6 +501,7 @@ export default function Home() {
         <div className=' w-[60%] flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
           {NewPost_Item_All.map((item) => (
             <NewPost_Item
+              icon_item={<item.icon/>}
               class_Custom_layout={'first:pb-7'}
               class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer	'}
               itemAll_id={item.id}
@@ -530,8 +542,9 @@ export default function Home() {
       <div className='w-[80%] m-auto mt-7 max-w-screen-2xl'>
         <div className='w-full border-t-[1px] border-[#DA251C]'>
           <div className='w-full border-t-[1px] border-[#DA251C]'>
-            <div className='border-b-[1px] border-stale-300 py-3'>
-              <h1 className='font-bold	text-[17px] uppercase text-[#031739] hover:text-[#191970] cursor-pointer'>
+            <div className='border-b-[1px] border-stale-300 py-3 flex items-center'>
+              <RiSendPlaneFill className='text-[#00008B]'/>
+              <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
                 xây dựng chính sách
               </h1>
             </div>
@@ -540,6 +553,7 @@ export default function Home() {
             {policyDevelopmentAll.map((item) => (
               <div className='w-[47%] max-[850px]:w-[100%]'>
                 <PolicyDevelopment
+               
                   class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
                   itemAll_id={item.id}
                   itemAll_RelatedNews={item.RelatedNews}
@@ -557,6 +571,7 @@ export default function Home() {
       <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
         {NewPost_Item_All_One.map((item) => (
           <NewPost_Item
+          icon_item={<item.icon/>}
             class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
             itemAll_id={item.id}
             itemAll_RelatedNews={item.RelatedNews}

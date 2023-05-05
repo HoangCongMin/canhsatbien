@@ -60,7 +60,7 @@ export default function Napbar() {
   }
 
   return (
-    <div className='w-full bg-white sticky top-0 z-10'>
+    <div className='w-full bg-white sticky top-0 z-20'>
       <div className='w-[80%] m-auto max-w-screen-2xl cursor-pointer'>
         <Link to={'/'} className='w-full'>
           <div className='w-full'>
@@ -69,12 +69,12 @@ export default function Napbar() {
         </Link>
       </div>
           <div className='w-full object-cover mt-5  bg-[#56aaff]'>
-            <div className='w-[80%] m-auto flex items-center  border-slate-300'>
-              <div className='m-auto max-[1322px]:hidden'>
-                <AiFillHome className='mb-[5px] ml-4 text-white text-[25px]' />
+            <div className='w-[80%] m-auto flex items-center border-slate-300'>
+              <div className='m-auto max-[1322px]:hidden '>
+                <AiFillHome className='mb-[5px] text-white text-[25px]' />
               </div>
-              <div className=' flex justify-between w-[98%]  max-[1322px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full 	 max-[1316px]:bg-white'>
-                <li className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 px-3 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
+              <div className=' flex justify-between w-[97%]  max-[1322px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full	max-[1316px]:bg-white'>
+                <li className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
                   <p>mENU</p>
                 </li>
                 {narBarItemAll.map((item) => (
@@ -95,7 +95,7 @@ export default function Napbar() {
                   //   }
                   // >
                   <>
-                    <li className=' group uppercase text-[13px]	leading-10 flex justify-center text-white font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#56aaff]	 hover:border-[#003f7f] hover:duration-700 px-3  max-[1316px]:justify-start '>
+                    <li className=' group uppercase text-[13px]	leading-10 flex justify-center text-white font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#56aaff]	 hover:border-[#003f7f] hover:duration-700 max-[1316px]:justify-start '>
                       <div className='flex items-center'>
                         <div>
                           <item.icon className='text-[#ff7f00]' />
@@ -106,7 +106,7 @@ export default function Napbar() {
                       </div>
 
                       <div
-                        className={classNames(`absolute  mt-10  ${item.id===narBarItemAll[5].id ?'w-full':'w-[170%]'} px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg  border-[#1px] border-[] shadow-2xl`)}
+                        className={classNames(`absolute  mt-10  ${item.id===narBarItemAll[5].id ?'w-full':'w-[215%]'} px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg  border-[#1px] border-[] shadow-2xl`)}
                       >
                         {item.menu_children.map((itemAll) => (
                           <div className={`w-[100%] hidden group-hover:block text-black bg-white  hover:duration-700   hover:text-[#003f7f] 	 h-[30px]`}>

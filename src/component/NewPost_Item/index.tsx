@@ -3,7 +3,7 @@ import New_post_icon_Item from '../New_post_icon_Item'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import { followCursor } from 'tippy.js'
-import classNames from 'classnames';
+import classNames from 'classnames'
 
 export interface item {
   story: string
@@ -21,9 +21,11 @@ export interface item_All {
   itemAll_Name_All: string
   itemAll_content_All: string
   class_NewPost_Item: string
-  class_Custom_layout?:string
+  class_Custom_layout?: string
+  icon_item?: any
 }
 export default function NewPost_Item({
+  icon_item,
   itemAll_RelatedNews,
   itemAll_id,
   itemAll_content,
@@ -38,14 +40,19 @@ export default function NewPost_Item({
   return (
     <div className={classNames(`${class_NewPost_Item}${class_Custom_layout}`)}>
       <div className='w-full border-t-[2px] border-[#DA251C]'>
-        <div className='border-b-[1px] border-stale-300 py-3'>
-          <h1 className='font-bold	text-[17px] uppercase text-[#031739] hover:text-[#191970]'>{itemAll_title}</h1>
+        <div className='border-b-[1px] border-stale-300 py-3 flex items-center'>
+          <div className='text-[17px] text-[#00008B] pb-1'>{icon_item}</div>
+          <h1 className='font-bold	text-[17px] uppercase text-[#00008B]  ml-3'>{itemAll_title}</h1>
         </div>
       </div>
 
       <div className='mt-4 flex justify-between'>
         <div className='w-[50%] overflow-hidden cursor-pointer relative group'>
-          <img className='hover:brightness-50 w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out' src={itemAll_image} alt='' />
+          <img
+            className='hover:brightness-50 w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out'
+            src={itemAll_image}
+            alt=''
+          />
         </div>
         {/* <Tippy
           className='bg-[#F6F6F6]'
@@ -68,12 +75,12 @@ export default function NewPost_Item({
           }
         >
         </Tippy> */}
-          <div className='w-[48%]'>
-            <h3 className='line-clamp-2 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
-              {itemAll_Name_All}
-            </h3>
-            <p className='text-[14px] text-[#3B4E68] line-clamp-4'>{itemAll_content_All}</p>
-          </div>
+        <div className='w-[48%]'>
+          <h3 className='line-clamp-2 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
+            {itemAll_Name_All}
+          </h3>
+          <p className='text-[14px] text-[#3B4E68] line-clamp-4'>{itemAll_content_All}</p>
+        </div>
       </div>
       <div className='mt-4'>
         {itemAll_RelatedNews.map((item: item) => (
@@ -84,9 +91,10 @@ export default function NewPost_Item({
   )
 }
 
-
-  {/* <div className='mt-4'>
+{
+  /* <div className='mt-4'>
               {itemAll_RelatedNews.map((item: item) => (
                 <New_post_icon_Item classItem_all={'text-[10px]'} newsItem={item} />
               ))}
-            </div> */}
+            </div> */
+}
