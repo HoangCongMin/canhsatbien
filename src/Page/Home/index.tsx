@@ -11,7 +11,7 @@ import ElecTriCiPyprice from '../../assets/2-can-bo-doan-dac-nhiem-pctp-ma-tuy-s
 import InternationalCooperation from '../../assets/csb3-071712441.jpeg'
 import SportsCulture from '../../assets/sc3a1ch-101432661.jpeg'
 import CoastGuardwork from '../../assets/tang-qua-180746147.jpeg'
-import { AiOutlineBars, AiOutlineClose,AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineBars, AiOutlineClose, AiOutlineSearch } from 'react-icons/ai'
 import { narBarItemAll } from '../../component/Napbar'
 import List_leaDer from '../../component/List_leaDer'
 // import Video_media from '../../assets/Video/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
@@ -30,7 +30,14 @@ import { FaBook } from 'react-icons/fa'
 import { IoNewspaperSharp } from 'react-icons/io5'
 import Backfrond from '../../assets/lopqqgk7.png'
 import classNames from 'classnames'
-import IconNews from'../../assets/png-clipart-kochers-computer-icons-new-label-leaf-text-thumbnail.png'
+import IconNews from '../../assets/png-clipart-kochers-computer-icons-new-label-leaf-text-thumbnail.png'
+import { BsFacebook } from 'react-icons/bs'
+import { FiMessageSquare } from 'react-icons/fi'
+import { HiOutlineMinusCircle } from 'react-icons/hi'
+import { RiPrinterFill } from 'react-icons/ri'
+import { IoMdAddCircleOutline } from 'react-icons/io'
+import { GoTextSize } from 'react-icons/go'
+import List_item_all_new from '../../component/List_item_all_new'
 
 export default function Home() {
   const Theoguongbac = [
@@ -70,38 +77,31 @@ export default function Home() {
   const TinMoi = [
     {
       id: 1,
-      content:
-        'Tàu CSB 3004 tuyên truyền, phổ biến pháp luật cho ngư dân'
+      content: 'Tàu CSB 3004 tuyên truyền, phổ biến pháp luật cho ngư dân'
     },
     {
       id: 2,
-      content:
-        'Chú trọng tuyên truyền pháp luật tại các bến tàu'
+      content: 'Chú trọng tuyên truyền pháp luật tại các bến tàu'
     },
     {
       id: 3,
-      content:
-        'Để mỗi người dân là một tuyên truyền viên về chống khai thác IUU'
+      content: 'Để mỗi người dân là một tuyên truyền viên về chống khai thác IUU'
     },
     {
       id: 4,
-      content:
-        'Đẩy mạnh công tác truyền thông trong phòng chống IUU trên vùng biển Miền'
+      content: 'Đẩy mạnh công tác truyền thông trong phòng chống IUU trên vùng biển Miền'
     },
     { id: 5, content: '“Tàu CSB 3004 tuyên truyền, phổ biến pháp luật cho ngư dân' },
     { id: 6, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 tạm giữ tàu chở dầu không rõ nguồn gốc' }
-
-
-
   ]
   const contentAll = [
-    { id: 1, content: 'TIN MỚI', icon: FaBook ,Conten_all:Theoguongbac},
-    { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp ,Conten_all:DocNhieu},
+    { id: 1, content: 'TIN MỚI', icon: FaBook, Conten_all: Theoguongbac },
+    { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp, Conten_all: DocNhieu },
     {
       id: 3,
       content: 'THEO GƯƠNG BÁC',
       img: 'https://static.wixstatic.com/media/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.png/v1/fill/w_500,h_750,al_c,q_90,usm_0.66_1.00_0.01/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.webp',
-      Conten_all:TinMoi
+      Conten_all: TinMoi
     }
   ]
 
@@ -129,10 +129,7 @@ export default function Home() {
     }
   ]
 
-
-
-
-  const[dataNews,setDataNews] =useState( { id: 1, content: 'TIN MỚI', icon: FaBook ,Conten_all:Theoguongbac})
+  const [dataNews, setDataNews] = useState({ id: 1, content: 'TIN MỚI', icon: FaBook, Conten_all: Theoguongbac })
   const NewPost_Item_All = [
     {
       id: 1,
@@ -345,6 +342,7 @@ export default function Home() {
     }
   ]
 
+  
   const [close, setClose] = useState(false)
 
   const handleClose = () => {
@@ -359,23 +357,30 @@ export default function Home() {
     video: Video_media
   }
 
-  const handle_New=(Conten_all:any)=>(
-    setDataNews(Conten_all)
-  )
+  const handle_New = (Conten_all: any) => setDataNews(Conten_all)
 
   return (
     <div className='w-full mt-4 mb-10'>
       <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl relative'>
-        <div className=' w-[50.4%] flex items-center max-[1300px]:hidden bg-white shadow-xl border-[1px] border-[#F6F6F6] rounded-full  ' >
-          
-          <input placeholder='Nhập từ khoá' type='text'  className='w-[95%] outline-none rounded-full text-[15px]  px-3 py-2' />
-          <AiOutlineSearch className='w-[5%]'/>
+        <div className=' w-[50.4%] flex items-center max-[1300px]:hidden bg-white shadow-xl border-[1px] border-[#F6F6F6] rounded-full  '>
+          <input
+            placeholder='Nhập từ khoá'
+            type='text'
+            className='w-[95%] outline-none rounded-full text-[15px]  px-3 py-2'
+          />
+          <AiOutlineSearch className='w-[5%]' />
         </div>
         <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
           <div className='w-[95%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
-            {contentAll.map((item,index) => (
-              
-              <div className={classNames(`flex items-center px-3 border-b-[2px] hover:border-[#DA251C]  max-[500px]:border-none	  hover:duration-700 ${item.Conten_all[index].id===dataNews.id ? 'border-[#DA251C]':'border-[#F6F6F6]' }`)}  onClick={()=>handle_New(item)}>
+            {contentAll.map((item, index) => (
+              <div
+                className={classNames(
+                  `flex items-center px-3 border-b-[2px] hover:border-[#DA251C]  max-[500px]:border-none	  hover:duration-700 ${
+                    item.Conten_all[index].id === dataNews.id ? 'border-[#DA251C]' : 'border-[#F6F6F6]'
+                  }`
+                )}
+                onClick={() => handle_New(item)}
+              >
                 {item.img && (
                   <div className='w-[16px] h-[21px] max-[500px]:hidden'>
                     <img className='w-full h-full' src={item.img} alt='' />
@@ -413,9 +418,33 @@ export default function Home() {
       </div>
       <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col '>
         <div className='w-[72%] flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%]'>
-          <div className='w-[70%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	'>
+          <div className='w-[8%]'>
+            <div className='w-[90%] m-auto'>
+              <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+                <BsFacebook />
+              </div>
+              <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+                <FiMessageSquare />
+              </div>
+              <div className='text-center text-[11px] mt-3 m-auto  pb-5 border-b-[1px] border-slate-300 w-[65%]'>0</div>
+              <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+                <RiPrinterFill />
+              </div>
+              <div className='w-[50px] border-[1px] border-slate-300 rounded-full flex items-center justify-center mt-2 m-auto'>
+                <div>
+                  <IoMdAddCircleOutline className='text-[14px] my-3' />
+                  <GoTextSize className='text-[14px] my-3' />
+                  <HiOutlineMinusCircle className='text-[14px] my-3' />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='w-[60%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	'>
             <div className='w-[97%]'>
               <Posts />
+              <div className='w-full'>
+                <List_item_all_new />
+              </div>
               {ShortMessageItem.map((item) => (
                 <ShortMessage
                   classItiemAll={'line-clamp-1'}
@@ -427,6 +456,7 @@ export default function Home() {
               ))}
             </div>
           </div>
+
           <div className='w-[28%] overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
             <div className='scrollbar h-[22vh] max-[1300px]:h-[100%]'>
               {dataNews.Conten_all.map((item) => (
@@ -441,6 +471,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div className='w-[26%] border-slate-400 max-[850px]:w-[100%]'>
           <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	hover:text-[#191970]'>
             BẢN ĐỒ HÀNH CHÍNH
@@ -592,7 +623,6 @@ export default function Home() {
               trang và cán bộ, công chức, viên chức có cùng điều kiện, môi trường làm việc, khu vực địa bàn, biển đảo
               công tác theo quy định của pháp .
             </span>
-           
           </p>
         </div>
       </div>
