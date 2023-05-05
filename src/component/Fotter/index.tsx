@@ -11,7 +11,9 @@ export default function Fotter() {
   const Item_all = [{ title: 'Thư điện tử' }, { title: 'Ý kiến bạn đọc' }, { title: 'Sơ đồ trang' },{title:'Thành viên trực tuyến:',value:'8'},{title:'Hôm nay:',value:'5000'},{title:'Hôm qua:',value:'0'},{title:'Tháng này:',value:'5000'}]
   return (
     <div className='w-full bg-[#0066bc] '>
-      <div className='w-[80%] m-auto flex items-center bg-[#ff7f00] py-2'>
+      <div className='w-full m-auto bg-[#ff7f00] py-2'>
+        <div className='w-[80%] m-auto flex items-center'>
+
         <div className='w-[5%] '>
               <AiFillHome className='m-auto text-white'/>
         </div>
@@ -19,6 +21,7 @@ export default function Fotter() {
           {Item_all.map((item) => (
             <div className='text-white text-[12px] cursor-pointer'>{item.title}{item.value&& item.value}</div>
           ))}
+        </div>
         </div>
       </div>
       <div className='w-[80%] m-auto pt-10 pb-10 border-b-[0.5px] border-stone-50 max-w-screen-2xl'>
