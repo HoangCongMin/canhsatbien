@@ -8,7 +8,7 @@ import { HiOutlineMinusCircle } from 'react-icons/hi'
 
 export default function Box_Call() {
   return (
-    <div className='w-[8%] sticky top-0 z-10'>
+    <div className='w-[8%] sticky top-0 z-10 max-[1300px]:hidden'>
       <div className='w-[90%] m-auto'>
         <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
           <BsFacebook />

@@ -16,7 +16,7 @@ export default function Title_media({ title_Clip, libari_image,Title }: title_na
   console.log(active)
   return (
     <div className='w-[100%] border-b-[2.5px] border-[#DA251C]'>
-      <div className='flex justify-between items-center w-[90%] m-auto py-3 max-[420px]:flex-col cursor-pointer '>
+      <div className='flex justify-between max-[1100px]:justify-around items-center w-[90%] m-auto py-3 max-[420px]:flex-col cursor-pointer '>
         <div onClick={()=>setActive(false)} className={classNames(`${Title} font-bold hover:text-[#191970] ${!active && 'text-[#191970]'} uppercase text-[16px] max-[420px]:py-2`)}>{title_Clip}</div>
         {libari_image && (
           <>

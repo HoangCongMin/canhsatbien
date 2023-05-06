@@ -147,7 +147,7 @@ export default function Napbar() {
               </>
             )}
           </div>
-          <div className='w-[13%] m-auto flex justify-end'>
+          <div className='w-[13%] max-[1100px]:hidden m-auto flex justify-end'>
             <div className='flex justify-between w-[60%]'>
               <div className='text-[17px] text-white'>
                 <IoCallSharp />
