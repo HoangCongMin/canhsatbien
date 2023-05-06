@@ -4,6 +4,7 @@ import New_post_icon_Item from '../New_post_icon_Item'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import { followCursor } from 'tippy.js'
+import {RiSendPlaneFill} from'react-icons/ri'
 
 export default function PolicyDevelopment({
   itemAll_id,
@@ -17,17 +18,29 @@ export default function PolicyDevelopment({
 }: item_All) {
   return (
     <div className='w-[100%] cursor-pointer	'>
+      <div className='w-full border-t-[1px] border-[#DA251C]'>
+        <div className='border-b-[1px] border-stale-300 py-3 flex items-center'>
+          <RiSendPlaneFill className='text-[#00008B]' />
+          <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
+            xây dựng chính sách
+          </h1>
+        </div>
+      </div>
       <div className='mt-4 flex justify-between'>
         <div className='w-[50%] overflow-hidden cursor-pointer relative group'>
-          <img className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50	' src={itemAll_image} alt='' />
+          <img
+            className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50	'
+            src={itemAll_image}
+            alt=''
+          />
         </div>
-       
-          <div className='w-[48%]'>
-            <h3 className='line-clamp-2 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
-              {itemAll_Name_All}
-            </h3>
-            <p className='text-[14px] text-[#3B4E68] line-clamp-4'>{itemAll_content_All}</p>
-          </div>
+
+        <div className='w-[48%]'>
+          <h3 className='line-clamp-2 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
+            {itemAll_Name_All}
+          </h3>
+          <p className='text-[14px] text-[#3B4E68] line-clamp-4'>{itemAll_content_All}</p>
+        </div>
       </div>
       <div className='mt-4 '>
         {itemAll_RelatedNews.map((item: item) => (
@@ -38,9 +51,8 @@ export default function PolicyDevelopment({
   )
 }
 
-
-
-{/* <Tippy
+{
+  /* <Tippy
 arrow={false}
 followCursor={true}
 plugins={[followCursor]}
@@ -56,7 +68,10 @@ content={
   </div>
 }
 >
-</Tippy> */}
-  {/* <div className='w-[100%]'>
+</Tippy> */
+}
+{
+  /* <div className='w-[100%]'>
   <img className='w-full' src={itemAll_image} alt='' />
-  </div> */}
+  </div> */
+}

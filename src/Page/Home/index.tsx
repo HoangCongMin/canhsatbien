@@ -34,11 +34,11 @@ import IconNews from '../../assets/png-clipart-kochers-computer-icons-new-label-
 import { BsFacebook } from 'react-icons/bs'
 import { FiMessageSquare } from 'react-icons/fi'
 import { HiOutlineMinusCircle } from 'react-icons/hi'
-import { RiPrinterFill, RiRoadMapFill,RiSendPlaneFill } from 'react-icons/ri'
+import { RiPrinterFill, RiRoadMapFill, RiSendPlaneFill } from 'react-icons/ri'
 import { IoMdAddCircleOutline } from 'react-icons/io'
 import { GoTextSize, GoLaw } from 'react-icons/go'
 import List_item_all_new from '../../component/List_item_all_new'
-import{MdSportsGymnastics,MdLocalPolice} from'react-icons/md'
+import { MdSportsGymnastics, MdLocalPolice } from 'react-icons/md'
 
 export default function Home() {
   const Theoguongbac = [
@@ -276,7 +276,7 @@ export default function Home() {
 
   const NewPost_Item_All_One = [
     {
-      icon:MdSportsGymnastics,
+      icon: MdSportsGymnastics,
       id: 1,
       title: 'Văn hóa - Thể thao',
       image: SportsCulture,
@@ -312,7 +312,7 @@ export default function Home() {
       ]
     },
     {
-      icon:MdLocalPolice,
+      icon: MdLocalPolice,
       id: 2,
       title: 'Công tác Cảnh sát biển',
       name_All: 'Đảng ủy Cảnh sát biển và Tỉnh ủy Thái Bình.',
@@ -443,35 +443,159 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='w-[60%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	'>
-            <div className='w-[97%]'>
-              <Posts />
-              <div className='w-full'>
-                <List_item_all_new />
+          <div className='w-[88%]'>
+            <div className='w-full flex justify-between '>
+              <div className='w-[67%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	'>
+                <div className='w-[97%]'>
+                  <Posts />
+                  <div className='w-full'>
+                    <List_item_all_new />
+                  </div>
+                  {ShortMessageItem.map((item) => (
+                    <ShortMessage
+                      classItiemAll={'line-clamp-1'}
+                      classItiem={
+                        "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970]	"
+                      }
+                      conTentShortMessage={item.title}
+                    />
+                  ))}
+                </div>
               </div>
-              {ShortMessageItem.map((item) => (
-                <ShortMessage
-                  classItiemAll={'line-clamp-1'}
-                  classItiem={
-                    "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970]	"
-                  }
-                  conTentShortMessage={item.title}
+
+              <div className='w-[30%] overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
+                <div className='scrollbar h-[22vh] max-[1300px]:h-[100%]'>
+                  {dataNews.Conten_all.map((item) => (
+                    <ShortMessage
+                      classItiemAll={'text-[15px] text-black font-bold hover:text-[#191970]'}
+                      classItiem={
+                        "text-[15px] text-[#000] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 cursor-pointer	 "
+                      }
+                      conTentShortMessage={item.content}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className='w-full m-auto mt-9 pt-6 border-t-[1px] border-slate-300'>
+              <img
+                className='w-full'
+                src='https://canhsatbien.vn:443/upload/files/category/20210607/tuyen-truyen-luat-csb-2021-090548126.gif?h=165'
+                alt=''
+              />
+            </div>
+            <div className='w-full m-auto max-w-screen-2xl '>
+              <List_leaDer />
+            </div>
+            <div className='w-full m-auto max-w-screen-2xl mt-7 justify-between flex  max-[1160px]:flex-col'>
+              <div className=' w-full flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
+                {NewPost_Item_All.map((item) => (
+                  <NewPost_Item
+                    icon_item={<item.icon />}
+                    class_Custom_layout={'first:pb-7'}
+                    class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer	'}
+                    itemAll_id={item.id}
+                    itemAll_RelatedNews={item.RelatedNews}
+                    itemAll_content={item.content}
+                    itemAll_image={item.image}
+                    itemAll_title={item.title}
+                    itemAll_Name={item.name}
+                    itemAll_Name_All={item.nameAll}
+                    itemAll_content_All={item.contentAll}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className='w-full m-auto mt-7 max-w-screen-2xl'>
+              <div className='w-full border-t-[1px] border-[#DA251C]'>
+                <div className='flex-col max-[850px]:flex-col'>
+                  {policyDevelopmentAll.map((item) => (
+                    <div className='w-full max-[850px]:w-[100%]'>
+                      <PolicyDevelopment
+                        class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
+                        itemAll_id={item.id}
+                        itemAll_RelatedNews={item.RelatedNews}
+                        itemAll_content={item.content}
+                        itemAll_image={item.image}
+                        itemAll_Name={item.name}
+                        itemAll_Name_All={item.name_All}
+                        itemAll_content_All={item.content_All}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className='w-full m-auto flex-col justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
+              {NewPost_Item_All_One.map((item) => (
+                <NewPost_Item
+                  icon_item={<item.icon />}
+                  class_NewPost_Item={'w-full  max-[850px]:w-[100%] cursor-pointer	'}
+                  itemAll_id={item.id}
+                  itemAll_RelatedNews={item.RelatedNews}
+                  itemAll_content={item.content}
+                  itemAll_image={item.image}
+                  itemAll_title={item.title}
+                  itemAll_Name={item.name}
+                  itemAll_content_All={item.content_All}
+                  itemAll_Name_All={item.name_All}
                 />
               ))}
             </div>
-          </div>
+            <div className='w-full m-auto max-w-screen-2xl mt-5'>
+              <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center '>
+                <div className='bg-[#DA251C] h-7 w-1'></div>
+                <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
+                  Tổ chức - Biên chế
+                </div>
+              </div>
 
-          <div className='w-[28%] overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
-            <div className='scrollbar h-[22vh] max-[1300px]:h-[100%]'>
-              {dataNews.Conten_all.map((item) => (
-                <ShortMessage
-                  classItiemAll={'text-[15px] text-black font-bold hover:text-[#191970]'}
-                  classItiem={
-                    "text-[15px] text-[#000] before:content-['>'] before:mr-2 before:text-red-500 flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 cursor-pointer	 "
-                  }
-                  conTentShortMessage={item.content}
-                />
-              ))}
+              <div className='my-10 '>
+                <p className='  text-[#333] my-3 text-[15px]'>
+                  <span>
+                    Theo đó, hệ thống tổ chức của Cảnh sát biển Việt Nam gồm: Bộ Tư lệnh Cảnh sát biển Việt Nam; các đơn
+                    vị trực thuộc Bộ Tư lệnh Cảnh sát biển Việt Nam; Các cơ quan, đơn vị đầu mối và cấp cơ sở trực thuộc
+                    các đơn vị trên. Trong đó, Cơ quan Bộ Tư lệnh Cảnh sát biển Việt Nam gồm Bộ Tham mưu, Cục Chính trị,
+                    Cục Nghiệp vụ và Pháp luật, Cục Hậu Cần, Cục Kỹ thuật, các cơ quan trực thuộc Tư lệnh Cảnh sát biển
+                    Việt Nam.
+                  </span>
+                </p>
+                <p className=' text-[#333] my-3 text-[15px]'>
+                  <span>
+                    Chức danh pháp lý của Cảnh sát biển Việt Nam là Cảnh sát viên, Trinh sát viên và Cán bộ điều tra, có
+                    nhiệm vụ phòng ngừa, ngăn chặn, phát hiện và đấu tranh phòng, chống tội phạm, vi phạm pháp luật.
+                    Cảnh sát viên, Trinh sát viên Cảnh sát biển gồm: cảnh sát viên, Trinh sát viên sơ cấp; Cảnh sát
+                    viên, Trinh sát trung cấp; Cảnh sát viên, Trinh sát viên cao cấp.
+                  </span>
+                </p>
+                <p className=' text-[#333] my-3 text-[15px]'>
+                  <span>
+                    Bộ Quốc phòng quy định điều kiện, tiêu chuẩn, trình tự, thủ tục bổ nhiệm, miễn nhiệm, cách chức đối
+                    với Cảnh sát viên, Trinh sát viên của Cảnh sát biển Việt Nam. Tư lệnh Cảnh sát biển Việt Nam quyết
+                    định bổ nhiệm, miễn nhiệm, cách chức Cảnh sát viên, Trinh sát viên; cấp, thu hồi và quy định việc
+                    quản lý, sử dụng Giấy chứng nhận Cảnh sát viên, Trinh sát viên của Cảnh sát biển Việt Nam.
+                  </span>
+                </p>
+                <p className=' text-[#333] my-3 text-[15px]'>
+                  <span>
+                    Cán bộ điều tra thuộc Cảnh sát biển Việt Nam khi được phân công điều tra vụ án hình sự theo quy định
+                    của Bộ luật Tố tụng hình sự, Luật Tổ chức cơ quan điều tra hình sự phải chịu trách nhiệm trước pháp
+                    luật và Thủ trưởng đã ra quyết định phân công về việc thực hiện nhiệm vụ, quyền hạn của mình.
+                  </span>
+                </p>
+                <p className=' text-[#333] my-3 text-[15px]'>
+                  <span>
+                    Cán bộ, chiến sỹ Cảnh sát biển Việt Nam được hưởng lương theo ngạch, bậc, chức vụ, chế độ trợ cấp;
+                    được hưởng chế độ phụ cấp thâm niên vượt khung, phụ cấp kiêm nhiệm chức danh lãnh đạo, phụ cấp khu
+                    vực, phụ cấp đặc biệt, phụ cấp thu hút, phụ cấp lưu động, phụ cấp độc hại nguy hiểm, phụ cấp thâm
+                    niên nghề, phụ cấp trách nhiệm theo nghề, phụ cấp trách nhiệm công việc, phụ cấp phục vụ quốc
+                    phòng-an ninh, phụ cấp công tác lâu năm ở trên tàu, biển, đảo, phụ cấp ngày đi biển, phụ cấp đặc thù
+                    đi biển... phù hợp với khu vực địa bàn vùng biển, đảo công tác, yêu cầu nhiệm vụ và chế độ, chính
+                    sách khác như cán bộ, chiến sỹ lực lượng vũ trang và cán bộ, công chức, viên chức có cùng điều kiện,
+                    môi trường làm việc, khu vực địa bàn, biển đảo công tác theo quy định của pháp .
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -484,38 +608,6 @@ export default function Home() {
           <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
             © Cổng TTĐT Cảnh sát biển
           </p>
-        </div>
-      </div>
-      <div className='w-[80%] m-auto mt-9 pt-6 border-t-[1px] border-slate-300'>
-        <img
-          className='w-full'
-          src='https://canhsatbien.vn:443/upload/files/category/20210607/tuyen-truyen-luat-csb-2021-090548126.gif?h=165'
-          alt=''
-        />
-      </div>
-
-      <div className='w-[80%] m-auto max-w-screen-2xl '>
-        <List_leaDer />
-      </div>
-      <div className='w-[80%] m-auto max-w-screen-2xl mt-7 justify-between flex  max-[1160px]:flex-col'>
-        <div className=' w-[60%] flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
-          {NewPost_Item_All.map((item) => (
-            <NewPost_Item
-              icon_item={<item.icon/>}
-              class_Custom_layout={'first:pb-7'}
-              class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer	'}
-              itemAll_id={item.id}
-              itemAll_RelatedNews={item.RelatedNews}
-              itemAll_content={item.content}
-              itemAll_image={item.image}
-              itemAll_title={item.title}
-              itemAll_Name={item.name}
-              itemAll_Name_All={item.nameAll}
-              itemAll_content_All={item.contentAll}
-            />
-          ))}
-        </div>
-        <div className='w-[35%] max-[1160px]:w-[100%]'>
           <div className='w-[100%] border-t-[2px] border-[#DA251C]  '>
             <Title_media title_Clip={'Video - Clip'} libari_image={'Thư viện ảnh'} />
             <div className='w-[95%] m-auto mt-4'>
@@ -539,21 +631,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='w-[80%] m-auto mt-7 max-w-screen-2xl'>
+
+      {/* <div className='w-[80%] m-auto max-w-screen-2xl '>
+        <List_leaDer />
+      </div> */}
+
+      {/* <div className='w-[80%] m-auto mt-7 max-w-screen-2xl'>
         <div className='w-full border-t-[1px] border-[#DA251C]'>
           <div className='w-full border-t-[1px] border-[#DA251C]'>
             <div className='border-b-[1px] border-stale-300 py-3 flex items-center'>
-              <RiSendPlaneFill className='text-[#00008B]'/>
+              <RiSendPlaneFill className='text-[#00008B]' />
               <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
                 xây dựng chính sách
               </h1>
             </div>
           </div>
-          <div className='flex justify-between max-[850px]:flex-col'>
+          <div className='flex-col max-[850px]:flex-col'>
             {policyDevelopmentAll.map((item) => (
               <div className='w-[47%] max-[850px]:w-[100%]'>
                 <PolicyDevelopment
-               
                   class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
                   itemAll_id={item.id}
                   itemAll_RelatedNews={item.RelatedNews}
@@ -567,11 +663,11 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
-      <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
+      </div> */}
+      {/* <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
         {NewPost_Item_All_One.map((item) => (
           <NewPost_Item
-          icon_item={<item.icon/>}
+            icon_item={<item.icon />}
             class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
             itemAll_id={item.id}
             itemAll_RelatedNews={item.RelatedNews}
@@ -583,64 +679,7 @@ export default function Home() {
             itemAll_Name_All={item.name_All}
           />
         ))}
-      </div>
-
-      <div className='w-[80%] m-auto max-w-screen-2xl mt-5'>
-        <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center '>
-          <div className='bg-[#DA251C] h-7 w-1'></div>
-          <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
-            Tổ chức - Biên chế
-          </div>
-        </div>
-        {/* <Chart_All_Item /> */}
-        <Chart_test_Item />
-
-        <div className='my-10 '>
-          <p className='  text-[#333] my-3 text-[15px]'>
-            <span>
-              Theo đó, hệ thống tổ chức của Cảnh sát biển Việt Nam gồm: Bộ Tư lệnh Cảnh sát biển Việt Nam; các đơn vị
-              trực thuộc Bộ Tư lệnh Cảnh sát biển Việt Nam; Các cơ quan, đơn vị đầu mối và cấp cơ sở trực thuộc các đơn
-              vị trên. Trong đó, Cơ quan Bộ Tư lệnh Cảnh sát biển Việt Nam gồm Bộ Tham mưu, Cục Chính trị, Cục Nghiệp vụ
-              và Pháp luật, Cục Hậu Cần, Cục Kỹ thuật, các cơ quan trực thuộc Tư lệnh Cảnh sát biển Việt Nam.
-            </span>
-          </p>
-          <p className=' text-[#333] my-3 text-[15px]'>
-            <span>
-              Chức danh pháp lý của Cảnh sát biển Việt Nam là Cảnh sát viên, Trinh sát viên và Cán bộ điều tra, có nhiệm
-              vụ phòng ngừa, ngăn chặn, phát hiện và đấu tranh phòng, chống tội phạm, vi phạm pháp luật. Cảnh sát viên,
-              Trinh sát viên Cảnh sát biển gồm: cảnh sát viên, Trinh sát viên sơ cấp; Cảnh sát viên, Trinh sát trung
-              cấp; Cảnh sát viên, Trinh sát viên cao cấp.
-            </span>
-          </p>
-          <p className=' text-[#333] my-3 text-[15px]'>
-            <span>
-              Bộ Quốc phòng quy định điều kiện, tiêu chuẩn, trình tự, thủ tục bổ nhiệm, miễn nhiệm, cách chức đối với
-              Cảnh sát viên, Trinh sát viên của Cảnh sát biển Việt Nam. Tư lệnh Cảnh sát biển Việt Nam quyết định bổ
-              nhiệm, miễn nhiệm, cách chức Cảnh sát viên, Trinh sát viên; cấp, thu hồi và quy định việc quản lý, sử dụng
-              Giấy chứng nhận Cảnh sát viên, Trinh sát viên của Cảnh sát biển Việt Nam.
-            </span>
-          </p>
-          <p className=' text-[#333] my-3 text-[15px]'>
-            <span>
-              Cán bộ điều tra thuộc Cảnh sát biển Việt Nam khi được phân công điều tra vụ án hình sự theo quy định của
-              Bộ luật Tố tụng hình sự, Luật Tổ chức cơ quan điều tra hình sự phải chịu trách nhiệm trước pháp luật và
-              Thủ trưởng đã ra quyết định phân công về việc thực hiện nhiệm vụ, quyền hạn của mình.
-            </span>
-          </p>
-          <p className=' text-[#333] my-3 text-[15px]'>
-            <span>
-              Cán bộ, chiến sỹ Cảnh sát biển Việt Nam được hưởng lương theo ngạch, bậc, chức vụ, chế độ trợ cấp; được
-              hưởng chế độ phụ cấp thâm niên vượt khung, phụ cấp kiêm nhiệm chức danh lãnh đạo, phụ cấp khu vực, phụ cấp
-              đặc biệt, phụ cấp thu hút, phụ cấp lưu động, phụ cấp độc hại nguy hiểm, phụ cấp thâm niên nghề, phụ cấp
-              trách nhiệm theo nghề, phụ cấp trách nhiệm công việc, phụ cấp phục vụ quốc phòng-an ninh, phụ cấp công tác
-              lâu năm ở trên tàu, biển, đảo, phụ cấp ngày đi biển, phụ cấp đặc thù đi biển... phù hợp với khu vực địa
-              bàn vùng biển, đảo công tác, yêu cầu nhiệm vụ và chế độ, chính sách khác như cán bộ, chiến sỹ lực lượng vũ
-              trang và cán bộ, công chức, viên chức có cùng điều kiện, môi trường làm việc, khu vực địa bàn, biển đảo
-              công tác theo quy định của pháp .
-            </span>
-          </p>
-        </div>
-      </div>
+      </div> */}
     </div>
   )
 }
@@ -653,4 +692,41 @@ export default function Home() {
 '
   />
 </div> */
+}
+{
+  /* <img src={BG_IMG_TWO} alt='' className='w-[95%] m-auto' /> */
+}
+{
+  /* <img src={BG_IMG_VietTell} alt='' className='w-[95%] m-auto' /> */
+}
+
+{
+  /* <div className='w-[35%] max-[1160px]:w-[100%]'>
+          <div className='w-[100%] border-t-[2px] border-[#DA251C]  '>
+            <Title_media title_Clip={'Video - Clip'} libari_image={'Thư viện ảnh'} />
+            <div className='w-[95%] m-auto mt-4'>
+              <Video_Title
+                Image_csb_All={Image_csb}
+                Video_media_title={media_all.title}
+                Video_media_video={media_all.video}
+                content={'Xem tất cả...'}
+              />
+            </div>
+          </div>
+          <div>
+            <Title_media title_Clip={'Thông tin thời tiết'} Title={'m-auto'} />
+            <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
+              <Link to={''}>Bản tin thủy văn</Link>
+              <img className='w-[95%] m-auto py-2' src={BG_IMG} alt='' />
+              <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto py-2' />
+            </div>
+          </div>
+        </div> */
+}
+
+{
+  /* <Chart_All_Item /> */
+}
+{
+  /* <Chart_test_Item /> */
 }
