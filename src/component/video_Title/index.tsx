@@ -31,7 +31,7 @@ export default function Video_Title({
     <div>
       {videoPlay ? (
         <div
-          className={classNames(`w-full  ${hight_item ? hight_item : 'h-[19rem]'} max-[1160px]:h-auto`)}
+          className={classNames(`w-full  ${hight_item ? hight_item : 'h-[13rem]'} max-[1160px]:h-auto`)}
           onMouseOut={() => setVideoPlay(false)}
         >
           <video className='object-cover h-full w-full' controls>
@@ -40,7 +40,7 @@ export default function Video_Title({
         </div>
       ) : (
         <div
-          className={classNames(`w-full ${hight_item ? hight_item : 'h-[19rem]'}  max-[1160px]:h-auto`)}
+          className={classNames(`w-full ${hight_item ? hight_item : 'h-[13rem]'}  max-[1160px]:h-auto`)}
           onMouseOver={() => setVideoPlay(true)}
         >
           <img className='w-full h-full' src={Image_csb_All} alt='' />

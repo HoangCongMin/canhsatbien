@@ -19,8 +19,8 @@ export default function List_leaDer() {
         { id: 4, avatar: Avatar_leader_four, position: 'cán bộ', name: 'Trần Lưu Quang' }
     ]
     return (
-        <div className='  border-stale-300 mt-7 mb-[4rem] max-[1300px]:border-none'>
-            <div className='flex justify-center pt-[2.75rem] pb-[2.25rem] '>
+        <div className='  border-stale-300 mt-2 mb-[4rem] max-[1300px]:border-none'>
+            <div className='flex justify-center pt-[1.5rem] pb-[1.5rem] '>
                 <div className='text-[#182940] text-[18px] uppercase'>Trang tin điện tử của các Cảnh sát biển</div>
             </div>
             <div className='flex justify-between max-[1300px]:grid max-[1300px]:grid-cols-2 gap-4 max-[1300px]:grid-rows-2 max-[1150px]:grid max-[1150px]:grid-cols-1 max-[1150px]:gap-4 max-[1150px]:grid-rows-1'>

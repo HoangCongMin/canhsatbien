@@ -109,12 +109,12 @@ export default function Napbar() {
                     className={classNames(
                       `absolute  mt-10  ${
                         item.id === narBarItemAll[5].id ? 'w-[130%]' : 'w-[280%]'
-                      } px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg  border-[#1px] border-[] shadow-2xl`
+                      } px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg   border-[#1px] border-[] shadow-2xl`
                     )}
                   >
                     {item.menu_children.map((itemAll) => (
                       <div
-                        className={`w-[100%] hidden group-hover:block text-black bg-white  hover:duration-700   hover:text-[#003f7f] h-[30px]`}
+                        className={`w-[100%]	 hidden group-hover:block text-black bg-white  hover:duration-700  cursor-pointer  hover:text-[#003f7f] h-[30px]`}
                       >
                         {itemAll.title}
                       </div>
