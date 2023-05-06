@@ -39,6 +39,9 @@ import { IoMdAddCircleOutline } from 'react-icons/io'
 import { GoTextSize, GoLaw } from 'react-icons/go'
 import List_item_all_new from '../../component/List_item_all_new'
 import { MdSportsGymnastics, MdLocalPolice } from 'react-icons/md'
+import AutoSlice_cart_newsPlay from '../../component/Slice_cart_news'
+import Slice_cart_news_coppy_image from '../../component/Slice_cart_news_coppy_image'
+import Box_Call from'../../component/Box_Call'
 
 export default function Home() {
   const Theoguongbac = [
@@ -47,7 +50,10 @@ export default function Home() {
     { id: 3, content: 'Đại tướng Phan Văn Giang gửi thư khen ngợi, động viên Trung tâm Đào tạo và' },
     { id: 4, content: 'HTuyên dương gương mặt trẻ tiêu biểu, gương mặt trẻ triển vọng toàn quân' },
     { id: 5, content: '“Bông hồng trắng” của Lực lượng Cảnh sát biển Việt Nam' },
-    { id: 6, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
+    { id: 7, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    { id: 9, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
   ]
 
   const DocNhieu = [
@@ -422,27 +428,8 @@ export default function Home() {
       </div>
       <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col overflow-auto '>
         <div className='w-[72%] flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%] '>
-          <div className='w-[8%] sticky top-0 z-10'>
-            <div className='w-[90%] m-auto'>
-              <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-                <BsFacebook />
-              </div>
-              <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-                <FiMessageSquare />
-              </div>
-              <div className='text-center text-[11px] mt-3 m-auto  pb-5 border-b-[1px] border-slate-300 w-[65%]'>0</div>
-              <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-                <RiPrinterFill />
-              </div>
-              <div className='w-[50px] border-[1px] border-slate-300 rounded-full flex items-center justify-center mt-2 m-auto'>
-                <div>
-                  <IoMdAddCircleOutline className='text-[14px] my-3' />
-                  <GoTextSize className='text-[14px] my-3' />
-                  <HiOutlineMinusCircle className='text-[14px] my-3' />
-                </div>
-              </div>
-            </div>
-          </div>
+          
+          <Box_Call/>
           <div className='w-[88%]'>
             <div className='w-full flex justify-between '>
               <div className='w-[67%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	'>
@@ -451,15 +438,17 @@ export default function Home() {
                   <div className='w-full'>
                     <List_item_all_new />
                   </div>
-                  {ShortMessageItem.map((item) => (
-                    <ShortMessage
-                      classItiemAll={'line-clamp-1'}
-                      classItiem={
-                        "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970]	"
-                      }
-                      conTentShortMessage={item.title}
-                    />
-                  ))}
+                  <div className='mt-4'>
+                    {ShortMessageItem.map((item) => (
+                      <ShortMessage
+                        classItiemAll={'line-clamp-1'}
+                        classItiem={
+                          "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970]"
+                        }
+                        conTentShortMessage={item.title}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -601,13 +590,6 @@ export default function Home() {
         </div>
 
         <div className='w-[26%] border-slate-400 max-[850px]:w-[100%]'>
-          <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	hover:text-[#191970]'>
-            BẢN ĐỒ HÀNH CHÍNH
-          </h1>
-          <img src={Map} alt='' className='cursor-pointer	' />
-          <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
-            © Cổng TTĐT Cảnh sát biển
-          </p>
           <div className='w-[100%] border-t-[2px] border-[#DA251C]  '>
             <Title_media title_Clip={'Video - Clip'} libari_image={'Thư viện ảnh'} />
             <div className='w-[95%] m-auto mt-4'>
@@ -625,11 +607,25 @@ export default function Home() {
               <Link to={''}>Bản tin thủy văn</Link>
               <img className='w-[95%] m-auto py-2' src={BG_IMG} alt='' />
               <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto py-2' />
+              <img src='https://tranvietmb.com/wp-content/uploads/2021/09/bao-hiem-lien-ket-dau-tu-920x425.jpg' alt='' className='w-[95%] m-auto py-2  h-[122px]' />
+              <img src="https://tttctt.1cdn.vn/thumbs/600x315/2023/03/06/kv-biz-mbbank.jpg" alt="" className='w-[95%] m-auto py-2 h-[122px]' />
+              {/* <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto py-2' /> */}
+              
               {/* <img src={BG_IMG_TWO} alt='' className='w-[95%] m-auto' /> */}
               {/* <img src={BG_IMG_VietTell} alt='' className='w-[95%] m-auto' /> */}
             </div>
           </div>
+          <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	hover:text-[#191970]'>
+            BẢN ĐỒ HÀNH CHÍNH
+          </h1>
+          <img src={Map} alt='' className='cursor-pointer	' />
+          <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
+            © Cổng TTĐT Cảnh sát biển
+          </p>
         </div>
+      </div>
+      <div className='w-[80%] m-auto'>
+        <Slice_cart_news_coppy_image />
       </div>
 
       {/* <div className='w-[80%] m-auto max-w-screen-2xl '>

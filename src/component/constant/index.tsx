@@ -423,6 +423,16 @@ export const Organization_Payroll_Data_three = {
   ]
 }
 
+export const Img_all_array = [
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logoqdnd-154031114.jpg',name:'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logo_bienphong-154008079.jpg',name:'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/hqvn-154047478.jpg',name:'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/cong-thong-tin-154110612.jpg',name:'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logoqdnd-154031114.jpg',name:'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logo_bienphong-154008079.jpg',name:'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/hqvn-154047478.jpg',name:'boquocphong' }
+]
+
 export const Organization_Payroll_Data_four = {
   title: 'Bộ Tư lệnh Vùng Cảnh sát biển 4',
   img: 'https://photo-cms-tpo.epicdn.me/w645/Uploaded/2023/xqeioxwsxr/2022_01_24/tp-phong-van-1-6926.jpg',

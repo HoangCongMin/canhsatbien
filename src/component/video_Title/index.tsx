@@ -4,9 +4,9 @@ import Image_csb from '../../assets/cover canh sat bien vn.jpg'
 import classNames from 'classnames'
 
 interface video_all {
-  Video_media_title: string
-  Video_media_video: string
-  Image_csb_All: string
+  Video_media_title?: string
+  Video_media_video?: string
+  Image_csb_All?: string
   hight_item?: string
   line_clamp?: string
   class_Title?: string

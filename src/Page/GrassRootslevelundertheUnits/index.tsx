@@ -1,5 +1,6 @@
 import React from 'react'
 import Content_Same from '../../component/Content_Same'
+import Box_Call from '../../component/Box_Call'
 
 export default function GrassRootslevelundertheUnits() {
   return (
@@ -11,8 +12,11 @@ export default function GrassRootslevelundertheUnits() {
             Cục Chính trị
           </div>
         </div>
-        <div className='w-[80%] m-auto my-7'>
-          <img src={'https://cdn.lawnet.vn/uploads/tintuc/2022/11/29/canh-sat-bien-viet-nma.jpg'} alt='' />
+        <div className='w-[100%] m-auto my-7 flex'>
+         
+            <Box_Call />
+        
+          <img className='w-[90%]' src={'https://cdn.lawnet.vn/uploads/tintuc/2022/11/29/canh-sat-bien-viet-nma.jpg'} alt='' />
         </div>
         <div className='text-[#838383] text-[15px] font-[Roboto] my-3'>08:48 | 09/02/2023</div>
         <p className='text-[14px] text-[#3B4E68]'>

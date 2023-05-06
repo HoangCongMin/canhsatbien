@@ -9,10 +9,9 @@ import Backfrond from '../../assets/menubackground2.png'
 import { CgAsterisk } from 'react-icons/cg'
 import { AiFillHome } from 'react-icons/ai'
 import classNames from 'classnames'
-import { BsFillTelephoneFill } from 'react-icons/bs'
+import { IoCallSharp } from 'react-icons/io5'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BiSearch } from 'react-icons/bi'
-import {IoCall} from'react-icons/io5'
 
 export const narBarItemAll = [
   {
@@ -64,7 +63,7 @@ export default function Napbar() {
   }
 
   return (
-    <div className='w-full bg-white  sticky top-0 z-20'>
+    <div className='w-full bg-white sticky top-0 z-20'>
       <div className='w-[80%] m-auto max-w-screen-2xl cursor-pointer shadow-2xl'>
         <Link to={'/'} className='w-full'>
           <div className='w-full'>
@@ -72,8 +71,8 @@ export default function Napbar() {
           </div>
         </Link>
       </div>
-      <div className='w-full object-cover mt-5  bg-[#56aaff]'>
-        <div className='w-[80%] max-w-screen-2xl m-auto flex items-center border-slate-300 justify-between'>
+      <div className='w-full object-cover bg-[#56aaff]'>
+        <div className='w-[80%] m-auto flex  max-w-screen-2xl items-center border-slate-300'>
           <div className='w-[4%] max-[1322px]:hidden'>
             <AiFillHome className='mb-[5px] text-white text-[25px]' />
           </div>
@@ -99,11 +98,8 @@ export default function Napbar() {
               //   }
               // >
               <>
-                <li className=' group uppercase text-[13px]	leading-10 flex justify-center text-white font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#56aaff]	 hover:border-[#003f7f] hover:duration-700 max-[1316px]:justify-start '>
+                <li className=' group uppercase text-[13px]	leading-10 flex font-[Helvetica] justify-center relative text-white font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#56aaff]	 hover:border-[#003f7f] hover:duration-700 max-[1316px]:justify-start '>
                   <div className='flex items-center'>
-                    <div>
-                      <item.icon className='text-[#ff7f00]' />
-                    </div>
                     <div>
                       <Link to={'/Organization_Payroll'}>{item.title}</Link>
                     </div>
@@ -112,13 +108,13 @@ export default function Napbar() {
                   <div
                     className={classNames(
                       `absolute  mt-10  ${
-                        item.id === narBarItemAll[5].id ? 'w-full' : 'w-[215%]'
+                        item.id === narBarItemAll[5].id ? 'w-[130%]' : 'w-[280%]'
                       } px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg  border-[#1px] border-[] shadow-2xl`
                     )}
                   >
                     {item.menu_children.map((itemAll) => (
                       <div
-                        className={`w-[100%] hidden group-hover:block text-black bg-white  hover:duration-700   hover:text-[#003f7f] 	 h-[30px]`}
+                        className={`w-[100%] hidden group-hover:block text-black bg-white  hover:duration-700   hover:text-[#003f7f] h-[30px]`}
                       >
                         {itemAll.title}
                       </div>
@@ -151,15 +147,15 @@ export default function Napbar() {
               </>
             )}
           </div>
-          <div className='w-[10%]'>
-            <div className='flex justify-between w-[80%] m-auto'>
-              <div className='text-white  text-[17px]'>
-                <IoCall />
+          <div className='w-[13%] m-auto flex justify-end'>
+            <div className='flex justify-between w-[60%]'>
+              <div className='text-[17px] text-white'>
+                <IoCallSharp />
               </div>
-              <div  className='text-white  text-[17px]'>
+              <div className='text-[17px] text-white'>
                 <AiOutlineMail />
               </div>
-              <div className='text-white text-[17px]'>
+              <div className='text-[17px] text-white'>
                 <BiSearch />
               </div>
             </div>
