@@ -29,7 +29,7 @@ export default function Fotter() {
                 <div className='text-white text-[12px] text-center w-[35%] cursor-pointer border-l-[1px] border-white'>{item.title}</div>
               ))}
             </div>
-            <div className='w-[40%] flex justify-between'>
+            <div className='w-[50%] flex justify-between'>
               {Item_tw0.map((item) => (
                 <div className='flex items-center' >
                   <div className='text-white text-[12px] cursor-pointer'>{item.title}</div>
