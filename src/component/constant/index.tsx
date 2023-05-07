@@ -424,13 +424,13 @@ export const Organization_Payroll_Data_three = {
 }
 
 export const Img_all_array = [
-  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logoqdnd-154031114.jpg',name:'boquocphong' },
-  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logo_bienphong-154008079.jpg',name:'boquocphong' },
-  { img: 'https://canhsatbien.vn/upload/files/category/20161228/hqvn-154047478.jpg',name:'boquocphong' },
-  { img: 'https://canhsatbien.vn/upload/files/category/20161228/cong-thong-tin-154110612.jpg',name:'boquocphong' },
-  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logoqdnd-154031114.jpg',name:'boquocphong' },
-  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logo_bienphong-154008079.jpg',name:'boquocphong' },
-  { img: 'https://canhsatbien.vn/upload/files/category/20161228/hqvn-154047478.jpg',name:'boquocphong' }
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logoqdnd-154031114.jpg', name: 'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logo_bienphong-154008079.jpg', name: 'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/hqvn-154047478.jpg', name: 'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/cong-thong-tin-154110612.jpg', name: 'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logoqdnd-154031114.jpg', name: 'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/logo_bienphong-154008079.jpg', name: 'boquocphong' },
+  { img: 'https://canhsatbien.vn/upload/files/category/20161228/hqvn-154047478.jpg', name: 'boquocphong' }
 ]
 
 export const Organization_Payroll_Data_four = {

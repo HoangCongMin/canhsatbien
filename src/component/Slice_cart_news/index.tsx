@@ -49,9 +49,7 @@ export default class AutoSlice_cart_newsPlay extends Component {
             slidesToScroll: 1
           }
         }
-      ],
-      
-      
+      ]
     }
     return (
       <div className='pb-10 '>

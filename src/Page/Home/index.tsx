@@ -11,8 +11,8 @@ import ElecTriCiPyprice from '../../assets/2-can-bo-doan-dac-nhiem-pctp-ma-tuy-s
 import InternationalCooperation from '../../assets/csb3-071712441.jpeg'
 import SportsCulture from '../../assets/sc3a1ch-101432661.jpeg'
 import CoastGuardwork from '../../assets/tang-qua-180746147.jpeg'
-import { AiOutlineBars, AiOutlineClose, AiOutlineSearch } from 'react-icons/ai'
-import { narBarItemAll } from '../../component/Napbar'
+import { AiOutlineSearch } from 'react-icons/ai'
+// import { narBarItemAll } from '../../component/Napbar'
 import List_leaDer from '../../component/List_leaDer'
 // import Video_media from '../../assets/Video/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
 import Video_Title from '../../component/video_Title'
@@ -20,28 +20,29 @@ import Image_csb from '../../assets/cover canh sat bien vn.jpg'
 import Title_media from '../../component/Title_media'
 import { Link } from 'react-router-dom'
 import BG_IMG from '../../assets/bnqc-6-095527762.jpg'
-import BG_IMG_TWO from '../../assets/media-qdndvn-133303282.jpg'
+// import BG_IMG_TWO from '../../assets/media-qdndvn-133303282.jpg'
 import BG_IMG_THREE from '../../assets/duong-day-nong-090912604-150007571-080459585.jpg'
-import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
-import Chart_All_Item from '../../component/Chart_All_Item'
-import Chart_test_Item from '../../component/Chart_test_Item'
-import { Organization_Payroll_Data } from '../../component/constant'
+// import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
+// import Chart_All_Item from '../../component/Chart_All_Item'
+// import Chart_test_Item from '../../component/Chart_test_Item'
+// import { Organization_Payroll_Data } from '../../component/constant'
 import { FaBook } from 'react-icons/fa'
 import { IoNewspaperSharp } from 'react-icons/io5'
-import Backfrond from '../../assets/lopqqgk7.png'
+// import Backfrond from '../../assets/lopqqgk7.png'
 import classNames from 'classnames'
-import IconNews from '../../assets/png-clipart-kochers-computer-icons-new-label-leaf-text-thumbnail.png'
-import { BsFacebook } from 'react-icons/bs'
-import { FiMessageSquare } from 'react-icons/fi'
-import { HiOutlineMinusCircle } from 'react-icons/hi'
-import { RiPrinterFill, RiRoadMapFill, RiSendPlaneFill } from 'react-icons/ri'
-import { IoMdAddCircleOutline } from 'react-icons/io'
-import { GoTextSize, GoLaw } from 'react-icons/go'
+// import IconNews from '../../assets/png-clipart-kochers-computer-icons-new-label-leaf-text-thumbnail.png'
+// import { BsFacebook } from 'react-icons/bs'
+// import { FiMessageSquare } from 'react-icons/fi'
+// import { HiOutlineMinusCircle } from 'react-icons/hi'
+import { RiRoadMapFill } from 'react-icons/ri'
+// import { IoMdAddCircleOutline } from 'react-icons/io'
+import { GoLaw } from 'react-icons/go'
 import List_item_all_new from '../../component/List_item_all_new'
 import { MdSportsGymnastics, MdLocalPolice } from 'react-icons/md'
-import AutoSlice_cart_newsPlay from '../../component/Slice_cart_news'
+// import AutoSlice_cart_newsPlay from '../../component/Slice_cart_news'
 import Slice_cart_news_coppy_image from '../../component/Slice_cart_news_coppy_image'
 import Box_Call from '../../component/Box_Call'
+import Box_weather from '../../component/Box_weather'
 
 export default function Home() {
   const Theoguongbac = [
@@ -51,9 +52,9 @@ export default function Home() {
     { id: 4, content: 'HTuyên dương gương mặt trẻ tiêu biểu, gương mặt trẻ triển vọng toàn quân' },
     { id: 5, content: '“Bông hồng trắng” của Lực lượng Cảnh sát biển Việt Nam' },
     { id: 7, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
-    { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
-    { id: 9, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
-    { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
+    // { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    // { id: 9, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    // { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
   ]
 
   const DocNhieu = [
@@ -78,7 +79,11 @@ export default function Home() {
         'Tư lệnh Cảnh sát biển gửi Thư chúc mừng Bộ Tư lệnh Vùng Cảnh sát biển 3 nhân dịp kỷ niệm 22 năm Ngày truyền trống'
     },
     { id: 5, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
-    { id: 6, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
+    { id: 6, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    { id: 7, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
+    { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    { id: 9, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
+    { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
   ]
 
   const TinMoi = [
@@ -102,14 +107,14 @@ export default function Home() {
     { id: 6, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 tạm giữ tàu chở dầu không rõ nguồn gốc' }
   ]
   const contentAll = [
-    { id: 1, content: 'TIN MỚI', icon: FaBook, Conten_all: Theoguongbac },
     { id: 2, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp, Conten_all: DocNhieu },
-    {
-      id: 3,
-      content: 'THEO GƯƠNG BÁC',
-      img: 'https://static.wixstatic.com/media/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.png/v1/fill/w_500,h_750,al_c,q_90,usm_0.66_1.00_0.01/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.webp',
-      Conten_all: TinMoi
-    }
+    { id: 1, content: 'TIN MỚI', icon: FaBook, Conten_all: TinMoi }
+    // {
+    //   id: 3,
+    //   content: 'THEO GƯƠNG BÁC',
+    //   img: 'https://static.wixstatic.com/media/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.png/v1/fill/w_500,h_750,al_c,q_90,usm_0.66_1.00_0.01/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.webp',
+    //   Conten_all: TinMoi
+    // }
   ]
 
   const ShortMessageItem = [
@@ -136,7 +141,7 @@ export default function Home() {
     }
   ]
 
-  const [dataNews, setDataNews] = useState({ id: 1, content: 'TIN MỚI', icon: FaBook, Conten_all: Theoguongbac })
+  const [dataNews, setDataNews] = useState({ id: 1, content: 'TIN MỚI', icon: FaBook, Conten_all: DocNhieu })
   const NewPost_Item_All = [
     {
       icon: RiRoadMapFill,
@@ -353,6 +358,15 @@ export default function Home() {
     }
   ]
 
+  const List_weather_all = [
+    { id: 1, title: 'Nam Vịnh Bắc Bộ', img: 'https://baohaiquanvietnam.vn/storage/images/muarao_vadong.gif' },
+    { id: 2, title: 'Quảng Trị đến Quảng Ngãi', img: 'https://baohaiquanvietnam.vn/storage/images/Co_luc_co_Mua.gif' },
+    { id: 3, title: 'Bình Định đến Ninh Thuận', img: 'https://baohaiquanvietnam.vn/storage/images/muarao_vadong.gif' },
+    { id: 4, title: 'Bình Thuận đến Cà Mau', img: 'https://baohaiquanvietnam.vn/storage/images/Co_luc_co_Mua.gif' },
+    { id: 5, title: 'Cà Mau đến Kiên Giang', img: 'https://baohaiquanvietnam.vn/storage/images/muarao_vadong.gif' },
+    { id: 6, title: 'Bắc Biển Đông', img: 'https://baohaiquanvietnam.vn/storage/images/Co_luc_co_Mua.gif' }
+  ]
+
   const [close, setClose] = useState(false)
 
   const handleClose = () => {
@@ -381,21 +395,21 @@ export default function Home() {
           <AiOutlineSearch className='w-[5%]' />
         </div>
         <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
-          <div className='w-[95%] m-auto flex justify-between h-[100%] max-[500px]:justify-end'>
+          <div className='w-[95%] m-auto flex justify-start h-[100%] max-[500px]:justify-end'>
             {contentAll.map((item, index) => (
               <div
                 className={classNames(
-                  `flex items-center px-3 border-b-[2px] hover:border-[#DA251C]  max-[500px]:border-none	  hover:duration-700 ${
+                  `flex items-center px-3 border-b-[2px] hover:border-[#DA251C] last:ml-[20px] max-[500px]:border-none	  hover:duration-700 ${
                     item.Conten_all[index].id === dataNews.id ? 'border-[#DA251C]' : 'border-[#F6F6F6]'
                   }`
                 )}
                 onClick={() => handle_New(item)}
               >
-                {item.img && (
+                {/* {item.img && (
                   <div className='w-[16px] h-[21px] max-[500px]:hidden'>
                     <img className='w-full h-full' src={item.img} alt='' />
                   </div>
-                )}
+                )} */}
                 {item.icon && (
                   <div className='cursor-pointer text-[#DA251C] max-[500px]:hidden'>
                     <item.icon />
@@ -601,6 +615,54 @@ export default function Home() {
             </div>
           </div>
           <div>
+            <div className='w-full mt-3'>
+              <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
+                Theo gương Bác
+              </div>
+              <div className='w-95% m-auto my-4'>
+                {Theoguongbac.map((item) => (
+                  <ShortMessage
+                    classItiemAll={'line-clamp-2'}
+                    classItiem={
+                      "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
+                    }
+                    conTentShortMessage={item.content}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className='w-full mt-3'>
+              <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
+              Tuyên truyền Luật Cảnh sát biển Việt Nam
+              </div>
+              <div className='w-95% m-auto my-4'>
+                {Theoguongbac.map((item) => (
+                  <ShortMessage
+                    classItiemAll={'line-clamp-2'}
+                    classItiem={
+                      "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
+                    }
+                    conTentShortMessage={item.content}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className='w-full mt-3'>
+              <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
+              Phòng chống IUU
+              </div>
+              <div className='w-95% m-auto my-4'>
+                {Theoguongbac.map((item) => (
+                  <ShortMessage
+                    classItiemAll={'line-clamp-2'}
+                    classItiem={
+                      "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
+                    }
+                    conTentShortMessage={item.content}
+                  />
+                ))}
+              </div>
+            </div>
             {/* <Title_media title_Clip={'Thông tin thời tiết'} Title={'m-auto'} /> */}
             <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
               {/* <Link to={''}>Bản tin thủy văn</Link> */}
@@ -650,6 +712,9 @@ export default function Home() {
           <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
             © Cổng TTĐT Cảnh sát biển
           </p>
+          <div className='mt-5'>
+            <Box_weather List_weather={List_weather_all} />
+          </div>
         </div>
       </div>
       <div className='w-[80%] max-w-screen-2xl m-auto'>

@@ -51,7 +51,7 @@ export default function Media() {
             <div className='flex justify-between flex-wrap'>
               {images_all_items_media.map((idtem) => (
                 <div className='w-[23%] max-[1024px]:w-[30%] max-[1024px]:mt-3 max-[600px]:w-[48%] max-[500px]:w-[100%]'>
-                  <div className="w-full overflow-hidden cursor-pointer relative group">
+                  <div className='w-full overflow-hidden cursor-pointer relative group'>
                     <img
                       className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50'
                       src={idtem.image}

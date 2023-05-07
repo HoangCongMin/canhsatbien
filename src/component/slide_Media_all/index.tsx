@@ -21,10 +21,10 @@ export default function Slide_Media_all() {
     const newIndex = LastSlice ? 0 : currenIndex + 1
     setCurrenIndex(newIndex)
   }
-console.log(currenIndex)
+  console.log(currenIndex)
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (currenIndex === (Data_Media.length -1)) {
+      if (currenIndex === Data_Media.length - 1) {
         setCurrenIndex(0)
       } else {
         setCurrenIndex(currenIndex + 1)

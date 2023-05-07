@@ -22,17 +22,21 @@ export default function Fotter() {
         <div className='w-[80%] m-auto flex items-center'>
           <div className='flex w-[100%] justify-between items-center text-white font-[Roboto] max-[1165px]:flex-col'>
             <div className='w-[35%] flex items-center max-[1165px]:w-full max-[1165px]:justify-center '>
-          <div className='px-[10px] py-[5px] border-r-[1px] border-white max-[400px]:border-none'>
-            <AiFillHome className=' text-white ' />
-          </div>
+              <div className='px-[10px] py-[5px] border-r-[1px] border-white max-[400px]:border-none'>
+                <AiFillHome className=' text-white ' />
+              </div>
               {Item_all.map((item) => (
-                <div className='text-[12px] px-[10px] py-[5px] border-r-[1px] max-[400px]:px-[3px] max-[400px]:border-none border-white first:border-l-[1px] first:border-white' >{item.title}</div>
+                <div className='text-[12px] px-[10px] py-[5px] border-r-[1px] max-[400px]:px-[3px] max-[400px]:border-none border-white first:border-l-[1px] first:border-white'>
+                  {item.title}
+                </div>
               ))}
             </div>
             <div className='w-[50%] flex justify-end	max-[1165px]:w-full max-[1165px]:justify-center max-[553px]:flex-col max-[553px]:text-center'>
               {Item_tw0.map((item) => (
-                <div  className='first:border-l-[1px] max-[553px]:border-none' >
-                  <div className='text-[12px] py-[5px] px-[10px] border-r-[1px] border-white max-[553px]:border-none' >{item.title} {item.value}</div>
+                <div className='first:border-l-[1px] max-[553px]:border-none'>
+                  <div className='text-[12px] py-[5px] px-[10px] border-r-[1px] border-white max-[553px]:border-none'>
+                    {item.title} {item.value}
+                  </div>
                 </div>
               ))}
             </div>

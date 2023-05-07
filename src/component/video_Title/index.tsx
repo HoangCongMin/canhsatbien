@@ -46,13 +46,11 @@ export default function Video_Title({
           <img className='w-full h-full' src={Image_csb_All} alt='' />
         </div>
       )}
-      <div
-        className={classNames(
-          `${class_Title ? class_Title : 'mt-3 text-[14px] text-[#3B4E68]'} `
-        )}
-      >
+      <div className={classNames(`${class_Title ? class_Title : 'mt-3 text-[14px] text-[#3B4E68]'} `)}>
         {<div className='text-[12px] font-[Roboto] text-[#3B4E68BF] font-thin pb-1'>{time}</div>}
-        <div className={classNames(`${line_clamp ? line_clamp : ''} cursor-pointer text-[#000] hover:text-[#182940]`)}>{Video_media_title}</div>
+        <div className={classNames(`${line_clamp ? line_clamp : ''} cursor-pointer text-[#000] hover:text-[#182940]`)}>
+          {Video_media_title}
+        </div>
       </div>
       <div className={classNames(`${class_content_icon ? 'flex justify-start' : 'flex justify-end'}`)}>
         <Link

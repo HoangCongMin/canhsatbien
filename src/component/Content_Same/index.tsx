@@ -1,6 +1,6 @@
 import React from 'react'
-import {Organization_Payroll_Data} from'../constant'
-import Item_content_same from'../Content_Same/Item_content_same'
+import { Organization_Payroll_Data } from '../constant'
+import Item_content_same from '../Content_Same/Item_content_same'
 
 export default function Content_Same() {
   return (
@@ -13,7 +13,7 @@ export default function Content_Same() {
         </div>
       </div>
       <div className='w-full'>
-        <Item_content_same Organization_Payroll_Data={Organization_Payroll_Data.child}/>
+        <Item_content_same Organization_Payroll_Data={Organization_Payroll_Data.child} />
       </div>
     </div>
   )

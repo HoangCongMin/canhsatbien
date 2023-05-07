@@ -4,7 +4,7 @@ import New_post_icon_Item from '../New_post_icon_Item'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import { followCursor } from 'tippy.js'
-import {RiSendPlaneFill} from'react-icons/ri'
+import { RiSendPlaneFill } from 'react-icons/ri'
 
 export default function PolicyDevelopment({
   itemAll_id,

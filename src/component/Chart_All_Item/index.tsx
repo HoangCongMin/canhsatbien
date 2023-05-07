@@ -1,7 +1,12 @@
 import React from 'react'
 import { Tree, TreeNode } from 'react-organizational-chart'
 import Item_In_Chart_Item from '../Chart_All_Item/Item_In_Chart_Item'
-import { Organization_Payroll_Data, Organization_Payroll_Data_two, Organization_Payroll_Data_three,Organization_Payroll_Data_four } from '../constant'
+import {
+  Organization_Payroll_Data,
+  Organization_Payroll_Data_two,
+  Organization_Payroll_Data_three,
+  Organization_Payroll_Data_four
+} from '../constant'
 import { Link } from 'react-router-dom'
 
 export default function Chart_All_Item() {
@@ -104,7 +109,6 @@ export default function Chart_All_Item() {
             ></TreeNode>
           ))}
         </Tree>
-
 
         <Tree
           lineWidth={'2px'}

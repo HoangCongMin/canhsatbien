@@ -79,8 +79,8 @@ export default function NarbarMedia() {
         </div>
         {hidden && (
           <div className='absolute top-0 right-0 w-full z-[1] p-4 bg-white  left-0  '>
-            <div className='p-2 flex justify-end bg-[#F6F6F6] ' onClick={handleClose} >
-              <AiOutlineClose className='text-[#274c90]'/>
+            <div className='p-2 flex justify-end bg-[#F6F6F6] ' onClick={handleClose}>
+              <AiOutlineClose className='text-[#274c90]' />
             </div>
             {menu_Media.map((item) => (
               <div className='p-2'>

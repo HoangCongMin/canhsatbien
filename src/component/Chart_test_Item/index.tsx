@@ -11,18 +11,15 @@ export default function Chart_test_Item() {
             <ul className='director'>
               <li>
                 <Link to={'/contact'}>
-                  
-
-                  <span className='line-clamp-1 text-[17px]'  >Bộ Tư lệnh Cảnh sát biển Việt Nam</span>
-                  
+                  <span className='line-clamp-1 text-[17px]'>Bộ Tư lệnh Cảnh sát biển Việt Nam</span>
                 </Link>
-                  <ul className='subdirector'>
-                    <li className='invisible'>
-                      <Link to={'/contact'}>
-                        <span>Assistante Director</span>
-                      </Link>
-                    </li>
-                  </ul>
+                <ul className='subdirector'>
+                  <li className='invisible'>
+                    <Link to={'/contact'}>
+                      <span>Assistante Director</span>
+                    </Link>
+                  </li>
+                </ul>
                 <ul className='departments cf'>
                   <li className='invisible'>
                     <Link to={'/contact'}>
@@ -32,7 +29,7 @@ export default function Chart_test_Item() {
 
                   <li className='department dep-a'>
                     <Link to={'/contact'}>
-                      <span >Bộ Tư lệnh Vùng Cảnh sát biển 1</span>
+                      <span>Bộ Tư lệnh Vùng Cảnh sát biển 1</span>
                     </Link>
                     <ul className='sections'>
                       <li className='section'>
@@ -87,11 +84,11 @@ export default function Chart_test_Item() {
                       </li>
                       <li className='section'>
                         <Link to={'/contact'}>
-                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                          <span className='line-clamp-1'>
+                            Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004
+                          </span>
                         </Link>
                       </li>
-                      
-                      
                     </ul>
                   </li>
                   <li className='department dep-a'>
@@ -151,11 +148,11 @@ export default function Chart_test_Item() {
                       </li>
                       <li className='section'>
                         <Link to={'/contact'}>
-                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                          <span className='line-clamp-1'>
+                            Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004
+                          </span>
                         </Link>
                       </li>
-                      
-                      
                     </ul>
                   </li>
                   <li className='department dep-a'>
@@ -215,11 +212,11 @@ export default function Chart_test_Item() {
                       </li>
                       <li className='section'>
                         <Link to={'/contact'}>
-                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                          <span className='line-clamp-1'>
+                            Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004
+                          </span>
                         </Link>
                       </li>
-                      
-                      
                     </ul>
                   </li>
                   <li className='department dep-a'>
@@ -279,11 +276,11 @@ export default function Chart_test_Item() {
                       </li>
                       <li className='section'>
                         <Link to={'/contact'}>
-                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                          <span className='line-clamp-1'>
+                            Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004
+                          </span>
                         </Link>
                       </li>
-                      
-                      
                     </ul>
                   </li>
                   <li className='department dep-a'>
@@ -343,11 +340,11 @@ export default function Chart_test_Item() {
                       </li>
                       <li className='section'>
                         <Link to={'/contact'}>
-                          <span className='line-clamp-1'>Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004</span>
+                          <span className='line-clamp-1'>
+                            Tàu Cảnh sát biển 2008 - 4036 - 6002 - 8003 - 8004 - 9004
+                          </span>
                         </Link>
                       </li>
-                      
-                      
                     </ul>
                   </li>
                 </ul>
@@ -359,7 +356,5 @@ export default function Chart_test_Item() {
     </div>
   )
 }
-
-
 
 // https://codepen.io/siiron/pen/DpJmwK
