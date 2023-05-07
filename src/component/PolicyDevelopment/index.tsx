@@ -20,7 +20,7 @@ export default function PolicyDevelopment({
     <div className='w-[100%] cursor-pointer	'>
       <div className='w-full border-b-[2px] border-[#DA251C]'>
         <div className='py-3 flex items-center'>
-          <RiSendPlaneFill className='text-[#00008B]' />
+          <RiSendPlaneFill className='text-[#ff7f00] text-[22px]' />
           <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
             xây dựng chính sách
           </h1>

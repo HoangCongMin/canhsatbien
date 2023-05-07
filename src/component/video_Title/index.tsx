@@ -54,7 +54,7 @@ export default function Video_Title({
       </div>
       <div className={classNames(`${class_content_icon ? 'flex justify-start' : 'flex justify-end'}`)}>
         <Link
-          className={classNames(class_content_icon ? class_content_icon : 'text-[#b40000] text-right mt-3')}
+          className={classNames(class_content_icon ? class_content_icon : 'text-[#56AAFF] text-[13px] text-right mt-3')}
           to={'/media'}
         >
           {content}

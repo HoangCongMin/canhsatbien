@@ -24,31 +24,56 @@ export const narBarItemAll = [
   {
     id: 2,
     title: 'hoạt động cảnh sát biển',
-    menu_children: [{ title: 'Truyền thống' }, { title: 'Xây dựng - Phát triển' }, { title: 'Tổ chức - Biên chế' }],
+    menu_children: [
+      { title: 'Vì chủ quyền biển, đảo' },
+      { title: 'Thực thi pháp luật' },
+      { title: 'Cứu hộ - Cứu nạn' },
+      { title: 'Hợp Tác Quốc Tế' },
+      { title: 'Phòng chống IUU' },
+      { title: 'Theo gương Bác' },
+      { title: 'Văn hóa - Thể thao' },
+      { title: 'Công tác Cảnh sát biển' },
+      { title: 'Cảnh sát biển Việt Nam và những người bạn' }
+    ],
     icon: CgAsterisk
   },
   {
     id: 3,
     title: 'tin tức - sự kiện',
-    menu_children: [{ title: 'Truyền thống' }, { title: 'Xây dựng - Phát triển' }, { title: 'Tổ chức - Biên chế' }],
+    menu_children: [{ title: 'Quốc phòng - An ninh' }, { title: 'Tin trong nước' }, { title: 'Tin quốc tế' }],
     icon: CgAsterisk
   },
   {
     id: 4,
     title: 'quản lý - chỉ đạo',
-    menu_children: [{ title: 'Truyền thống' }, { title: 'Xây dựng - Phát triển' }, { title: 'Tổ chức - Biên chế' }],
+    menu_children: [
+      { title: 'Văn bản quản lý, hành chính' },
+      { title: 'Chỉ đạo - Hướng dẫn' },
+      { title: 'Chế độ chính sách' }
+    ],
     icon: CgAsterisk
   },
   {
     id: 5,
     title: 'thông tin - tư liệu',
-    menu_children: [{ title: 'Truyền thống' }, { title: 'Xây dựng - Phát triển' }, { title: 'Tổ chức - Biên chế' }],
+    menu_children: [
+      { title: 'Biển đảo Việt Nam' },
+      { title: 'Nghiên cứu - Trao đổi' },
+      { title: 'Khoa học - Công nghệ' },
+      { title: 'Thông tin an ninh hàng hải' },
+      { title: 'Thông tin dịch vụ' }
+    ],
     icon: CgAsterisk
   },
   {
     id: 6,
     title: 'trợ giúp ngư dân',
-    menu_children: [{ title: 'Truyền thống' }, { title: 'Tin quốc tế' }, { title: 'Tổ chức - Biên chế' }],
+    menu_children: [
+      { title: 'Văn bản pháp luật' },
+      { title: 'Phổ biến giáo dục pháp luật' },
+      { title: 'Tuyên truyền Luật Cảnh sát biển Việt Nam' },
+      { title: 'Trợ giúp ngư dân' }
+    ],
     icon: CgAsterisk
   }
 ]
@@ -76,7 +101,7 @@ export default function Napbar() {
           <div className='w-[4%] max-[1322px]:hidden'>
             <AiFillHome className='mb-[5px] text-white text-[25px]' />
           </div>
-          <div className=' flex justify-between w-[80%]  max-[1322px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full	max-[1316px]:bg-white'>
+          <div className=' flex justify-between w-[75%]  max-[1322px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full	max-[1316px]:bg-white'>
             <li className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
               <p>mENU</p>
             </li>
@@ -108,7 +133,7 @@ export default function Napbar() {
                   <div
                     className={classNames(
                       `absolute  mt-10  ${
-                        item.id === narBarItemAll[5].id ? 'w-[130%]' : 'w-[280%]'
+                        item.id === narBarItemAll[5].id ? 'w-[260%]' : 'w-[280%]'
                       } px-3 pb-3 top-0.5 hidden group-hover:block z-10 left-0 bg-white rounded-b-lg   border-[#1px] border-[] shadow-2xl`
                     )}
                   >
@@ -147,8 +172,8 @@ export default function Napbar() {
               </>
             )}
           </div>
-          <div className='w-[13%] max-[1100px]:hidden m-auto flex justify-end'>
-            <div className='flex justify-between w-[60%]'>
+          <div className='w-[18%] max-[1100px]:hidden flex justify-end'>
+            <div className='flex justify-between w-[70%]'>
               <div className='text-[17px] text-white'>
                 <IoCallSharp />
               </div>

@@ -16,7 +16,7 @@ export default function Title_media({ title_Clip, libari_image, Title }: title_n
   console.log(active)
   return (
     <div className='w-[100%] border-b-[2.5px] border-[#DA251C]'>
-      <div className='flex justify-between max-[1100px]:justify-around items-center w-[90%] m-auto py-3 max-[420px]:flex-col cursor-pointer '>
+      <div className='flex justify-between max-[1100px]:justify-around items-center w-[90%] m-auto pb-3 max-[420px]:flex-col cursor-pointer '>
         <div
           onClick={() => setActive(false)}
           className={classNames(

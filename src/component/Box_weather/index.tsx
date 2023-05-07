@@ -12,7 +12,7 @@ interface weather{
 
 export default function Box_weather({List_weather}:weathers) {
   return (
-    <div className='w-full'>
+    <div className='w-full shadow-xl border-[1px] border-[#F6F6F6]'>
       <h1 className='uppercase font-bold text-[16px] text-[#191970] text-center border-[#DA251C] border-b-[2.5px] py-2'>
         dự báo thời tiết biển
       </h1>
