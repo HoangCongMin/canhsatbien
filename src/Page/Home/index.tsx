@@ -22,6 +22,7 @@ import { Link } from 'react-router-dom'
 import BG_IMG from '../../assets/bnqc-6-095527762.jpg'
 // import BG_IMG_TWO from '../../assets/media-qdndvn-133303282.jpg'
 import BG_IMG_THREE from '../../assets/duong-day-nong-090912604-150007571-080459585.jpg'
+import Grid_bg from'../../assets/tuyen-truyen-luat-csb-2021-090548126.gif'
 // import BG_IMG_VietTell from '../../assets/viettel-logo-145740177.jpg'
 // import Chart_All_Item from '../../component/Chart_All_Item'
 // import Chart_test_Item from '../../component/Chart_test_Item'
@@ -600,7 +601,7 @@ export default function Home() {
             <div className='w-full m-auto mt-5 shadow-xl'>
               <img
                 className='w-full '
-                src='https://canhsatbien.vn:443/upload/files/category/20210607/tuyen-truyen-luat-csb-2021-090548126.gif?h=165'
+                src={Grid_bg}
                 alt=''
               />
             </div>

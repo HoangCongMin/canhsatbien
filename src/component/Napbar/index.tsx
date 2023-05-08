@@ -17,39 +17,39 @@ export const narBarItemAll = [
   {
     id: 1,
     title: 'giới thiệu',
-    link_nar: '/Organization_Payroll',
-    menu_children: [{ title: 'Truyền thống' }, { title: 'Xây dựng - Phát triển' }, { title: 'Tổ chức - Biên chế' }],
+    link_nar: '/gioithieu',
+    menu_children: [{ title: 'Truyền thống',nap_bar:'/' }, { title: 'Xây dựng - Phát triển',nap_bar:'/' }, { title: 'Tổ chức - Biên chế', nap_bar:'/Organization_Payroll' }],
     icon: CgAsterisk
   },
   {
     id: 2,
     title: 'hoạt động cảnh sát biển',
     menu_children: [
-      { title: 'Vì chủ quyền biển, đảo' },
-      { title: 'Thực thi pháp luật' },
-      { title: 'Cứu hộ - Cứu nạn' },
-      { title: 'Hợp Tác Quốc Tế' },
-      { title: 'Phòng chống IUU' },
-      { title: 'Theo gương Bác' },
-      { title: 'Văn hóa - Thể thao' },
-      { title: 'Công tác Cảnh sát biển' },
-      { title: 'Cảnh sát biển Việt Nam và những người bạn' }
+      { title: 'Vì chủ quyền biển, đảo',nap_bar:'/' },
+      { title: 'Thực thi pháp luật' ,nap_bar:'/'},
+      { title: 'Cứu hộ - Cứu nạn',nap_bar:'/' },
+      { title: 'Hợp Tác Quốc Tế',nap_bar:'/' },
+      { title: 'Phòng chống IUU' ,nap_bar:'/'},
+      { title: 'Theo gương Bác',nap_bar:'/' },
+      { title: 'Văn hóa - Thể thao',nap_bar:'/' },
+      { title: 'Công tác Cảnh sát biển',nap_bar:'/' },
+      { title: 'Cảnh sát biển Việt Nam và những người bạn',nap_bar:'/' }
     ],
     icon: CgAsterisk
   },
   {
     id: 3,
     title: 'tin tức - sự kiện',
-    menu_children: [{ title: 'Quốc phòng - An ninh' }, { title: 'Tin trong nước' }, { title: 'Tin quốc tế' }],
+    menu_children: [{ title: 'Quốc phòng - An ninh' ,nap_bar:'/' }, { title: 'Tin trong nước' ,nap_bar:'/' }, { title: 'Tin quốc tế' ,nap_bar:'/' }],
     icon: CgAsterisk
   },
   {
     id: 4,
     title: 'quản lý - chỉ đạo',
     menu_children: [
-      { title: 'Văn bản quản lý, hành chính' },
-      { title: 'Chỉ đạo - Hướng dẫn' },
-      { title: 'Chế độ chính sách' }
+      { title: 'Văn bản quản lý, hành chính',nap_bar:'/' },
+      { title: 'Chỉ đạo - Hướng dẫn',nap_bar:'/' },
+      { title: 'Chế độ chính sách',nap_bar:'/' }
     ],
     icon: CgAsterisk
   },
@@ -57,11 +57,11 @@ export const narBarItemAll = [
     id: 5,
     title: 'thông tin - tư liệu',
     menu_children: [
-      { title: 'Biển đảo Việt Nam' },
-      { title: 'Nghiên cứu - Trao đổi' },
-      { title: 'Khoa học - Công nghệ' },
-      { title: 'Thông tin an ninh hàng hải' },
-      { title: 'Thông tin dịch vụ' }
+      { title: 'Biển đảo Việt Nam',nap_bar:'/' },
+      { title: 'Nghiên cứu - Trao đổi',nap_bar:'/' },
+      { title: 'Khoa học - Công nghệ',nap_bar:'/' },
+      { title: 'Thông tin an ninh hàng hải',nap_bar:'/' },
+      { title: 'Thông tin dịch vụ',nap_bar:'/' }
     ],
     icon: CgAsterisk
   },
@@ -69,10 +69,10 @@ export const narBarItemAll = [
     id: 6,
     title: 'trợ giúp ngư dân',
     menu_children: [
-      { title: 'Văn bản pháp luật' },
-      { title: 'Phổ biến giáo dục pháp luật' },
-      { title: 'Tuyên truyền Luật Cảnh sát biển Việt Nam' },
-      { title: 'Trợ giúp ngư dân' }
+      { title: 'Văn bản pháp luật' ,nap_bar:'/'},
+      { title: 'Phổ biến giáo dục pháp luật',nap_bar:'/' },
+      { title: 'Tuyên truyền Luật Cảnh sát biển Việt Nam',nap_bar:'/' },
+      { title: 'Trợ giúp ngư dân' ,nap_bar:'/'}
     ],
     icon: CgAsterisk
   }
@@ -126,7 +126,7 @@ export default function Napbar() {
                 <li className=' group uppercase text-[13px]	leading-10 flex font-[Helvetica] justify-center relative text-white font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#56aaff]	 hover:border-[#003f7f] hover:duration-700 max-[1316px]:justify-start '>
                   <div className='flex items-center'>
                     <div>
-                      <Link to={'/Organization_Payroll'}>{item.title}</Link>
+                      <Link to={'/gioithieu'}>{item.title}</Link>
                     </div>
                   </div>
 
@@ -138,11 +138,11 @@ export default function Napbar() {
                     )}
                   >
                     {item.menu_children.map((itemAll) => (
-                      <div
+                      <Link to={itemAll.nap_bar}
                         className={`w-[100%]	 hidden group-hover:block text-black bg-white  hover:duration-700  cursor-pointer  hover:text-[#003f7f] h-[30px]`}
                       >
                         {itemAll.title}
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </li>

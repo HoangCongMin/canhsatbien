@@ -1,11 +1,22 @@
 import React from 'react'
 import Chart_All_Item from '../../component/Chart_All_Item'
+import Chart_test_Item from'../../component/Chart_test_Item'
 
 export default function Organization_Payroll() {
   return (
     <div className='w-full'>
       <div className='w-[80%] m-auto max-w-screen-2xl'>
         {/* <Chart_All_Item /> */}
+        <div className='w-full bg-[#F6F6F6] py-3 mt-[30px] px-2 flex items-center '>
+                <div className='bg-[#DA251C] h-7 w-1'></div>
+                <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
+                  Tổ chức - Biên chế
+                </div>
+              </div>
+        <div className='mt-10'>
+
+        <Chart_test_Item/>
+        </div>
         <div className='my-10'>
           <p className='text-[12px] font-[Arial] text-[#333] my-3'>
             <span>

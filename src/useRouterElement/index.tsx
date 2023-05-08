@@ -29,6 +29,14 @@ export default function useRouterElement() {
       path: '/Organization_Payroll',
       element: (
         <Main>
+          <Organization_Payroll />
+        </Main>
+      )
+    },
+    {
+      path: '/gioithieu',
+      element: (
+        <Main>
           <GrassRootslevelundertheUnits />
         </Main>
       )
