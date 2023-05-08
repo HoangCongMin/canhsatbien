@@ -23,6 +23,7 @@ export interface item_All {
   class_NewPost_Item: string
   class_Custom_layout?: string
   icon_item?: any
+  header?:string
 }
 export default function NewPost_Item({
   icon_item,
@@ -76,10 +77,10 @@ export default function NewPost_Item({
         >
         </Tippy> */}
         <div className='w-[48%]'>
-          <h3 className='line-clamp-2 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
+          <h3 className='text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
             {itemAll_Name_All}
           </h3>
-          <p className='text-[14px] text-[#3B4E68] line-clamp-4'>{itemAll_content_All}</p>
+          <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
         </div>
       </div>
       <div className='mt-4'>

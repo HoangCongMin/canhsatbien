@@ -20,6 +20,7 @@
     "react-icons": "^4.8.0",
     "react-organizational-chart": "^2.2.1",
     "react-router-dom": "^6.10.0",
+    "react-scroll-to-top": "^3.0.0",
     "react-slick": "^0.29.0",
     "sass": "^1.62.1",
     "slick-carousel": "^1.8.1"

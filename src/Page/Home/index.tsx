@@ -48,8 +48,12 @@ export default function Home() {
   const Theoguongbac = [
     { id: 1, content: 'Hành động nhỏ, ý nghĩa lớn - góp phần bảo vệ môi trường biển' },
     { id: 2, content: 'Tuyên dương Gương mặt trẻ tiêu biểu Cảnh sát biển năm 2022' },
-    { id: 3, content: 'Đại tướng Phan Văn Giang gửi thư khen ngợi, động viên Trung tâm Đào tạo và' },
-    { id: 4, content: 'HTuyên dương gương mặt trẻ tiêu biểu, gương mặt trẻ triển vọng toàn quân' },
+    {
+      id: 3,
+      content:
+        'Đại tướng Phan Văn Giang gửi thư khen ngợi, động viên Trung tâm Đào tạo và Bồi dưỡng nghiệp vụ Cảnh sát biển'
+    },
+    { id: 4, content: 'Tuyên dương gương mặt trẻ tiêu biểu, gương mặt trẻ triển vọng toàn quân năm 2022' },
     { id: 5, content: '“Bông hồng trắng” của Lực lượng Cảnh sát biển Việt Nam' },
     { id: 7, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
     // { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
@@ -57,56 +61,78 @@ export default function Home() {
     // { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
   ]
 
+  const LUATCSB = [
+    { id: 1, content: 'Hải đội 301 tuyên truyền tại phường 9, thành phố Vũng Tàu' },
+    { id: 2, content: 'Tuyên truyền, phổ biến pháp luật cho Nhân dân phường Phúc La, quận Hà Đô' },
+    {
+      id: 3,
+      content: 'Cảnh sát biển tuyên truyền, phổ biến pháp luật cho nhân dân phường Đồng Mai'
+    },
+    { id: 4, content: 'Hải đoàn 42 quyết tâm tháo gỡ thẻ vàng của EC cho ngành thủy sản' },
+    { id: 5, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 tuyên truyền biển, đảo tại Ninh Bình' },
+    { id: 7, content: 'Tuyên truyền biển, đảo và phòng chống ma túy cho 1000 cán bộ, giáo viên và học sinh' }
+  ]
+  const IUU = [
+    {
+      id: 1,
+      content: 'Đoàn Đặc nhiệm PCTP ma túy số 2 tuyên truyền pháp luật, khám và cấp phát thuốc miễn phí cho người dân'
+    },
+    { id: 2, content: 'Hải đoàn 21 tổ chức hội nghị tuyên truyền về tình hình an ninh biển, đảo' },
+    {
+      id: 3,
+      content: 'Tàu Cảnh sát biển 3003 tuyên truyền phòng chống IUU tại khu vực đảo Bạch Long Vỹ'
+    },
+    { id: 4, content: 'Chú trọng tuyên truyền pháp luật tại các bến tàu' },
+    { id: 5, content: 'Để mỗi người dân là một tuyên truyền viên về chống khai thác IUU' },
+    { id: 7, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 2 đẩy mạnh tuyên truyền phòng chống IUU' }
+  ]
   const DocNhieu = [
     {
       id: 1,
-      content:
-        'Thư của Đảng ủy, Bộ Tư lệnh Cảnh sát biển Việt Nam gửi cán bộ, chiến sĩ nhân kỷ niệm 24 năm Ngày truyền thống'
+      content: 'Nhìn lại sự kiện Hải Dương 981 và bài học kinh nghiệm trong đấu tranh bảo vệ chủ quyền biển đảo'
     },
     {
       id: 2,
-      content:
-        'Ban Liên lạc truyền thống Cảnh sát biển khu vực Hà Nội gặp mặt nhân kỷ niệm 24 năm Ngày thành lập Lực lượng'
+      content: 'Kinh nghiệm xây dựng chính quy, quản lý rèn luyện kỷ luật ở Bộ Tư lệnh Vùng Cảnh sát biển 1'
     },
     {
       id: 3,
       content:
-        'Chính ủy Cảnh sát biển gửi Thư chúc mừng Bộ Tư lệnh Vùng Cảnh sát biển 2 nhân dịp kỷ niệm 18 năm Ngày thành lập'
+        'Một số vấn đề về đấu tranh chống các quan điểm sai trái, thù địch trên không gian mạng  ở các đơn vị quân đội hiện nay'
     },
     {
       id: 4,
-      content:
-        'Tư lệnh Cảnh sát biển gửi Thư chúc mừng Bộ Tư lệnh Vùng Cảnh sát biển 3 nhân dịp kỷ niệm 22 năm Ngày truyền trống'
+      content: 'Xác lập Kỷ lục khoảng 3.000 người hát Quốc ca, tạo hình lá cờ Tổ quốc'
     },
-    { id: 5, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
-    { id: 6, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
-    { id: 7, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
-    { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
-    { id: 9, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
-    { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
+    { id: 5, content: 'Chính sách của Nhật Bản đối với vấn đề Biển Đông hiện nay và tác động đến ASEAN, Việt Nam' },
+    { id: 6, content: 'Vai trò của Biển Đông đối với các nước có tuyên bố chủ quyền, khu vực và thế giới hiện nay' }
+    // { id: 7, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
+    // { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
+    // { id: 9, content: '“Cục Cảnh sát biển Việt Nam 15 năm xây dựng và trưởng thành' },
+    // { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
   ]
 
   const TinMoi = [
     {
       id: 1,
-      content: 'Tàu CSB 3004 tuyên truyền, phổ biến pháp luật cho ngư dân'
+      content: 'Thiếu tướng Lê Quang Đạo - Tư lệnh Cảnh sát biển tiếp xúc cử tri tỉnh Phú'
     },
     {
       id: 2,
-      content: 'Chú trọng tuyên truyền pháp luật tại các bến tàu'
+      content: 'Đoàn Đặc nhiệm PCTP ma túy số 2 tuyên truyền pháp luật, khám và cấp phát thuốc miễn phí cho người dân'
     },
     {
       id: 3,
-      content: 'Để mỗi người dân là một tuyên truyền viên về chống khai thác IUU'
+      content: 'Bảo hiểm xã hội Bộ Quốc phòng làm việc với Bộ Tư lệnh Cảnh sát biển'
     },
     {
       id: 4,
-      content: 'Đẩy mạnh công tác truyền thông trong phòng chống IUU trên vùng biển Miền'
+      content: 'Hải đoàn 21 tổ chức hội nghị tuyên truyền về tình hình an ninh biển, đảo'
     },
-    { id: 5, content: '“Tàu CSB 3004 tuyên truyền, phổ biến pháp luật cho ngư dân' },
+    { id: 5, content: 'Tàu Cảnh sát biển 3003 tuyên truyền phòng chống IUU tại khu vực đảo' },
     { id: 6, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 tạm giữ tàu chở dầu không rõ nguồn gốc' }
   ]
-  
+
   const ShortMessageItem = [
     {
       id: 1,
@@ -126,13 +152,13 @@ export default function Home() {
     {
       id: 4,
       content:
-      'Hội đồng Lý luận Trung ương đánh giá kết quả thực hiện Chiến lược bảo vệ Tổ quốc trong tình hình mới tại Bộ Tư lệnh Cảnh sát biển',
+        'Hội đồng Lý luận Trung ương đánh giá kết quả thực hiện Chiến lược bảo vệ Tổ quốc trong tình hình mới tại Bộ Tư lệnh Cảnh sát biển',
       title: 'Hội đồng Lý luận Trung ương đánh giá kết quả.'
     }
   ]
-  
+
   const contentAll = [
-    { id: 1, content: 'ĐỌC NHIỀU', icon: IoNewspaperSharp, Conten_all: DocNhieu },
+    { id: 1, content: 'TIN ĐỌC NHIỀU', icon: IoNewspaperSharp, Conten_all: DocNhieu },
     { id: 2, content: 'TIN MỚI', icon: FaBook, Conten_all: TinMoi }
     // {
     //   id: 3,
@@ -151,29 +177,31 @@ export default function Home() {
       content:
         'Ngày 25/4, Bộ Thông tin và Truyền thông tổ chức Hội nghị tập huấn, phổ biến chính sách pháp luật về bảo vệ biên giới của Tổ quốc năm 2023 và Hội nghị tập huấn, phổ biến chính sách, pháp luật về chủ quyền biển, đảo nhằm nâng cao nhận thức, hiểu biết về chính sách pháp luật và kỹ năng viết bài, đẩy mạnh tuyên truyền về bảo vệ biên giới và chủ quyền biển, đảo.',
       name: 'Tập huấn, phổ biến chính sách, pháp luật về bảo vệ biên giới và chủ quyền biển, đảo',
-      nameAll: 'Tập huấn, phổ biến chính sách, pháp luật.',
+      nameAll: 'Tập huấn, phổ biến chính sách, pháp luật về bảo vệ biên giới và chủ quyền biển, đảo',
       contentAll:
-        'Ngày 25/4, Bộ Thông tin và Truyền thông tổ chức Hội nghị tập huấn, phổ biến chính sách pháp luật về bảo vệ biên giới của Tổ quốc năm 2023.',
+        'Ngày 25/4, Bộ Thông tin và Truyền thông tổ chức Hội nghị tập huấn, phổ biến chính sách pháp luật về bảo vệ biên giới của Tổ quốc năm 2023 và Hội nghị tập huấn, phổ biến chính sách, pháp luật về chủ quyền biển, đảo nhằm nâng cao nhận thức, hiểu biết về chính sách pháp luật và kỹ năng viết bài, đẩy mạnh tuyên truyền về bảo vệ biên giới và chủ quyền biển, đảo.',
       RelatedNews: [
         {
-          story_All: 'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân.',
+          story_All:
+            'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa.',
           story:
             'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa',
           id: 1
         },
         {
-          story_All: 'Đẩy mạnh công tác "Cảnh sát biển".',
+          story_All: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân".',
           story: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân',
           id: 2
         },
         {
-          story_All: 'Giao ban công tác phối hợp thực hiện 03/2019/NĐ-CP.',
+          story_All:
+            'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam.',
           story:
             'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam',
           id: 3
         },
         {
-          story_All: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn.',
+          story_All: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ.',
           story: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ',
           id: 4
         }
@@ -183,32 +211,33 @@ export default function Home() {
       icon: GoLaw,
       id: 2,
       title: 'Thực thi pháp luật',
-      image: New_image_Item_law,
+      image: 'https://canhsatbien.vn/upload/files/image/20230502/tau-vi-pham-bi-tam-giu-101420264.jpg?w=400',
       content:
         'Cục Nghiệp vụ và Pháp luật Cảnh sát biển cho biết, đơn vị vừa phối hợp với Công an tỉnh Thái Bình bắt quả tang 01 đối tượng có hành vi tàng trữ, vận chuyển trái phép chất ma túy.',
       name: 'Phối hợp bắt giữ đối tượng tàng trữ trái phép chất ma túy',
-      nameAll: 'Phối hợp bắt giữ đối tượng.',
+      nameAll: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 tạm giữ tàu chở dầu không rõ nguồn gốc',
       contentAll:
-        'Cục Nghiệp vụ và Pháp luật Cảnh sát biển cho biết, đơn vị vừa phối hợp với Công an tỉnh Thái Bình bắt quả tang 01 đối tượng có hành vi tàng trữ.',
+        'Ngày 01/5, lực lượng chức năng Bộ Tư lệnh Vùng Cảnh sát biển 1 đã hoàn tất hồ sơ ban đầu, ra quyết định tạm giữ tàu chở dầu DO và FO không rõ nguồn gốc hợp pháp, tiếp tục điều tra, xác minh và xử lý theo quy định của pháp luật.',
       RelatedNews: [
         {
-          story_All: 'Khen thưởng thành tích phá đường dây chuyển 9 bánh heroine.',
+          story_All: 'Phối hợp bắt giữ đối tượng tàng trữ trái phép chất ma túy.',
           story:
             'Bộ Tư lệnh Cảnh sát biển khen thưởng thành tích triệt phá đường dây mua bán, vận chuyển 9 bánh heroine',
           id: 1
         },
         {
-          story_All: 'Bắt giữ tàu vận chuyển hơn 30.000 lít dầu D.O trái phép.',
+          story_All:
+            'Bộ Tư lệnh Cảnh sát biển khen thưởng thành tích triệt phá đường dây mua bán, vận chuyển 9 bánh heroine.',
           story: 'Bắt giữ tàu vận chuyển hơn 30.000 lít dầu D.O trái phép trên vùng biển Tây Nam',
           id: 2
         },
         {
-          story_All: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O .',
+          story_All: 'Bắt giữ tàu vận chuyển hơn 30.000 lít dầu D.O trái phép trên vùng biển Tây Nam.',
           story: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O trái phép trên vùng biển Tây Nam',
           id: 3
         },
         {
-          story_All: 'Triệt phá đường dây mua bán, vận chuyển ma túy.',
+          story_All: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O trái phép trên vùng biển Tây Nam',
           story: 'Triệt phá đường dây mua bán, vận chuyển ma túy với số lượng lớn',
           id: 4
         }
@@ -218,41 +247,45 @@ export default function Home() {
 
   const policyDevelopmentAll = [
     {
+      header: 'Cứu hộ - Cứu nạn',
       id: 1,
       name: 'Đoàn Đặc nhiệm PCTP ma túy số 2 tổ chức tuyên truyền phòng, chống tai nạn đuối nước cho học sinh',
-      name_All: 'Đoàn Đặc nhiệm PCTP ma túy số 2 tổ chức tuyên truyền.',
+      name_All: 'Đoàn Đặc nhiệm PCTP ma túy số 2 tổ chức tuyên truyền phòng, chống tai nạn đuối nước cho học sinh',
       image: ElecTriCiPyprice,
       content_All:
-        'Chiều 10/4, Đoàn cơ sở Đoàn Đặc nhiệm PCTP ma túy số 2 phối hợp với Đoàn cơ sở xã Phúc Thọ tổ chức buổi tuyên truyền, giáo dục kỹ năng.',
+        'Chiều 10/4, Đoàn cơ sở Đoàn Đặc nhiệm PCTP ma túy số 2 phối hợp với Đoàn cơ sở xã Phúc Thọ tổ chức buổi tuyên truyền, giáo dục kỹ năng sống về phòng, chống đuối nước cho hơn 800 em học sinh trường Tiều học xã Phúc Thọ, huyện Nghi Lộc, tỉnh Nghệ An.',
       content:
         'Chiều 10/4, Đoàn cơ sở Đoàn Đặc nhiệm PCTP ma túy số 2 phối hợp với Đoàn cơ sở xã Phúc Thọ tổ chức buổi tuyên truyền, giáo dục kỹ năng sống về phòng, chống đuối nước cho hơn 800 em học sinh trường Tiều học xã Phúc Thọ, huyện Nghi Lộc, tỉnh Nghệ An.',
       RelatedNews: [
         {
-          story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm.',
+          story_All:
+            'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn',
           id: 1,
           story: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn'
         },
         {
-          story_All: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình.',
+          story_All: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn ',
           id: 2,
           story: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn '
         },
         {
-          story_All: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển.',
+          story_All: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển',
           id: 3,
           story: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển'
         },
         {
-          story_All: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển.',
+          story_All: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển',
           id: 4,
           story: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển'
         }
       ]
     },
     {
-      name_All: 'Lực lượng Cảnh sát biển Việt Nam tuần tra liên hợp.',
+      header: 'Hợp Tác Quốc Tế',
+
+      name_All: 'Lực lượng Cảnh sát biển Việt Nam tuần tra liên hợp với Lực lượng Cảnh sát biển Trung Quốc',
       content_All:
-        'Chiều 09/4, biên đội tàu CSB 8004 và CSB 8003 của Bộ Tư lệnh Vùng Cảnh sát biển 1 cùng Đoàn công tác đã rời cảng Đình Vũ.',
+        'Chiều 09/4, biên đội tàu CSB 8004 và CSB 8003 của Bộ Tư lệnh Vùng Cảnh sát biển 1 cùng Đoàn công tác đã rời cảng Đình Vũ, thành phố Hải Phòng lên đường thực hiện nhiệm vụ tuần tra liên hợp trên vùng biển lân cận đường phân định Vịnh Bắc Bộ cùng Lực lượng Cảnh sát biển Trung Quốc.',
       id: 2,
       name: 'Lực lượng Cảnh sát biển Việt Nam tuần tra liên hợp với Lực lượng Cảnh sát biển Trung Quốc',
       image: InternationalCooperation,
@@ -260,24 +293,26 @@ export default function Home() {
         'Chiều 09/4, biên đội tàu CSB 8004 và CSB 8003 của Bộ Tư lệnh Vùng Cảnh sát biển 1 cùng Đoàn công tác đã rời cảng Đình Vũ, thành phố Hải Phòng lên đường thực hiện nhiệm vụ tuần tra liên hợp trên vùng biển lân cận đường phân định Vịnh Bắc Bộ cùng Lực lượng Cảnh sát biển Trung Quốc.',
       RelatedNews: [
         {
-          story_All: 'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ.',
+          story_All:
+            'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ đón và luyện tập chung với Lực lượng Bảo vệ bờ biển Nhật Bản',
           id: 1,
           story:
             'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ đón và luyện tập chung với Lực lượng Bảo vệ bờ biển Nhật Bản'
         },
         {
-          story_All: 'Tăng cường phối hợp, hợp tác Cảnh sát biển Việt Nam.',
+          story_All: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản',
           id: 2,
           story: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản'
         },
         {
-          story_All: 'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ.',
+          story_All:
+            'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ cho cán bộ trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc',
           id: 3,
           story:
             'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ cho cán bộ trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc'
         },
         {
-          story_All: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật.',
+          story_All: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển',
           id: 4,
           story: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển'
         }
@@ -290,32 +325,32 @@ export default function Home() {
       icon: MdSportsGymnastics,
       id: 1,
       title: 'Văn hóa - Thể thao',
-      image: SportsCulture,
+      image: 'https://canhsatbien.vn/upload/files/image/20230429/toc3a0n-ce1baa3nh-he1bb99i-nghe1bb8b--162606987.jpg?w=400',
       content_All:
-        'Chiều 13/4, Trung tâm Đào tạo và Bồi dưỡng nghiệp vụ Cảnh sát biển phối hợp với Thời báo Văn học Nghệ thuật/ Liên hiệp các Hội Văn học.',
-      name_All: 'Hưởng ứng Ngày Sách và Văn hóa đọc Việt Nam năm 2023',
+        ' Ngày 28/4, Bộ Tư lệnh Vùng Cảnh sát biển 3 phối hợp với Đảng ủy phường Mỹ Xuân, thị xã Phú Mỹ, tỉnh Bà Riạ - Vũng Tàu tổ chức tuyên truyền biển, đảo; Luật Cảnh sát biển Việt Nam; Luật Phòng, chống ma túy cho 500 cán bộ, đảng viên, trưởng khu phố, công chức, viên chức, nhân dân trên địa bàn.',
+      name_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 3 đẩy mạnh tuyên truyền pháp luật cho người dân',
       content:
         'Chiều 13/4, Trung tâm Đào tạo và Bồi dưỡng nghiệp vụ Cảnh sát biển phối hợp với Thời báo Văn học Nghệ thuật/ Liên hiệp các Hội Văn học Nghệ thuật Việt Nam, Nhà Xuất bản Dân trí khai mạc Ngày Sách và Văn hóa đọc Việt Nam lần thứ hai năm 2023 với chủ đề “Sách: Nhận thức - Đổi mới - Sáng tạo”. Đại tá Nguyễn Đức Độ - Bí thư Đảng ủy, Chính ủy Trung tâm chủ trì buổi khai mạc.',
       name: 'Hưởng ứng Ngày Sách và Văn hóa đọc Việt Nam năm 2023',
       RelatedNews: [
         {
-          story_All: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội.',
+          story_All: 'Khuyến khích và phát triển văn hóa đọc tại đơn vị cơ sở',
           story: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn',
           id: 1
         },
         {
-          story_All: 'Đoàn Văn công Quân chủng Phòng không biểu diễn.',
+          story_All: 'Hưởng ứng Ngày Sách và Văn hóa đọc Việt Nam năm 2023',
           story:
             'Đoàn Văn công Quân chủng Phòng không - Không quân biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3',
           id: 2
         },
         {
-          story_All: 'Thể lệ Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng.',
+          story_All: 'Đoàn Văn công Quân chủng Phòng không - Không quân biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3',
           story: 'Thể lệ Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
           id: 3
         },
         {
-          story_All: 'Bộ Tư lệnh Cảnh sát biển tổ chức Cuộc vận động sáng tác văn.',
+          story_All: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn"',
           story:
             'Bộ Tư lệnh Cảnh sát biển tổ chức Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
           id: 4
@@ -326,31 +361,31 @@ export default function Home() {
       icon: MdLocalPolice,
       id: 2,
       title: 'Công tác Cảnh sát biển',
-      name_All: 'Đảng ủy Cảnh sát biển và Tỉnh ủy Thái Bình.',
-      image: CoastGuardwork,
+      name_All: 'Bảo hiểm xã hội Bộ Quốc phòng làm việc với Bộ Tư lệnh Cảnh sát biển',
+      image: 'https://canhsatbien.vn/upload/files/image/20230505/quang-canh-bhxh-162829483.jpg?w=400',
       content_All:
-        'Chiều 25/4, tại Thái Bình, Ban Thường vụ Đảng ủy Cảnh sát biển Việt Nam và Ban Thường vụ Tỉnh ủy Thái Bình đã tổ chức hội nghị ký kết.',
+        'Chiều 05/5, Đoàn công tác của Bảo hiểm xã hội Bộ Quốc phòng do Đại tá Trần Ngọc Duy - Phó Giám đốc Bảo hiểm xã hội Bộ Quốc phòng làm trưởng đoàn tiến hành thẩm định quyết toán thu, chi bảo hiểm xã hội (BHXH), bảo hiểm y tế (BHYT), bảo hiểm thất nghiệp (BHTN) năm 2022 tại Bộ Tư lệnh Cảnh sát biển. Đại tá Lê Đình Cường - Phó Tư lệnh, Tham mưu trưởng Cảnh sát biển tiếp và làm việc với đoàn.',
       content:
         'Chiều 25/4, tại Thái Bình, Ban Thường vụ Đảng ủy Cảnh sát biển Việt Nam và Ban Thường vụ Tỉnh ủy Thái Bình đã tổ chức hội nghị ký kết Chương trình phối hợp thực hiện công tác dân vận “Cảnh sát biển đồng hành với ngư dân”. Thái Bình là tỉnh thành thứ 22 Ban Thường vụ Đảng ủy Cảnh sát biển Việt Nam ký kết Chương trình phối hợp thực hiện.',
       name: 'Đảng ủy Cảnh sát biển và Tỉnh ủy Thái Bình ký kết chương trình Cảnh sát biển đồng hành với ngư dân',
       RelatedNews: [
         {
-          story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 3 tổ chức chức Hội thi cán bộ.',
+          story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 thăm, tặng quà Mẹ Việt Nam anh hùng',
           story: 'Bộ Tư lệnh Vùng Cảnh sát biển 3 tổ chức Hội thi cán bộ giảng dạy chính trị năm 2023',
           id: 1
         },
         {
-          story_All: 'Không ngừng củng cố kiến thức, chuyên môn kỹ thuật cho đội ngũ.',
+          story_All: 'Luyện tập các phương án sẵn sàng chiến đấu bảo vệ cơ quan Bộ Tư lệnh Cảnh sát biển',
           story: 'Không ngừng củng cố kiến thức, chuyên môn kỹ thuật cho đội ngũ QNCN, CNVQP',
           id: 2
         },
         {
-          story_All: 'Sôi nổi Cuộc thi “Em yêu biển, đảo quê hương”.',
+          story_All: 'Tập huấn bồi dưỡng Cuộc thi chính luận về bảo vệ nền tảng tư tưởng của Đảng',
           story: 'Sôi nổi Cuộc thi “Em yêu biển, đảo quê hương” tại huyện Núi Thành, tỉnh Quảng Nam',
           id: 3
         },
         {
-          story_All: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 hưởng ứng Ngày Sách.',
+          story_All: 'Góp phần nâng cao chất lượng công tác giảng dạy chính trị trong Lực lượng Cảnh sát biển',
           story: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 hưởng ứng Ngày Sách và văn hóa đọc Việt Nam năm 2023',
           id: 4
         }
@@ -376,12 +411,58 @@ export default function Home() {
   const Video_media =
     'https://canhsatbien.vn:443/upload/files/video/20221122/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4'
 
-  const media_all = {
-    title: 'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
-    video: Video_media
-  }
+  // const media_all = {
+  //   title: 'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
+  //   video: Video_media
+  // }
+
+  //   const Video_add = {
+  //     title: 'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
+  //     video: Video_media
+  //   }
+
+  //   const imgbg={
+  //     title:
+  //     'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
+  //   img: 'https://file3.qdnd.vn/data/images/0/2021/01/28/thanhhuong/cover%20canh%20sat%20bien%20vn.jpg'
+  // }
+
+  const media_item_all = [
+    {
+      herder: 'Video - Clip',
+      content: {
+        title:
+          'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
+        video:
+          'https://canhsatbien.vn:443/upload/files/video/20221122/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4',
+        img: ''
+      }
+    },
+    {
+      herder: 'Thư viện ảnh',
+      content: {
+        title: 'Chính ủy Cảnh sát biển thăm, động viên, tặng quà quân dân huyện đảo Bạch Long Vĩ',
+
+        img: 'https://canhsatbien.vn/upload/files/category/20200917/chinh-uy-tro-chuyen-voi-cac-llvt-tren-dao-074603881.jpg'
+      }
+    }
+  ]
+
+  const [video_defaule, setVideo_Defaule] = useState({
+    herder: 'Video - Clip',
+    content: {
+      title:
+        'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
+      video:
+        'https://canhsatbien.vn:443/upload/files/video/20221122/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4' ||
+        undefined,
+      img: ''
+    }
+  })
 
   const handle_New = (Conten_all: any) => setDataNews(Conten_all)
+
+  console.log(video_defaule.content.video)
 
   return (
     <div className='w-full mt-4 mb-10'>
@@ -451,7 +532,7 @@ export default function Home() {
                   <div className='w-full'>
                     <List_item_all_new />
                   </div>
-                  <div className='mt-4'>
+                  {/* <div className='mt-4'>
                     {ShortMessageItem.map((item) => (
                       <ShortMessage
                         classItiemAll={'line-clamp-1'}
@@ -461,7 +542,7 @@ export default function Home() {
                         conTentShortMessage={item.title}
                       />
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -522,6 +603,7 @@ export default function Home() {
                         itemAll_Name={item.name}
                         itemAll_Name_All={item.name_All}
                         itemAll_content_All={item.content_All}
+                        header={item.header}
                       />
                     </div>
                   ))}
@@ -603,17 +685,57 @@ export default function Home() {
         </div>
 
         <div className='w-[26%] border-slate-400 max-[1300px]:w-[32%] max-[850px]:w-[100%] max-[1100px]:w-[100%]'>
-          <div className='w-[100%]'>
-            <Title_media title_Clip={'Video - Clip'} libari_image={'Thư viện ảnh'} />
-            <div className='w-[95%] m-auto mt-4'>
-              <Video_Title
-                Image_csb_All={Image_csb}
-                Video_media_title={media_all.title}
-                Video_media_video={media_all.video}
-                content={'Xem tất cả...'}
-              />
+          {/* {media_item_all.map((item) => (
+            <div className='w-[100%]'>
+              <Title_media title_Clip={item.herder} /> */}
+          <div className='w-[95%$]'>
+            <div className='w-full m-auto flex border-b-[2.5px] border-[#DA251C] pb-2'>
+              {media_item_all.map((item) => (
+                <div className='w-[50%] first:border-r-[1.5px] border-[#191970]'>
+                  <div
+                    className={classNames(
+                      ` ${
+                        item.herder === video_defaule.herder ? 'text-[#191970]' : 'text-[#000]'
+                      } text-[16px] font-bold text-center cursor-pointer`
+                    )}
+                    onClick={() => setVideo_Defaule(item)}
+                  >
+                    {item.herder}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className='w-full mt-3'>
+              {video_defaule.content.video === undefined ? (
+                <>
+                  <img src={video_defaule.content.img} className=' w-full object-cover h-[13rem]' />
+                  <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
+                </>
+              ) : (
+                <>
+                  <video src={video_defaule.content.video} className=' w-full object-cover h-[13rem]' controls></video>
+                  <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
+                </>
+              )}
+
+              {/* {
+             ! video_defaule.content.video && (
+                <>
+                <img src={video_defaule.content.video} className='h-full w-full object-cover'></img>
+                <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
+                </>
+
+              )
+            } */}
+              <div className='flex justify-end'>
+                <Link to={'/media'} className='text-[#003f7f] text-[12px] font-semibold	'>
+                  Xem tất cả...
+                </Link>
+              </div>
             </div>
           </div>
+          {/* </div>
+          ))} */}
           <div>
             <div className='w-full mt-3'>
               <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center flex items-center'>
@@ -642,7 +764,7 @@ export default function Home() {
                 Tuyên truyền Luật Cảnh sát biển Việt Nam
               </div>
               <div className='w-95% m-auto my-4'>
-                {Theoguongbac.map((item) => (
+                {LUATCSB.map((item) => (
                   <ShortMessage
                     classItiemAll={'line-clamp-2'}
                     classItiem={

@@ -6,6 +6,8 @@ import { BsDiagram3 } from 'react-icons/bs'
 import Android from '../../assets/google-play.png'
 import Ios from '../../assets/app-store.png'
 import { AiFillHome } from 'react-icons/ai'
+import ScrollToTop from "react-scroll-to-top";
+
 
 export default function Fotter() {
   const Item_all = [{ title: 'Thư điện tử' }, { title: 'Ý kiến bạn đọc' }, { title: 'Sơ đồ trang' }]
@@ -112,6 +114,9 @@ export default function Fotter() {
         <p className='text-center text-[#FFFFFFCC] text-[14px] py-4'>
           Ghi rõ nguồn 'Cổng Thông tin điện tử Chính phủ' hoặc 'www.chinhphu.vn' khi phát hành lại thông tin từ các
           nguồn này.
+        <ScrollToTop className='bg-none' smooth viewBox='0 0 24 24' component={<img className='w-[25px] h-[25px] m-auto' src={'https://canhsatbien.vn/assets/img/icon-top.png'} alt="" />} />
+         
+       
         </p>
       </div>
     </div>

@@ -13,6 +13,7 @@ interface video_all {
   content?: string
   class_content_icon?: string
   time?: string
+  img?:string
 }
 export default function Video_Title({
   Video_media_title,
@@ -23,7 +24,7 @@ export default function Video_Title({
   class_Title,
   content,
   class_content_icon,
-  time
+  time,
 }: video_all) {
   // const vidRef = useRef(null)
   const [videoPlay, setVideoPlay] = useState(false)

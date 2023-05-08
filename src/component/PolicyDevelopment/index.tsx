@@ -14,7 +14,8 @@ export default function PolicyDevelopment({
   itemAll_title,
   itemAll_Name,
   itemAll_Name_All,
-  itemAll_content_All
+  itemAll_content_All,
+  header
 }: item_All) {
   return (
     <div className='w-[100%] cursor-pointer	'>
@@ -22,7 +23,7 @@ export default function PolicyDevelopment({
         <div className='py-3 flex items-center'>
           <RiSendPlaneFill className='text-[#ff7f00] text-[22px]' />
           <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
-            xây dựng chính sách
+           {header}
           </h1>
         </div>
       </div>
@@ -36,10 +37,10 @@ export default function PolicyDevelopment({
         </div>
 
         <div className='w-[48%]'>
-          <h3 className='line-clamp-2 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
+          <h3 className='line-clamp-3 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
             {itemAll_Name_All}
           </h3>
-          <p className='text-[14px] text-[#3B4E68] line-clamp-4'>{itemAll_content_All}</p>
+          <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
         </div>
       </div>
       <div className='mt-4 '>
