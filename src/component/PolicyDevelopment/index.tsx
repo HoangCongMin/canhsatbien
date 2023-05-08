@@ -30,7 +30,7 @@ export default function PolicyDevelopment({
       <div className='mt-4 flex justify-between'>
         <div className='w-[50%] overflow-hidden cursor-pointer relative group'>
           <img
-            className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50	'
+            className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out 	'
             src={itemAll_image}
             alt=''
           />

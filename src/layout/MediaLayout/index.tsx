@@ -8,7 +8,7 @@ interface mainitem {
 
 export default function MediaLayout({ children }: mainitem) {
   return (
-    <div className='overflow-y-auto'>
+    <div className=''>
       <NarbarMedia />
       {children}
       <Fotter />

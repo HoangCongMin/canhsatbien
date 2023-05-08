@@ -15,7 +15,7 @@ export default function Organization_Payroll() {
               </div>
         <div className='mt-10'>
 
-        <Chart_test_Item/>
+        {/* <Chart_test_Item/> */}
         </div>
         <div className='my-10'>
           <p className='text-[12px] font-[Arial] text-[#333] my-3'>

@@ -11,7 +11,7 @@ export default function posts() {
         <img
           src={'https://canhsatbien.vn/upload/files/image/20230323/trao-thuong-danh-hieu-guong-mat-tre-145546235.jpg?h=343'}
           alt=''
-          className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50'
+          className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out '
         />
       </div>
       <div className='text-sm text-[#000] font-bold mt-3'>

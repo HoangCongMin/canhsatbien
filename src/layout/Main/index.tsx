@@ -8,7 +8,7 @@ interface mainitem {
 
 export default function Main({ children }: mainitem) {
   return (
-    <div className='overflow-y-auto'>
+    <div className=''>
       <Napbar />
       {children}
       <Fotter />

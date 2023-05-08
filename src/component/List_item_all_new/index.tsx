@@ -27,7 +27,7 @@ export default function List_item_all_new() {
         <div className='w-[30%]  shadow-lg	'>
           <div className='overflow-hidden cursor-pointer relative group mt-2'>
             <img
-              className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50'
+              className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out '
               src={item.img}
               alt=''
             />

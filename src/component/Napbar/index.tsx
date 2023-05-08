@@ -12,44 +12,53 @@ import classNames from 'classnames'
 import { IoCallSharp } from 'react-icons/io5'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BiSearch } from 'react-icons/bi'
+import { IoMdArrowDropdown } from 'react-icons/io'
 
 export const narBarItemAll = [
   {
     id: 1,
     title: 'giới thiệu',
     link_nar: '/gioithieu',
-    menu_children: [{ title: 'Truyền thống',nap_bar:'/' }, { title: 'Xây dựng - Phát triển',nap_bar:'/' }, { title: 'Tổ chức - Biên chế', nap_bar:'/Organization_Payroll' }],
+    menu_children: [
+      { title: 'Truyền thống', nap_bar: '/' },
+      { title: 'Xây dựng - Phát triển', nap_bar: '/' },
+      { title: 'Tổ chức - Biên chế', nap_bar: '/Organization_Payroll' }
+    ],
     icon: CgAsterisk
   },
   {
     id: 2,
     title: 'hoạt động cảnh sát biển',
     menu_children: [
-      { title: 'Vì chủ quyền biển, đảo',nap_bar:'/' },
-      { title: 'Thực thi pháp luật' ,nap_bar:'/'},
-      { title: 'Cứu hộ - Cứu nạn',nap_bar:'/' },
-      { title: 'Hợp Tác Quốc Tế',nap_bar:'/' },
-      { title: 'Phòng chống IUU' ,nap_bar:'/'},
-      { title: 'Theo gương Bác',nap_bar:'/' },
-      { title: 'Văn hóa - Thể thao',nap_bar:'/' },
-      { title: 'Công tác Cảnh sát biển',nap_bar:'/' },
-      { title: 'Cảnh sát biển Việt Nam và những người bạn',nap_bar:'/' }
+      { title: 'Vì chủ quyền biển, đảo', nap_bar: '/' },
+      { title: 'Thực thi pháp luật', nap_bar: '/' },
+      { title: 'Cứu hộ - Cứu nạn', nap_bar: '/' },
+      { title: 'Hợp Tác Quốc Tế', nap_bar: '/' },
+      { title: 'Phòng chống IUU', nap_bar: '/' },
+      { title: 'Theo gương Bác', nap_bar: '/' },
+      { title: 'Văn hóa - Thể thao', nap_bar: '/' },
+      { title: 'Công tác Cảnh sát biển', nap_bar: '/' },
+      { title: 'Cảnh sát biển Việt Nam và những người bạn', nap_bar: '/' }
     ],
     icon: CgAsterisk
   },
   {
     id: 3,
     title: 'tin tức - sự kiện',
-    menu_children: [{ title: 'Quốc phòng - An ninh' ,nap_bar:'/' }, { title: 'Tin trong nước' ,nap_bar:'/' }, { title: 'Tin quốc tế' ,nap_bar:'/' }],
+    menu_children: [
+      { title: 'Quốc phòng - An ninh', nap_bar: '/' },
+      { title: 'Tin trong nước', nap_bar: '/' },
+      { title: 'Tin quốc tế', nap_bar: '/' }
+    ],
     icon: CgAsterisk
   },
   {
     id: 4,
     title: 'quản lý - chỉ đạo',
     menu_children: [
-      { title: 'Văn bản quản lý, hành chính',nap_bar:'/' },
-      { title: 'Chỉ đạo - Hướng dẫn',nap_bar:'/' },
-      { title: 'Chế độ chính sách',nap_bar:'/' }
+      { title: 'Văn bản quản lý, hành chính', nap_bar: '/' },
+      { title: 'Chỉ đạo - Hướng dẫn', nap_bar: '/' },
+      { title: 'Chế độ chính sách', nap_bar: '/' }
     ],
     icon: CgAsterisk
   },
@@ -57,11 +66,11 @@ export const narBarItemAll = [
     id: 5,
     title: 'thông tin - tư liệu',
     menu_children: [
-      { title: 'Biển đảo Việt Nam',nap_bar:'/' },
-      { title: 'Nghiên cứu - Trao đổi',nap_bar:'/' },
-      { title: 'Khoa học - Công nghệ',nap_bar:'/' },
-      { title: 'Thông tin an ninh hàng hải',nap_bar:'/' },
-      { title: 'Thông tin dịch vụ',nap_bar:'/' }
+      { title: 'Biển đảo Việt Nam', nap_bar: '/' },
+      { title: 'Nghiên cứu - Trao đổi', nap_bar: '/' },
+      { title: 'Khoa học - Công nghệ', nap_bar: '/' },
+      { title: 'Thông tin an ninh hàng hải', nap_bar: '/' },
+      { title: 'Thông tin dịch vụ', nap_bar: '/' }
     ],
     icon: CgAsterisk
   },
@@ -69,10 +78,10 @@ export const narBarItemAll = [
     id: 6,
     title: 'trợ giúp ngư dân',
     menu_children: [
-      { title: 'Văn bản pháp luật' ,nap_bar:'/'},
-      { title: 'Phổ biến giáo dục pháp luật',nap_bar:'/' },
-      { title: 'Tuyên truyền Luật Cảnh sát biển Việt Nam',nap_bar:'/' },
-      { title: 'Trợ giúp ngư dân' ,nap_bar:'/'}
+      { title: 'Văn bản pháp luật', nap_bar: '/' },
+      { title: 'Phổ biến giáo dục pháp luật', nap_bar: '/' },
+      { title: 'Tuyên truyền Luật Cảnh sát biển Việt Nam', nap_bar: '/' },
+      { title: 'Trợ giúp ngư dân', nap_bar: '/' }
     ],
     icon: CgAsterisk
   }
@@ -88,7 +97,7 @@ export default function Napbar() {
   }
 
   return (
-    <div className='w-full bg-white sticky top-0 z-20'>
+    <div className='w-full bg-white '>
       <div className='w-[80%] m-auto max-w-screen-2xl cursor-pointer shadow-2xl'>
         <Link to={'/'} className='w-full'>
           <div className='w-full'>
@@ -97,14 +106,16 @@ export default function Napbar() {
         </Link>
       </div>
       <div className='w-full object-cover bg-[#56aaff]'>
-        <div className='w-[80%] m-auto flex  max-w-screen-2xl items-center border-slate-300'>
-          <div className='w-[4%] max-[1322px]:hidden'>
+        <div className='w-[80%] m-auto flex  max-w-screen-2xl items-center justify-between border-slate-300'>
+          <div className='flex items-center w-[90%]'>
+
+          <div className='w-[3%] max-[1322px]:hidden'>
             <AiFillHome className='mb-[5px] text-white text-[25px]' />
           </div>
-          <div className=' flex justify-between w-[75%]  max-[1322px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full	max-[1316px]:bg-white'>
-            <li className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
+          <div className=' flex justify-between w-[90%]  max-[1322px]:hidden  items-center  max-[1316px]:flex-col max-[1316px]:absolute max-[1316px]:w-full	max-[1316px]:bg-white'>
+            <div className='uppercase text-sm hidden	leading-10  justify-center border-b-2 font-bold border-[#191970] bg-[#F6F6F6] max-[1316px]:block max-[1316px]:flex  hover:text-[#015CA2] hover:duration-700 hover:border-b-2 hover:border-[#015CA2] max-[1316px]:justify-start'>
               <p>mENU</p>
-            </li>
+            </div>
             {narBarItemAll.map((item) => (
               // style={{ backgroundImage: `url(${!close && Backfrond})` }}
               // <Tippy
@@ -123,10 +134,13 @@ export default function Napbar() {
               //   }
               // >
               <>
-                <li className=' group uppercase text-[13px]	leading-10 flex font-[Helvetica] justify-center relative text-white font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#56aaff]	 hover:border-[#003f7f] hover:duration-700 max-[1316px]:justify-start '>
+                <div className=' group uppercase text-[13px]	leading-10 flex font-[Helvetica] justify-center relative text-white font-bold hover:text-[#003f7f]  border-b-[2.5px] border-[#56aaff]	 hover:border-[#003f7f] hover:duration-700 max-[1316px]:justify-start '>
                   <div className='flex items-center'>
                     <div>
                       <Link to={'/gioithieu'}>{item.title}</Link>
+                    </div>
+                    <div>
+                      <IoMdArrowDropdown className='text-[17px] ml-1'/>
                     </div>
                   </div>
 
@@ -138,14 +152,15 @@ export default function Napbar() {
                     )}
                   >
                     {item.menu_children.map((itemAll) => (
-                      <Link to={itemAll.nap_bar}
+                      <Link
+                        to={itemAll.nap_bar}
                         className={`w-[100%]	 hidden group-hover:block text-black bg-white  hover:duration-700  cursor-pointer  hover:text-[#003f7f] h-[30px]`}
                       >
                         {itemAll.title}
                       </Link>
                     ))}
                   </div>
-                </li>
+                </div>
               </>
               // </Tippy>
             ))}
@@ -172,18 +187,19 @@ export default function Napbar() {
               </>
             )}
           </div>
-          <div className='w-[18%] max-[1100px]:hidden flex justify-end'>
-            <div className='flex justify-between w-[70%]'>
-              <div className='text-[17px] text-white'>
+          </div>
+          <div className='w-[8%] max-[1100px]:hidden flex justify-between'>
+           
+              <div className='text-[20px] text-white'>
                 <IoCallSharp />
               </div>
-              <div className='text-[17px] text-white'>
+              <div className='text-[20px] text-white'>
                 <AiOutlineMail />
               </div>
-              <div className='text-[17px] text-white'>
+              <div className='text-[20px] text-white'>
                 <BiSearch />
               </div>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function Item_image_new_all({ content_item }: item_all) {
   return (
     <div className='w-full overflow-hidden cursor-pointer relative group'>
       <img
-        className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out hover:brightness-50'
+        className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out '
         src={content_item.img}
         alt=''
       />

@@ -36,7 +36,7 @@ export default function Slide_Media_all() {
     <div className='w-full h-[760px] max-[1250px]:h-[560px]  max-[875px]:h-[460px] max-[500px]:h-[350px] relative bg-cover bg-center py-6 duration-500 group'>
       <div
         style={{ backgroundImage: `url(${Data_Media[currenIndex].image})` }}
-        className='w-full h-full rounded-2xl bg-center bg-cover duration-500 brightness-[0.7]'
+        className='w-full h-full rounded-2xl bg-center bg-cover duration-500 '
       ></div>
       <div className='hidden group-hover:block  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactLeft onClick={prevSlice} />

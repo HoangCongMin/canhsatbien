@@ -23,7 +23,7 @@ export interface item_All {
   class_NewPost_Item: string
   class_Custom_layout?: string
   icon_item?: any
-  header?:string
+  header?: string
 }
 export default function NewPost_Item({
   icon_item,
@@ -47,55 +47,26 @@ export default function NewPost_Item({
         </div>
       </div>
 
-      <div className='mt-4 flex justify-between'>
-        <div className='w-[50%] overflow-hidden cursor-pointer relative group'>
-          <img
-            className='hover:brightness-50 w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out'
-            src={itemAll_image}
-            alt=''
-          />
+      <div className='flex justify-between'>
+        <div className='mt-4 w-[50%] '>
+          <div className='w-full overflow-hidden cursor-pointer relative group'>
+            <img
+              className=' w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out'
+              src={itemAll_image}
+              alt=''
+            />
+          </div>
+          <div className='w-full mt-3'>
+            <h3 className='text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>{itemAll_Name_All}</h3>
+            <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
+          </div>
         </div>
-        {/* <Tippy
-          className='bg-[#F6F6F6]'
-          arrow={false}
-          followCursor={true}
-          plugins={[followCursor]}
-          content={
-            <div className='w-[100%]  max-[850px]:w-[100%] cursor-pointer	'>
-              <div className='mt-4 '>
-                <div className='w-[80%] m-auto overflow-hidden cursor-pointer relative group'>
-                  <img className='w-full' src={itemAll_image} alt='' />
-                </div>
-                <div className='w-[80%] m-auto'>
-                  <h3 className=' mt-3 text-[14px] font-medium	text-[#031739] hover:text-[#191970]'>{itemAll_Name}</h3>
-                  <p className='text-[10px] text-[#3B4E68] '>{itemAll_content}</p>
-                </div>
-              </div>
-            
-            </div>
-          }
-        >
-        </Tippy> */}
-        <div className='w-[48%]'>
-          <h3 className='text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
-            {itemAll_Name_All}
-          </h3>
-          <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
+        <div className='mt-4 w-[45%]'>
+          {itemAll_RelatedNews.map((item: item) => (
+            <New_post_icon_Item newsItem={item} />
+          ))}
         </div>
-      </div>
-      <div className='mt-4'>
-        {itemAll_RelatedNews.map((item: item) => (
-          <New_post_icon_Item newsItem={item} />
-        ))}
       </div>
     </div>
   )
-}
-
-{
-  /* <div className='mt-4'>
-              {itemAll_RelatedNews.map((item: item) => (
-                <New_post_icon_Item classItem_all={'text-[10px]'} newsItem={item} />
-              ))}
-            </div> */
 }
