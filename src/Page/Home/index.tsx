@@ -663,7 +663,7 @@ export default function Home() {
                 />
               ))}
             </div>
-            <div className='w-full m-auto max-w-screen-2xl mt-5'>
+            {/* <div className='w-full m-auto max-w-screen-2xl mt-5'>
               <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center '>
                 <div className='bg-[#DA251C] h-7 w-1'></div>
                 <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
@@ -717,7 +717,7 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -882,7 +882,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='w-[80%] max-w-screen-2xl m-auto'>
+      <div className='w-[80%] max-w-screen-2xl m-auto mt-10'>
         <Slice_cart_news_coppy_image />
       </div>
 
