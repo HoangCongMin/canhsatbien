@@ -38,7 +38,7 @@ import { RiRoadMapFill } from 'react-icons/ri'
 // import { IoMdAddCircleOutline } from 'react-icons/io'
 import { GoLaw } from 'react-icons/go'
 import List_item_all_new from '../../component/List_item_all_new'
-import { MdSportsGymnastics, MdLocalPolice } from 'react-icons/md'
+import { MdSportsGymnastics, MdLocalPolice ,MdSecurity} from 'react-icons/md'
 // import AutoSlice_cart_newsPlay from '../../component/Slice_cart_news'
 import Slice_cart_news_coppy_image from '../../component/Slice_cart_news_coppy_image'
 import Box_Call from '../../component/Box_Call'
@@ -169,6 +169,42 @@ export default function Home() {
   ]
   const [dataNews, setDataNews] = useState({ id: 1, content: 'ĐỌC NHIỀU', icon: FaBook, Conten_all: DocNhieu })
   const NewPost_Item_All = [
+    {
+      icon: MdSecurity,
+      id: 8,
+      title: 'Quốc phòng - An ninh',
+      image: 'https://canhsatbien.vn/upload/files/image/20230507/thieu-tuong-le-quang-dao-181826741.jpg?w=400',
+      content:'Từ ngày 04 – 06/5/2023, Thiếu tướng Lê Quang Đạo - Tư lệnh Cảnh sát biển Việt Nam, Đại biểu Quốc hội khóa XV cùng Đoàn Đại biểu Quốc hội (ĐBQH) tỉnh Phú Yên đã tiếp xúc cử tri tại Tp. Tuy Hòa, thị xã Sông Cầu, huyện Tuy An và huyện Đồng Xuân thuộc tỉnh Phú Yên.',
+      name: 'Tập huấn, phổ biến chính sách, pháp luật về bảo vệ biên giới và chủ quyền biển, đảo',
+      nameAll: 'Thiếu tướng Lê Quang Đạo - Tư lệnh Cảnh sát biển tiếp xúc cử tri tỉnh Phú Yên trước Kỳ họp thứ 5, Quốc hội khóa XV',
+      contentAll:'Từ ngày 04 – 06/5/2023, Thiếu tướng Lê Quang Đạo - Tư lệnh Cảnh sát biển Việt Nam, Đại biểu Quốc hội khóa XV cùng Đoàn Đại biểu Quốc hội (ĐBQH) tỉnh Phú Yên đã tiếp xúc cử tri tại Tp. Tuy Hòa, thị xã Sông Cầu, huyện Tuy An và huyện Đồng Xuân thuộc tỉnh Phú Yên.',
+      RelatedNews: [
+        {
+          story_All:
+            'Phó Chủ tịch Quốc hội Trần Quang Phương thăm và làm việc với Bộ Tư lệnh Cảnh sát biển',
+          story:
+            'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa',
+          id: 1
+        },
+        {
+          story_All: 'Đại tướng Lương Cường thăm, làm việc tại Bộ Tư lệnh Vùng Cảnh sát biển 4',
+          story: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân',
+          id: 2
+        },
+        {
+          story_All:
+            'Tạo sức lan toả và hiệu quả của Chương trình “Cảnh sát biển đồng hành với ngư dân” tại tỉnh Bến Tre',
+          story:
+            'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam',
+          id: 3
+        },
+        {
+          story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 thực hiện hiệu quả Nghị quyết Trung ương 8, khóa XI',
+          story: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ',
+          id: 4
+        }
+      ]
+    },
     {
       icon: RiRoadMapFill,
       id: 1,
@@ -345,16 +381,16 @@ export default function Home() {
           id: 2
         },
         {
+          story_All: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn"',
+          story:
+          'Bộ Tư lệnh Cảnh sát biển tổ chức Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
+          id: 4
+        },
+        {
           story_All: 'Đoàn Văn công Quân chủng Phòng không - Không quân biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3',
           story: 'Thể lệ Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
           id: 3
         },
-        {
-          story_All: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn"',
-          story:
-            'Bộ Tư lệnh Cảnh sát biển tổ chức Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
-          id: 4
-        }
       ]
     },
     {
@@ -568,9 +604,9 @@ export default function Home() {
                 alt=''
               />
             </div>
-            <div className='w-full m-auto max-w-screen-2xl '>
+            {/* <div className='w-full m-auto max-w-screen-2xl '>
               <List_leaDer />
-            </div>
+            </div> */}
             <div className='w-full m-auto max-w-screen-2xl justify-between flex  max-[1160px]:flex-col'>
               <div className=' w-full flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
                 {NewPost_Item_All.map((item) => (
