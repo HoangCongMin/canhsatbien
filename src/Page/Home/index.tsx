@@ -442,6 +442,7 @@ export default function Home() {
       herder: 'Thư viện ảnh',
       content: {
         title: 'Chính ủy Cảnh sát biển thăm, động viên, tặng quà quân dân huyện đảo Bạch Long Vĩ',
+        video:'',
 
         img: 'https://canhsatbien.vn/upload/files/category/20200917/chinh-uy-tro-chuyen-voi-cac-llvt-tren-dao-074603881.jpg'
       }
@@ -706,7 +707,7 @@ export default function Home() {
               ))}
             </div>
             <div className='w-full mt-3'>
-              {video_defaule.content.video === undefined ? (
+              {video_defaule.content.video === '' ? (
                 <>
                   <img src={video_defaule.content.img} className=' w-full object-cover h-[13rem]' />
                   <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
