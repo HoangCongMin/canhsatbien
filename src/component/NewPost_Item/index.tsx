@@ -61,12 +61,12 @@ export default function NewPost_Item({
         {/* <span className='border-b-[4px] border-[#d42b1a] absolute top-[50px] w-[50%]'></span> */}
         <span className='flex items-center border-b-[4px] border-[#d42b1a] absolute top-0 py-3 z-10 '>
           <div className='text-[22px] text-[#ff7f00] pb-1'>{icon_item}</div>
-          <h1 className='font-bold	text-[17px] uppercase text-[#00008B]  ml-3 '>{itemAll_title}</h1>
+          <h1 className='font-bold max-[360px]:text-[14px]	text-[17px] uppercase text-[#00008B]  ml-3 '>{itemAll_title}</h1>
         </span>
       </div>
 
-      <div className='flex justify-between'>
-        <div className='mt-4 w-[50%]  '>
+      <div className='flex justify-between max-[1000px]:flex-col'>
+        <div className='mt-4 w-[50%] max-[1000px]:w-full '>
           <div className='w-full overflow-hidden cursor-pointer relative group'>
             <img
               className=' w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out'
@@ -74,12 +74,12 @@ export default function NewPost_Item({
               alt=''
             />
           </div>
-          <div className='w-full mt-3'>
+          <div className='w-full mt-3 '>
             <h3 className='text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>{item_Wrapper.nameAll}</h3>
             <p className='text-[14px] text-[#3B4E68]'>{item_Wrapper.contentAll}</p>
           </div>
         </div>
-        <div className='mt-4 w-[45%]'>
+        <div className='mt-4 w-[45%] max-[1000px]:flex max-[1000px]:justify-between max-[1000px]:flex-wrap max-[687px]:	 max-[1000px]:w-full'>
           {itemAll_RelatedNews.map((item: item) => (
             <New_post_icon_Item newsItem={item} handle={handle_Item} />
           ))}

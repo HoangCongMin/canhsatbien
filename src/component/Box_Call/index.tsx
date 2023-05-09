@@ -5,16 +5,20 @@ import { RiPrinterFill } from 'react-icons/ri'
 import { IoMdAddCircleOutline } from 'react-icons/io'
 import { GoTextSize } from 'react-icons/go'
 import { HiOutlineMinusCircle } from 'react-icons/hi'
+import {AiFillLike} from'react-icons/ai'
 
 export default function Box_Call() {
   return (
     <div className='w-[8%] sticky top-0 z-10 max-[1300px]:hidden'>
       <div className='w-[90%] m-auto'>
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <BsFacebook />
+      <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+          <AiFillLike className='text-[#56aaff]' />
         </div>
         <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <FiMessageSquare />
+          <BsFacebook  className='text-[#56aaff]' />
+        </div>
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+          <FiMessageSquare  className='text-[#56aaff]' />
         </div>
         <div className='text-center text-[11px] mt-3 m-auto  pb-5 border-b-[1px] border-slate-300 w-[65%]'>0</div>
         <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>

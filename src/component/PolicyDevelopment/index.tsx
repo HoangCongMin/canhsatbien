@@ -27,11 +27,12 @@ export default function PolicyDevelopment({
           <RiSendPlaneFill className='text-[#ff7f00] text-[22px]' />
           <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
             {header}
+           
           </h1>
         </div>
       </div>
-      <div className='flex justify-between'>
-        <div className='mt-4 w-[50%]' >
+      <div className='flex justify-between max-[1000px]:flex-col'>
+        <div className='mt-4 w-[50%]  max-[1000px]:w-full' >
           <div className='w-full overflow-hidden cursor-pointer relative group'>
             <img
               className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out 	'
@@ -47,7 +48,7 @@ export default function PolicyDevelopment({
             <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
           </div>
         </div>
-        <div className='mt-4 w-[45%] '>
+        <div className='mt-4 w-[45%]  max-[1000px]:flex  max-[1000px]:w-[100%] max-[1000px]:flex-wrap '>
           {itemAll_RelatedNews.map((item: item) => (
             <New_post_icon_Item handle={handle_item} newsItem={item} />
           ))}

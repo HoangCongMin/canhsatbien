@@ -190,14 +190,16 @@ export default function Home() {
             'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa',
           id: 1,
           img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%204/Quang-canh.jpg',
-          contentAll:'Ngày 03/4, đoàn công tác của Quốc hội do Thượng tướng Trần Quang Phương - Ủy viên Trung ương Đảng, Phó chủ tịch Quốc hội làm trưởng đoàn, đã đến thăm và làm việc với Bộ Tư lệnh Cảnh sát biển. Tham gia đoàn công tác có Thượng tướng Hoàng Xuân Chiến - Ủy viên Trung ương Đảng, Thứ trưởng Bộ Quốc phòng cùng đại diện, lãnh đạo các cơ quan của Quốc hội, đại diện Bộ Nông nghiệp và Phát triển nông thôn, Bộ Tài nguyên và Môi trường.'
+          contentAll:
+            'Ngày 03/4, đoàn công tác của Quốc hội do Thượng tướng Trần Quang Phương - Ủy viên Trung ương Đảng, Phó chủ tịch Quốc hội làm trưởng đoàn, đã đến thăm và làm việc với Bộ Tư lệnh Cảnh sát biển. Tham gia đoàn công tác có Thượng tướng Hoàng Xuân Chiến - Ủy viên Trung ương Đảng, Thứ trưởng Bộ Quốc phòng cùng đại diện, lãnh đạo các cơ quan của Quốc hội, đại diện Bộ Nông nghiệp và Phát triển nông thôn, Bộ Tài nguyên và Môi trường.'
         },
         {
           story_All: 'Đại tướng Lương Cường thăm, làm việc tại Bộ Tư lệnh Vùng Cảnh sát biển 4',
           story: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân',
           id: 2,
           img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%203/Dai-tuong-tang-qua-Vung-4.jpg',
-          contentAll:'Sáng 25/3, Đoàn công tác Quân ủy Trung ương, Bộ Quốc phòng do Đại tướng Lương Cường - Ủy viên Bộ Chính trị, Ủy viên Thường vụ Quân ủy Trung ương, Chủ nhiệm Tổng cục Chính trị Quân đội nhân dân Việt Nam làm trưởng đoàn đã đến thăm, làm việc với Bộ Tư lệnh (BTL) Vùng Cảnh sát biển 4.'
+          contentAll:
+            'Sáng 25/3, Đoàn công tác Quân ủy Trung ương, Bộ Quốc phòng do Đại tướng Lương Cường - Ủy viên Bộ Chính trị, Ủy viên Thường vụ Quân ủy Trung ương, Chủ nhiệm Tổng cục Chính trị Quân đội nhân dân Việt Nam làm trưởng đoàn đã đến thăm, làm việc với Bộ Tư lệnh (BTL) Vùng Cảnh sát biển 4.'
         },
         {
           story_All:
@@ -206,14 +208,16 @@ export default function Home() {
             'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam',
           id: 3,
           img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%203/BEN%20TRE/ky-ket-ben-tre.jpg',
-          contentAll:'Sáng 18/3, tại Bến Tre, Ban Thường vụ Đảng uỷ Cảnh sát biển Việt Nam và Ban Thường vụ Tỉnh uỷ Bến Tre tổ chức Hội nghị ký kết Chương trình phối hợp “Cảnh sát biển đồng hành với ngư dân”..'
+          contentAll:
+            'Sáng 18/3, tại Bến Tre, Ban Thường vụ Đảng uỷ Cảnh sát biển Việt Nam và Ban Thường vụ Tỉnh uỷ Bến Tre tổ chức Hội nghị ký kết Chương trình phối hợp “Cảnh sát biển đồng hành với ngư dân”..'
         },
         {
           story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 thực hiện hiệu quả Nghị quyết Trung ương 8, khóa XI',
           story: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ',
           id: 4,
           img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%203/Quang-c%E1%BA%A3nh-H%E1%BB%99i-ngh%E1%BB%8B.jpg',
-          contentAll:'Để trực tiếp góp phần bổ sung, hoàn thiện “Một số vấn đề lý luận - thực tiễn về chiến lược bảo vệ Tổ quốc trong tình hình mới”, chiều 18/3, tại Tp.Phú Quốc, Đoàn công tác Hội đồng Lý luận Trung ương đã đến khảo sát, nghiên cứu nắm tình hình kết quả triển khai thực hiện Nghị quyết Trung ương 8 (khóa XI) tại Bộ Tư lệnh (BTL) Vùng Cảnh sát biển 4.'
+          contentAll:
+            'Để trực tiếp góp phần bổ sung, hoàn thiện “Một số vấn đề lý luận - thực tiễn về chiến lược bảo vệ Tổ quốc trong tình hình mới”, chiều 18/3, tại Tp.Phú Quốc, Đoàn công tác Hội đồng Lý luận Trung ương đã đến khảo sát, nghiên cứu nắm tình hình kết quả triển khai thực hiện Nghị quyết Trung ương 8 (khóa XI) tại Bộ Tư lệnh (BTL) Vùng Cảnh sát biển 4.'
         }
       ]
     },
@@ -236,14 +240,16 @@ export default function Home() {
             'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa',
           id: 1,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/TT-Gau-tham-dong-vienTau-CSB-8001.jpg',
-          contentAll:'Từ ngày 6/4 đến 14/4, đoàn công tác của Tổng cục Chính trị Quân đội nhân dân Việt Nam, do Trung tướng Nguyễn Văn Gấu - Ủy viên Trung ương Đảng, Ủy viên Quân ủy Trung ương, Phó Chủ nhiệm Tổng cục Chính trị Quân đội Nhân dân Việt Nam làm trưởng đoàn đã kiểm tra, thăm quân và dân các đảo thuộc quần đảo Trường Sa, Nhà giàn DK1. Trong chuyến công tác này, đoàn đã đến thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 đang thực hiện nhiệm vụ tại khu vực đảo Sinh Tồn Đông – quần đảo Trường Sa. '
+          contentAll:
+            'Từ ngày 6/4 đến 14/4, đoàn công tác của Tổng cục Chính trị Quân đội nhân dân Việt Nam, do Trung tướng Nguyễn Văn Gấu - Ủy viên Trung ương Đảng, Ủy viên Quân ủy Trung ương, Phó Chủ nhiệm Tổng cục Chính trị Quân đội Nhân dân Việt Nam làm trưởng đoàn đã kiểm tra, thăm quân và dân các đảo thuộc quần đảo Trường Sa, Nhà giàn DK1. Trong chuyến công tác này, đoàn đã đến thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 đang thực hiện nhiệm vụ tại khu vực đảo Sinh Tồn Đông – quần đảo Trường Sa. '
         },
         {
           story_All: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân".',
           story: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân',
           id: 2,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/Trung-tuong-Bui-Quoc-Oai-phat-bieu.jpg',
-          contentAll:'Thừa Thiên Huế là tỉnh, thành phố ven biển thứ 21 mà Ban Thường vụ Đảng uỷ Cảnh sát biển ký kết chương trình phối hợp công tác dân vận "Cảnh sát biển đồng hành với ngư dân". Trong bất cứ hoàn cảnh nào, cán bộ, chiến sĩ Cảnh sát biển sẽ luôn đồng hành với bà con ngư dân tỉnh Thừa Thiên Huế.'
+          contentAll:
+            'Thừa Thiên Huế là tỉnh, thành phố ven biển thứ 21 mà Ban Thường vụ Đảng uỷ Cảnh sát biển ký kết chương trình phối hợp công tác dân vận "Cảnh sát biển đồng hành với ngư dân". Trong bất cứ hoàn cảnh nào, cán bộ, chiến sĩ Cảnh sát biển sẽ luôn đồng hành với bà con ngư dân tỉnh Thừa Thiên Huế.'
         },
         {
           story_All:
@@ -252,14 +258,16 @@ export default function Home() {
             'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam',
           id: 3,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/%C4%90%E1%BA%A1i-bi%E1%BB%83u-tham-d%E1%BB%B1-h%E1%BB%99i-ngh%E1%BB%8B-giao-ban.jpg',
-          contentAll:'Chiều 31/3, tại Bộ Tư lệnh Vùng Cảnh sát biển 2, Ủy ban nhân dân tỉnh Quảng Nam tổ chức Hội nghị giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023. Đồng chí Hồ Quang Bửu - Phó chủ tịch UBND tỉnh Quảng Nam chủ trì hội nghị.'
+          contentAll:
+            'Chiều 31/3, tại Bộ Tư lệnh Vùng Cảnh sát biển 2, Ủy ban nhân dân tỉnh Quảng Nam tổ chức Hội nghị giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023. Đồng chí Hồ Quang Bửu - Phó chủ tịch UBND tỉnh Quảng Nam chủ trì hội nghị.'
         },
         {
           story_All: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ.',
           story: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ',
           id: 4,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/%C4%90%E1%BA%A1i-t%C3%A1-Tr%E1%BA%A7n-Nguy%C3%AAn-Lai---Ph%C3%B3-T%C6%B0-l%E1%BB%87nh%2C-Tham-m%C6%B0u-tr%C6%B0%E1%BB%9Fng-BTL-V%C3%B9ng-CSB4-ph%C3%A1t-bi%E1%BB%83u-t%E1%BA%A1i-bu%E1%BB%95i-l%C3%A0m-vi%E1%BB%87c-v%E1%BB%9Bi-BCHQS-t%E1%BB%89nh-Ki%C3%AAn-Giang.jpg',
-          contentAll:'Trong 04 ngày (từ ngày 27 - 30/3/2023), Đoàn công tác của Bộ Tư lệnh (BTL) Vùng Cảnh sát biển 4 đã phối hợp với Ủy ban nhân dân các tỉnh Kiên Giang, Cà Mau, Bạc Liêu, Sóc Trăng khảo sát tàu thuyền và công tác bảo đảm hậu cần, kỹ thuật tại chỗ theo kế hoạch huy động nhân lực, tàu thuyền, phương tiện dân sự tham gia bảo vệ chủ quyền biển, đảo.'
+          contentAll:
+            'Trong 04 ngày (từ ngày 27 - 30/3/2023), Đoàn công tác của Bộ Tư lệnh (BTL) Vùng Cảnh sát biển 4 đã phối hợp với Ủy ban nhân dân các tỉnh Kiên Giang, Cà Mau, Bạc Liêu, Sóc Trăng khảo sát tàu thuyền và công tác bảo đảm hậu cần, kỹ thuật tại chỗ theo kế hoạch huy động nhân lực, tàu thuyền, phương tiện dân sự tham gia bảo vệ chủ quyền biển, đảo.'
         }
       ]
     },
@@ -281,7 +289,8 @@ export default function Home() {
             'Bộ Tư lệnh Cảnh sát biển khen thưởng thành tích triệt phá đường dây mua bán, vận chuyển 9 bánh heroine',
           id: 1,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/%C4%90%E1%BB%91i-t%C6%B0%E1%BB%A3ng-Tr%E1%BA%A7n-Th%E1%BB%8B-Rum-va-tang-vat.jpg',
-          contentAll:'Cục Nghiệp vụ và Pháp luật Cảnh sát biển cho biết, đơn vị vừa phối hợp với Công an tỉnh Thái Bình bắt quả tang 01 đối tượng có hành vi tàng trữ, vận chuyển trái phép chất ma túy.'
+          contentAll:
+            'Cục Nghiệp vụ và Pháp luật Cảnh sát biển cho biết, đơn vị vừa phối hợp với Công an tỉnh Thái Bình bắt quả tang 01 đối tượng có hành vi tàng trữ, vận chuyển trái phép chất ma túy.'
         },
         {
           story_All:
@@ -289,21 +298,24 @@ export default function Home() {
           story: 'Bắt giữ tàu vận chuyển hơn 30.000 lít dầu D.O trái phép trên vùng biển Tây Nam',
           id: 2,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/Thi%E1%BA%BFu%20t%C6%B0%E1%BB%9Bng%20V%C5%A9%20Trung%20Ki%C3%AAn%20-%20Ph%C3%B3%20T%C6%B0%20l%C3%AAnh%20C%E1%BA%A3nh%20s%C3%A1t%20bi%E1%BB%83n%20ph%C3%A1t%20bi%E1%BB%83u%20ch%E1%BB%89%20%C4%91%E1%BA%A1o%20H%E1%BB%99i%20ngh%E1%BB%8B.JPG',
-          contentAll:'Ngày 25/4, tại Hải Phòng, Đoàn đặc nhiệm Phòng chống tội phạm ma túy số 1/Bộ Tư lệnh Cảnh sát biển tổ chức Hội nghị Rút kinh nghiệm đấu tranh triệt phá đường dây vận chuyển, mua bán trái phép chất ma túy từ Điện Biên về khu vực cảng biển Hải Phòng tiêu thụ, bắt 3 đối tượng, thu giữ 9 bánh heroine.'
+          contentAll:
+            'Ngày 25/4, tại Hải Phòng, Đoàn đặc nhiệm Phòng chống tội phạm ma túy số 1/Bộ Tư lệnh Cảnh sát biển tổ chức Hội nghị Rút kinh nghiệm đấu tranh triệt phá đường dây vận chuyển, mua bán trái phép chất ma túy từ Điện Biên về khu vực cảng biển Hải Phòng tiêu thụ, bắt 3 đối tượng, thu giữ 9 bánh heroine.'
         },
         {
           story_All: 'Bắt giữ tàu vận chuyển hơn 30.000 lít dầu D.O trái phép trên vùng biển Tây Nam.',
           story: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O trái phép trên vùng biển Tây Nam',
           id: 3,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/L%E1%BB%B1c-l%C6%B0%E1%BB%A3ng-ch%E1%BB%A9c-n%C4%83ng-c%E1%BB%A7a-BTL-V%C3%B9ng-C%E1%BA%A3nh-s%C3%A1t-bi%E1%BB%83n-4-ki%E1%BB%83m-tra-t%C3%A0u-vi-ph%E1%BA%A1m.jpg',
-          contentAll:'Vào hồi 19h30 ngày 20/4, trong quá trình tuần tra, kiểm soát trên khu vực biển Tây Nam, lực lượng chức năng Bộ Tư lệnh Vùng Cảnh sát biển 4 phát hiện tàu TG 94458 TS có nhiều dấu hiệu nghi vấn, đã ra tín hiệu dừng tàu để kiểm tra hành chính.'
+          contentAll:
+            'Vào hồi 19h30 ngày 20/4, trong quá trình tuần tra, kiểm soát trên khu vực biển Tây Nam, lực lượng chức năng Bộ Tư lệnh Vùng Cảnh sát biển 4 phát hiện tàu TG 94458 TS có nhiều dấu hiệu nghi vấn, đã ra tín hiệu dừng tàu để kiểm tra hành chính.'
         },
         {
           story_All: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O trái phép trên vùng biển Tây Nam',
           story: 'Triệt phá đường dây mua bán, vận chuyển ma túy với số lượng lớn',
           id: 4,
           img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/H%C3%ACnh-%E1%BA%A3nh-t%C3%A0u-vi-ph%E1%BA%A1m.jpg',
-          contentAll:'Kiên quyết đấu tranh, xử lý không khoan nhượng với các loại tội phạm, vi phạm, Bộ Tư lệnh Vùng Cảnh sát biển 4 cho biết, đơn vị vừa bắt giữ 01 tàu vận chuyển khoảng 480.000 lít dầu D.O trái phép trên vùng biển Tây Nam.'
+          contentAll:
+            'Kiên quyết đấu tranh, xử lý không khoan nhượng với các loại tội phạm, vi phạm, Bộ Tư lệnh Vùng Cảnh sát biển 4 cho biết, đơn vị vừa bắt giữ 01 tàu vận chuyển khoảng 480.000 lít dầu D.O trái phép trên vùng biển Tây Nam.'
         }
       ]
     }
@@ -327,25 +339,33 @@ export default function Home() {
           id: 1,
           story:
             'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/T%C3%A0u-CSB-4003-%C4%91ang-l%C3%A0m-nhi%E1%BB%87m-v%E1%BB%A5-t%E1%BA%A1i-khu-v%E1%BB%B1c-m%C3%A1y-bay-tr%E1%BB%B1c-th%C4%83ng-g%E1%BA%B7p-n%E1%BA%A1n.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/T%C3%A0u-CSB-4003-%C4%91ang-l%C3%A0m-nhi%E1%BB%87m-v%E1%BB%A5-t%E1%BA%A1i-khu-v%E1%BB%B1c-m%C3%A1y-bay-tr%E1%BB%B1c-th%C4%83ng-g%E1%BA%B7p-n%E1%BA%A1n.jpg',
+          contentAll:
+            'Các tàu, xuồng của Hải đoàn 11/BTL Vùng Cảnh sát biển 1 vẫn đang phối hợp với lực lượng chức năng tại hiện trường tiếp tục tìm kiếm các nạn nhân còn lại trong vụ máy bay trực thăng Bell 505 bị rơi tại địa điểm giáp ranh giữa vịnh Hạ Long (Quảng Ninh) và vịnh Lan Hạ (Hải Phòng).'
         },
         {
           story_All: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn ',
           id: 2,
           story: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn ',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%203/Vung%202/202/csb-cuu-ho.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%203/Vung%202/202/csb-cuu-ho.jpg',
+          contentAll:
+            'Ngày 12/3, Hải đội 202/ Bộ Tư lệnh Vùng Cảnh sát biển 2 đã đến thăm hỏi, động viên và hỗ trợ gia đình ngư dân gặp nạn trên sông Hiếu (Quảng Trị).'
         },
         {
           story_All: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển',
           id: 3,
           story: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/vung%203/C%C3%A1n-b%E1%BB%99%2C-chi%E1%BA%BFn-s%C4%A9-T%C3%A0u-CSB-6007-%C4%91%C6%B0a-c%C3%A1c-thuy%E1%BB%81n-vi%C3%AAn-l%C3%AAn-t%C3%A0u.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/vung%203/C%C3%A1n-b%E1%BB%99%2C-chi%E1%BA%BFn-s%C4%A9-T%C3%A0u-CSB-6007-%C4%91%C6%B0a-c%C3%A1c-thuy%E1%BB%81n-vi%C3%AAn-l%C3%AAn-t%C3%A0u.jpg',
+          contentAll:
+            'Vào khoảng 11h30, ngày 09/3, tàu CSB 6007/Bộ Tư lệnh Vùng Cảnh sát biển 3, nhận được thông báo từ Bộ đội Biên phòng tỉnh Bình Thuận về việc tàu cá BTh 85372 TS đã cứu vớt được 02 thuyền viên của sà lan LA - 05923 bị nạn cách vị trí bị nạn khoảng 32 hải lý về phía Bắc. Tàu CSB 6007 đã chuyển hướng hành trình đến vị trí tàu cá BTh 85372 TS để tiếp nhận 02 thuyền viên.'
         },
         {
           story_All: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển',
           id: 4,
           story: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/Vung%202/Ti%E1%BA%BFp-c%E1%BA%ADn-t%C3%A0u-c%C3%A1-c%C3%B3-ng%C6%B0%E1%BB%9Di-b%E1%BB%8B-n%E1%BA%A1n.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/Vung%202/Ti%E1%BA%BFp-c%E1%BA%ADn-t%C3%A0u-c%C3%A1-c%C3%B3-ng%C6%B0%E1%BB%9Di-b%E1%BB%8B-n%E1%BA%A1n.jpg',
+          contentAll:
+            'Ngày 19/02, Tàu CSB 2012/Hải đội 202/ Bộ Tư lệnh Vùng Cảnh sát biển 2 đã đưa vào bờ an toàn một ngư dân bị tai biến mạch máu não'
         }
       ]
     },
@@ -367,13 +387,17 @@ export default function Home() {
           id: 1,
           story:
             'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ đón và luyện tập chung với Lực lượng Bảo vệ bờ biển Nhật Bản',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/Quang-canh-HN.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/Quang-canh-HN.jpg',
+          contentAll:
+            'Chiều ngày 27/2, tại Bộ Tư lệnh Vùng Cảnh sát biển 2, Bộ Tư lệnh Cảnh sát biển tổ chức Hội nghi Tổng kết kết quả thực hiện nhiệm vụ đón và luyện tập chung với tàu tuần tra Settsu của Lực lượng Bảo vệ bờ biển Nhật Bản. Thiếu tướng Vũ Trung Kiên - Phó Tư lệnh Pháp luật Cảnh sát biển chủ trì hội nghị.'
         },
         {
           story_All: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản',
           id: 2,
           story: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Song%20phuong%20CSB%20Viet%20-%20Nhat/Quang-canh-buoi-tiep.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Song%20phuong%20CSB%20Viet%20-%20Nhat/Quang-canh-buoi-tiep.jpg',
+          contentAll:
+            'Chiều 21/2, tại Trụ sở Cục Đối ngoại/Bộ Quốc phòng, Thiếu tướng Vũ Trung Kiên – Phó Tư lệnh Cảnh sát biển Việt Nam đã tiếp, trao đổi song phương Phó Đô đốc Shiraishi Masami - Phó Tư lệnh Lực lượng Bảo vệ bờ biển (LLBVBB) Nhật Bản nhân dịp đoàn sang thăm, làm việc tại Việt Nam.'
         },
         {
           story_All:
@@ -381,13 +405,17 @@ export default function Home() {
           id: 3,
           story:
             'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ cho cán bộ trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%202/BTL/QHQT/IMG_1448.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%202/BTL/QHQT/IMG_1448.jpg',
+          contentAll:
+            'Sáng 20/2, Bộ Tư lệnh Cảnh sát biển tổ chức gặp gỡ, động viên, giao nhiệm vụ cho Đại úy Trần Nam Phương trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc tại Phái bộ UNISFA (Khu vực Abyei). Thiếu tướng Vũ Trung Kiên - Phó Tư lệnh Pháp luật Cảnh sát biển chủ trì buổi gặp mặt. '
         },
         {
           story_All: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển',
           id: 4,
           story: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển',
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/IMGP8098.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/IMGP8098.jpg',
+          contentAll:
+            'Ngày 18/2, tàu Settsu của Lực lượng Bảo vệ bờ biển Nhật Bản đã cùng tham gia luyện tập chung tìm kiếm cứu nạn và phòng, chống cháy nổ với Bộ Tư lệnh Vùng Cảnh sát biển 2 trước khi rời Đà Nẵng, kết thúc chuyến thăm hữu nghị giữa hai lực lượng.'
         }
       ]
     }
@@ -411,28 +439,34 @@ export default function Home() {
           story_All: 'Khuyến khích và phát triển văn hóa đọc tại đơn vị cơ sở',
           story: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn',
           id: 1,
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Van%20hoa%20-%20van%20nghe/Nam%202023/Thang%204/CBCS-%C4%90o%C3%A0n-%C4%90%E1%BA%B7c-nhi%E1%BB%87m-PCTP-ma-t%C3%BAy-s%E1%BB%91-1-h%C6%B0%E1%BB%9Fng-%E1%BB%A9ng-Ng%C3%A0y-s%C3%A1ch-v%C3%A0-v%C4%83n-h%C3%B3a-%C4%91%E1%BB%8Dc.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Van%20hoa%20-%20van%20nghe/Nam%202023/Thang%204/CBCS-%C4%90o%C3%A0n-%C4%90%E1%BA%B7c-nhi%E1%BB%87m-PCTP-ma-t%C3%BAy-s%E1%BB%91-1-h%C6%B0%E1%BB%9Fng-%E1%BB%A9ng-Ng%C3%A0y-s%C3%A1ch-v%C3%A0-v%C4%83n-h%C3%B3a-%C4%91%E1%BB%8Dc.jpg',
+          contentAll:
+            'Hưởng ứng Ngày Sách và Văn hóa đọc Việt Nam lần thứ 2 năm 2023, Đoàn Đặc nhiệm PCTP ma túy số 1 đã tổ chức nhiều hoạt động ý nghĩa nhằm khuyến khích và phát triển phong trào đọc sách, nâng cao nhận thức đối với cán bộ, chiến sĩ trong đơn vị.'
         },
         {
           story_All: 'Hưởng ứng Ngày Sách và Văn hóa đọc Việt Nam năm 2023',
           story:
             'Đoàn Văn công Quân chủng Phòng không - Không quân biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3',
           id: 2,
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Van%20hoa%20-%20van%20nghe/Nam%202023/Thang%204/IMG_1681373790299_1681374526526.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Van%20hoa%20-%20van%20nghe/Nam%202023/Thang%204/IMG_1681373790299_1681374526526.jpg',
+          contentAll:
+            'Chiều 13/4, Trung tâm Đào tạo và Bồi dưỡng nghiệp vụ Cảnh sát biển phối hợp với Thời báo Văn học Nghệ thuật/ Liên hiệp các Hội Văn học Nghệ thuật Việt Nam, Nhà Xuất bản Dân trí khai mạc Ngày Sách và Văn hóa đọc Việt Nam lần thứ hai năm 2023 với chủ đề “Sách: Nhận thức - Đổi mới - Sáng tạo”. Đại tá Nguyễn Đức Độ - Bí thư Đảng ủy, Chính ủy Trung tâm chủ trì buổi khai mạc.'
         },
         {
           story_All: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn"',
           story:
             'Bộ Tư lệnh Cảnh sát biển tổ chức Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
           id: 4,
-          img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/hoi-trai.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/hoi-trai.jpg',
+          contentAll: ''
         },
         {
           story_All:
             'Đoàn Văn công Quân chủng Phòng không - Không quân biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3',
           story: 'Thể lệ Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
           id: 3,
-          img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/M%E1%BB%99t-trong-c%C3%A1c-ti%E1%BA%BFt-m%E1%BB%A5c-%C4%91%E1%BA%B7c-s%E1%BA%AFc-c%E1%BB%A7a-%C4%91o%C3%A0n-t%E1%BA%A1i-%C4%91%C3%AAm-l%C6%B0u-di%E1%BB%87n-t%E1%BA%A1i-B%E1%BB%99-T%C6%B0-l%E1%BB%87nh-V%C3%B9ng-C%E1%BA%A3nh-s%C3%A1t-bi%E1%BB%83n-3.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/M%E1%BB%99t-trong-c%C3%A1c-ti%E1%BA%BFt-m%E1%BB%A5c-%C4%91%E1%BA%B7c-s%E1%BA%AFc-c%E1%BB%A7a-%C4%91o%C3%A0n-t%E1%BA%A1i-%C4%91%C3%AAm-l%C6%B0u-di%E1%BB%87n-t%E1%BA%A1i-B%E1%BB%99-T%C6%B0-l%E1%BB%87nh-V%C3%B9ng-C%E1%BA%A3nh-s%C3%A1t-bi%E1%BB%83n-3.jpg',
+          contentAll: ''
         }
       ]
     },
@@ -560,12 +594,12 @@ export default function Home() {
           />
           <AiOutlineSearch className='w-[5%]' />
         </div>
-        <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full max-[1300px]:py-5 '>
+        <div className='w-[48%] bg-[#F6F6F6] max-[1300px]:w-full '>
           <div className='w-[95%] m-auto flex justify-start h-[100%] max-[500px]:justify-end'>
             {contentAll.map((item, index) => (
               <div
                 className={classNames(
-                  `flex items-center px-3 border-b-[2px] hover:border-[#DA251C] last:ml-[20px] max-[500px]:border-none	  hover:duration-700 ${
+                  `flex items-center px-3 border-b-[2px] hover:border-[#DA251C] last:ml-[20px] max-[500px]:border-none	  max-[1300px]:py-5  hover:duration-700 ${
                     item.Conten_all[index].id === dataNews.id ? 'border-[#DA251C]' : 'border-[#F6F6F6]'
                   }`
                 )}
@@ -620,6 +654,7 @@ export default function Home() {
             </div>
             <div className='w-full'>
               <List_item_all_new />
+              
             </div>
             <div className='w-full m-auto mt-5 shadow-xl'>
               <img className='w-full ' src={Grid_bg} alt='' />
@@ -629,6 +664,7 @@ export default function Home() {
             </div> */}
             <div className='w-full m-auto max-w-screen-2xl justify-between flex  max-[1160px]:flex-col'>
               <div className=' w-full flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
+                
                 {NewPost_Item_All.map((item) => (
                   <NewPost_Item
                     icon_item={<item.icon />}

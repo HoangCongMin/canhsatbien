@@ -94,7 +94,7 @@ export default function Box_Call_All() {
 
 
   return (
-    <div className='sticky top-0 z-30'>
+    <div className='sticky top-0 z-30 max-[1100px]:mt-7'>
       <div className='w-[95%] m-auto '>
         <div className='w-full m-auto flex border-b-[2.5px] border-[#DA251C] pb-2 '>
           {media_item_all.map((item) => (

@@ -2,7 +2,17 @@ import React from 'react'
 import { Organization_Payroll_Data } from '../constant'
 import Item_content_same from '../Content_Same/Item_content_same'
 
-export default function Content_Same() {
+
+interface data_Post_Same{
+  data:data_Item[]
+}
+
+interface data_Item{
+  id:string
+  content:string
+}
+
+export default function Content_Same({data}:data_Post_Same) {
   return (
     <div className='w-full mt-4'>
       <div className='w-full border-t-[2px] border-[#DA251C]'>
@@ -13,7 +23,13 @@ export default function Content_Same() {
         </div>
       </div>
       <div className='w-full'>
-        <Item_content_same Organization_Payroll_Data={Organization_Payroll_Data.child} />
+      {
+        data.map((item)=>(
+          <>
+        <Item_content_same Organization_Payroll_Data={item} />
+          </>
+        ))
+      }
       </div>
     </div>
   )
