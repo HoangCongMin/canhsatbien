@@ -741,7 +741,7 @@ export default function Home() {
                   />
                   <div className='ml-2'>Theo gương Bác</div>
                 </div>
-                <div className='w-95% m-auto py-4 bg-[#F0F0F0]'>
+                <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
                   {Theoguongbac.map((item) => (
                     <ShortMessage
                       classItiemAll={'line-clamp-2'}
@@ -757,7 +757,7 @@ export default function Home() {
                 <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
                   Tuyên truyền Luật Cảnh sát biển Việt Nam
                 </div>
-                <div className='w-95% m-auto py-4 bg-[#F0F0F0]'>
+                <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
                   {LUATCSB.map((item) => (
                     <ShortMessage
                       classItiemAll={'line-clamp-2'}
@@ -773,7 +773,7 @@ export default function Home() {
                 <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
                   Phòng chống IUU
                 </div>
-                <div className='w-95% m-auto py-4 bg-[#F0F0F0]'>
+                <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
                   {Theoguongbac.map((item) => (
                     <ShortMessage
                       classItiemAll={'line-clamp-2'}
