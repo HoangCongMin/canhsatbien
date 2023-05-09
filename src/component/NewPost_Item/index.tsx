@@ -9,6 +9,7 @@ export interface item {
   story: string
   id: number
   story_All: string
+  img:string
 }
 
 export interface item_All {
@@ -39,7 +40,7 @@ export default function NewPost_Item({
   class_Custom_layout
 }: item_All) {
   return (
-    <div className={classNames(`${class_NewPost_Item}${class_Custom_layout}`)}>
+    <div className={classNames(`${class_NewPost_Item}${class_Custom_layout} mt-6`)}>
       <div className='w-full border-b-[2px] border-[#DA251C]'>
         <div className=' py-3 flex items-center'>
           <div className='text-[22px] text-[#ff7f00] pb-1'>{icon_item}</div>

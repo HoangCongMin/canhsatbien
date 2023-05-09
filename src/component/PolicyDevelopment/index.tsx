@@ -23,30 +23,32 @@ export default function PolicyDevelopment({
         <div className='py-3 flex items-center'>
           <RiSendPlaneFill className='text-[#ff7f00] text-[22px]' />
           <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
-           {header}
+            {header}
           </h1>
         </div>
       </div>
-      <div className='mt-4 flex justify-between'>
-        <div className='w-[50%] overflow-hidden cursor-pointer relative group'>
-          <img
-            className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out 	'
-            src={itemAll_image}
-            alt=''
-          />
-        </div>
+      <div className='flex justify-between'>
+        <div className='mt-4 w-[50%]' >
+          <div className='w-full overflow-hidden cursor-pointer relative group'>
+            <img
+              className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out 	'
+              src={itemAll_image}
+              alt=''
+            />
+          </div>
 
-        <div className='w-[48%]'>
-          <h3 className='line-clamp-3 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
-            {itemAll_Name_All}
-          </h3>
-          <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
+          <div className='w-full mt-3'>
+            <h3 className='line-clamp-3 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
+              {itemAll_Name_All}
+            </h3>
+            <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
+          </div>
         </div>
-      </div>
-      <div className='mt-4 '>
-        {itemAll_RelatedNews.map((item: item) => (
-          <New_post_icon_Item newsItem={item} />
-        ))}
+        <div className='mt-4 w-[45%] '>
+          {itemAll_RelatedNews.map((item: item) => (
+            <New_post_icon_Item newsItem={item} />
+          ))}
+        </div>
       </div>
     </div>
   )

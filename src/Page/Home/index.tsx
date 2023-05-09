@@ -187,24 +187,28 @@ export default function Home() {
           story_All: 'Phó Chủ tịch Quốc hội Trần Quang Phương thăm và làm việc với Bộ Tư lệnh Cảnh sát biển',
           story:
             'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa',
-          id: 1
+          id: 1,
+          img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%204/Quang-canh.jpg'
         },
         {
           story_All: 'Đại tướng Lương Cường thăm, làm việc tại Bộ Tư lệnh Vùng Cảnh sát biển 4',
           story: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân',
-          id: 2
+          id: 2,
+          img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%203/Dai-tuong-tang-qua-Vung-4.jpg'
         },
         {
           story_All:
             'Tạo sức lan toả và hiệu quả của Chương trình “Cảnh sát biển đồng hành với ngư dân” tại tỉnh Bến Tre',
           story:
             'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam',
-          id: 3
+          id: 3,
+          img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%203/BEN%20TRE/ky-ket-ben-tre.jpg'
         },
         {
           story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 4 thực hiện hiệu quả Nghị quyết Trung ương 8, khóa XI',
           story: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ',
-          id: 4
+          id: 4,
+          img: 'https://canhsatbien.vn/upload/files/1/Tin%20tuc%20-%20su%20kien/Quoc%20phong%20-%20an%20ninh/Nam%202023/Thang%203/Quang-c%E1%BA%A3nh-H%E1%BB%99i-ngh%E1%BB%8B.jpg'
         }
       ]
     },
@@ -225,24 +229,28 @@ export default function Home() {
             'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa.',
           story:
             'Đoàn công tác Tổng cục Chính trị Quân đội Nhân dân Việt Nam thăm, động viên cán bộ, chiến sĩ Tàu CSB 8001 trực tại khu vực quần đảo Trường Sa',
-          id: 1
+          id: 1,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/TT-Gau-tham-dong-vienTau-CSB-8001.jpg'
         },
         {
           story_All: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân".',
           story: 'Đẩy mạnh công tác dân vận "Cảnh sát biển đồng hành với ngư dân',
-          id: 2
+          id: 2,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/Trung-tuong-Bui-Quoc-Oai-phat-bieu.jpg'
         },
         {
           story_All:
             'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam.',
           story:
             'Giao ban công tác phối hợp thực hiện Nghị định số 03/2019/NĐ-CP của Chính phủ quý I năm 2023 trên địa bàn tỉnh Quảng Nam',
-          id: 3
+          id: 3,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/%C4%90%E1%BA%A1i-bi%E1%BB%83u-tham-d%E1%BB%B1-h%E1%BB%99i-ngh%E1%BB%8B-giao-ban.jpg'
         },
         {
           story_All: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ.',
           story: 'Khảo sát, rà soát nguồn nhân lực tàu thuyền trên địa bàn các tỉnh Tây Nam Bộ',
-          id: 4
+          id: 4,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Vi%20chu%20quyen%20bien%2C%20dao/Nam%202023/%C4%90%E1%BA%A1i-t%C3%A1-Tr%E1%BA%A7n-Nguy%C3%AAn-Lai---Ph%C3%B3-T%C6%B0-l%E1%BB%87nh%2C-Tham-m%C6%B0u-tr%C6%B0%E1%BB%9Fng-BTL-V%C3%B9ng-CSB4-ph%C3%A1t-bi%E1%BB%83u-t%E1%BA%A1i-bu%E1%BB%95i-l%C3%A0m-vi%E1%BB%87c-v%E1%BB%9Bi-BCHQS-t%E1%BB%89nh-Ki%C3%AAn-Giang.jpg'
         }
       ]
     },
@@ -262,23 +270,27 @@ export default function Home() {
           story_All: 'Phối hợp bắt giữ đối tượng tàng trữ trái phép chất ma túy.',
           story:
             'Bộ Tư lệnh Cảnh sát biển khen thưởng thành tích triệt phá đường dây mua bán, vận chuyển 9 bánh heroine',
-          id: 1
+          id: 1,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/%C4%90%E1%BB%91i-t%C6%B0%E1%BB%A3ng-Tr%E1%BA%A7n-Th%E1%BB%8B-Rum-va-tang-vat.jpg'
         },
         {
           story_All:
             'Bộ Tư lệnh Cảnh sát biển khen thưởng thành tích triệt phá đường dây mua bán, vận chuyển 9 bánh heroine.',
           story: 'Bắt giữ tàu vận chuyển hơn 30.000 lít dầu D.O trái phép trên vùng biển Tây Nam',
-          id: 2
+          id: 2,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/Thi%E1%BA%BFu%20t%C6%B0%E1%BB%9Bng%20V%C5%A9%20Trung%20Ki%C3%AAn%20-%20Ph%C3%B3%20T%C6%B0%20l%C3%AAnh%20C%E1%BA%A3nh%20s%C3%A1t%20bi%E1%BB%83n%20ph%C3%A1t%20bi%E1%BB%83u%20ch%E1%BB%89%20%C4%91%E1%BA%A1o%20H%E1%BB%99i%20ngh%E1%BB%8B.JPG'
         },
         {
           story_All: 'Bắt giữ tàu vận chuyển hơn 30.000 lít dầu D.O trái phép trên vùng biển Tây Nam.',
           story: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O trái phép trên vùng biển Tây Nam',
-          id: 3
+          id: 3,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/L%E1%BB%B1c-l%C6%B0%E1%BB%A3ng-ch%E1%BB%A9c-n%C4%83ng-c%E1%BB%A7a-BTL-V%C3%B9ng-C%E1%BA%A3nh-s%C3%A1t-bi%E1%BB%83n-4-ki%E1%BB%83m-tra-t%C3%A0u-vi-ph%E1%BA%A1m.jpg'
         },
         {
           story_All: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O trái phép trên vùng biển Tây Nam',
           story: 'Triệt phá đường dây mua bán, vận chuyển ma túy với số lượng lớn',
-          id: 4
+          id: 4,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Thuc%20thi%20phap%20luat/Nam%202023/Thang%204/H%C3%ACnh-%E1%BA%A3nh-t%C3%A0u-vi-ph%E1%BA%A1m.jpg'
         }
       ]
     }
@@ -300,22 +312,26 @@ export default function Home() {
           story_All:
             'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn',
           id: 1,
-          story: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn'
+          story: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn',
+          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/T%C3%A0u-CSB-4003-%C4%91ang-l%C3%A0m-nhi%E1%BB%87m-v%E1%BB%A5-t%E1%BA%A1i-khu-v%E1%BB%B1c-m%C3%A1y-bay-tr%E1%BB%B1c-th%C4%83ng-g%E1%BA%B7p-n%E1%BA%A1n.jpg'
         },
         {
           story_All: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn ',
           id: 2,
-          story: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn '
+          story: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn ',
+          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%203/Vung%202/202/csb-cuu-ho.jpg'
         },
         {
           story_All: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển',
           id: 3,
-          story: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển'
+          story: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển',
+          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/vung%203/C%C3%A1n-b%E1%BB%99%2C-chi%E1%BA%BFn-s%C4%A9-T%C3%A0u-CSB-6007-%C4%91%C6%B0a-c%C3%A1c-thuy%E1%BB%81n-vi%C3%AAn-l%C3%AAn-t%C3%A0u.jpg'
         },
         {
           story_All: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển',
           id: 4,
-          story: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển'
+          story: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển',
+          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/Vung%202/Ti%E1%BA%BFp-c%E1%BA%ADn-t%C3%A0u-c%C3%A1-c%C3%B3-ng%C6%B0%E1%BB%9Di-b%E1%BB%8B-n%E1%BA%A1n.jpg'
         }
       ]
     },
@@ -336,24 +352,30 @@ export default function Home() {
             'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ đón và luyện tập chung với Lực lượng Bảo vệ bờ biển Nhật Bản',
           id: 1,
           story:
-            'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ đón và luyện tập chung với Lực lượng Bảo vệ bờ biển Nhật Bản'
+            'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ đón và luyện tập chung với Lực lượng Bảo vệ bờ biển Nhật Bản',
+            img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/Quang-canh-HN.jpg'
+
         },
         {
           story_All: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản',
           id: 2,
-          story: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản'
+          story: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản',
+          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Song%20phuong%20CSB%20Viet%20-%20Nhat/Quang-canh-buoi-tiep.jpg'
         },
         {
           story_All:
             'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ cho cán bộ trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc',
           id: 3,
           story:
-            'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ cho cán bộ trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc'
+            'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ cho cán bộ trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc',
+            img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%202/BTL/QHQT/IMG_1448.jpg'
+
         },
         {
           story_All: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển',
           id: 4,
-          story: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển'
+          story: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển',
+          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/IMGP8098.jpg'
         }
       ]
     }
@@ -376,25 +398,29 @@ export default function Home() {
         {
           story_All: 'Khuyến khích và phát triển văn hóa đọc tại đơn vị cơ sở',
           story: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn',
-          id: 1
+          id: 1,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Van%20hoa%20-%20van%20nghe/Nam%202023/Thang%204/CBCS-%C4%90o%C3%A0n-%C4%90%E1%BA%B7c-nhi%E1%BB%87m-PCTP-ma-t%C3%BAy-s%E1%BB%91-1-h%C6%B0%E1%BB%9Fng-%E1%BB%A9ng-Ng%C3%A0y-s%C3%A1ch-v%C3%A0-v%C4%83n-h%C3%B3a-%C4%91%E1%BB%8Dc.jpg'
         },
         {
           story_All: 'Hưởng ứng Ngày Sách và Văn hóa đọc Việt Nam năm 2023',
           story:
             'Đoàn Văn công Quân chủng Phòng không - Không quân biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3',
-          id: 2
+          id: 2,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Van%20hoa%20-%20van%20nghe/Nam%202023/Thang%204/IMG_1681373790299_1681374526526.jpg'
         },
         {
           story_All: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 tham gia hội trại "Nối vòng tay lớn"',
           story:
             'Bộ Tư lệnh Cảnh sát biển tổ chức Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
-          id: 4
+          id: 4,
+          img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/hoi-trai.jpg'
         },
         {
           story_All:
             'Đoàn Văn công Quân chủng Phòng không - Không quân biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3',
           story: 'Thể lệ Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
-          id: 3
+          id: 3,
+          img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/M%E1%BB%99t-trong-c%C3%A1c-ti%E1%BA%BFt-m%E1%BB%A5c-%C4%91%E1%BA%B7c-s%E1%BA%AFc-c%E1%BB%A7a-%C4%91o%C3%A0n-t%E1%BA%A1i-%C4%91%C3%AAm-l%C6%B0u-di%E1%BB%87n-t%E1%BA%A1i-B%E1%BB%99-T%C6%B0-l%E1%BB%87nh-V%C3%B9ng-C%E1%BA%A3nh-s%C3%A1t-bi%E1%BB%83n-3.jpg'
         }
       ]
     },
@@ -402,10 +428,9 @@ export default function Home() {
       icon: MdLocalPolice,
       id: 2,
       title: 'Công tác Cảnh sát biển',
-      name_All: 'Bảo hiểm xã hội Bộ Quốc phòng làm việc với Bộ Tư lệnh Cảnh sát biển',
-      image: 'https://canhsatbien.vn/upload/files/image/20230505/quang-canh-bhxh-162829483.jpg?w=400',
-      content_All:
-        'Chiều 05/5, Đoàn công tác của Bảo hiểm xã hội Bộ Quốc phòng do Đại tá Trần Ngọc Duy - Phó Giám đốc Bảo hiểm xã hội Bộ Quốc phòng làm trưởng đoàn tiến hành thẩm định quyết toán thu, chi bảo hiểm xã hội (BHXH), bảo hiểm y tế (BHYT), bảo hiểm thất nghiệp (BHTN) năm 2022 tại Bộ Tư lệnh Cảnh sát biển. Đại tá Lê Đình Cường - Phó Tư lệnh, Tham mưu trưởng Cảnh sát biển tiếp và làm việc với đoàn.',
+      name_All: 'Hải đoàn 32 phối hợp tổ chức hành trình “Thanh niên Khánh Hòa vì biển, đảo quê hương”',
+      image: 'https://canhsatbien.vn/upload/files/image/20230508/thu-truong-btl-vung-canh-sat-bien-3_-thu-truong-hai-doan-32-trao-qua-va-xe-dap-cho-cac-chau-hoc-sinh-ngheo-vuot-kho-132822153.jpg?w=400',
+      content_All:'(Canhsatbien.vn) - Ngày 07/5, tại thị xã Ninh Hòa, tỉnh Khánh Hòa, Hải đoàn 32/BTL Vùng Cảnh sát biển 3 phối hợp với Tỉnh đoàn, Hội Sinh viên Việt Nam Khánh Hòa tổ chức hành trình “Thanh niên Khánh Hòa vì biển, đảo quê hương” năm 2023. Tham dự chương trình có đồng chí Bùi Quang Huy - Ủy viên dự khuyết Ban chấp hành Trung ương Đảng, Bí thư thứ nhất Ban Chấp hành Trung ương Đoàn; đồng chí Đinh Văn Thiệu - Tỉnh ủy viên,',
       content:
         'Chiều 25/4, tại Thái Bình, Ban Thường vụ Đảng ủy Cảnh sát biển Việt Nam và Ban Thường vụ Tỉnh ủy Thái Bình đã tổ chức hội nghị ký kết Chương trình phối hợp thực hiện công tác dân vận “Cảnh sát biển đồng hành với ngư dân”. Thái Bình là tỉnh thành thứ 22 Ban Thường vụ Đảng ủy Cảnh sát biển Việt Nam ký kết Chương trình phối hợp thực hiện.',
       name: 'Đảng ủy Cảnh sát biển và Tỉnh ủy Thái Bình ký kết chương trình Cảnh sát biển đồng hành với ngư dân',
@@ -413,22 +438,26 @@ export default function Home() {
         {
           story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 thăm, tặng quà Mẹ Việt Nam anh hùng',
           story: 'Bộ Tư lệnh Vùng Cảnh sát biển 3 tổ chức Hội thi cán bộ giảng dạy chính trị năm 2023',
-          id: 1
+          id: 1,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/%C4%90%E1%BA%A1i-t%C3%A1-Tr%E1%BA%A7n-V%C4%83n-H%E1%BA%ADu-th%C4%83m-h%E1%BB%8Fi%2C-%C4%91%E1%BB%99ng-vi%C3%AAn-M%E1%BA%B9-VNAH-Tr%E1%BA%A7n-Th%E1%BB%8B-B%E1%BB%87.jpg'
         },
         {
           story_All: 'Luyện tập các phương án sẵn sàng chiến đấu bảo vệ cơ quan Bộ Tư lệnh Cảnh sát biển',
           story: 'Không ngừng củng cố kiến thức, chuyên môn kỹ thuật cho đội ngũ QNCN, CNVQP',
-          id: 2
+          id: 2,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/BTL/Luyen%20tap%20SSCD/Thuong-ta-Nguyen-Ngoc-Tung.jpg'
         },
         {
           story_All: 'Tập huấn bồi dưỡng Cuộc thi chính luận về bảo vệ nền tảng tư tưởng của Đảng',
           story: 'Sôi nổi Cuộc thi “Em yêu biển, đảo quê hương” tại huyện Núi Thành, tỉnh Quảng Nam',
-          id: 3
+          id: 3,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/BTL/quang-canh-tap-huan.jpg'
         },
         {
-          story_All: 'Góp phần nâng cao chất lượng công tác giảng dạy chính trị trong Lực lượng Cảnh sát biển',
+          story_All: 'Bảo hiểm xã hội Bộ Quốc phòng làm việc với Bộ Tư lệnh Cảnh sát biển',
           story: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 hưởng ứng Ngày Sách và văn hóa đọc Việt Nam năm 2023',
-          id: 4
+          id: 4,
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%205/BTL/Quang-canh-BHXH.jpg'
         }
       ]
     }
@@ -552,10 +581,10 @@ export default function Home() {
       {/* phần thân */}
       <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[1100px]:flex-col max-[850px]:flex-col  '>
         <div className='w-[72%] max-[1300px]:w-[65%] flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%] max-[1100px]:w-[100%] overflow-y-auto'>
-          <Box_Call />
-          <div className='w-[88%] max-[1300px]:w-full'>
+          {/* <Box_Call /> */}
+          <div className='w-full max-[1300px]:w-full'>
             <div className='w-full flex justify-between max-[1300px]:flex-col '>
-              <div className='w-[67%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	max-[1100px]:border-none '>
+              <div className='w-[71%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	max-[1100px]:border-none '>
                 <div className='w-[97%]'>
                   <Posts />
                   <div className='w-full'>
@@ -575,7 +604,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='w-[30%]  scrollbar-thumb-blue-300	scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full  overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
+              <div className='w-[27%]  scrollbar-thumb-slate-300	scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full  overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
                 <div className=' h-[22vh] max-[1300px]:h-[100%]'>
                   {dataNews.Conten_all.map((item) => (
                     <ShortMessage
@@ -601,7 +630,7 @@ export default function Home() {
                   <NewPost_Item
                     icon_item={<item.icon />}
                     class_Custom_layout={'first:pb-7'}
-                    class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer	'}
+                    class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer px-4 py-2 pb-4 border-[1px] mt-6 border-slate-200	'}
                     itemAll_id={item.id}
                     itemAll_RelatedNews={item.RelatedNews}
                     itemAll_content={item.content}
@@ -614,13 +643,13 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className='w-full m-auto mt-7 max-w-screen-2xl'>
+            <div className='w-full m-auto max-w-screen-2xl'>
               <div className='w-full'>
                 <div className='flex-col max-[850px]:flex-col'>
                   {policyDevelopmentAll.map((item) => (
-                    <div className='w-full max-[850px]:w-[100%]'>
+                    <div className='w-full max-[850px]:w-[100%] px-4 py-2 pb-4 border-[1px] mt-6 border-slate-200'>
                       <PolicyDevelopment
-                        class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	'}
+                        class_NewPost_Item={'w-[47%]  max-[850px]:w-[100%] cursor-pointer	 '}
                         itemAll_id={item.id}
                         itemAll_RelatedNews={item.RelatedNews}
                         itemAll_content={item.content}
@@ -635,11 +664,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='w-full m-auto flex-col justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
+            <div className='w-full m-auto flex-col justify-between max-w-screen-2xl max-[850px]:flex-col'>
+              
+
               {NewPost_Item_All_One.map((item) => (
                 <NewPost_Item
                   icon_item={<item.icon />}
-                  class_NewPost_Item={'w-full  max-[850px]:w-[100%] cursor-pointer	'}
+                  class_NewPost_Item={'w-full  max-[850px]:w-[100%] cursor-pointer px-4 py-2 pb-4 border-[1px] border-slate-200 '}
                   itemAll_id={item.id}
                   itemAll_RelatedNews={item.RelatedNews}
                   itemAll_content={item.content}
@@ -650,6 +681,7 @@ export default function Home() {
                   itemAll_Name_All={item.name_All}
                 />
               ))}
+              
             </div>
           </div>
         </div>
@@ -657,7 +689,7 @@ export default function Home() {
         <div className='w-[26%] border-slate-400 max-[1300px]:w-[32%] max-[850px]:w-[100%] max-[1100px]:w-[100%]'>
           <div className='sticky top-0 z-30'>
             <div className='w-[95%] m-auto '>
-              <div className='w-full m-auto flex border-b-[2.5px] border-[#DA251C] pb-2'>
+              <div className='w-full m-auto flex border-b-[2.5px] border-[#DA251C] pb-2 '>
                 {media_item_all.map((item) => (
                   <div className='w-[50%] first:border-r-[1.5px] border-[#191970]'>
                     <div
@@ -709,7 +741,7 @@ export default function Home() {
                   />
                   <div className='ml-2'>Theo gương Bác</div>
                 </div>
-                <div className='w-95% m-auto my-4'>
+                <div className='w-95% m-auto py-4 bg-[#F0F0F0]'>
                   {Theoguongbac.map((item) => (
                     <ShortMessage
                       classItiemAll={'line-clamp-2'}
@@ -725,7 +757,7 @@ export default function Home() {
                 <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
                   Tuyên truyền Luật Cảnh sát biển Việt Nam
                 </div>
-                <div className='w-95% m-auto my-4'>
+                <div className='w-95% m-auto py-4 bg-[#F0F0F0]'>
                   {LUATCSB.map((item) => (
                     <ShortMessage
                       classItiemAll={'line-clamp-2'}
@@ -741,7 +773,7 @@ export default function Home() {
                 <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
                   Phòng chống IUU
                 </div>
-                <div className='w-95% m-auto my-4'>
+                <div className='w-95% m-auto py-4 bg-[#F0F0F0]'>
                   {Theoguongbac.map((item) => (
                     <ShortMessage
                       classItiemAll={'line-clamp-2'}
@@ -753,7 +785,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
+              {/* <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
                 <img className='w-[95%] m-auto' src={BG_IMG} alt='' />
                 <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto ' />
                 <img
@@ -786,7 +818,7 @@ export default function Home() {
                   alt=''
                   className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
                 />
-              </div>
+              </div> */}
             </div>
             <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	hover:text-[#191970]'>
               BẢN ĐỒ HÀNH CHÍNH
