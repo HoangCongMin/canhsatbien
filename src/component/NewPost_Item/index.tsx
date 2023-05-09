@@ -41,7 +41,7 @@ export default function NewPost_Item({
 }: item_All) {
   return (
     <div className={classNames(`${class_NewPost_Item}${class_Custom_layout} mt-6`)}>
-      <div className='w-full border-b-[2px] border-[#DA251C]'>
+      <div className='w-[50%] border-b-[3px] border-[#DA251C]'>
         <div className=' py-3 flex items-center'>
           <div className='text-[22px] text-[#ff7f00] pb-1'>{icon_item}</div>
           <h1 className='font-bold	text-[17px] uppercase text-[#00008B]  ml-3'>{itemAll_title}</h1>

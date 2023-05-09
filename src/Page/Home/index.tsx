@@ -44,6 +44,7 @@ import { MdSportsGymnastics, MdLocalPolice, MdSecurity } from 'react-icons/md'
 import Slice_cart_news_coppy_image from '../../component/Slice_cart_news_coppy_image'
 import Box_Call from '../../component/Box_Call'
 import Box_weather from '../../component/Box_weather'
+import Box_Call_All from '../../component/Box_Call_All'
 
 export default function Home() {
   const Theoguongbac = [
@@ -312,26 +313,27 @@ export default function Home() {
           story_All:
             'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn',
           id: 1,
-          story: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn',
-          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/T%C3%A0u-CSB-4003-%C4%91ang-l%C3%A0m-nhi%E1%BB%87m-v%E1%BB%A5-t%E1%BA%A1i-khu-v%E1%BB%B1c-m%C3%A1y-bay-tr%E1%BB%B1c-th%C4%83ng-g%E1%BA%B7p-n%E1%BA%A1n.jpg'
+          story:
+            'Bộ Tư lệnh Vùng Cảnh sát biển 1 nỗ lực tham gia tìm kiếm nạn nhân trong vụ máy bay trực thăng gặp nạn',
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/T%C3%A0u-CSB-4003-%C4%91ang-l%C3%A0m-nhi%E1%BB%87m-v%E1%BB%A5-t%E1%BA%A1i-khu-v%E1%BB%B1c-m%C3%A1y-bay-tr%E1%BB%B1c-th%C4%83ng-g%E1%BA%B7p-n%E1%BA%A1n.jpg'
         },
         {
           story_All: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn ',
           id: 2,
           story: 'Hải đội 202 tham gia tìm kiếm và kịp thời hỗ trợ gia đình ngư dân gặp nạn ',
-          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%203/Vung%202/202/csb-cuu-ho.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%203/Vung%202/202/csb-cuu-ho.jpg'
         },
         {
           story_All: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển',
           id: 3,
           story: 'Đã tìm thấy thêm 02 thuyền viên ở sà lan gặp nạn trên biển',
-          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/vung%203/C%C3%A1n-b%E1%BB%99%2C-chi%E1%BA%BFn-s%C4%A9-T%C3%A0u-CSB-6007-%C4%91%C6%B0a-c%C3%A1c-thuy%E1%BB%81n-vi%C3%AAn-l%C3%AAn-t%C3%A0u.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/vung%203/C%C3%A1n-b%E1%BB%99%2C-chi%E1%BA%BFn-s%C4%A9-T%C3%A0u-CSB-6007-%C4%91%C6%B0a-c%C3%A1c-thuy%E1%BB%81n-vi%C3%AAn-l%C3%AAn-t%C3%A0u.jpg'
         },
         {
           story_All: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển',
           id: 4,
           story: 'Tàu CSB 2012 cấp cứu ngư dân bị tai biến trên biển',
-          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/Vung%202/Ti%E1%BA%BFp-c%E1%BA%ADn-t%C3%A0u-c%C3%A1-c%C3%B3-ng%C6%B0%E1%BB%9Di-b%E1%BB%8B-n%E1%BA%A1n.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cuu%20ho%20-%20cuu%20nan/Nam%202023/Vung%202/Ti%E1%BA%BFp-c%E1%BA%ADn-t%C3%A0u-c%C3%A1-c%C3%B3-ng%C6%B0%E1%BB%9Di-b%E1%BB%8B-n%E1%BA%A1n.jpg'
         }
       ]
     },
@@ -353,14 +355,13 @@ export default function Home() {
           id: 1,
           story:
             'Bộ Tư lệnh Cảnh sát biển tổng kết thực hiện nhiệm vụ đón và luyện tập chung với Lực lượng Bảo vệ bờ biển Nhật Bản',
-            img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/Quang-canh-HN.jpg'
-
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/Quang-canh-HN.jpg'
         },
         {
           story_All: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản',
           id: 2,
           story: 'Tăng cường phối hợp, hợp tác giữa Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản',
-          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Song%20phuong%20CSB%20Viet%20-%20Nhat/Quang-canh-buoi-tiep.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Song%20phuong%20CSB%20Viet%20-%20Nhat/Quang-canh-buoi-tiep.jpg'
         },
         {
           story_All:
@@ -368,14 +369,13 @@ export default function Home() {
           id: 3,
           story:
             'Thủ trưởng Bộ Tư lệnh Cảnh sát biển gặp mặt, giao nhiệm vụ cho cán bộ trước khi lên đường làm nhiệm vụ gìn giữ hòa bình Liên Hợp quốc',
-            img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%202/BTL/QHQT/IMG_1448.jpg'
-
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%202/BTL/QHQT/IMG_1448.jpg'
         },
         {
           story_All: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển',
           id: 4,
           story: 'Cảnh sát biển Việt Nam và Lực lượng Bảo vệ bờ biển Nhật Bản luyện tập chung trên biển',
-          img:'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/IMGP8098.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Hop%20tac%20quoc%20te/Nam%202023/Thang%202/Luyen%20tap%20chung%20tren%20bien%20voi%20Nhat/IMGP8098.jpg'
         }
       ]
     }
@@ -429,8 +429,10 @@ export default function Home() {
       id: 2,
       title: 'Công tác Cảnh sát biển',
       name_All: 'Hải đoàn 32 phối hợp tổ chức hành trình “Thanh niên Khánh Hòa vì biển, đảo quê hương”',
-      image: 'https://canhsatbien.vn/upload/files/image/20230508/thu-truong-btl-vung-canh-sat-bien-3_-thu-truong-hai-doan-32-trao-qua-va-xe-dap-cho-cac-chau-hoc-sinh-ngheo-vuot-kho-132822153.jpg?w=400',
-      content_All:'(Canhsatbien.vn) - Ngày 07/5, tại thị xã Ninh Hòa, tỉnh Khánh Hòa, Hải đoàn 32/BTL Vùng Cảnh sát biển 3 phối hợp với Tỉnh đoàn, Hội Sinh viên Việt Nam Khánh Hòa tổ chức hành trình “Thanh niên Khánh Hòa vì biển, đảo quê hương” năm 2023. Tham dự chương trình có đồng chí Bùi Quang Huy - Ủy viên dự khuyết Ban chấp hành Trung ương Đảng, Bí thư thứ nhất Ban Chấp hành Trung ương Đoàn; đồng chí Đinh Văn Thiệu - Tỉnh ủy viên,',
+      image:
+        'https://canhsatbien.vn/upload/files/image/20230508/thu-truong-btl-vung-canh-sat-bien-3_-thu-truong-hai-doan-32-trao-qua-va-xe-dap-cho-cac-chau-hoc-sinh-ngheo-vuot-kho-132822153.jpg?w=400',
+      content_All:
+        '(Canhsatbien.vn) - Ngày 07/5, tại thị xã Ninh Hòa, tỉnh Khánh Hòa, Hải đoàn 32/BTL Vùng Cảnh sát biển 3 phối hợp với Tỉnh đoàn, Hội Sinh viên Việt Nam Khánh Hòa tổ chức hành trình “Thanh niên Khánh Hòa vì biển, đảo quê hương” năm 2023. Tham dự chương trình có đồng chí Bùi Quang Huy - Ủy viên dự khuyết Ban chấp hành Trung ương Đảng, Bí thư thứ nhất Ban Chấp hành Trung ương Đoàn; đồng chí Đinh Văn Thiệu - Tỉnh ủy viên,',
       content:
         'Chiều 25/4, tại Thái Bình, Ban Thường vụ Đảng ủy Cảnh sát biển Việt Nam và Ban Thường vụ Tỉnh ủy Thái Bình đã tổ chức hội nghị ký kết Chương trình phối hợp thực hiện công tác dân vận “Cảnh sát biển đồng hành với ngư dân”. Thái Bình là tỉnh thành thứ 22 Ban Thường vụ Đảng ủy Cảnh sát biển Việt Nam ký kết Chương trình phối hợp thực hiện.',
       name: 'Đảng ủy Cảnh sát biển và Tỉnh ủy Thái Bình ký kết chương trình Cảnh sát biển đồng hành với ngư dân',
@@ -587,20 +589,6 @@ export default function Home() {
               <div className='w-[71%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	max-[1100px]:border-none '>
                 <div className='w-[97%]'>
                   <Posts />
-                  <div className='w-full'>
-                    <List_item_all_new />
-                  </div>
-                  {/* <div className='mt-4'>
-                    {ShortMessageItem.map((item) => (
-                      <ShortMessage
-                        classItiemAll={'line-clamp-1'}
-                        classItiem={
-                          "text-[15px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970]"
-                        }
-                        conTentShortMessage={item.title}
-                      />
-                    ))}
-                  </div> */}
                 </div>
               </div>
 
@@ -618,6 +606,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className='w-full'>
+              <List_item_all_new />
+            </div>
             <div className='w-full m-auto mt-5 shadow-xl'>
               <img className='w-full ' src={Grid_bg} alt='' />
             </div>
@@ -630,7 +621,9 @@ export default function Home() {
                   <NewPost_Item
                     icon_item={<item.icon />}
                     class_Custom_layout={'first:pb-7'}
-                    class_NewPost_Item={'w-[100%]  max-[850px]:w-[100%] cursor-pointer px-4 py-2 pb-4 border-[1px] mt-6 border-slate-200	'}
+                    class_NewPost_Item={
+                      'w-[100%]  max-[850px]:w-[100%] cursor-pointer px-4 py-2 pb-4 border-[1px] mt-6 border-slate-200	'
+                    }
                     itemAll_id={item.id}
                     itemAll_RelatedNews={item.RelatedNews}
                     itemAll_content={item.content}
@@ -665,12 +658,12 @@ export default function Home() {
               </div>
             </div>
             <div className='w-full m-auto flex-col justify-between max-w-screen-2xl max-[850px]:flex-col'>
-              
-
               {NewPost_Item_All_One.map((item) => (
                 <NewPost_Item
                   icon_item={<item.icon />}
-                  class_NewPost_Item={'w-full  max-[850px]:w-[100%] cursor-pointer px-4 py-2 pb-4 border-[1px] border-slate-200 '}
+                  class_NewPost_Item={
+                    'w-full  max-[850px]:w-[100%] cursor-pointer px-4 py-2 pb-4 border-[1px] border-slate-200 '
+                  }
                   itemAll_id={item.id}
                   itemAll_RelatedNews={item.RelatedNews}
                   itemAll_content={item.content}
@@ -681,156 +674,12 @@ export default function Home() {
                   itemAll_Name_All={item.name_All}
                 />
               ))}
-              
             </div>
           </div>
         </div>
 
         <div className='w-[26%] border-slate-400 max-[1300px]:w-[32%] max-[850px]:w-[100%] max-[1100px]:w-[100%]'>
-          <div className='sticky top-0 z-30'>
-            <div className='w-[95%] m-auto '>
-              <div className='w-full m-auto flex border-b-[2.5px] border-[#DA251C] pb-2 '>
-                {media_item_all.map((item) => (
-                  <div className='w-[50%] first:border-r-[1.5px] border-[#191970]'>
-                    <div
-                      className={classNames(
-                        ` ${
-                          item.herder === video_defaule.herder ? 'text-[#191970]' : 'text-[#000]'
-                        } text-[16px] font-bold text-center cursor-pointer`
-                      )}
-                      onClick={() => setVideo_Defaule(item)}
-                    >
-                      {item.herder}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className='w-full mt-3'>
-                {video_defaule.content.video === '' ? (
-                  <>
-                    <img src={video_defaule.content.img} className=' w-full object-cover h-[13rem]' />
-                    <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
-                  </>
-                ) : (
-                  <>
-                    <video
-                      src={video_defaule.content.video}
-                      className=' w-full object-cover h-[13rem]'
-                      controls
-                    ></video>
-                    <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
-                  </>
-                )}
-
-                <div className='flex justify-end'>
-                  <Link to={'/media'} className='text-[#003f7f] text-[12px] font-semibold	'>
-                    Xem tất cả...
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div className='w-full mt-3'>
-                <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center flex items-center'>
-                  <img
-                    src={
-                      'https://static.wixstatic.com/media/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.png/v1/fill/w_500,h_750,al_c,q_90,usm_0.66_1.00_0.01/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.webp'
-                    }
-                    className='w-[16px]'
-                  />
-                  <div className='ml-2'>Theo gương Bác</div>
-                </div>
-                <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
-                  {Theoguongbac.map((item) => (
-                    <ShortMessage
-                      classItiemAll={'line-clamp-2'}
-                      classItiem={
-                        "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
-                      }
-                      conTentShortMessage={item.content}
-                    />
-                  ))}
-                </div>
-              </div>
-              <div className='w-full mt-3'>
-                <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
-                  Tuyên truyền Luật Cảnh sát biển Việt Nam
-                </div>
-                <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
-                  {LUATCSB.map((item) => (
-                    <ShortMessage
-                      classItiemAll={'line-clamp-2'}
-                      classItiem={
-                        "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
-                      }
-                      conTentShortMessage={item.content}
-                    />
-                  ))}
-                </div>
-              </div>
-              <div className='w-full mt-3'>
-                <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
-                  Phòng chống IUU
-                </div>
-                <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
-                  {Theoguongbac.map((item) => (
-                    <ShortMessage
-                      classItiemAll={'line-clamp-2'}
-                      classItiem={
-                        "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
-                      }
-                      conTentShortMessage={item.content}
-                    />
-                  ))}
-                </div>
-              </div>
-              {/* <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
-                <img className='w-[95%] m-auto' src={BG_IMG} alt='' />
-                <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto ' />
-                <img
-                  src='https://tranvietmb.com/wp-content/uploads/2021/09/bao-hiem-lien-ket-dau-tu-920x425.jpg'
-                  alt=''
-                  className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
-                />
-                <img
-                  src='https://tttctt.1cdn.vn/thumbs/600x315/2023/03/06/kv-biz-mbbank.jpg'
-                  alt=''
-                  className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
-                />
-                <img
-                  src='https://viettelstore24h.com/wp-content/uploads/2021/12/banner.jpg'
-                  alt=''
-                  className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
-                />
-                <img
-                  src='https://ib.vib.com.vn/banners/Promotion/20221121100604159_vna.jpg'
-                  className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
-                  alt=''
-                />
-                <img
-                  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_zgfi7thzSz_0xcjtJNIbgG6hkqeBeOSow&usqp=CAU'
-                  alt=''
-                  className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
-                />
-                <img
-                  src='data:image/png;base64,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'
-                  alt=''
-                  className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
-                />
-              </div> */}
-            </div>
-            <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	hover:text-[#191970]'>
-              BẢN ĐỒ HÀNH CHÍNH
-            </h1>
-            <img src={Map} alt='' className='cursor-pointer	 w-full' />
-            <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
-              © Cổng TTĐT Cảnh sát biển
-            </p>
-            <div className='mt-5'>
-              <Box_weather List_weather={List_weather_all} />
-            </div>
-          </div>
+          <Box_Call_All />
         </div>
       </div>
       <div className='w-[80%] max-w-screen-2xl m-auto mt-10'>
@@ -889,7 +738,7 @@ export default function Home() {
 
 {
   /* <div className='w-full m-auto max-w-screen-2xl mt-5'>
-<div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center '>
+  <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center '>
 <div className='bg-[#DA251C] h-7 w-1'></div>
 <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] text-[#031739] hover:text-[#191970] '>
 Tổ chức - Biên chế
@@ -906,7 +755,7 @@ Cục Nghiệp vụ và Pháp luật, Cục Hậu Cần, Cục Kỹ thuật, cá
 Việt Nam.
 </span>
 </p>
-    <p className=' text-[#333] my-3 text-[15px]'>
+<p className=' text-[#333] my-3 text-[15px]'>
     <span>
         Chức danh pháp lý của Cảnh sát biển Việt Nam là Cảnh sát viên, Trinh sát viên và Cán bộ điều tra, có
         nhiệm vụ phòng ngừa, ngăn chặn, phát hiện và đấu tranh phòng, chống tội phạm, vi phạm pháp luật.
@@ -978,7 +827,7 @@ Việt Nam.
                 ))}
                 </div>
                 </div>
-              </div> */
+                </div> */
 }
 {
   /* <div className='w-[80%] m-auto flex justify-between mt-7 max-w-screen-2xl max-[850px]:flex-col'>
@@ -996,7 +845,7 @@ Việt Nam.
           itemAll_Name_All={item.name_All}
           />
           ))}
-        </div> */
+          </div> */
 }
 {
   /* <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto py-2' /> */
@@ -1010,18 +859,168 @@ Việt Nam.
 }
 {
   /* <div className='hidden max-[1300px]:block '>
-          {!close && <AiOutlineBars onClick={handleClose} />}
+  {!close && <AiOutlineBars onClick={handleClose} />}
         
-          {close && (
+  {close && (
             <div className='absolute w-[100%] z-[1] right-0 left-0 top-0 p-4 bg-white '>
-              <div className='flex justify-between bg-[#F6F6F6] items-center p-[10px]'>
+            <div className='flex justify-between bg-[#F6F6F6] items-center p-[10px]'>
                 <h3>Menu</h3>
                 {close && <AiOutlineClose className='bg-[#F6F6F6] p-[3px]' onClick={handleClose} />}
-              </div>
-              {narBarItemAll.map((item) => (
-                <div className='pt-2 px-[10px]'>{item.title}</div>
+                </div>
+                {narBarItemAll.map((item) => (
+                  <div className='pt-2 px-[10px]'>{item.title}</div>
               ))}
             </div>
           )}
-        </div> */
+          </div> */
+}
+
+{
+  /* <div className='w-full text-center text-[16px] font-bold hover:text-[#191970] py-2'>
+    <img className='w-[95%] m-auto' src={BG_IMG} alt='' />
+    <img src={BG_IMG_THREE} alt='' className='w-[95%] m-auto ' />
+    <img
+    src='https://tranvietmb.com/wp-content/uploads/2021/09/bao-hiem-lien-ket-dau-tu-920x425.jpg'
+    alt=''
+      className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
+    />
+    <img
+    src='https://tttctt.1cdn.vn/thumbs/600x315/2023/03/06/kv-biz-mbbank.jpg'
+    alt=''
+      className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
+    />
+    <img
+      src='https://viettelstore24h.com/wp-content/uploads/2021/12/banner.jpg'
+      alt=''
+      className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
+    />
+    <img
+      src='https://ib.vib.com.vn/banners/Promotion/20221121100604159_vna.jpg'
+      className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
+      alt=''
+    />
+    <img
+      src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_zgfi7thzSz_0xcjtJNIbgG6hkqeBeOSow&usqp=CAU'
+      alt=''
+      className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
+    />
+    <img
+    src='data:image/png;base64,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'
+      alt=''
+      className='w-[95%] m-auto h-[122px] max-[1100px]:h-[220px]'
+    />
+    </div> */
+}
+
+{
+  /* <div className='sticky top-0 z-30'>
+  <div className='w-[95%] m-auto '>
+    <div className='w-full m-auto flex border-b-[2.5px] border-[#DA251C] pb-2 '>
+      {media_item_all.map((item) => (
+        <div className='w-[50%] first:border-r-[1.5px] border-[#191970]'>
+          <div
+            className={classNames(
+              ` ${
+                item.herder === video_defaule.herder ? 'text-[#191970]' : 'text-[#000]'
+              } text-[16px] font-bold text-center cursor-pointer`
+            )}
+            onClick={() => setVideo_Defaule(item)}
+          >
+            {item.herder}
+          </div>
+        </div>
+      ))}
+    </div>
+    <div className='w-full mt-3'>
+      {video_defaule.content.video === '' ? (
+        <>
+          <img src={video_defaule.content.img} className=' w-full object-cover h-[13rem]' />
+          <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
+        </>
+      ) : (
+        <>
+          <video
+            src={video_defaule.content.video}
+            className=' w-full object-cover h-[13rem]'
+            controls
+          ></video>
+          <p className='text-[15px] font-bold mt-2'>{video_defaule.content.title}</p>
+        </>
+      )}
+
+      <div className='flex justify-end'>
+        <Link to={'/media'} className='text-[#003f7f] text-[12px] font-semibold	'>
+          Xem tất cả...
+        </Link>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div className='w-full mt-3'>
+      <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center flex items-center'>
+        <img
+          src={
+            'https://static.wixstatic.com/media/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.png/v1/fill/w_500,h_750,al_c,q_90,usm_0.66_1.00_0.01/9d8ed5_c69e33fefd0b420f8763d2c478de5c66~mv2.webp'
+          }
+          className='w-[16px]'
+        />
+        <div className='ml-2'>Theo gương Bác</div>
+      </div>
+      <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
+        {Theoguongbac.map((item) => (
+          <ShortMessage
+            classItiemAll={'line-clamp-2'}
+            classItiem={
+              "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
+            }
+            conTentShortMessage={item.content}
+          />
+        ))}
+      </div>
+    </div>
+    <div className='w-full mt-3'>
+      <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
+        Tuyên truyền Luật Cảnh sát biển Việt Nam
+      </div>
+      <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
+        {LUATCSB.map((item) => (
+          <ShortMessage
+            classItiemAll={'line-clamp-2'}
+            classItiem={
+              "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
+            }
+            conTentShortMessage={item.content}
+          />
+        ))}
+      </div>
+    </div>
+    <div className='w-full mt-3'>
+      <div className='uppercase py-2 border-b-[2.5px] border-[#DA251C] text-[#191970] font-bold text-center'>
+        Phòng chống IUU
+      </div>
+      <div className='w-95% m-auto py-4 px-2 bg-[#F0F0F0]'>
+        {Theoguongbac.map((item) => (
+          <ShortMessage
+            classItiemAll={'line-clamp-2'}
+            classItiem={
+              "text-[14px] before:content-['>'] before:mr-2 before:text-red-500 flex cursor-pointer hover:text-[#191970] my-2"
+            }
+            conTentShortMessage={item.content}
+          />
+        ))}
+      </div>
+    </div>
+    <h1 className='text-center bg-[#F6F6F6] text-[17px] py-4 font-bold	border-slate-400	hover:text-[#191970]'>
+      BẢN ĐỒ HÀNH CHÍNH
+    </h1>
+    <img src={Map} alt='' className='cursor-pointer	 w-full' />
+    <p className='text-center bg-[#F6F6F6] text-[13px] text-[#3B4E68] py-4 border-slate-400'>
+      © Cổng TTĐT Cảnh sát biển
+    </p>
+    <div className='mt-5'>
+      <Box_weather List_weather={List_weather_all} />
+    </div>
+  </div>
+</div> */
 }
