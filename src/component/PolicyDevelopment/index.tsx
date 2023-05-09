@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { item_All, item } from '../NewPost_Item'
 import New_post_icon_Item from '../New_post_icon_Item'
 import Tippy from '@tippyjs/react'
@@ -17,7 +17,24 @@ export default function PolicyDevelopment({
   itemAll_content_All,
   header
 }: item_All) {
-  const handle_item=()=>{}
+
+
+  const [item_Wrapper, setItem_Wrapper] = useState({
+    id: 8,
+    image: itemAll_image,
+    content:
+      'Từ ngày 04 – 06/5/2023, Thiếu tướng Lê Quang Đạo - Tư lệnh Cảnh sát biển Việt Nam, Đại biểu Quốc hội khóa XV cùng Đoàn Đại biểu Quốc hội (ĐBQH) tỉnh Phú Yên đã tiếp xúc cử tri tại Tp. Tuy Hòa, thị xã Sông Cầu, huyện Tuy An và huyện Đồng Xuân thuộc tỉnh Phú Yên.',
+    name: 'Tập huấn, phổ biến chính sách, pháp luật về bảo vệ biên giới và chủ quyền biển, đảo',
+    nameAll: itemAll_Name_All,
+    contentAll: itemAll_content_All
+  })
+
+
+  const handle_Item=(img:string,storyall:string,contentAll:string)=>{
+    setItem_Wrapper((pre)=>({...pre,image:img,nameAll:storyall,contentAll:contentAll}))
+  }
+
+
   return (
     <div className='w-[100%] cursor-pointer	'>
       <div className='w-full border-b-[4px] relative  border-[#d6d6d6] pt-[3.1rem]'>
@@ -36,21 +53,21 @@ export default function PolicyDevelopment({
           <div className='w-full overflow-hidden cursor-pointer relative group'>
             <img
               className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out 	'
-              src={itemAll_image}
+              src={item_Wrapper.image}
               alt=''
             />
           </div>
 
           <div className='w-full mt-3'>
             <h3 className='line-clamp-3 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
-              {itemAll_Name_All}
+              {item_Wrapper.nameAll}
             </h3>
-            <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
+            <p className='text-[14px] text-[#3B4E68]'>{item_Wrapper.contentAll}</p>
           </div>
         </div>
         <div className='mt-4 w-[45%]  max-[1000px]:flex  max-[1000px]:w-[100%] max-[1000px]:flex-wrap '>
           {itemAll_RelatedNews.map((item: item) => (
-            <New_post_icon_Item handle={handle_item} newsItem={item} />
+            <New_post_icon_Item handle={handle_Item} newsItem={item} />
           ))}
         </div>
       </div>

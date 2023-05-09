@@ -458,7 +458,8 @@ export default function Home() {
             'Bộ Tư lệnh Cảnh sát biển tổ chức Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
           id: 4,
           img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/hoi-trai.jpg',
-          contentAll: ''
+          contentAll:
+            'Trong hai ngày 07 và 8/4, Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 gồm 50 cán bộ đoàn viên thanh niên do Đại tá Đinh Văn Điền - Phó Chủ nhiệm Chính trị Bộ Tư lệnh Vùng làm trưởng đoàn tham gia hội trại "Nối vòng tay lớn" năm 2023 do UBND thành phố Vũng Tàu tổ chức.'
         },
         {
           story_All:
@@ -466,7 +467,8 @@ export default function Home() {
           story: 'Thể lệ Cuộc vận động sáng tác văn học nghệ thuật về Lực lượng Cảnh sát biển Việt Nam',
           id: 3,
           img: 'https://canhsatbien.vn/upload/files/1/Van%20hoa%20-%20the%20thao/Nam%202023/M%E1%BB%99t-trong-c%C3%A1c-ti%E1%BA%BFt-m%E1%BB%A5c-%C4%91%E1%BA%B7c-s%E1%BA%AFc-c%E1%BB%A7a-%C4%91o%C3%A0n-t%E1%BA%A1i-%C4%91%C3%AAm-l%C6%B0u-di%E1%BB%87n-t%E1%BA%A1i-B%E1%BB%99-T%C6%B0-l%E1%BB%87nh-V%C3%B9ng-C%E1%BA%A3nh-s%C3%A1t-bi%E1%BB%83n-3.jpg',
-          contentAll: ''
+          contentAll:
+            'Tối 07/4, Đoàn Văn công Quân chủng Phòng không - Không quân đã đến biểu diễn phục vụ cán bộ, chiến sĩ Bộ Tư lệnh Vùng Cảnh sát biển 3, chương trình nghệ thuật "Vinh quang người chiến sĩ canh trời”. Tới dự có đồng chí Thiếu tướng Ngô Bình Minh - Tư lệnh Vùng. '
         }
       ]
     },
@@ -487,25 +489,33 @@ export default function Home() {
           story_All: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 thăm, tặng quà Mẹ Việt Nam anh hùng',
           story: 'Bộ Tư lệnh Vùng Cảnh sát biển 3 tổ chức Hội thi cán bộ giảng dạy chính trị năm 2023',
           id: 1,
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/%C4%90%E1%BA%A1i-t%C3%A1-Tr%E1%BA%A7n-V%C4%83n-H%E1%BA%ADu-th%C4%83m-h%E1%BB%8Fi%2C-%C4%91%E1%BB%99ng-vi%C3%AAn-M%E1%BA%B9-VNAH-Tr%E1%BA%A7n-Th%E1%BB%8B-B%E1%BB%87.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/Vung%201/%C4%90%E1%BA%A1i-t%C3%A1-Tr%E1%BA%A7n-V%C4%83n-H%E1%BA%ADu-th%C4%83m-h%E1%BB%8Fi%2C-%C4%91%E1%BB%99ng-vi%C3%AAn-M%E1%BA%B9-VNAH-Tr%E1%BA%A7n-Th%E1%BB%8B-B%E1%BB%87.jpg',
+          contentAll:
+            'Nhân kỷ niệm 48 năm ngày Giải phóng miền Nam, thống nhất đất nước (30/4/1975 - 30/4/2023), sáng 28/4, Đại tá Trần Văn Hậu - Bí thư Đảng ủy, Chính uỷ BTL Vùng Cảnh sát biển 1 cùng đoàn công tác đã đến thăm hỏi, động viên và tặng quà Mẹ Việt Nam anh hùng Trần Thị Bệ, trú tại tổ dân phố số 9, phường Đằng Hải, quận Hải An, Tp. Hải Phòng.'
         },
         {
           story_All: 'Luyện tập các phương án sẵn sàng chiến đấu bảo vệ cơ quan Bộ Tư lệnh Cảnh sát biển',
           story: 'Không ngừng củng cố kiến thức, chuyên môn kỹ thuật cho đội ngũ QNCN, CNVQP',
           id: 2,
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/BTL/Luyen%20tap%20SSCD/Thuong-ta-Nguyen-Ngoc-Tung.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/BTL/Luyen%20tap%20SSCD/Thuong-ta-Nguyen-Ngoc-Tung.jpg',
+          contentAll:
+            'Nhằm nâng cao trình độ chỉ huy của cán bộ các cấp, sự hiệp đồng chặt chẽ giữa các cơ quan, lực lượng, bộ phận trong luyện tập các phương án chiến đấu tại chỗ bảo vệ cơ quan Bộ Tư lệnh Cảnh sát biển. Chiều 27/4, Bộ Tham mưu Cảnh sát biển tổ chức tiến hành luyện tập các phương án sẵn sàng chiến đấu bảo vệ cơ quan và các mục tiêu được giao.'
         },
         {
           story_All: 'Tập huấn bồi dưỡng Cuộc thi chính luận về bảo vệ nền tảng tư tưởng của Đảng',
           story: 'Sôi nổi Cuộc thi “Em yêu biển, đảo quê hương” tại huyện Núi Thành, tỉnh Quảng Nam',
           id: 3,
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/BTL/quang-canh-tap-huan.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%204/BTL/quang-canh-tap-huan.jpg',
+          contentAll:
+            'Hưởng ứng Cuộc thi chính luận về bảo vệ nền tảng tư tưởng của Đảng lần thứ ba, năm 2023 do Trung ương và Quân ủy Trung ương (QUTW) phát động, sáng 27/4, tại Hà Nội, Cục Tuyên huấn/Tổng cục Chính trị Quân đội nhân dân Việt Nam - Cơ quan Thường trực Ban Chỉ đạo 35 QUTW tổ chức Hội nghị tập huấn bồi dưỡng Cuộc thi chính luận về bảo vệ nền tảng tư tưởng của Đảng lần thứ ba, năm 2023 nhằm tiếp tục bồi dưỡng nâng cao trình độ tổ chức và kỹ năng chuẩn bị các tác phẩm tham gia Cuộc thi chính luận cho các cơ quan, đơn vị và các lực lượng tham gia Cuộc thi chính luận đạt hiệu quả thiết thực. Thiếu tướng Đỗ Thanh Phong - Phó cục trưởng Cục Tuyên huấn/Tổng cục Chính trị Quân đội nhân dân Việt Nam dự và chủ trì.'
         },
         {
           story_All: 'Bảo hiểm xã hội Bộ Quốc phòng làm việc với Bộ Tư lệnh Cảnh sát biển',
           story: 'Tuổi trẻ Bộ Tư lệnh Vùng Cảnh sát biển 3 hưởng ứng Ngày Sách và văn hóa đọc Việt Nam năm 2023',
           id: 4,
-          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%205/BTL/Quang-canh-BHXH.jpg'
+          img: 'https://canhsatbien.vn/upload/files/1/Hoat%20dong%20CSB/Cong%20tac%20CSB/Nam%202023/Thang%205/BTL/Quang-canh-BHXH.jpg',
+          contentAll:
+            'Chiều 05/5, Đoàn công tác của Bảo hiểm xã hội Bộ Quốc phòng do Đại tá Trần Ngọc Duy - Phó Giám đốc Bảo hiểm xã hội Bộ Quốc phòng làm trưởng đoàn tiến hành thẩm định quyết toán thu, chi bảo hiểm xã hội (BHXH), bảo hiểm y tế (BHYT), bảo hiểm thất nghiệp (BHTN) năm 2022 tại Bộ Tư lệnh Cảnh sát biển. Đại tá Lê Đình Cường - Phó Tư lệnh, Tham mưu trưởng Cảnh sát biển tiếp và làm việc với đoàn.'
         }
       ]
     }
@@ -654,7 +664,6 @@ export default function Home() {
             </div>
             <div className='w-full'>
               <List_item_all_new />
-              
             </div>
             <div className='w-full m-auto mt-5 shadow-xl'>
               <img className='w-full ' src={Grid_bg} alt='' />
@@ -664,7 +673,6 @@ export default function Home() {
             </div> */}
             <div className='w-full m-auto max-w-screen-2xl justify-between flex  max-[1160px]:flex-col'>
               <div className=' w-full flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
-                
                 {NewPost_Item_All.map((item) => (
                   <NewPost_Item
                     icon_item={<item.icon />}
@@ -706,6 +714,7 @@ export default function Home() {
               </div>
             </div>
             <div className='w-full m-auto flex-col justify-between max-w-screen-2xl max-[850px]:flex-col'>
+              
               {NewPost_Item_All_One.map((item) => (
                 <NewPost_Item
                   icon_item={<item.icon />}
