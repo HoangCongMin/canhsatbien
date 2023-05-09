@@ -4,7 +4,8 @@ import Home from '../Page/Home'
 import Media from '../Page/Media'
 import MediaLayout from '../layout/MediaLayout'
 import Organization_Payroll from '../Page/Organization_Payroll'
-import GrassRootslevelundertheUnits from '../Page/GrassRootslevelundertheUnits'
+import Post_detail from '../Page/Post_detail'
+import Post_Detail_Layout from '../layout/Post_Detail_Layout'
 import React from 'react'
 
 export default function useRouterElement() {
@@ -34,19 +35,19 @@ export default function useRouterElement() {
       )
     },
     {
-      path: '/gioithieu',
+      path: '/Post_detail',
       element: (
-        <Main>
-          <GrassRootslevelundertheUnits />
-        </Main>
+        <Post_Detail_Layout>
+          <Post_detail />
+        </Post_Detail_Layout>
       )
     },
     {
       path: '/:name',
       element: (
-        <Main>
-          <GrassRootslevelundertheUnits />
-        </Main>
+        <Post_Detail_Layout>
+          <Post_detail />
+        </Post_Detail_Layout>
       )
     }
   ])

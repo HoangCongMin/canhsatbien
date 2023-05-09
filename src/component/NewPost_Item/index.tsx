@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import New_post_icon_Item from '../New_post_icon_Item'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
@@ -9,7 +9,8 @@ export interface item {
   story: string
   id: number
   story_All: string
-  img:string
+  contentAll:string
+  img: string
 }
 
 export interface item_All {
@@ -39,32 +40,48 @@ export default function NewPost_Item({
   class_NewPost_Item,
   class_Custom_layout
 }: item_All) {
+  const [item_Wrapper, setItem_Wrapper] = useState({
+    id: 8,
+    image: itemAll_image,
+    content:
+      'Từ ngày 04 – 06/5/2023, Thiếu tướng Lê Quang Đạo - Tư lệnh Cảnh sát biển Việt Nam, Đại biểu Quốc hội khóa XV cùng Đoàn Đại biểu Quốc hội (ĐBQH) tỉnh Phú Yên đã tiếp xúc cử tri tại Tp. Tuy Hòa, thị xã Sông Cầu, huyện Tuy An và huyện Đồng Xuân thuộc tỉnh Phú Yên.',
+    name: 'Tập huấn, phổ biến chính sách, pháp luật về bảo vệ biên giới và chủ quyền biển, đảo',
+    nameAll: itemAll_Name_All,
+    contentAll: itemAll_content_All
+  })
+
+  const handle_Item=(img:string,storyall:string,contentAll:string)=>{
+    setItem_Wrapper((pre)=>({...pre,image:img,nameAll:storyall,contentAll:contentAll}))
+  }
+
+  console.log(itemAll_RelatedNews)
   return (
     <div className={classNames(`${class_NewPost_Item}${class_Custom_layout} mt-6`)}>
-      <div className='w-[50%] border-b-[3px] border-[#DA251C]'>
-        <div className=' py-3 flex items-center'>
+      <div className='w-[100%] relative border-b-[4px] py-3	pb-[2.4rem]'>
+        {/* <span className='border-b-[4px] border-[#d42b1a] absolute top-[50px] w-[50%]'></span> */}
+        <span className='flex items-center border-b-[4px] border-[#d42b1a] absolute top-0 py-3 z-10 '>
           <div className='text-[22px] text-[#ff7f00] pb-1'>{icon_item}</div>
-          <h1 className='font-bold	text-[17px] uppercase text-[#00008B]  ml-3'>{itemAll_title}</h1>
-        </div>
+          <h1 className='font-bold	text-[17px] uppercase text-[#00008B]  ml-3 '>{itemAll_title}</h1>
+        </span>
       </div>
 
       <div className='flex justify-between'>
-        <div className='mt-4 w-[50%] '>
+        <div className='mt-4 w-[50%]  '>
           <div className='w-full overflow-hidden cursor-pointer relative group'>
             <img
               className=' w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out'
-              src={itemAll_image}
+              src={item_Wrapper.image}
               alt=''
             />
           </div>
           <div className='w-full mt-3'>
-            <h3 className='text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>{itemAll_Name_All}</h3>
-            <p className='text-[14px] text-[#3B4E68]'>{itemAll_content_All}</p>
+            <h3 className='text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>{item_Wrapper.nameAll}</h3>
+            <p className='text-[14px] text-[#3B4E68]'>{item_Wrapper.contentAll}</p>
           </div>
         </div>
         <div className='mt-4 w-[45%]'>
           {itemAll_RelatedNews.map((item: item) => (
-            <New_post_icon_Item newsItem={item} />
+            <New_post_icon_Item newsItem={item} handle={handle_Item} />
           ))}
         </div>
       </div>

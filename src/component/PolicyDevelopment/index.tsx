@@ -17,10 +17,13 @@ export default function PolicyDevelopment({
   itemAll_content_All,
   header
 }: item_All) {
+  const handle_item=()=>{}
   return (
     <div className='w-[100%] cursor-pointer	'>
-      <div className='w-[50%] border-b-[3px] border-[#DA251C]'>
-        <div className='py-3 flex items-center'>
+      <div className='w-full border-b-[4px] relative  border-[#d6d6d6] pt-[3.1rem]'>
+      {/* <span className='border-b-[4px] border-[#d42b1a] absolute top-[50px] w-[19%]'></span> */}
+
+        <div className='py-3 flex items-center border-b-[4px] border-[#d42b1a] absolute top-0 z-10'>
           <RiSendPlaneFill className='text-[#ff7f00] text-[22px]' />
           <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
             {header}
@@ -46,7 +49,7 @@ export default function PolicyDevelopment({
         </div>
         <div className='mt-4 w-[45%] '>
           {itemAll_RelatedNews.map((item: item) => (
-            <New_post_icon_Item newsItem={item} />
+            <New_post_icon_Item handle={handle_item} newsItem={item} />
           ))}
         </div>
       </div>

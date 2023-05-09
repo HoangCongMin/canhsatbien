@@ -2,11 +2,10 @@ import React from 'react'
 import Content_Same from '../../component/Content_Same'
 import Box_Call from '../../component/Box_Call'
 
-export default function GrassRootslevelundertheUnits() {
+export default function Post_detail() {
   return (
-    <div className='w-full'>
-      <div className='w-[80%] m-auto max-w-screen-2xl'>
-        <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center mt-5'>
+    <div className='w-full max-w-screen-2xl'>
+        <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center'>
           <div className='bg-[#DA251C] h-7 w-1'></div>
           <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] hover:text-[#191970] cursor-pointer '>
             Cục Chính trị
@@ -57,8 +56,7 @@ export default function GrassRootslevelundertheUnits() {
             Cổng TTĐT Cảnh Sát Biển
           </p>
         </div>
-      </div>
-      <div className='w-[80%] m-auto mb-14 max-w-screen-2xl'>
+      <div className='w-full m-auto mb-14 max-w-screen-2xl'>
         <Content_Same />
       </div>
     </div>
