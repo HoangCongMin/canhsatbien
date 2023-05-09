@@ -82,10 +82,10 @@ export default function Post_detail() {
           - 3 Huân chương Chiến công (hạng Nhất, hạng Nhì, hạng Ba)…
         </p>
       </div>
-      <div className='w-full'>
+      <div className='w-full  max-w-screen-2xl'>
         <Share />
       </div>
-      <div className='pt-3 pb-2'>
+      <div className='pt-3 pb-2 '>
         <p className='font-bold text-[16px] uppercase mt-[2px] hover:text-[#191970] cursor-pointer text-right'>
           Cổng TTĐT Cảnh Sát Biển
         </p>
