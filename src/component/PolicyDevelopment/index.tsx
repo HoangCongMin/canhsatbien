@@ -5,6 +5,8 @@ import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import { followCursor } from 'tippy.js'
 import { RiSendPlaneFill } from 'react-icons/ri'
+import Logo from '../../assets/logo-csb-080730606.png'
+
 
 export default function PolicyDevelopment({
   itemAll_id,
@@ -40,8 +42,9 @@ export default function PolicyDevelopment({
       <div className='w-full border-b-[4px] relative  border-[#d6d6d6] pt-[3.1rem]'>
       {/* <span className='border-b-[4px] border-[#d42b1a] absolute top-[50px] w-[19%]'></span> */}
 
-        <div className='py-3 flex items-center border-b-[4px] border-[#d42b1a] absolute top-0 z-10'>
-          <RiSendPlaneFill className='text-[#ff7f00] text-[22px]' />
+        <div className='py-3 flex items-center border-b-[4px] border-[#ffcc00] absolute top-0 z-10'>
+          <img src={Logo} className=' w-[1.2rem]' />
+          
           <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
             {header}
            
@@ -65,11 +68,11 @@ export default function PolicyDevelopment({
             <p className='text-[14px] text-[#3B4E68]'>{item_Wrapper.contentAll}</p>
           </div>
         </div>
-        <div className='mt-4 w-[45%]  max-[1000px]:flex  max-[1000px]:w-[100%] max-[1000px]:flex-wrap '>
+        {/* <div className='mt-4 w-[45%] flex flex-col justify-between  max-[1000px]:flex-row  max-[1000px]:w-[100%] max-[1000px]:flex-wrap '>
           {itemAll_RelatedNews.map((item: item) => (
             <New_post_icon_Item handle={handle_Item} newsItem={item} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   )

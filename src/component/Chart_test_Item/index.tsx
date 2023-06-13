@@ -10,7 +10,7 @@ export default function Chart_test_Item() {
           <li>
             <ul className='director'>
               <li>
-                <Link to={'/contact'}>
+                <Link className='hover:h-[80px]' to={'/contact'}>
                   <span className='line-clamp-1 text-[17px]'>Bộ Tư lệnh Cảnh sát biển Việt Nam</span>
                 </Link>
                 <ul className='subdirector'>

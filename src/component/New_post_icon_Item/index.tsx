@@ -3,34 +3,54 @@ import { item } from '../NewPost_Item'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import classNames from 'classnames'
-
+import Featured from '../../type/new.type'
+import { FormatImage } from '../../utils/util.type'
+import { Link } from 'react-router-dom'
 interface newsItemStory {
-  newsItem: item
+  newsItem: Featured
   classItem_all?: string
   img_Item?: string
-  contentAll?:string
-  handle: (img: string, storyall: string,contentall:string) => void
+  contentAll?: string
+  handle: (img: string, storyall: string, contentall: string) => void
+  content?: string
+  id_Item?: number
 }
-
-export default function New_post_icon_Item({ newsItem, classItem_all, img_Item,handle}: newsItemStory) {
+// onClick={()=>handle(newsItem.img,newsItem.story_All,newsItem.contentAll)}
+export default function New_post_icon_Item({
+  newsItem,
+  classItem_all,
+  img_Item,
+  handle,
+  content,
+  id_Item
+}: newsItemStory) {
   return (
-   
-      <div className='py-2 cursor-pointer max-[687px]:w-[45%] max-[450px]:w-[100%]  max-[1000px]:w-[160px] max-[1000px]:m-[6px]' onClick={()=>handle(newsItem.img,newsItem.story_All,newsItem.contentAll)}>
-        <div
-          className={classNames(
-            ` text-[#182940] text-[15px] hover:text-[#191970] font-medium	w-full m-auto flex justify-between max-[1000px]:flex-col  ${
-              classItem_all ? 'text-[10px]' : 'text-[14px]'
-            }`
-          )}
-        >
-          <img src={newsItem.img} className='w-[30%] h-[68px] max-[450px]:h-auto max-[1000px]:h-[100px] max-[1000px]:w-full' alt='' />
-          <div className='w-[65%] max-[1000px]:w-full'>
-            <div className='text-[15px] hover:text-[#191970] font-medium  max-[1000px]:line-clamp-4  max-[1000px]:mt-2'>{newsItem.story_All}</div>
-            <div className='text-[14px] font-[Roboto] text-[#62748D]'>20:17</div>
-          </div>
-        </div>
-
-       
+    <Link
+      to={`/${id_Item}`}
+      className={classNames(
+        `text-[#182940] text-[15px] first:text-[18px]  font-medium	w-full h-full m-auto grid  grid-cols-5 grid-rows-1  gap-x-3   max-[1000px]:flex-col first:flex-col first:flex  ${
+          classItem_all
+            ? 'text-[10px]'
+            : 'text-[14px] first:flex-col first:row-span-4 first:col-span-3 col-span-2  first:max-[900px]:col-span-5 max-[900px]:col-span-2 max-[900px]:flex  max-[500px]:col-span-4'
+        }`
+      )}
+    >
+      <div className={classNames(`overflow-hidden cursor-pointer col-span-3 relative group shadow-xl`)}>
+        <img
+          src={`${FormatImage(newsItem.gallery)}`}
+          className='w-full h-full min-w-[131px] max-[450px]:h-auto max-[1000px]:w-full max-[500px]:grid-col-1  object-cover  group-hover:scale-110 transition duration-500 ease-in-out '
+          alt=''
+        />
       </div>
+      <div className='w-full max-[1000px]:w-full col-span-2'>
+        <div className='break-word line-clamp-4  mt-2 hover:text-[#191970] font-medium max-[1000px]:line-clamp-3  max-[1000px]:mt-2  '>
+          {newsItem.title}
+        </div>
+        {content && <div className='text-[14px] mt-1 text-[#3B4E68] line-clamp-4'>{content}</div>}
+        {/* <div className='text-[14px] font-[Roboto] text-[#62748D]'>20:17</div> */}
+      </div>
+    </Link>
   )
 }
+
+// max-[1300px]:w-[50%] max-[1245px]:w-[47%] max-[1175px]:w-[45%] max-[1143px]:w-[43%] max-[1100px]:w-[50%]

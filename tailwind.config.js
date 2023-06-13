@@ -24,7 +24,8 @@ export default {
         backgroundImage: {
           'hero-pattern': "url('/img/hero-pattern.svg')",
           'footer-texture': "url('/img/footer-texture.png')",
-        }
+        },
+        
       },
       fontFamily: {
         Roboto: ['Roboto']

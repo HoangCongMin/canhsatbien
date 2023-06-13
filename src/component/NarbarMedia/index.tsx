@@ -18,7 +18,6 @@ export default function NarbarMedia() {
   const menu_Media = [
     { icon: BsFillCameraVideoFill, title: 'Video' },
     { icon: BsFillMicFill, title: 'Radio News' },
-    { title: 'Longform' },
     { icon: MdInsertPhoto, title: 'Photos' },
     { icon: AiFillPieChart, title: 'infographics' },
     { icon: RiVoiceprintFill, title: 'Voices' }
@@ -47,29 +46,27 @@ export default function NarbarMedia() {
           </Link>
         </div>
         <div className='w-[60%] flex justify-between items-center max-[1240px]:hidden'>
-          <div className='flex items-center cursor-pointer'>
+          <Link to={ '/media/Video'} className='flex items-center cursor-pointer'>
             <BsFillCameraVideoFill className='text-[#274c90] text-[20px] ' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium	'>Video</span>
-          </div>
-          <div className='flex items-center cursor-pointer '>
+          </Link>
+          <Link to={'/media/Radio_News'} className='flex items-center cursor-pointer '>
             <BsFillMicFill className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Radio News</span>
-          </div>
-          <div className='flex items-center cursor-pointer'>
+          </Link>
+          <Link to={ '/media/Voices'} className='flex items-center cursor-pointer'>
             <RiVoiceprintFill className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Voices</span>
-          </div>
-          <div className='flex items-center cursor-pointer '>
-            <span className='text-[#182940] font-[Roboto] text-[15px] font-medium'>Longform</span>
-          </div>
-          <div className='flex items-center cursor-pointer'>
+          </Link>
+
+          <Link to={ '/media/Infographics'} className='flex items-center cursor-pointer'>
             <AiFillPieChart className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>infographics</span>
-          </div>
-          <div className='flex items-center cursor-pointer'>
+          </Link>
+          <Link to={ '/media/Photos'} className='flex items-center cursor-pointer'>
             <MdInsertPhoto className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Photos</span>
-          </div>
+          </Link>
           <div className='flex items-center  cursor-pointer'>
             <BsSearch />
           </div>

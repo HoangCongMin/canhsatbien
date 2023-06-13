@@ -1,24 +1,49 @@
 import React from 'react'
-import { BsFacebook } from 'react-icons/bs'
+// import { BsFacebook } from 'react-icons/bs'
 import { FiMessageSquare } from 'react-icons/fi'
 import { RiPrinterFill } from 'react-icons/ri'
 import { IoMdAddCircleOutline } from 'react-icons/io'
 import { GoTextSize } from 'react-icons/go'
 import { HiOutlineMinusCircle } from 'react-icons/hi'
-import {AiFillLike} from'react-icons/ai'
+import { AiFillLike } from 'react-icons/ai'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  TelegramShareButton,
+  TelegramIcon,
+} from 'react-share'
+import { FormatImage, FormatLink } from '../../utils/util.type'
 
 export default function Box_Call() {
+  const ma = window.location.href
+  
   return (
     <div className='w-[8%] sticky top-0 z-10 max-[1300px]:hidden'>
       <div className='w-[90%] m-auto'>
-      <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
           <AiFillLike className='text-[#56aaff]' />
         </div>
         <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <BsFacebook  className='text-[#56aaff]' />
+          {/* <BsFacebook className='text-[#56aaff]' /> */}
+          <FacebookShareButton url={ma} quote={'FaceBook'}>
+            <FacebookIcon size={20} round={true} />
+          </FacebookShareButton>
         </div>
         <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <FiMessageSquare  className='text-[#56aaff]' />
+          <TwitterShareButton url={ma}>
+            <TwitterIcon size={20} round={true} />
+          </TwitterShareButton>
+        </div>
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+          <TelegramShareButton url={ma}>
+            <TelegramIcon size={20} round={true} />
+          </TelegramShareButton>
+        </div>
+       
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+          <FiMessageSquare className='text-[#56aaff]' />
         </div>
         <div className='text-center text-[11px] mt-3 m-auto  pb-5 border-b-[1px] border-slate-300 w-[65%]'>0</div>
         <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>

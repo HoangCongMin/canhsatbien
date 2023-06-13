@@ -12,7 +12,7 @@ export default function Post_Detail_Layout({ children }: Post_Detail_Layout) {
   return (
     <div className=''>
       <Napbar />
-      < div className='flex justify-between w-[80%] m-auto mt-6 max-[1100px]:flex-col max-w-screen-2xl'>
+      < div className='flex justify-between w-[80%] m-auto mt-6 max-[1100px]:flex-col'>
         <div className='w-[68%] max-[1100px]:w-full'>{children}</div>
        <div className='w-[29%] max-[1100px]:w-full' >
 

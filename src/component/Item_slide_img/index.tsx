@@ -8,9 +8,9 @@ interface Img_Items_Container {
 
 export default function Item_slide_img({ Img_Items, Name_img }: Img_Items_Container) {
   return (
-    <div className='w-[100%] h-[100px]'>
+    <div className='w-[100%] '>
       <Link to={`/${Name_img}`} className='w-full h-full'>
-        <img className='w-[270px] h-full' src={Img_Items} alt='' />
+        <img className='w-[100%] h-full' src={Img_Items} alt='' />
       </Link>
     </div>
   )

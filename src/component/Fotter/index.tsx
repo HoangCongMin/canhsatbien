@@ -6,11 +6,20 @@ import { BsDiagram3 } from 'react-icons/bs'
 import Android from '../../assets/google-play.png'
 import Ios from '../../assets/app-store.png'
 import { AiFillHome } from 'react-icons/ai'
-import ScrollToTop from "react-scroll-to-top";
-
+import ScrollToTop from 'react-scroll-to-top'
+import { Link } from 'react-router-dom'
+import { HiMapPin } from 'react-icons/hi2'
+import { BsTelephoneFill } from 'react-icons/bs'
+import { MdFax, MdEmail } from 'react-icons/md'
+import { BiWorld } from 'react-icons/bi'
+import { AiOutlineMail, AiFillNotification } from 'react-icons/ai'
 
 export default function Fotter() {
-  const Item_all = [{ title: 'Thư điện tử' }, { title: 'Ý kiến bạn đọc' }, { title: 'Sơ đồ trang' }]
+  const Item_all = [
+    { title: 'Thư điện tử', Link: 'mailto:banbientapcsb@gmail.com' },
+    { title: 'Ý kiến bạn đọc', Link: '/' },
+    { title: 'Sơ đồ trang', Link: '/' }
+  ]
 
   const Item_tw0 = [
     { title: 'Thành viên trực tuyến:', value: '8' },
@@ -25,12 +34,17 @@ export default function Fotter() {
           <div className='flex w-[100%] justify-between items-center text-white font-[Roboto] max-[1165px]:flex-col'>
             <div className='w-[35%] flex items-center max-[1165px]:w-full max-[1165px]:justify-center '>
               <div className='px-[10px] py-[5px] border-r-[1px] border-white max-[400px]:border-none'>
-                <AiFillHome className=' text-white ' />
+                <Link to={'/'}>
+                  <AiFillHome className=' text-white text-[25px]' />
+                </Link>
               </div>
               {Item_all.map((item) => (
-                <div className='text-[12px] px-[10px] py-[5px] border-r-[1px] max-[400px]:px-[3px] max-[400px]:border-none border-white first:border-l-[1px] first:border-white'>
+                <Link
+                  to={item.Link}
+                  className='text-[12px] px-[10px] py-[5px] border-r-[1px] max-[400px]:px-[3px] max-[400px]:border-none cursor-pointer	 border-white first:border-l-[1px] first:border-white'
+                >
                   {item.title}
-                </div>
+                </Link>
               ))}
             </div>
             <div className='w-[50%] flex justify-end	max-[1165px]:w-full max-[1165px]:justify-center max-[553px]:flex-col max-[553px]:text-center'>
@@ -45,78 +59,63 @@ export default function Fotter() {
           </div>
         </div>
       </div>
-      <div className='w-[80%] m-auto pt-10 pb-10 border-b-[0.5px] border-stone-50 max-w-screen-2xl'>
+      <div className='w-[80%] m-auto pt-5'>
         <div className='w-full flex justify-between items-center max-[1200px]:flex-col'>
-          <div className='w-[45%] max-[1200px]:w-[100%]'>
+          <div className='w-[75%] max-[1200px]:w-[100%]'>
             <div className='flex justify-between items-center'>
-              <div className='w-[30%]'>
-                <img src={AvatarImage} alt='' className='w-full' />
-              </div>
-              <div className='w-[68%]'>
+              <div className='w-full'>
                 <p className='text-lg	font-medium	text-[#FFFFFFCC] font-sans line-clamp-2'>
-                  © TRANG THÔNG TIN ĐIỆN TỬ CỦA LỰC LƯỢNG CẢNH SÁT BIỂN VIỆT NAM
-                </p>
-                <p className='text-sm	text-[#FFFFFFCC] font-normal	'>
-                  Tổng Giám đốc:<strong> Nguyễn Hồng Sâm </strong>
+                  TRANG THÔNG TIN ĐIỆN TỬ CỦA LỰC LƯỢNG CẢNH SÁT BIỂN VIỆT NAM
                 </p>
               </div>
             </div>
-            <div className='mt-6'>
-              <p className='text-sm	text-[#FFFFFFCC] font-normal	'>
-                Địa chỉ: Km số 6 + 825 Đại lộ Thăng Long, phường Tây Mỗ, quận Nam Từ Liêm, Thành phố Hà Nội
+            <div className='mt-2'>
+              <p className='text-sm	text-[#FFFFFFCC] font-normal	flex items-center'>
+                <HiMapPin className='mr-1' />
+                <span>Địa chỉ: Km số 6 + 825 Đại lộ Thăng Long, phường Tây Mỗ, quận Nam Từ Liêm, Thành phố Hà Nội</span>
               </p>
-              <p className='text-sm	text-[#ffffffe8] font-normal	'>Tel:84-69.567227</p>
-              <p className='text-sm	text-[#FFFFFFCC] font-normal	'>Fax: +84-69.567235</p>
-              <p className='text-sm	text-[#FFFFFFCC] font-normal	'>Email: banbientapcsb@gmail.com</p>
+              <p className='text-sm	text-[#FFFFFFCC] font-normal flex items-center'>
+                <BsTelephoneFill className='mr-1 text-[11px]' />
+                <span>Tel:84-69.567227</span>
+              </p>
+              <p className='text-sm	text-[#FFFFFFCC] font-normal	flex items-center'>
+                <MdFax className='mr-1' />
+                <span>Fax: +84-69.567235</span>
+              </p>
+              <p className='text-sm	text-[#FFFFFFCC] font-normal flex items-center'>
+                <MdEmail className='mr-1' />
+                <span>Email: banbientapcsb@gmail.com</span>
+              </p>
             </div>
           </div>
-          <div className='w-[50%] max-[1200px]:w-[100%] max-[1200px]:mt-5'>
-            <div className='w-[90%] max-[650px]:flex-col m-auto flex justify-between text-center'>
-              <div className='w-[23%] max-[650px]:w-[100%]'>
-                <div className='w-[70%] m-auto'>
-                  <RiProfileLine className='text-[#FFFFFFCC] text-xl m-auto' />
-                  <p className='text-sm text-white mt-3'>Giới thiệu cổng TTDT cảnh sát biển</p>
-                </div>
-              </div>
-              <div className='w-[23%] max-[650px]:w-[100%]'>
-                <div className='w-[70%] m-auto'>
-                  <div className='text-[#FFFFFFCC] text-xl m-auto h-[21px]	'>@</div>
-                  <p className='text-sm text-white mt-3'>Thư điện tử cảnh sát biển</p>
-                </div>
-              </div>
-              <div className='w-[23%] max-[650px]:w-[100%]'>
-                <div className='w-[70%] m-auto'>
-                  <CiMail className='text-[#FFFFFFCC] text-xl m-auto	' />
-                  <p className='text-sm text-white mt-3'>Liên hệ</p>
-                </div>
-              </div>
-              <div className='w-[23%] max-[650px]:w-[100%]'>
-                <div className='w-[70%] m-auto'>
-                  <BsDiagram3 className='text-[#FFFFFFCC] text-xl	m-auto' />
-                  <p className='text-sm text-white mt-3'>Sơ đồ TTDT cảnh sát biển</p>
-                </div>
-              </div>
-            </div>
-            <div className='flex justify-between mt-10 max-[550px]:flex-col'>
-              <div>
-                <div className='text-sm text-[#FFFFFFCC]'>Tải ứng dụng:</div>
-                <h5 className='text-[13px] text-white'>CỔNG THÔNG TIN ĐIỆN TỬ CẢNH SÁT BIỂN</h5>
-              </div>
-              <div className='flex justify-between items-center max-[550px]:justify-start max-[550px]:mt-5'>
-                <img src={Android} alt='' className='w-[120px] h-[39px]' />
-                <img src={Ios} alt='' className='w-[120px] h-[39px]' />
-              </div>
+          <div className='w-[20%] max-[1200px]:w-[100%] max-[1200px]:mt-5'>
+            <div className='w-full max-w-[263px] max-[1200px]:mb-2'>
+              <img src={AvatarImage} alt='' className='w-full' />
             </div>
           </div>
         </div>
       </div>
-      <div className='w-[80%] m-auto'>
-        <p className='text-center text-[#FFFFFFCC] text-[14px] py-4'>
-          Ghi rõ nguồn 'Cổng Thông tin điện tử Chính phủ' hoặc 'www.chinhphu.vn' khi phát hành lại thông tin từ các
-          nguồn này.
-        <ScrollToTop className='bg-none' smooth viewBox='0 0 24 24' component={<img className='w-[25px] h-[25px] m-auto' src={'https://canhsatbien.vn/assets/img/icon-top.png'} alt="" />} />
-         
-       
+      <div className='w-[80%] m-auto pb-4'>
+        <p className=' text-[#FFFFFFCC] text-[14px] flex items-center'>
+          <BiWorld className='mr-1' />
+          <span>Website: canhsatbien.vn * Cơ quan quản lý: Bộ Tư lệnh Cảnh sát biển </span>
+        </p>
+        <p className=' text-[#FFFFFFCC] text-[14px] flex items-center'>
+          <AiFillNotification className='mr-1' />
+          <span>Quyết định cấp phép hoạt động: 362/QÐ-CT, ngày 13/03/2013 của Tổng cục Chính trị QĐNDVN</span>
+        </p>
+      </div>
+      <div className='w-[80%] m-auto '>
+        <p className='text-center text-[#FFFFFFCC] text-[14px] py-4 border-t-[0.5px] border-stone-50'>
+          ® Ghi rõ nguồn canhsatbien.vn khi phát hành lại thông tin từ trang thông tin điện tử này.
+          <ScrollToTop
+            className='bg-none'
+            smooth
+            viewBox='0 0 24 24'
+            component={
+              <img className='w-[25px] h-[25px] m-auto' src={'https://canhsatbien.vn/assets/img/icon-top.png'} alt='' />
+            }
+          />
         </p>
       </div>
     </div>

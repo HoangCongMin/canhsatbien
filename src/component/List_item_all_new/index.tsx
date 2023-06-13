@@ -1,39 +1,39 @@
 import React from 'react'
+import { useQuery } from '@tanstack/react-query'
+import {GetListItemFeaturedAll} from'../../apis/GetNew'
+import Featured from '../../type/new.type'
+import { Link } from 'react-router-dom'
 
-const Image_item_all = [
-  {
-    img: 'https://canhsatbien.vn/upload/files/image/20230425/thieu-tuong-vu-trung-kien-pho-tu-lenh-canh-sat-bien-tang-bang-khen-cho-cac-tap-the-ca-nhan-co-thanh-tich-xuat-sac-trong-dau-tranh-chuyen-an-171744385.jpg?h=120',
-    content: 'Bộ Tư lệnh Cảnh sát biển khen thưởng thành tích triệt phá đường dây mua bán, vận chuyển 9 bánh heroine'
-  },
-  {
-    img: 'https://canhsatbien.vn/upload/files/image/20230419/kie1bb83m20tra20hc3a0ng20hc3b3a20vi20phe1baa1m-143409562.jpg?h=120',
-    content: 'Cảnh sát biển bắt giữ tàu vận chuyển lượng lớn dầu D.O trái phép trên vùng biển Tây Nam'
-  },
-  {
-    img: 'https://canhsatbien.vn/upload/files/image/20230223/chinh-uy-phat-to-roi-103634841.jpg?h=120',
-    content: 'Chính ủy Cảnh sát biển thăm và làm việc tại đảo Thổ Châu'
-  }
-]
+
+
 
 interface item_All_new {
   img: string
   content: string
 }
 export default function List_item_all_new() {
+
+  const { data: Image_item_all } = useQuery({ queryKey: ['todos_List'], queryFn: GetListItemFeaturedAll })
+
+
+
+
+
   return (
     <div className='w-full flex justify-between mt-2 cursor-pointer '>
-      {Image_item_all.map((item) => (
-        
-        <div className='w-[32%]  shadow-lg	'>
+      {Image_item_all?.data.map((item: Featured) => (
+
+        <Link to={`/${item.id}`} className='w-[32%]  shadow-lg' key={item.id}>
           <div className='overflow-hidden cursor-pointer relative group mt-2'>
             <img
               className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out '
-              src={item.img}
+              src={`https://canhsatbien.vn/${item.gallery}`}
               alt=''
             />
           </div>
-          <p className='text-[14px] font-bold	 my-2 hover:text-[#191970] line-clamp-4'>{item.content}</p>
-        </div>
+         
+          <p className='text-[14px] font-bold	 my-2 hover:text-[#191970] line-clamp-4'>{item.title}</p>
+        </Link>
       ))}
     </div>
   )

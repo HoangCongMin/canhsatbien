@@ -6,3 +6,8 @@ body {
   font-family: 'Merriweather';
   font-style: normal;
 }
+
+body * {
+  -webkit-tap-highlight-color: transparent;
+
+}

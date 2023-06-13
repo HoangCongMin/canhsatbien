@@ -3,6 +3,8 @@ import { Data_item_cart } from '../../component/constant'
 import Video_Title from '../../component/video_Title'
 import Slider from 'react-slick'
 import classNames from 'classnames'
+import { useQuery } from '@tanstack/react-query'
+import { GetListVideoAllTow } from '../../apis/GetNew'
 
 export default class AutoSlice_cart_newsPlay extends Component {
   render() {
@@ -51,6 +53,9 @@ export default class AutoSlice_cart_newsPlay extends Component {
         }
       ]
     }
+
+/*    const { data: slide_Media_All } = useQuery({ queryKey: ['slide_Media'], queryFn: () => { return GetListVideoAllTow()}})
+*/
     return (
       <div className='pb-10 '>
         <Slider {...settings}>
@@ -60,7 +65,7 @@ export default class AutoSlice_cart_newsPlay extends Component {
                 Video_media_title={item.title}
                 Video_media_video={item.video}
                 Image_csb_All={item.image}
-                hight_item={'h-[155px]'}
+                hight_item={'h-[12rem]'}
                 line_clamp={'line-clamp-2'}
               />
             </div>

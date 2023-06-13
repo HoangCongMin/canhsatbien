@@ -37,7 +37,7 @@ export default function List_New_All_Item({
           Video_media_title={item.title}
           Video_media_video={item.video}
           Image_csb_All={item.image}
-          hight_item={'h-[155px] mt-2'}
+          hight_item={'h-[65%] mt-2'}
           line_clamp={'line-clamp-2'}
           class_content_icon={'text-[13px] text-[#3B4E69BF] font-[Roboto]'}
           time={item.time}

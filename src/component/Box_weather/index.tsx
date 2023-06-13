@@ -1,27 +1,34 @@
 import React from 'react'
+import Logo from '../../assets/logo-csb-080730606.png'
 
-interface weathers{
-  List_weather:weather[]
+
+interface weathers {
+  List_weather: weather[]
 }
 
-interface weather{
-  id:number
-  title:string
-  img:string
+interface weather {
+  id: number
+  title: string
+  img: string
 }
 
-export default function Box_weather({List_weather}:weathers) {
+export default function Box_weather({ List_weather }: weathers) {
   return (
     <div className='w-full shadow-xl border-[1px] border-[#F6F6F6]'>
-      <h1 className='uppercase font-bold text-[16px] text-[#191970] text-center border-[#DA251C] border-b-[2.5px] py-2'>
-        dự báo thời tiết biển
-      </h1>
+      
+      <div className='uppercase py-2 pb-6 border-b-[2.5px] border-[#d6d6d6] text-[#191970] font-bold text-center relative'>
+        <div className='border-b-[2.5px] border-[#ffcc00] absolute	flex items-center top-0 pb-2 pl-2'>
+          <img src={Logo} className='w-[16px]' />
+          <div className='ml-2'> dự báo thời tiết biển</div>
+        </div>
+      </div>
       <div>
-        {List_weather.map((item)=>(
+        {List_weather.map((item) => (
           <div className='flex items-center w-[95%] m-auto justify-between'>
             <span className='text-[13px] text-[#333] text-right w-[60%] max-[1100px]:w-[48%]'>{item.title}</span>
+
             <div className='w-[30%] max-[1100px]:w-[48%]'>
-              <img src={item.img} alt="" />
+              <img src={item.img} alt='' />
             </div>
           </div>
         ))}

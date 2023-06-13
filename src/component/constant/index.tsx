@@ -8,21 +8,21 @@ import Image_csb_Item_froust from '../../assets/tau 1.png'
 const Data_Media = [
   {
     title: 'Cảnh sát biển bắt giữ tàu vận chuyển 170.000 lít xăng, dầu trái phép trên biển',
-    image:
+    img:
       'https://canhsatbien.vn/upload/files/1/Gioi%20thieu/Xay%20dung%20-%20phat%20trien/Nam%202018/thang%205/Bien%20doi%20tau.jpg'
   },
   {
     title: 'Cảnh sát biển Việt Nam – nòng cốt thực thi pháp luật trên biển',
-    image:
+    img:
       'https://file3.qdnd.vn/data/images/0/2021/08/23/vanphong/bien%20doi%20tau%20tuan%20tra%20csb.jpg?dpi=150&quality=100&w=870'
   },
   {
     title: 'Cảnh sát biển Việt Nam – nòng cốt thực thi pháp luật trên biển',
-    image: 'https://www.canhsatbien.vn/upload/files/cuu_ho_cuu_nan/bai5/1_1.jpg?1479746993719'
+    img: 'https://www.canhsatbien.vn/upload/files/cuu_ho_cuu_nan/bai5/1_1.jpg?1479746993719'
   },
   {
     title: 'Nghĩa vụ và trách nhiệm của cán bộ, chiến sĩ Cảnh sát biển được quy định trong Luật Cảnh sát biển Việt Nam',
-    image: 'https://media.vov.vn/sites/default/files/styles/large/public/2021-10/h2_3.jpg'
+    img: 'https://media.vov.vn/sites/default/files/styles/large/public/2021-10/h2_3.jpg'
   }
 ]
 
