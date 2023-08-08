@@ -121,7 +121,7 @@ export default function Napbar() {
                 // </Tippy>
               ))}
             </div>
-            <div className='w-[95%] m-auto hidden  max-[1322px]:block  py-3 '>
+            <div className='w-[95%] m-auto hidden  max-[1248px]:block  py-3 '>
               {!close && (
                 <AiOutlineBars className='text-[#fff] text-[20px] max-[600px]:text-[35px]' onClick={handleClose} />
               )}
@@ -132,7 +132,7 @@ export default function Napbar() {
                     <AiOutlineClose className='text-[20px]' onClick={handleClose} />
                   </li>
                   {List_Napbar_Item?.data.map((item: any) => (
-                    <li className='uppercase text-sm list-none	leading-10 flex-col  justify-center  font-bold   group  hover:duration-700 px-3 hover:border-b-2 hover:border-[#ff7f00] text-[#fff] max-[1322px]:justify-start'>
+                    <li className='uppercase text-sm list-none	leading-10 flex-col  justify-center  font-bold   group  hover:duration-700 px-3 hover:border-b-2 hover:border-[#ff7f00] text-[#fff] max-[1248px]:justify-start'>
                       <p>{item?.name}</p>
 
                       <div className='hidden group-hover:block'>

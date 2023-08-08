@@ -175,8 +175,7 @@ export default function Home() {
               </div>
 
               <div className='w-[27%]  	  overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
-                <div className=' h-[22vh] max-[1300px]:h-[100%]'>
-               
+                <div className=' h-[22vh] max-[1300px]:h-[100%]'> 
                   {dataNewest?.data.map((item: Featured) => (
                     <ShortMessage
                     id_cart={item.catID}
@@ -191,13 +190,10 @@ export default function Home() {
                     />
                   ))}
                 </div>
-               
               </div>
             </div>
             <div className='w-full'>
-           
               <List_item_all_new />
-             
             </div>
             <div className='w-full object-cover relative pt-[20%] m-auto mt-5 shadow-xl'>
               <img

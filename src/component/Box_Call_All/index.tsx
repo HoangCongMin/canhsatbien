@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { FaPlay } from 'react-icons/fa'
 import ShortMessage from '../shortMessage'
 import Box_weather from '../Box_weather'
 import classNames from 'classnames'
@@ -11,82 +12,6 @@ import { FormatMeida } from '../../utils/util.type'
 import {useParams} from'react-router-dom'
 
 export default function Box_Call_All() {
-  // const media_item_all = [
-  //   {
-  //     herder: 'Video - Clip',
-  //     content: {
-  //       title:
-  //         'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
-  //       video:
-  //         'https://canhsatbien.vn:443/upload/files/video/20221122/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4',
-  //       img: ''
-  //     }
-  //   },
-  //   {
-  //     herder: 'multimedia',
-  //     content: {
-  //       title: 'Chính ủy Cảnh sát biển thăm, động viên, tặng quà quân dân huyện đảo Bạch Long Vĩ',
-  //       video: '',
-
-  //       img: 'https://canhsatbien.vn/upload/files/category/20200917/chinh-uy-tro-chuyen-voi-cac-llvt-tren-dao-074603881.jpg'
-  //     }
-  //   }
-  // ]
-
-  // const [video_defaule, setVideo_Defaule] = useState({
-  //   herder: 'Video - Clip',
-  //   content: {
-  //     title:
-  //       'Chương trình giao lưu "Cảnh sát biển Việt Nam và những người bạn" lần thứ nhất (Từ ngày 8 đến 11/12/2022)',
-  //     video:
-  //       'https://canhsatbien.vn:443/upload/files/video/20221122/trailer-csb-va-nhung-nguoi-ban-lan-thu-nhat-074813552.mp4' ||
-  //       undefined,
-  //     img: ''
-  //   }
-  // })
-
-  // const Theoguongbac = [
-  //   { id: 1, content: 'Hành động nhỏ, ý nghĩa lớn - góp phần bảo vệ môi trường biển' },
-  //   { id: 2, content: 'Tuyên dương Gương mặt trẻ tiêu biểu Cảnh sát biển năm 2022' },
-  //   {
-  //     id: 3,
-  //     content:
-  //       'Đại tướng Phan Văn Giang gửi thư khen ngợi, động viên Trung tâm Đào tạo và Bồi dưỡng nghiệp vụ Cảnh sát biển'
-  //   },
-  //   { id: 4, content: 'Tuyên dương gương mặt trẻ tiêu biểu, gương mặt trẻ triển vọng toàn quân năm 2022' },
-  //   { id: 5, content: '“Bông hồng trắng” của Lực lượng Cảnh sát biển Việt Nam' },
-  //   { id: 7, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
-  //   { id: 8, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
-  //   { id: 9, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' },
-  //   { id: 10, content: 'UBND thành phố Hải Phòng tặng thưởng các tập thể có thành tích xuất sắc trong' }
-  // ]
-
-  // const LUATCSB = [
-  //   { id: 1, content: 'Hải đội 301 tuyên truyền tại phường 9, thành phố Vũng Tàu' },
-  //   { id: 2, content: 'Tuyên truyền, phổ biến pháp luật cho Nhân dân phường Phúc La, quận Hà Đô' },
-  //   {
-  //     id: 3,
-  //     content: 'Cảnh sát biển tuyên truyền, phổ biến pháp luật cho nhân dân phường Đồng Mai'
-  //   },
-  //   { id: 4, content: 'Hải đoàn 42 quyết tâm tháo gỡ thẻ vàng của EC cho ngành thủy sản' },
-  //   { id: 5, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 1 tuyên truyền biển, đảo tại Ninh Bình' },
-  //   { id: 7, content: 'Tuyên truyền biển, đảo và phòng chống ma túy cho 1000 cán bộ, giáo viên và học sinh' }
-  // ]
-  // const IUU = [
-  //   {
-  //     id: 1,
-  //     content: 'Đoàn Đặc nhiệm PCTP ma túy số 2 tuyên truyền pháp luật, khám và cấp phát thuốc miễn phí cho người dân'
-  //   },
-  //   { id: 2, content: 'Hải đoàn 21 tổ chức hội nghị tuyên truyền về tình hình an ninh biển, đảo' },
-  //   {
-  //     id: 3,
-  //     content: 'Tàu Cảnh sát biển 3003 tuyên truyền phòng chống IUU tại khu vực đảo Bạch Long Vỹ'
-  //   },
-  //   { id: 4, content: 'Chú trọng tuyên truyền pháp luật tại các bến tàu' },
-  //   { id: 5, content: 'Để mỗi người dân là một tuyên truyền viên về chống khai thác IUU' },
-  //   { id: 7, content: 'Bộ Tư lệnh Vùng Cảnh sát biển 2 đẩy mạnh tuyên truyền phòng chống IUU' }
-  // ]
-
   const List_weather_all = [
     { id: 1, title: 'Nam Vịnh Bắc Bộ', img: 'https://baohaiquanvietnam.vn/storage/images/muarao_vadong.gif' },
     { id: 2, title: 'Quảng Trị đến Quảng Ngãi', img: 'https://baohaiquanvietnam.vn/storage/images/Co_luc_co_Mua.gif' },
@@ -108,8 +33,15 @@ export default function Box_Call_All() {
   const { data: Imgae_detail } = useQuery({ queryKey: ['Imgae_item'], queryFn: GetImage })
 
   const [video_Display, setVideo_Display] = useState(false)
+  const [playVideo, setPlayVideo] = useState(false)
+  const videoRef = useRef();
   // ${newsItem.title}/${id_Item}/${newsItem.catID}
-const data_Item=useParams()
+  const data_Item=useParams();
+
+  const handlePlayVideo = () => {
+    setPlayVideo(!playVideo);
+    videoRef.current.play();
+  }
 
   return (
     <div className='sticky top-0 z-30 max-[1100px]:mt-7'>
@@ -128,6 +60,7 @@ const data_Item=useParams()
             <>
               {' '}
               <img
+                alt='okkk'
                 src={`${FormatMeida(Imgae_detail?.data.sliderExtra.images)}`}
                 className=' w-full object-cover h-[13rem]'
               />
@@ -141,11 +74,25 @@ const data_Item=useParams()
           )}
           {!video_Display && (
             <>
-              <video
-                src={`${FormatMeida(Video_detail?.data?.videoExtra?.video as string)}`}
-                className=' w-full object-cover h-[13rem]'
-                controls
-              ></video>
+              <div className='relative overflow-hidden pt-[66.6667%]'>
+                {!playVideo &&
+                  <>
+                    <img className='absolute top-0 left-0 w-full h-full object-cover z-10' src={`${FormatMeida(Video_detail?.data?.videoExtra?.gallery as string)}`} alt={Video_detail?.data?.videoExtra?.title} />
+                    <div className='group absolute top-0 left-0 w-full h-full flex items-center justify-center z-20 cursor-pointer bg-[rgba(0,_0,_0,_0.5)] text-[rgba(225,_225,_225,_0.8)]'
+                      onClick={()=> handlePlayVideo()}
+                    >
+                        <FaPlay size={30} className='transition ease duration-[0.5s] scale-0 group-hover:scale-100'/>
+                      </div>
+                  </>
+                }
+                <video
+                  ref={videoRef}
+                  src={`${FormatMeida(Video_detail?.data?.videoExtra?.video as string)}`}
+                  className='w-full h-full object-cover h-[13rem] absolute top-0 left-0'
+                  controls
+                >
+                </video>
+              </div>
               <p className='text-[15px] font-bold mt-2'>{Video_detail?.data.videoExtra.title}</p>
               <div className='flex justify-end'>
                 <Link to={'/media/video'} className='text-[#003f7f] text-[12px] font-semibold	'>

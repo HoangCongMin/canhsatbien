@@ -16,7 +16,7 @@ export function Ingrp(conten:string){
 
 }
 
-export function Date_Time(value :string){
+export function Date_Time(value :string, showHourse?:boolean){
     var dateObj = new Date(value);
 
     var outputString = ("0" + dateObj.getDate()).slice(-2) + "/" +
@@ -24,5 +24,11 @@ export function Date_Time(value :string){
     dateObj.getFullYear() + " " +
     ("0" + dateObj.getHours()).slice(-2) + ":" +
     ("0" + dateObj.getMinutes()).slice(-2) + ":00";
+
+    if (showHourse) {
+      outputString = ("0" + dateObj.getDate()).slice(-2) + "/" +
+      ("0" + (dateObj.getMonth() + 1)).slice(-2) + "/" +
+      dateObj.getFullYear() + " ";
+    }
     return outputString
 }
