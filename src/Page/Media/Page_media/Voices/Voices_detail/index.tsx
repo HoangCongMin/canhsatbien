@@ -16,14 +16,13 @@ export default function Voices_detail() {
     const { data: Voice_Item } = useQuery({ queryKey: ['List_Voice_media_xame'], queryFn: GetListVoice })
 
     const Video_Item_data_List = Voice_Item?.data
-    console.log(Video_Item_data_List)
 
 
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
         <Title name={'Multimedia Voice'} />
-        <Detail_Audio audio={Voices_detail_item_all?.data?.sliderExtra?.audio} bg={Voices_detail_item_all?.data?.sliderExtra?.gallery} title={Voices_detail_item_all?.data?.sliderExtra?.title}/>
+        <Detail_Audio audio={Voices_detail_item_all && Voices_detail_item_all?.data?.sliderExtra?.video} bg={Voices_detail_item_all?.data?.sliderExtra?.gallery} title={Voices_detail_item_all?.data?.sliderExtra?.title}/>
         <div className='mt-6'>
           <Title name={'Multimedia Danh sách Radio'} />
           {

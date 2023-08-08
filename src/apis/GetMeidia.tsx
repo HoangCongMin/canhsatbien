@@ -9,3 +9,4 @@ export const GetListVideoAllTow_Item=(categoryId:number)=>http.get(`Layout/GetLi
 export const GetRadioDetail=(id:number)=>http.get(`Layout/GetRadioDetail?id=${id}`)
 export const GetImage_detail=(id:number)=>http.get(`Layout/GetImage_detail?id=${id}`)
 export const GetItem_detail=(id:number)=>http.get(`ItemDetail/Item_Detail?itemId=${id}`)
+export const GetBreadCrumb =(id:number)=>http.get(`Home/Getbreadcrumb?catId=${id}`)

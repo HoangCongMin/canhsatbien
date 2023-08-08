@@ -9,7 +9,7 @@ import Paginate from '../../../../component/Paginate'
 import useQueryParam from '../../../../Hook/useQueryParam'
 import Media_detail from '../../Component/Media_detail'
 import VideoDetail from 'type/videoDetail'
-import {useEffect} from'react'
+import { useEffect } from 'react'
 
 export default function Media() {
   const queryParam = useQueryParam()
@@ -25,23 +25,30 @@ export default function Media() {
   const Video_Item_data_List = List_Video?.data
   const page_size_all = List_Video?.data && List_Video_All?.data?.length % 10
 
+  const ma = List_Video_All?.data && List_Video_All?.data?.length % 10
+  const mb = List_Video_All?.data && List_Video_All?.data?.length / 10
+
+  const handle_Paginate = () => {
+    if (ma > 0) {
+      return Math.floor(mb) + 1
+    }
+    return Math.floor(mb)
+  }
+  const item = handle_Paginate()
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
+  }, [item])
   return (
     <div className='w-[100%]'>
-      <div className='w-[98%] m-auto'>
+      <div className='w-[98%] m-auto mt-[6px]'>
         <Title name={'Multimedia Video'} />
-      
-        <Media_detail Video_Item_data ={ Video_Item_data && Video_Item_data}/>
+
+        <Media_detail Video_Item_data={Video_Item_data && Video_Item_data} />
         <div className='mt-6'>
           <Title name={'Multimedia Danh sách Video'} />
-          
-          <div className='flex justify-end mt-4	'>
-            <span className='mr-4 text-[15px]'>
 
-            Chọn chuyên mục :
-            </span>
+          <div className='flex justify-end mt-4	'>
+            <span className='mr-4 text-[15px]'>Chọn chuyên mục :</span>
             <Sort queryParam={queryParam} />
           </div>
           {
@@ -53,7 +60,7 @@ export default function Media() {
             </div>
           }
         </div>
-        <Paginate queryParam={queryParam} page_size={page_size_all} />
+        {item && <Paginate queryParam={queryParam} page_size={item} path_Name={'/media/video'} />}
       </div>
     </div>
   )

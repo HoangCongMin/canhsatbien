@@ -6,11 +6,11 @@ import { useQuery } from '@tanstack/react-query'
 import { useParams } from 'react-router-dom'
 import Title from '../../../Component/Title'
 import Detail_Audio from '../../../Component/Detail_Audio'
-import { FormatImage, FormatMeida } from '../../../../../utils/util.type'
+import { FormatImage, FormatMeida, Date_Time } from '../../../../../utils/util.type'
 import Item_catergory from '../../../Component/Item_catergory'
 import { typeData } from '../../../Component/Item_catergory'
 import { useEffect } from 'react'
-import {GetItem_detail} from '../../../../../apis/GetMeidia'
+import { GetItem_detail } from '../../../../../apis/GetMeidia'
 
 export default function Photos_detail() {
   const { id } = useParams()
@@ -18,7 +18,6 @@ export default function Photos_detail() {
     queryKey: ['Photo_detail', id],
     queryFn: () => GetItem_detail(Number(id))
   })
-
 
   const { data: Photo_detail_Item } = useQuery({
     queryKey: ['Photo_detail_item', id],
@@ -32,33 +31,27 @@ export default function Photos_detail() {
   const Video_Item_data_List = List_imgitem?.data
   const ma = Video_Item_data_List && (Video_Item_data_List.length = 10)
 
-  const [datajson,setDataJson]=useState ({Title:'',Description:'',Gallery:'',Video:''})
-
-
+  const [datajson, setDataJson] = useState({ Title: '', Description: '', Gallery: '', Video: '' })
 
   useEffect(() => {
-    if(List_img){
-      setDataJson(JSON.parse(List_img?.data?.fieldValue) )
+    if (List_img) {
+      setDataJson(JSON.parse(List_img?.data?.fieldValue))
     }
     window.scrollTo(0, 0)
-  }, [id,List_img])
+  }, [id, List_img])
 
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
-      <div className='font-bold text-2xl not-italic	'>
-          {datajson && datajson?.Title}
-        </div>
-        <div className='text-[20px] text-[#182940] not-italic	font-[roboto]'>
-          {datajson?.Description}
-        </div>
         <div className='text-[#768496] not-italic text-[15px] font-normal font-[roboto]	'>
-          {List_img?.data.createdDate}
+          {Date_Time(List_img?.data.createdDate)}
         </div>
+        <div className='font-bold text-2xl not-italic	'>{datajson && datajson?.Title}</div>
+        <div className='text-[20px] text-[#182940] not-italic	font-[roboto]'>{datajson && datajson?.Description}</div>
 
         <div className='mt-[20px] mb-5'>
-          <img className='w-[90%] m-auto' src={ FormatMeida(datajson?.Gallery)} alt="" />
-          <img className='w-[90%] mt-4 m-auto' src={ FormatMeida(datajson?.Video)} alt="" />
+          <img className='w-[90%] m-auto' src={FormatMeida(datajson?.Gallery)} alt='' />
+          <img className='w-[90%] mt-4 m-auto' src={FormatMeida(datajson?.Video)} alt='' />
         </div>
 
         <div className='mt-6 mb-20'>
@@ -77,12 +70,11 @@ export default function Photos_detail() {
   )
 }
 
-     
-
-
-
- {/* <Title name={'Multimedia Image'} /> */}
-        {/* <div
+{
+  /* <Title name={'Multimedia Image'} /> */
+}
+{
+  /* <div
           className='bg-no-repeat bg-center  relative mt-10	bg-cover pt-[55.6%]	'
           style={{
             backgroundImage: `url(${
@@ -100,4 +92,5 @@ export default function Photos_detail() {
               {Photo_detail_Item && Photo_detail_Item?.data?.sliderExtra?.title}
             </h1>
           </div>
-        </div> */}
+        </div> */
+}

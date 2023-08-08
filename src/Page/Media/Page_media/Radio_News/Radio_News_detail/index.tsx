@@ -33,7 +33,7 @@ export default function Radio_News_detail() {
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
         <Title name={'Multimedia Radio'} />
-        <Detail_Audio audio={Radio_detail_item?.data?.sliderExtra?.audio} bg={Radio_detail_item?.data?.sliderExtra?.gallery} title={Radio_detail_item?.data?.sliderExtra?.title}/>
+        <Detail_Audio audio={Radio_detail_item?.data?.sliderExtra?.video} bg={Radio_detail_item?.data?.sliderExtra?.gallery} title={Radio_detail_item?.data?.sliderExtra?.title}/>
         <div className='mt-6'>
           <Title name={'Multimedia Danh sách Radio'} />
           {

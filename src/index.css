@@ -9,5 +9,28 @@ body {
 
 body * {
   -webkit-tap-highlight-color: transparent;
-
 }
+
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e5e7eb;
+}
+
+
+/* scrollbar-thumb-gray-100	scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar:!w-[0.5px] */

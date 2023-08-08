@@ -17,7 +17,7 @@ export default function Item_In_Chart_Item({
         `${class_child ? class_child : 'w-[20%] '} m-auto bg-[#F6F6F6] py-4 font-bold rounded-lg  `
       )}
     >
-      <div className='text-[#031739] text-[12px] hover:text-[#191970]  max-[1250px]:text-[12px] max-[800px]:text-[8px] line-clamp-2 max-[1100px]:text-[10px] max-[800px]:line-clamp-1'>
+      <div className='text-[#031739] text-[12px] hover:text-[#0066bc]  max-[1250px]:text-[12px] max-[800px]:text-[8px] line-clamp-2 max-[1100px]:text-[10px] max-[800px]:line-clamp-1'>
         {title__Organization}
       </div>
       <div className='w-[30%]  m-auto max-[1250px]:w-[50%] max-[800px]:w-[70%] max-[600px]:w-[90%] '>

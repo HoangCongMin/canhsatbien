@@ -5,6 +5,7 @@ import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 interface typePage_size {
   page_size: number
   queryParam: queryPram_Type
+  path_Name:string
 }
 
 interface queryPram_Type {
@@ -15,8 +16,8 @@ interface queryPram_Type {
 
 
 const range = 2
-export default function Paginate({ page_size, queryParam }: typePage_size) {
-  const pages = Number(queryParam.p || 1)
+export default function Paginate({ page_size, queryParam,path_Name }: typePage_size) {
+  const pages = Number( queryParam.p || 1)
 
   const renderPaginate = () => {
     let dotAfter = false
@@ -60,11 +61,11 @@ export default function Paginate({ page_size, queryParam }: typePage_size) {
       } else if (pages >= page_size - range * 2 && pageName > range && pageName < pages - range) {
         return doDotBefore(index)
       }
-
+      
       return (
         <Link
           to={{
-            pathname: '/media/video',
+            pathname: path_Name,
             search: createSearchParams({
               ...queryParam,
               p: pageName.toString()
@@ -94,7 +95,7 @@ export default function Paginate({ page_size, queryParam }: typePage_size) {
       ) : (
         <Link
           to={{
-            pathname: '/media/video',
+            pathname: path_Name,
             search: createSearchParams({
               ...queryParam,
               p: (pages - 1).toString()
@@ -113,7 +114,7 @@ export default function Paginate({ page_size, queryParam }: typePage_size) {
       ) : (
         <Link
           to={{
-            pathname: '/media/video',
+            pathname: path_Name,
             search: createSearchParams({
               ...queryParam,
               p: (pages + 1).toString()

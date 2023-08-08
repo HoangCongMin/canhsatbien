@@ -45,7 +45,7 @@ export default function PolicyDevelopment({
         <div className='py-3 flex items-center border-b-[4px] border-[#ffcc00] absolute top-0 z-10'>
           <img src={Logo} className=' w-[1.2rem]' />
           
-          <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#191970] cursor-pointer'>
+          <h1 className='font-bold	text-[17px] ml-2 uppercase text-[#00008B] hover:text-[#0066bc] cursor-pointer'>
             {header}
            
           </h1>
@@ -62,7 +62,7 @@ export default function PolicyDevelopment({
           </div>
 
           <div className='w-full mt-3'>
-            <h3 className='line-clamp-3 text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>
+            <h3 className='line-clamp-3 text-[18px] font-medium	text-[#031739] hover:text-[#0066bc]'>
               {item_Wrapper.nameAll}
             </h3>
             <p className='text-[14px] text-[#3B4E68]'>{item_Wrapper.contentAll}</p>

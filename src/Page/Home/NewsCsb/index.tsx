@@ -7,9 +7,9 @@ interface contentItemAll {
 }
 export default function NewsCsb({ contentItem, classItem }: contentItemAll) {
   return (
-    <div
+    <div id="news"
       className={classNames(
-        `flex justify-center  items-center h-[100%] text-[#000000] text-xs	font-bold hover:text-[#191970] ${classItem}`
+        `flex justify-center  items-center h-[100%] text-[#000000] text-xs	font-bold hover:text-[#0066bc] ${classItem}`
       )}
     >
       {contentItem}

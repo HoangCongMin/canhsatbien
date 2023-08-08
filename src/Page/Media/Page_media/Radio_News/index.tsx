@@ -17,7 +17,6 @@ export default function Radio_News() {
 
   const Video_Item_data_List = Radio_Item?.data
 
-  console.log(Video_Item_data_List&&Video_Item_data_List[0])
 
 
   useEffect(() => {
@@ -27,7 +26,7 @@ export default function Radio_News() {
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
         <Title name={'Multimedia Radio'} />
-        <Detail_Audio title={Video_Item_data_List && Video_Item_data_List[0]?.sliderExtra?.title} audio={Video_Item_data_List && Video_Item_data_List[0]?.sliderExtra?.audio}  bg={Video_Item_data_List&&Video_Item_data_List[0]?.sliderExtra?.gallery}/>
+        <Detail_Audio title={Video_Item_data_List && Video_Item_data_List[0]?.sliderExtra?.title} audio={Video_Item_data_List && Video_Item_data_List[0]?.sliderExtra?.video}  bg={Video_Item_data_List&&Video_Item_data_List[0]?.sliderExtra?.gallery}/>
         <div className='mt-6'>
           <Title name={'Multimedia Danh sách Audio'} />
           {

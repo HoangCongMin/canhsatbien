@@ -59,13 +59,14 @@ export default function NewPost_Item({
 
 
   return (
-    <div className={classNames(`${class_NewPost_Item}${class_Custom_layout} mt-6`)}>
-      <div className='w-[100%] relative border-b-[4px] py-3	pb-[2.4rem]'>
-        <span className='flex items-center border-b-[4px] border-[#ffcc00] absolute top-0 py-[10px] pb-[0.77rem] z-10 '>
-          <img className='h-[1.7rem] text-[#ff7f00] pb-1 ' src={Logo} />
-          <h1 className='font-bold max-[360px]:text-[14px]	text-[17px] uppercase text-[#00008B]  ml-3 '>
+    <div id="news-post" className={classNames(`${class_NewPost_Item}${class_Custom_layout} mt-6`)}>
+      <div className='w-[100%] relative border-b-[2.5px] md:border-b-[4px] border-[#ffcc00] md:border-[#e5e7eb] py-3	pb-[2.4rem]'>
+        <span className='items-center border-0 md:border-b-[4px] inline-block border-[#ffcc00] absolute top-0 left-0 right-0 md:right-[auto] pt-[11px] pb-[0.77rem] z-10 '>
+          <img className='h-[1.7rem] text-[#ff7f00] pb-1 inline-block' src={Logo} />
+          <h2 className='font-bold max-[360px]:text-[14px] inline-block	text-[17px] uppercase text-[#00008B] ml-3 '>
+        
             {itemAll_title}
-          </h1>
+          </h2>
         </span>
       </div>
 
@@ -84,15 +85,17 @@ export default function NewPost_Item({
           </div>
         </div> */}
         {/* max-[1000px]:flex-row  max-[1000px]:justify-between max-[1000px]:flex-wrap max-[687px]:	 max-[1000px]:w-full */}
-        <div className='mt-4 w-full grid  grid-cols-5 grid-rows-3 gap-4 max-[900px]:grid-cols-4'>
+
+        {/* grid-rows-3 */}
+        <div className='mt-4 w-full grid  grid-cols-5  gap-4 max-[900px]:grid-cols-4'>
           {itemAll_RelatedNews?.map((item: Featured,i: number) => {
             if (i==0) {
-              return (<>
-                <New_post_icon_Item newsItem={item} id_Item={item.id} content={item.introText} handle={handle_Item} />
-              </>)
+              return (
+                <New_post_icon_Item key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} content={item.introText} handle={handle_Item} />
+              )
             } else {
               return (<>
-                <New_post_icon_Item newsItem={item} id_Item={item.id} handle={handle_Item} />
+                <New_post_icon_Item key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} handle={handle_Item} />
               </>)
             }
             

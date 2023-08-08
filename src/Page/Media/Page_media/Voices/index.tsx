@@ -15,6 +15,7 @@ export default function Voices() {
   const Video_Item_data_List = Voice_Item?.data
 
 
+
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
@@ -23,7 +24,7 @@ export default function Voices() {
           <div className='w-full absolute' style={{ background: "linear - gradient(rgba(0, 0, 0, 0) 0 %, rgba(0, 0, 0, 0.46) 100 %)"}}></div>
           <div className='absolute bottom-10 w-[80%] left-[10%] z-20	 '>
             <h1 className='text-[25px] text-[#fff] font-bold font-[Arial] text-center mt-5'>{Video_Item_data_List&&Video_Item_data_List[0]?.sliderExtra?.title}</h1>
-            <audio className='w-full mt-5' src={Video_Item_data_List&&Video_Item_data_List[0]?.sliderExtra.audio} controls></audio >
+            <audio className='w-full mt-5' src={ FormatMeida(Video_Item_data_List&&Video_Item_data_List[0]?.sliderExtra?.video)} controls></audio >
           </div>
 
         </div>

@@ -20,7 +20,6 @@ export default function Photos() {
   const ma = Video_Item_data_List && (Video_Item_data_List.length = 10)
 
 
-  console.log(Video_Item_data_List)
 
   useEffect(() => {
     window.scrollTo(0, 0)

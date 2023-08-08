@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { useParams } from 'react-router-dom'
-import { GetImage_detail,GetListInfographic,GetItem_detail } from '../../../../../apis/GetMeidia'
+import { GetImage_detail, GetListInfographic, GetItem_detail } from '../../../../../apis/GetMeidia'
 import Title from '../../../Component/Title'
-import { FormatImage,FormatMeida,Ingrp } from '../../../../../utils/util.type'
+import { FormatImage, FormatMeida, Ingrp, Date_Time } from '../../../../../utils/util.type'
 import Item_catergory from '../../../../../Page/Media/Component/Item_catergory'
 import { typeData } from '../../../Component/Item_catergory'
 
@@ -14,49 +14,34 @@ export default function Infographics_detail() {
     queryFn: () => GetItem_detail(Number(id))
   })
 
-
-
   const { data: Video_Item_data_List } = useQuery({
     queryKey: ['Infographics_Item_list'],
     queryFn: () => GetListInfographic()
   })
 
-const [datajson,setDataJson]=useState ({Title:'',Description:'',Gallery:'',Video:''})
+  const [datajson, setDataJson] = useState({ Title: '', Description: '', Gallery: '', Video: '' })
 
-
-
-console.log(Video_Item_data_List)
-
-
-
-useEffect(() => {
-  
-  if(List_detail){
-    setDataJson(JSON.parse(List_detail?.data?.fieldValue) )
-  }
+  useEffect(() => {
+    if (List_detail) {
+      setDataJson(JSON.parse(List_detail?.data?.fieldValue))
+    }
     window.scrollTo(0, 0)
-  }, [id,List_detail])
+  }, [id, List_detail])
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
-        
-        <div className='font-bold text-2xl not-italic	'>
-          {datajson && Ingrp( datajson?.Title)}
-        </div>
-        <div className='text-[20px] text-[#182940] not-italic	font-[roboto]'>
-          {datajson?.Description}
-        </div>
         <div className='text-[#768496] not-italic text-[15px] font-normal font-[roboto]	'>
-          {List_detail?.data.createdDate}
+          {Date_Time(List_detail?.data.createdDate)}
         </div>
+        <div className='font-bold text-2xl not-italic	'>{datajson && datajson?.Title}</div>
+        <div className='text-[20px] text-[#182940] not-italic	font-[roboto]'>{datajson && datajson?.Description}</div>
 
         <div className='mt-[20px] mb-5'>
-          <img className='w-[90%] m-auto' src={ FormatMeida(datajson?.Gallery)} alt="" />
-          <img className='w-[90%] mt-4 m-auto' src={ FormatMeida(datajson?.Video)} alt="" />
+          <img className='w-[90%] m-auto' src={FormatMeida(datajson?.Gallery)} alt='' />
+          <img className='w-[90%] mt-4 m-auto' src={FormatMeida(datajson?.Video)} alt='' />
         </div>
 
-
-         {/* <Title name={'Multimedia Image'} />
+        {/* <Title name={'Multimedia Image'} />
         <div
           className='bg-no-repeat bg-center  relative mt-10	bg-cover pt-[55.6%]	'
           style={{
@@ -77,23 +62,18 @@ useEffect(() => {
           </div>
         </div> */}
 
-
-
-
-
-
         <div className='mt-10 mb-20'>
           <Title name={'Multimedia Danh sách Image'} />
           {
             <div className='grid grid-cols-4 gap-4 mt-10 max-[850px]:grid-cols-2 max-[450px]:grid-cols-1'>
               {Video_Item_data_List &&
-                Video_Item_data_List?.data?.map((item: typeData) => <Item_catergory  Imge2={true} data={item} type={'Infographics'} />)}
+                Video_Item_data_List?.data?.map((item: typeData) => (
+                  <Item_catergory Imge2={true} data={item} type={'Infographics'} />
+                ))}
             </div>
           }
-        </div> 
+        </div>
       </div>
     </div>
   )
 }
-
-

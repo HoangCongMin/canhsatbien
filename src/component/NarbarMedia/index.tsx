@@ -16,11 +16,11 @@ import { followCursor } from 'tippy.js'
 
 export default function NarbarMedia() {
   const menu_Media = [
-    { icon: BsFillCameraVideoFill, title: 'Video' },
-    { icon: BsFillMicFill, title: 'Radio News' },
-    { icon: MdInsertPhoto, title: 'Photos' },
-    { icon: AiFillPieChart, title: 'infographics' },
-    { icon: RiVoiceprintFill, title: 'Voices' }
+    { icon: BsFillCameraVideoFill, title: 'Video' ,Link:'Video'},
+    { icon: BsFillMicFill, title: 'Radio News',Link:'Radio_News' },
+    { icon: MdInsertPhoto, title: 'Photos' ,Link:'Photos'},
+    { icon: AiFillPieChart, title: 'infographics',Link:'Infographics' },
+    { icon: RiVoiceprintFill, title: 'Voices',Link:'Voices' }
   ]
 
   const [hidden, SetHidden] = useState(false)
@@ -79,9 +79,9 @@ export default function NarbarMedia() {
             <div className='p-2 flex justify-end bg-[#F6F6F6] ' onClick={handleClose}>
               <AiOutlineClose className='text-[#274c90]' />
             </div>
-            {menu_Media.map((item) => (
-              <div className='p-2'>
-                <div>{item.title}</div>
+            {menu_Media.map((item,i) => (
+              <div key={i} className='p-2'>
+                <Link to={`/media/${item.Link}`}>{item.title}</Link>
               </div>
             ))}
           </div>

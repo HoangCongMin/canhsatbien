@@ -21,11 +21,22 @@ import Infographics_detail from'../Page/Media/Page_media/Infographics/Infographi
 import Photos_detail from '../Page/Media/Page_media/Photos/Photos_detail'
 import Portal from'../Page/Portal'
 import PortalLayout from'../layout/PortalLayout'
+import SearchItem from '../Page/SearchItem'
+import Comment from '../Page/comment'
+import SiteMap from '../Page/SiteMap'
 
 import React from 'react'
 
 export default function useRouterElement() {
   const element = useRoutes([
+    {
+      path: '/Sitemap',
+      element: (
+        <Main>
+          <SiteMap />
+        </Main>
+      )
+    },
     {
       path: '/',
       element: (
@@ -35,7 +46,7 @@ export default function useRouterElement() {
       )
     },
     {
-      path: '/portal/:id',
+      path: '/:name/:id',
       element: (
         <PortalLayout>
           <Portal />
@@ -51,7 +62,7 @@ export default function useRouterElement() {
       )
     },
     {
-      path: '/Post_detail',
+      path: '/:title/:id/:cart_id',
       element: (
         <Post_Detail_Layout>
           <Post_detail />
@@ -59,7 +70,7 @@ export default function useRouterElement() {
       )
     },
     {
-      path: '/:id',
+      path: '/:title/:id',
       element: (
         <Post_Detail_Layout>
           <Post_detail />
@@ -144,6 +155,22 @@ export default function useRouterElement() {
         <Layout_Media_Page>
           <Photos_detail />
         </Layout_Media_Page>
+      )
+    },
+    {
+      path: '/SearchItem',
+      element: (
+        <PortalLayout>
+          <SearchItem />
+        </PortalLayout>
+      )
+    },
+    {
+      path: '/comment',
+      element: (
+        <Main>
+          <Comment />
+        </Main>
       )
     },
   ])

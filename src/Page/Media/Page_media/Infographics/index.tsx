@@ -15,7 +15,6 @@ export default function Infographics() {
 
   const Video_Item_data_List = Image_Item?.data
 
-  console.log(Video_Item_data_List)
 
   useEffect(() => {
     window.scrollTo(0, 0)

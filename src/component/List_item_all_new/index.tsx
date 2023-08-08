@@ -20,19 +20,19 @@ export default function List_item_all_new() {
 
 
   return (
-    <div className='w-full flex justify-between mt-2 cursor-pointer '>
+    <div id="list-item-all-new" className='w-full flex justify-between mt-2 cursor-pointer '>
       {Image_item_all?.data.map((item: Featured) => (
 
-        <Link to={`/${item.id}`} className='w-[32%]  shadow-lg' key={item.id}>
-          <div className='overflow-hidden cursor-pointer relative group mt-2'>
+        <Link to={`/${item.title}/${item.id}/${item.catID}`} className='w-[32%]  shadow-lg' key={item.id}>
+          <div className='overflow-hidden cursor-pointer pt-[66.6667%] relative group mt-2'>
             <img
-              className='w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out '
+              className='w-full object-cover absolute top-0 left-0 h-full group-hover:scale-110 transition duration-300 ease-in-out '
               src={`https://canhsatbien.vn/${item.gallery}`}
               alt=''
             />
           </div>
          
-          <p className='text-[14px] font-bold	 my-2 hover:text-[#191970] line-clamp-4'>{item.title}</p>
+          <p className='text-[14px] font-bold	my-2 hover:text-[#0066bc] line-clamp-4 px-[7px]'>{item.title}</p>
         </Link>
       ))}
     </div>

@@ -15,11 +15,11 @@ export default function Item_content_same({ Organization_Payroll_Data }: Item_co
 
 
       <div className='mb-3'>
-        <div className='flex items-center'>
-          <RiArrowDropRightLine className='text-[21px] text-[#DA251C]' />
+        <div className='flex'>
+          <RiArrowDropRightLine className='text-[21px] text-[#DA251C] min-w-[20px]	' />
           <div
             
-            className='text-[15px] text-[#] font-bold hover:text-[#DA251C] cursor-pointer'
+            className='text-[15px] text-[#]  hover:text-[#DA251C] cursor-pointer'
           >
             {Organization_Payroll_Data.title}
           </div>

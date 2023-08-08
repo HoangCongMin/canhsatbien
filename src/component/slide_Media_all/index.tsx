@@ -18,6 +18,8 @@ interface typeSilde {
   text_Media_all?: string
 }
 
+
+
 export default function Slide_Media_all({ content, from, media_style, text_media, text_Media_all }: typeSilde) {
   const [currenIndex, setCurrenIndex] = useState(0)
 
@@ -43,25 +45,25 @@ export default function Slide_Media_all({ content, from, media_style, text_media
     return () => clearTimeout(timer)
   }, [currenIndex])
 
-  return (
-    <div
 
+  return (
+    <div id="slider-media"
       className={classNames(
         `w-full ${from ? from : ' h-[760px]'
         } max-[1250px]:h-[560px] overflow-hidden  max-[875px]:h-[460px] max-[500px]:h-[350px] relative bg-cover bg-center ${media_style ? media_style : ''
         }  duration-500 group`
       )}
     >
-      <Link to={`/${content&&content[currenIndex].id}` }>
-      <div
-        style={{
-          backgroundImage: `url(${content && content[currenIndex].gallery
-              ? FormatImage(content && content[currenIndex].gallery)
-              : content && content[currenIndex].img
-            })`
-        }}
-        className={classNames(`w-full h-full ${from ? 'rounded-none' : 'rounded-2xl'} bg-center bg-cover duration-500`)}
-      ></div>
+      <Link to={`/${content&&content[currenIndex].title}/${content&&content[currenIndex].id}/${content&&content[currenIndex].catID}` }>
+        <div
+          style={{
+            backgroundImage: `url(${content && content[currenIndex].gallery
+                ? FormatImage(content && content[currenIndex].gallery)
+                : content && content[currenIndex].img
+              })`
+          }}
+          className={classNames(`w-full h-full ${from ? 'rounded-none' : 'rounded-2xl'} bg-center bg-cover duration-500`)}
+        ></div>
       </Link>
       <div className='hidden group-hover:block  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <BsChevronCompactLeft onClick={prevSlice} />

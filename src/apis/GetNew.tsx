@@ -10,7 +10,7 @@ export const GetListCategoryItemAll = () => http.get('Home/GetListCategoryItem')
 export const GetListItemNewestAll = () => http.get('Home/GetListItemNewest')
 export const GetListItemFeaturedAll = () => http.get('Home/GetListItemFeatured')
 export const GetArticleDetail = (id: string) => http.get(`Portal/ArticleDetail?itemId=${id}`)
-export const GetArticleRelate = (CatId: number) => http.get(`Portal/ArticleRelate?CatId=${CatId}&page=5`)
+export const GetArticleRelate = (CatId: number) => http.get(`Portal/ArticleRelate?CatId=${CatId}&page=10`)
 export const GetListCategoryRightSession = () => http.get('Home/GetListCategoryRightSession')
 export const GetVideo = () => http.get<video>('Layout/GetVideo')
 export const GetImage = () => http.get('Layout/GetImage')
@@ -18,4 +18,10 @@ export const GetListVideoAllTow = (id: string, categoryId: string) => http.get(`
 export const GetListVideoAll = () => http.get(`Layout/GetListVideoAll`)
 
 export const GetImageList = () => http.get(`Layout/GetImageList`)
+
+export const GetItemSeachItem=(pra:string)=>http.get(`Sreach/SerachItemContent?name=${pra}`)
+export const GetItemSeachItemall=(pra:string,page:number)=>http.get(`Sreach/GetSerachItemContentTow?name=${pra}&p=${page}`)
+
+export const GetSendComment=(body:any)=>http.post(`Comment/InsertComment`,body)
+
 

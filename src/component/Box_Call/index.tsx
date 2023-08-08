@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import { BsFacebook } from 'react-icons/bs'
 import { FiMessageSquare } from 'react-icons/fi'
 import { RiPrinterFill } from 'react-icons/ri'
@@ -12,51 +12,64 @@ import {
   TwitterShareButton,
   TwitterIcon,
   TelegramShareButton,
-  TelegramIcon,
+  TelegramIcon
 } from 'react-share'
 import { FormatImage, FormatLink } from '../../utils/util.type'
+// import '@zalo/sdk';
 
-export default function Box_Call() {
+export default function Box_Call({Link}:any) {
   const ma = window.location.href
-  
+
+;
+
+const handlePrint=()=>{
+  window.print()
+}
+
+  useEffect(() => {
+    const script = document.createElement('script')
+
+    script.src = 'https://sp.zalo.me/plugins/sdk.js'
+   
+    script.async = true
+
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
+
   return (
-    <div className='w-[8%] sticky top-0 z-10 max-[1300px]:hidden'>
-      <div className='w-[90%] m-auto'>
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <AiFillLike className='text-[#56aaff]' />
-        </div>
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          {/* <BsFacebook className='text-[#56aaff]' /> */}
+      <div className='w-[30%]  flex justify-end  max-[1250px]:w-full  max-[1250px]:justify-start'>
+       
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center '>
           <FacebookShareButton url={ma} quote={'FaceBook'}>
             <FacebookIcon size={20} round={true} />
           </FacebookShareButton>
         </div>
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <TwitterShareButton url={ma}>
-            <TwitterIcon size={20} round={true} />
-          </TwitterShareButton>
-        </div>
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
+       
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center ml-[10px] '>
           <TelegramShareButton url={ma}>
             <TelegramIcon size={20} round={true} />
           </TelegramShareButton>
         </div>
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center ml-[10px] '>
+          <div
+            className='zalo-share-button'
+            data-href={Link}
+            data-oaid='3798984391676315104'
+            data-layout='2'
+            data-color='blue'
+            data-customize='false'
+          ></div>
+        </div>
+        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center ml-[10px]'>
+          <RiPrinterFill onClick={handlePrint} className='cursor-pointer text-[20px] text-[#375fae]'/>
+        </div>
+
        
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <FiMessageSquare className='text-[#56aaff]' />
-        </div>
-        <div className='text-center text-[11px] mt-3 m-auto  pb-5 border-b-[1px] border-slate-300 w-[65%]'>0</div>
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full h-[50px] flex items-center justify-center mt-2 m-auto'>
-          <RiPrinterFill />
-        </div>
-        <div className='w-[50px] border-[1px] border-slate-300 rounded-full flex items-center justify-center mt-2 m-auto'>
-          <div>
-            <IoMdAddCircleOutline className='text-[14px] my-3' />
-            <GoTextSize className='text-[14px] my-3' />
-            <HiOutlineMinusCircle className='text-[14px] my-3' />
-          </div>
-        </div>
       </div>
-    </div>
+    
   )
 }
