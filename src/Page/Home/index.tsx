@@ -152,7 +152,7 @@ export default function Home() {
       <div className='w-[80%] m-auto max-w-screen-2xl flex justify-between relative'>
         <div className=' w-[50.4%] flex items-center max-[1300px]:hidden bg-white shadow-xl border-[1px] border-[#F6F6F6] rounded-full  '>
           <input
-            placeholder='Nhập từ khoá'
+            placeholder='Nhập từ khóa'
             type='text'
             className='w-[95%] outline-none rounded-full text-[15px]  px-3 py-2'
             onChange={(e)=>setValueInput(e.target.value)}
@@ -165,24 +165,29 @@ export default function Home() {
         </div>
       </div>
       <div className='w-[80%] m-auto max-w-screen-2xl flex justify-between mt-7 max-[500px]:mt-0  max-[1300px]:flex-col max-[850px]:flex-col  '>
+        
         <div className='w-[75%] max-[1300px]:w-full flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%] max-[1100px]:w-[100%] overflow-y-auto'>
           <div className='w-full max-[1300px]:w-full'>
             <div className='w-full flex justify-between max-[1300px]:flex-col '>
-              <div className='w-[71%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	max-[1100px]:border-none '>
+              <div className='w-[68.1%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	max-[1100px]:border-none '>
+                
                 <div className='w-[97%]  max-[1100px]:w-full'>
-                  <Slide_Media_all content={List_side?.data} from={'h-[479px] py-0'} />
+              
+                  <Slide_Media_all content={List_side?.data} from={'h-[439px] py-0'} />
                 </div>
               </div>
 
-              <div className='w-[27%]  	  overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
-                <div className=' h-[22vh] max-[1300px]:h-[100%]'> 
+              <div className='w-[30%]  	  overflow-y-auto	max-[1300px]:w-[100%] max-[1300px]:pt-8'>
+                
+                <div className=' h-[22vh] max-[1300px]:h-[100%]'>
+               
                   {dataNewest?.data.map((item: Featured) => (
                     <ShortMessage
                     id_cart={item.catID}
                     name={item.title}
                     id_name={item.id}
                       id_Item={item.id}
-                      classItiemAll={'text-[14px] w-[95%] mr-2 text-black hover:text-[#0066bc] '}
+                      classItiemAll={'text-[14px] w-[95%] mr-2 text-black hover:text-[#0066bc]  '}
                       classItiem={
                         "text-[15px] text-justify text-[#000]  relative     before:text-[1.2rem] before:content-['▪'] before:mr-2 before:text-[#da251c] flex pb-[17px] pt-[23px] border-b-[1px] first:pt-0 last:border-none cursor-pointer	 "
                       }
@@ -205,7 +210,7 @@ export default function Home() {
 
             <div className='w-full m-auto  justify-between flex  max-[1160px]:flex-col'>
               <div className=' w-full flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
-              
+             
                 {NewPost_Item_All?.data.map((item: ListCategoryItem) => (
                   <NewPost_Item
                     class_Custom_layout={'first:pb-7'}

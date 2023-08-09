@@ -20,8 +20,7 @@ export interface typeData {
   created: null
 }
 
-
-export default function Item_catergory({ data, video, Voices, typeImage ,type,Image,Imge2  }:any) {
+export default function Item_catergory({ data, video, Voices, typeImage ,type,Image,Imge2 ,Imge3 }:any) {
   const [playVideo, setPlayVideo] = useState(false)
   const videoRef = useRef();
 
@@ -49,14 +48,16 @@ export default function Item_catergory({ data, video, Voices, typeImage ,type,Im
         }
         {video && (<p className='text-[15px]  mt-2 text-[#00285A] font-bold	 cursor-pointer front-[Arial] line-clamp-5'>{data.videoExtra.title}</p>)}
 
-        {Voices && (<img className='w-full' src={typeImage ? FormatMeida(data.sliderExtra.gallery) : FormatMeida(data.sliderExtra.gallery || data.sliderExtra.gallery)} />)}
+        {Voices && (<img className='w-full' src={typeImage ? FormatMeida(data?.sliderExtra?.video) : FormatMeida(data?.sliderExtra?.video || data?.sliderExtra?.video)} />)}
         
         {Voices && (<p className='text-[15px] text-[#00285A] mt-2 cursor-pointer font-bold	 front-[Arial]   line-clamp-5'>{data.sliderExtra.title}</p>)}
         {Voices && (<span className='text-[15px] text-[#999]'>{data.sliderExtra.datePost}</span>) }
-        {Image &&(<img className='w-full' src={ FormatMeida(data.sliderExtra.gallery) || FormatMeida(data.sliderExtra.gallery)} />)}
+        {Image &&(<img className='w-full' src={ FormatMeida(data.sliderExtra.video) || FormatMeida(data.sliderExtra.video)} />)}
         {Image && (<p className='text-[15px] text-[#00285A] mt-2 cursor-pointer font-bold	 front-[Arial]  line-clamp-5'>{data.sliderExtra.title}</p>)}
-        {Imge2 &&(<img className='w-full' src={FormatMeida( data.sliderExtra.gallery)} />)}
+        {Imge2 &&(<img className='w-full' src={FormatMeida(data.sliderExtra.gallery)} />)}
         {Imge2 && (<p className='text-[15px] text-[#00285A] mt-2 cursor-pointer font-bold	 front-[Arial]  line-clamp-5'>{data.sliderExtra.title}</p>)}
+        {Imge3 &&(<img className='w-full' src={FormatMeida(data.sliderExtra.gallery)} />)}
+        {Imge3 && (<p className='text-[15px] text-[#00285A] mt-2 cursor-pointer font-bold	 front-[Arial]  line-clamp-5'>{data.sliderExtra.title}</p>)}
         
         
       </div>

@@ -54,6 +54,7 @@ export default function Napbar() {
 
     return () => {
       window.removeEventListener('resize', () => {
+        console.log('thành công')
       })
     }
   }, [])

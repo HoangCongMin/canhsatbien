@@ -71,31 +71,17 @@ export default function NewPost_Item({
       </div>
 
       <div className='flex justify-between max-[1000px]:flex-col'>
-        {/* <div className='mt-4 w-[50%] max-[1000px]:w-full '>
-          <div className='w-full overflow-hidden cursor-pointer relative group'>
-            <img
-              className=' w-full object-cover  group-hover:scale-110 transition duration-300 ease-in-out'
-              src={item_Wrapper.image}
-              alt=''
-            />
-          </div>
-          <div className='w-full mt-3 '>
-            <h3 className='text-[18px] font-medium	text-[#031739] hover:text-[#191970]'>{item_Wrapper.nameAll}</h3>
-            <p className='text-[14px] text-[#3B4E68]'>{item_Wrapper.contentAll}</p>
-          </div>
-        </div> */}
-        {/* max-[1000px]:flex-row  max-[1000px]:justify-between max-[1000px]:flex-wrap max-[687px]:	 max-[1000px]:w-full */}
+        
 
-        {/* grid-rows-3 */}
-        <div className='mt-4 w-full grid  grid-cols-5  gap-4 max-[900px]:grid-cols-4'>
+        <div className='mt-4 w-full grid  grid-cols-4  gap-4 max-[900px]:grid-cols-4'>
           {itemAll_RelatedNews?.map((item: Featured,i: number) => {
             if (i==0) {
               return (
-                <New_post_icon_Item key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} content={item.introText} handle={handle_Item} />
+                <New_post_icon_Item class_one={'line-clamp-2	'} setStyle={'mt-2'} key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} content={item.introText} handle={handle_Item} />
               )
             } else {
               return (<>
-                <New_post_icon_Item key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} handle={handle_Item} />
+                <New_post_icon_Item setStyle={'mt-0'} key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} handle={handle_Item} />
               </>)
             }
             

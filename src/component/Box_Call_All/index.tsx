@@ -21,10 +21,7 @@ export default function Box_Call_All() {
     { id: 6, title: 'Bắc Biển Đông', img: 'https://baohaiquanvietnam.vn/storage/images/Co_luc_co_Mua.gif' }
   ]
 
-  /* const { data } = useQuery({
-     queryKey: ['List_side_right'],
-     queryFn:()=> GetListCategoryRightSession()
-   })*/
+
 
   const { data: List_Item } = useQuery({ queryKey: ['List_Item'], queryFn: GetListCategoryRightSession })
 

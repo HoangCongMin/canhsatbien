@@ -17,6 +17,7 @@ export default function shortMessage({ conTentShortMessage, classItiem, classIti
   return (
     <Link to={`/${conTentShortMessage}/${id_Item}/${id_cart}` } className={classItiem}>
       <div className={classItiemAll}>{conTentShortMessage}</div>
+      
     </Link>
   )
 }

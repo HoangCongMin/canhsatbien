@@ -55,8 +55,8 @@ export default class Slice_cart_news_coppy_image extends Component {
     return (
       <div className='pb-10 '>
         <Slider {...settings}>
-          {Img_all_array.map((item) => (
-            <div className='gap-3 px-2'>
+          {Img_all_array.map((item,i) => (
+            <div key={i} className='gap-3 px-2'>
               <Item_slide_img Name_img={item.name} Img_Items={item.img} />
             </div>
           ))}

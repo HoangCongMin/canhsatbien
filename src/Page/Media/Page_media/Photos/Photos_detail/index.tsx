@@ -25,20 +25,32 @@ export default function Photos_detail() {
   })
 
   const { data: List_imgitem } = useQuery({
-    queryKey: ['List_Photo_All'],
+    queryKey: ['List_Photo_All_item'],
     queryFn: () => GetImageList()
   })
   const Video_Item_data_List = List_imgitem?.data
-  const ma = Video_Item_data_List && (Video_Item_data_List.length = 10)
 
-  const [datajson, setDataJson] = useState({ Title: '', Description: '', Gallery: '', Video: '' })
 
-  useEffect(() => {
-    if (List_img) {
-      setDataJson(JSON.parse(List_img?.data?.fieldValue))
-    }
-    window.scrollTo(0, 0)
-  }, [id, List_img])
+  function handle_String(data: string) {
+    const newStr = data.replace(/upload/g, 'https://csbe.3i.com.vn//upload')
+    // const index = newStr.indexOf('/https://canhsatbien.vn//upload')
+
+    const style = "className='m-auto'"
+    const ma = newStr
+    const result = ma.replaceAll('src="/', 'src="')
+    const style_result = result.replace(/img/g, "img class='m-auto' ")
+    const result_item = style_result.replace(/em/g, "p class='text-[19px] text-center'")
+    return result_item
+  }
+
+  const item_result = Photo_detail_Item?.data?.sliderExtra
+
+  // useEffect(() => {
+  //   if (List_img) {
+  //     setDataJson(JSON.parse(List_img?.data?.fieldValue))
+  //   }
+  //   window.scrollTo(0, 0)
+  // }, [id, List_img])
 
   return (
     <div className='w-[100%]'>
@@ -46,13 +58,20 @@ export default function Photos_detail() {
         <div className='text-[#768496] not-italic text-[15px] font-normal font-[roboto]	'>
           {Date_Time(List_img?.data.createdDate)}
         </div>
-        <div className='font-bold text-2xl not-italic	'>{datajson && datajson?.Title}</div>
-        <div className='text-[20px] text-[#182940] not-italic	font-[roboto]'>{datajson && datajson?.Description}</div>
+        <div className='font-bold text-2xl not-italic	'>{item_result && item_result?.title}</div>
+        <div
+          className='font-[NotoSerif] text-[19px] mt-4  text-justify'
+          dangerouslySetInnerHTML={{
+            __html: item_result?.description && handle_String(item_result?.description)
+          }}
+        />
+        {/* <div className='font-bold text-2xl not-italic	'>{datajson && datajson?.Title}</div>
+        <div className='text-[20px] text-[#182940] not-italic	font-[roboto]'>{datajson && datajson?.Description}</div> */}
 
-        <div className='mt-[20px] mb-5'>
+        {/* <div className='mt-[20px] mb-5'>
           <img className='w-[90%] m-auto' src={FormatMeida(datajson?.Gallery)} alt='' />
           <img className='w-[90%] mt-4 m-auto' src={FormatMeida(datajson?.Video)} alt='' />
-        </div>
+        </div> */}
 
         <div className='mt-6 mb-20'>
           <Title name={'Multimedia Danh sách Image'} />

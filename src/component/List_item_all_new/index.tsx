@@ -32,7 +32,7 @@ export default function List_item_all_new() {
             />
           </div>
          
-          <p className='text-[14px] font-bold	my-2 hover:text-[#0066bc] line-clamp-4 px-[7px]'>{item.title}</p>
+          <p className='text-[14px] font-bold	my-2 hover:text-[#0066bc] line-clamp-2 px-[7px] '>{item.title}</p>
         </Link>
       ))}
     </div>

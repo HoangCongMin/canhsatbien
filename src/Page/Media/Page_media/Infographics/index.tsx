@@ -15,6 +15,8 @@ export default function Infographics() {
 
   const Video_Item_data_List = Image_Item?.data
 
+  console.log(Video_Item_data_List)
+
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -34,7 +36,7 @@ export default function Infographics() {
           <Title name={'Multimedia Danh sách GetListInfographic'} />
           {
             <div className='grid grid-cols-4 gap-4 mt-10 max-[1000px]:grid-cols-2 max-[450px]:grid-cols-1'>{Video_Item_data_List&&Video_Item_data_List.map((item: typeData) => (
-              <Item_catergory type={'Infographics'}  Voices={true} data={item} />
+              <Item_catergory type={'Infographics'}  Imge2={true} data={item} />
             ))}</div>
           }
         </div>

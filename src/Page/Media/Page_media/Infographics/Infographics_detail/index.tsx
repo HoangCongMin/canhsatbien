@@ -6,69 +6,66 @@ import Title from '../../../Component/Title'
 import { FormatImage, FormatMeida, Ingrp, Date_Time } from '../../../../../utils/util.type'
 import Item_catergory from '../../../../../Page/Media/Component/Item_catergory'
 import { typeData } from '../../../Component/Item_catergory'
+// import {Date_Time} from'../../../../../utils/util.type'
 
 export default function Infographics_detail() {
   const { id } = useParams()
-  const { data: List_detail } = useQuery({
-    queryKey: ['Infographics_Item', id],
-    queryFn: () => GetItem_detail(Number(id))
-  })
-
+  
   const { data: Video_Item_data_List } = useQuery({
     queryKey: ['Infographics_Item_list'],
     queryFn: () => GetListInfographic()
   })
+  
+  const { data: List_detail } = useQuery({
+    queryKey: ['Infographics_Item_detail', id],
+    queryFn: () => GetItem_detail(Number(id))
+  })
 
-  const [datajson, setDataJson] = useState({ Title: '', Description: '', Gallery: '', Video: '' })
+  
+  function handle_String(data: string) {
+    const newStr = data.replace(/upload/g, 'https://csbe.3i.com.vn//upload')
+    // const index = newStr.indexOf('/https://canhsatbien.vn//upload')
 
-  useEffect(() => {
-    if (List_detail) {
-      setDataJson(JSON.parse(List_detail?.data?.fieldValue))
-    }
-    window.scrollTo(0, 0)
-  }, [id, List_detail])
+    const style = "className='m-auto'"
+    const ma = newStr
+    const result = ma.replaceAll('src="/', 'src="')
+    const style_result = result.replace(/img/g, "img class='m-auto' ")
+    const result_item = style_result.replace(/em/g, "p class='text-[19px] text-center'")
+    return result_item
+  }
+
+
+  const item_result = List_detail?.data?.sliderExtra
+
+ 
+  console.log(item_result)
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
+       
+
         <div className='text-[#768496] not-italic text-[15px] font-normal font-[roboto]	'>
-          {Date_Time(List_detail?.data.createdDate)}
+          {Date_Time(List_detail?.data?.datePost)}
         </div>
-        <div className='font-bold text-2xl not-italic	'>{datajson && datajson?.Title}</div>
-        <div className='text-[20px] text-[#182940] not-italic	font-[roboto]'>{datajson && datajson?.Description}</div>
-
-        <div className='mt-[20px] mb-5'>
-          <img className='w-[90%] m-auto' src={FormatMeida(datajson?.Gallery)} alt='' />
-          <img className='w-[90%] mt-4 m-auto' src={FormatMeida(datajson?.Video)} alt='' />
-        </div>
-
-        {/* <Title name={'Multimedia Image'} />
+        <div className='font-bold text-2xl not-italic	'>{item_result && item_result?.title}</div>
         <div
-          className='bg-no-repeat bg-center  relative mt-10	bg-cover pt-[55.6%]	'
-          style={{
-            backgroundImage: `url(${
-              FormatMeida(List_detail && List_detail?.data?.sliderExtra?.gallery) ||
-              FormatMeida(List_detail && List_detail?.data?.sliderExtra?.gallery)
-            })`
+          className='font-[NotoSerif] text-[19px] mt-4  text-justify'
+          dangerouslySetInnerHTML={{
+            __html: item_result?.description && handle_String(item_result?.description)
           }}
-        >
-          <div
-            className='w-full absolute'
-            style={{ background: 'linear - gradient(rgba(0, 0, 0, 0) 0 %, rgba(0, 0, 0, 0.46) 100 %)' }}
-          ></div>
-          <div className='absolute bottom-10 w-[80%] left-[10%] z-20	 '>
-            <h1 className='text-[25px] text-[#fff] font-bold font-[Arial] text-center mt-5'>
-              {List_detail && List_detail?.data?.sliderExtra?.title}
-            </h1>
-          </div>
-        </div> */}
+        />
+        <div className='w-full my-10'>
+          <img className='m-auto' src={ FormatMeida(item_result?.video)} alt="" />
+
+        </div>
 
         <div className='mt-10 mb-20'>
           <Title name={'Multimedia Danh sách Image'} />
           {
             <div className='grid grid-cols-4 gap-4 mt-10 max-[850px]:grid-cols-2 max-[450px]:grid-cols-1'>
               {Video_Item_data_List &&
-                Video_Item_data_List?.data?.map((item: typeData) => (
-                  <Item_catergory Imge2={true} data={item} type={'Infographics'} />
+                Video_Item_data_List?.data?.map((item: any) => (
+                  <Item_catergory Imge3={true} data={item} type={'Infographics'} />
                 ))}
             </div>
           }

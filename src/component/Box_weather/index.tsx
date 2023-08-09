@@ -32,15 +32,11 @@ export default function Box_weather({ List_weather }: weathers) {
       </div>
       
       <div>
-        {List_weather.map((item,i) => (
-          <div key={i} className='flex items-center w-[95%] m-auto justify-between'>
-            <span className='text-[13px] text-[#333] text-right w-[60%] max-[1100px]:w-[48%]'>{item.title}</span>
+        <a target="_blank" href="https://www.nchmf.gov.vn/kttv/ ">
 
-            <div className='w-[30%] max-[1100px]:w-[48%]'>
-              <img src={item.img} alt='' />
-            </div>
-          </div>
-        ))}
+        <img className='m-auto py-6' src={List_weather[0].img} alt="" />
+        </a>
+        
       </div>
     </div>
   )

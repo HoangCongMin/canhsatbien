@@ -39,10 +39,10 @@ export default function NarbarMedia() {
             </div>
           </Link>
           <Link to={'/'} className='flex max-[1400px]:w-[100%]  w-[60%] items-center uppercase'>
-            <div className='w-20%'>
+            {/* <div className='w-20%'>
               <TfiYoutube className='w-[30px] h-[30px] text-[#dc2c2c]' />
-            </div>
-            <div className='text-[23px] ml-2 text-[#182940] font-bold'>multimedia</div>
+            </div> */}
+            <div className='text-[23px] ml-2 text-[#182940] font-bold'>Đa phương tiện</div>
           </Link>
         </div>
         <div className='w-[60%] flex justify-between items-center max-[1240px]:hidden'>
@@ -56,7 +56,7 @@ export default function NarbarMedia() {
           </Link>
           <Link to={ '/media/Voices'} className='flex items-center cursor-pointer'>
             <RiVoiceprintFill className='text-[#274c90] text-[20px]' />
-            <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Voices</span>
+            <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Longform</span>
           </Link>
 
           <Link to={ '/media/Infographics'} className='flex items-center cursor-pointer'>
@@ -67,9 +67,9 @@ export default function NarbarMedia() {
             <MdInsertPhoto className='text-[#274c90] text-[20px]' />
             <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Photos</span>
           </Link>
-          <div className='flex items-center  cursor-pointer'>
+          {/* <div className='flex items-center  cursor-pointer'>
             <BsSearch />
-          </div>
+          </div> */}
         </div>
         <div className='min-[1240px]:hidden' onClick={handleClose}>
           <AiOutlineBars />
