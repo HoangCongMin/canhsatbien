@@ -48,7 +48,7 @@ export default function Item_catergory({ data, video, Voices, typeImage ,type,Im
         }
         {video && (<p className='text-[15px]  mt-2 text-[#00285A] font-bold	 cursor-pointer front-[Arial] line-clamp-5'>{data.videoExtra.title}</p>)}
 
-        {Voices && (<img className='w-full' src={typeImage ? FormatMeida(data?.sliderExtra?.video) : FormatMeida(data?.sliderExtra?.video || data?.sliderExtra?.video)} />)}
+        {Voices && (<img className='w-full' src={typeImage ? FormatMeida(data?.sliderExtra?.gallery) : FormatMeida(data?.sliderExtra?.gallery || data?.sliderExtra?.gallery)} />)}
         
         {Voices && (<p className='text-[15px] text-[#00285A] mt-2 cursor-pointer font-bold	 front-[Arial]   line-clamp-5'>{data.sliderExtra.title}</p>)}
         {Voices && (<span className='text-[15px] text-[#999]'>{data.sliderExtra.datePost}</span>) }
