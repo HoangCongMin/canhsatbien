@@ -45,9 +45,9 @@ export default function Media() {
 
         <Media_detail Video_Item_data={Video_Item_data && Video_Item_data} />
         <div className='mt-6'>
-          <Title name={'Multimedia Danh sách Video'} />
+          <Title name={'Danh sách Video'} />
 
-          <div className='flex justify-end mt-4	'>
+          <div className='flex justify-end items-center mt-4	'>
             <span className='mr-4 text-[15px]'>Chọn chuyên mục :</span>
             <Sort queryParam={queryParam} />
           </div>

@@ -4,8 +4,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 import { FormatImage } from '../../utils/util.type'
 import {Date_Time} from'../../utils/util.type';
 
-const ListDocument = ({listItems}) => {
-  console.log(listItems);
+const ListDocument = ({listItems}:any) => {
   return (
     <>
       <table className="text-[12px] lg:text-[14px] w-full">

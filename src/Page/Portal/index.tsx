@@ -30,7 +30,6 @@ export default function Portal() {
   }
   const item = handle_Paginate()
 
-  console.log(List_Portal_Item);
 
   return (
     <>

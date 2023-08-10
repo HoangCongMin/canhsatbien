@@ -6,7 +6,7 @@ import Content_Same from '../../component/Content_Same'
 import Share from '../../component/Share'
 import { Date_Time } from '../../utils/util.type';
 
-const DetailDocument = ({prfile_all}) => {
+const DetailDocument = ({prfile_all}:any) => {
   const [activeTab, setActiveTab] = useState("tab1");
   const extraFields = JSON.parse(prfile_all?.data.extraFields);
   function handle_String(data: string) {

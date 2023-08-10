@@ -52,7 +52,7 @@ export default function NarbarMedia() {
           </Link>
           <Link to={'/media/Radio_News'} className='flex items-center cursor-pointer '>
             <BsFillMicFill className='text-[#274c90] text-[20px]' />
-            <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Radio News</span>
+            <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Podcast</span>
           </Link>
           <Link to={ '/media/Voices'} className='flex items-center cursor-pointer'>
             <RiVoiceprintFill className='text-[#274c90] text-[20px]' />
@@ -61,7 +61,7 @@ export default function NarbarMedia() {
 
           <Link to={ '/media/Infographics'} className='flex items-center cursor-pointer'>
             <AiFillPieChart className='text-[#274c90] text-[20px]' />
-            <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>infographics</span>
+            <span className='ml-2 text-[#182940] font-[Roboto] text-[15px] font-medium'>Infographic</span>
           </Link>
           <Link to={ '/media/Photos'} className='flex items-center cursor-pointer'>
             <MdInsertPhoto className='text-[#274c90] text-[20px]' />

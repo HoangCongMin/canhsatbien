@@ -31,18 +31,18 @@ export default function Voices() {
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
-        <Title name={'Đa phương tiện Longform'} />
-        <div
+        {/* <Title name={'Đa phương tiện Longform'} /> */}
+        {/* <div
               className='font-[NotoSerif] text-[19px] mt-4  text-justify'
               dangerouslySetInnerHTML={{
                 __html:Voice_Item_item?.data?.sliderExtra?.description && handle_String(Voice_Item_item?.data?.sliderExtra?.description),
-              }}/>
+              }}/> */}
 
         <div className='mt-6'>
-          <Title name={'Đa phương tiện danh sách Longform'} />
+          <Title name={'Danh sách Longform'} />
           {
             <div className='grid grid-cols-4 gap-4 mt-10 max-[1000px]:grid-cols-2 max-[450px]:grid-cols-1'>{Video_Item_data_List&&Video_Item_data_List?.map((item: typeData) => (
-              <Item_catergory Voices={true} type={'voices'} data={item} />
+              <Item_catergory typeImage={true} Voices={true} type={'voices'} data={item} />
             ))}</div>
           }
         </div>

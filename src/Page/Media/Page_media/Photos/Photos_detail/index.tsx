@@ -42,21 +42,17 @@ export default function Photos_detail() {
     const result_item = style_result.replace(/em/g, "p class='text-[19px] text-center'")
     return result_item
   }
-
+  // console.log(List_img?.data?.datePost)
   const item_result = Photo_detail_Item?.data?.sliderExtra
-
-  // useEffect(() => {
-  //   if (List_img) {
-  //     setDataJson(JSON.parse(List_img?.data?.fieldValue))
-  //   }
-  //   window.scrollTo(0, 0)
-  // }, [id, List_img])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [id])
 
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
         <div className='text-[#768496] not-italic text-[15px] font-normal font-[roboto]	'>
-          {Date_Time(List_img?.data.createdDate)}
+          {Date_Time(List_img?.data?.datePost)}
         </div>
         <div className='font-bold text-2xl not-italic	'>{item_result && item_result?.title}</div>
         <div

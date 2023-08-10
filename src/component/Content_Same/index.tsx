@@ -44,10 +44,14 @@ export default function Content_Same({ data,name,title_name }: data_Post_Same) {
           data_All?.data.map((item: PostArticleRelate) => (
             <>
             {/* to={`/${data_item.title}/${data_item.idall}/${title_name}/${item.id}`} */}
-              <Link className='flex items-center max-[1000px]:flex-col max-[1000px]:items-start  ' to={`/${item.title}/${item.id}/${item.catId}`}>
+              <Link className=' max-[1000px]:flex-col max-[1000px]:items-start  ' to={`/${item.title}/${item.id}/${item.catId}`}>
+                <p>
 
-                <Item_content_same Organization_Payroll_Data={item} key={item.id} />
-                <span className='text-[#838383] text-[15px] font-[Roboto] my-3 text-justify	ml-2'>({Date_Time( item.datePost)})</span>
+
+                <Item_content_same Organization_Payroll_Data={item} key={item.id} date={item.datePost} />
+                {/* <span className='text-[#838383] text-[15px] font-[Roboto] my-3 text-justify	ml-2'>({Date_Time( item.datePost)})</span> */}
+                  </p>
+
               </Link>
             </>
           ))

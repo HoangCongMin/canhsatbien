@@ -37,8 +37,9 @@ export default function Infographics_detail() {
 
   const item_result = List_detail?.data?.sliderExtra
 
- 
-  console.log(item_result)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [id])
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import BG_Image from '../../assets/00AE2B47-0D81-41E7-8AC2-B23090A9785F (1).jpg'
+import BG_Image from '../../assets/baner-canhsatbienvn-2022-ok-134459198.png'
 import { Link } from 'react-router-dom'
 import { AiOutlineBars, AiOutlineClose } from 'react-icons/ai'
 import Tippy from '@tippyjs/react'
@@ -13,7 +13,7 @@ import { IoCallSharp } from 'react-icons/io5'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BiSearch } from 'react-icons/bi'
 import { IoMdArrowDropdown } from 'react-icons/io'
-import Bg_mobile from '../../assets/mobileCSB.jpg'
+import Bg_mobile from '../../assets/app-store.png.jpg'
 import { myCreateContext } from '../../context'
 import { GetListCategorySession } from '../../apis/GetHoatDongCSB'
 import { useQuery } from '@tanstack/react-query'
@@ -58,8 +58,9 @@ export default function Napbar() {
       })
     }
   }, [])
-
-
+  // <img className='w-full' src={FormatMeida(banner_top?.data[0]?.bannerExtra?.images)} alt='' />
+  // <img className='w-full border-l-[1px]' src={FormatMeida(mobile_mobile?.data[0]?.bannerExtra?.images)} />
+  // BG_Image
   return (
     <div className='w-full bg-white '>
       <div className='w-[80%] max-w-screen-2xl m-auto cursor-pointer '>
@@ -67,10 +68,10 @@ export default function Napbar() {
           {/* style={{ backgroundImage: `url(${BG_Image})`}} */}
           <div className='w-full bg-cover'>
             {item_Window <= 500 && (
-              <img className='w-full border-l-[1px]' src={FormatMeida(mobile_mobile?.data[0]?.bannerExtra?.images)} />
+              <img className='w-full border-l-[1px]' src={Bg_mobile} />
             )}
             {item_Window > 500 && (
-              <img className='w-full' src={FormatMeida(banner_top?.data[0]?.bannerExtra?.images)} alt='' />
+              <img className='w-full' src={BG_Image} alt='' />
             )}
             {/* <img className='w-full absolute top-0 left-0 h-full object-cover' src={FormatMeida(banner_top?.data[0]?.bannerExtra?.images)} alt='' /> */}
           </div>

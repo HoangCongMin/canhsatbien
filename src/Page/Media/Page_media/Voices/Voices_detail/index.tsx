@@ -55,7 +55,7 @@ export default function Voices_detail() {
             <div className='grid grid-cols-4 gap-4 mt-10'>
               {Video_Item_data_List &&
                 Video_Item_data_List?.map((item: typeData) => (
-                  <Item_catergory Voices={true} data={item} type={'Voices'} />
+                  <Item_catergory typeImage={true} Voices={true} data={item} type={'Voices'} />
                 ))}
             </div>
           }

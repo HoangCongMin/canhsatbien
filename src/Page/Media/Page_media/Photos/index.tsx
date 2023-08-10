@@ -35,23 +35,24 @@ export default function Photos() {
     return result_item
   }
 
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (
     <div className='w-[100%]'>
       <div className='w-[98%] m-auto'>
-         <Title name={'Multimedia Image'} />
+         {/* <Title name={'Multimedia Image'} /> */}
        
-         <div
+         {/* <div
               className='font-[NotoSerif] text-[19px] mt-4  text-justify'
               dangerouslySetInnerHTML={{
                 __html:Voice_Item_item?.data?.sliderExtra?.description && handle_String(Voice_Item_item?.data?.sliderExtra?.description),
               }}/>
 
-        <div className='mt-6'></div>
+        <div className='mt-6'></div> */}
         <div className='mt-6'>
-          <Title name={'Multimedia Danh sách Image'} />
+          <Title name={'Danh sách Photos'} />
           {
             <div className='grid grid-cols-4 gap-4 mt-10 max-[1000px]:grid-cols-2 max-[450px]:grid-cols-1'>{Video_Item_data_List&&Video_Item_data_List.map((item: typeData) => (
               <Item_catergory typeImage={ true} Voices={true} type={'Photos'} data={item} />

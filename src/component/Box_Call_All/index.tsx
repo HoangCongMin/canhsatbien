@@ -31,13 +31,16 @@ export default function Box_Call_All() {
 
   const [video_Display, setVideo_Display] = useState(false)
   const [playVideo, setPlayVideo] = useState(false)
-  const videoRef = useRef();
+  const videoRef = useRef<HTMLVideoElement>(null);
   // ${newsItem.title}/${id_Item}/${newsItem.catID}
   const data_Item=useParams();
 
   const handlePlayVideo = () => {
     setPlayVideo(!playVideo);
-    videoRef.current.play();
+    if(videoRef.current){
+
+      videoRef.current.play();
+    }
   }
 
   return (

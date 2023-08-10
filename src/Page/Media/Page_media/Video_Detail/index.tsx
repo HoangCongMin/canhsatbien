@@ -11,7 +11,7 @@ import { typeData } from '../../Component/Item_catergory'
 import Title from '../../../Media/Component/Title'
 
 export default function Video_Detail() {
-  let { id } = useParams()
+  const { id } = useParams()
 
   const { data } = useQuery({ queryKey: ['detail_video',id], queryFn: () => GetVideoDetail(Number(id)) })
   const { data: List_Data } = useQuery({

@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form'
 
 import ListDocument from "./ListDocument";
 
-const AdministrativeDocuments = ({listItems}) => {
+const AdministrativeDocuments = ({listItems}:any) => {
   const agencyData = ["Tất cả", "BTL Cảnh sát biển", "Bộ Công An", "Bộ Công Thương", "Bộ Giao thông vận tải", "Bộ Giáo dục và Đào tạo", "Bộ Kế hoạch và Đầu tư", "Bộ Lao động - Thương binh và Xã hội", "Bộ Nông nghiệp và Phát triển nông thôn", "Bộ Nội vụ", "Bộ Quốc phòng", "Bộ Thông tin và Truyền thông", "Bộ Tài chính", "Bộ Tài nguyên & Môi trường", "Bộ Tư pháp", "Bộ Y tế", "Chính phủ", "Quốc hội", "Thủ tướng Chính phủ", "Toà án nhân dân tối cao", "Uỷ ban Thường vụ Quốc hội", "Viện kiểm sát nhân dân tối cao"];
 
   const typeData = ["Tất cả", "Chỉ thị", "Hiến pháp", "Hướng dẫn", "Luật - Pháp lệnh", "Nghị định", "Quyết định", "Sắc lệnh - Sắc luật", "Thông tư", "Thông tư liên tịch", "Văn bản hợp nhất"];

@@ -37,7 +37,7 @@ export default function Fotter() {
 
 
   return (
-    <div className='w-[80%]  max-w-screen-2xl m-auto bg-[#0066bc] '>
+    <div className='w-[80%] mt-[3rem] max-w-screen-2xl m-auto bg-[#0066bc] '>
       <div className='w-full m-auto bg-[#0066bc] '>
         <div className='w-[100%] m-auto  max-w-screen-2xl pt-3'>
           <div className='flex w-[95%] m-auto justify-between items-center max-[1372px]:flex-col text-white font-[Roboto]'>
@@ -119,9 +119,9 @@ export default function Fotter() {
               </div>
             </div>
             <div>
-              <p className='text-sm	text-[#FFFFFFCC] font-normal	flex items-center'>
+              <p className='text-sm 	text-[#FFFFFFCC] font-normal	flex items-center'>
                 <HiMapPin className='mr-1' />
-                <span>Địa chỉ: Km số 6 + 825 Đại lộ Thăng Long, phường Tây Mỗ, quận Nam Từ Liêm, Thành phố Hà Nội</span>
+                <span className='flex-1'>Địa chỉ: Km số 6 + 825 Đại lộ Thăng Long, phường Tây Mỗ, quận Nam Từ Liêm, Thành phố Hà Nội</span>
               </p>
               <p className='text-sm	text-[#FFFFFFCC] font-normal flex items-center'>
                 <BsTelephoneFill className='mr-1 text-[11px]' />
@@ -147,11 +147,11 @@ export default function Fotter() {
       <div className='w-[95%]  max-w-screen-2xl m-auto pb-4'>
         <p className=' text-[#FFFFFFCC] text-[14px] flex items-center'>
           <BiWorld className='mr-1' />
-          <span>Website: canhsatbien.vn * Cơ quan quản lý: Bộ Tư lệnh Cảnh sát biển </span>
+          <span className='flex-1'>Website: canhsatbien.vn * Cơ quan quản lý: Bộ Tư lệnh Cảnh sát biển </span>
         </p>
         <p className=' text-[#FFFFFFCC] text-[14px] flex items-center'>
           <AiFillNotification className='mr-1' />
-          <span>Quyết định cấp phép hoạt động: 362/QÐ-CT, ngày 13/03/2013 của Tổng cục Chính trị QĐNDVN</span>
+          <span className='flex-1'>Quyết định cấp phép hoạt động: 362/QÐ-CT, ngày 13/03/2013 của Tổng cục Chính trị QĐNDVN</span>
         </p>
       </div>
       <div className='w-[95%]  max-w-screen-2xl m-auto '>

@@ -36,9 +36,9 @@ export default function Sort({ queryParam }: param_type) {
 
   return (
     <div className="text-[15px]    ">
-      <div className="bg-slate-300 rounded px-2 py-1">
+      <div className="bg-[#F0F0F0] rounded px-2 py-1">
 
-      <select className="bg-slate-300 rounded" onChange={(e) => handle_Change(e)} value={data_Item.id}>
+      <select className="bg-[#F0F0F0] rounded outline-none" onChange={(e) => handle_Change(e)}>
         {data.map((item) => (
           <option value={item.id} key={item.id}>
             
