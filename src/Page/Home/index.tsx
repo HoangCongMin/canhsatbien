@@ -215,7 +215,7 @@ export default function Home() {
                   <NewPost_Item
                     class_Custom_layout={'first:pb-7'}
                     class_NewPost_Item={
-                      'w-[100%]  max-[850px]:w-[100%] cursor-pointer px-4 py-2 pb-4 border-[1px] mt-6 border-slate-200	'
+                      'w-[100%]  max-[850px]:w-[100%] cursor-pointer px-4 pt-2 pb-2 border-[1px] mt-6 border-slate-200	'
                     }
                     itemAll_id={item.id}
                     itemAll_title={item?.name}

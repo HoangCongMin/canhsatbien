@@ -23,5 +23,6 @@ export const GetItemSeachItem=(pra:string)=>http.get(`Sreach/SerachItemContent?n
 export const GetItemSeachItemall=(pra:string,page:number)=>http.get(`Sreach/GetSerachItemContentTow?name=${pra}&p=${page}`)
 
 export const GetSendComment=(body:any)=>http.post(`Comment/InsertComment`,body)
+export const GetAdministrativeDocument=(p:number, m:number)=>http.get(`Home/SeatchItem17?p=${p}&m=${m}`)
 
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 import Content_Same from '../../component/Content_Same'
 import Share from '../../component/Share'
-import { Date_Time } from '../../utils/util.type';
+import { Date_Time, FormatImage, FormatLink } from '../../utils/util.type';
 
 const DetailDocument = ({prfile_all}:any) => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -26,6 +26,8 @@ const DetailDocument = ({prfile_all}:any) => {
   const handleTab2 = () => {
     setActiveTab("tab2");
   };
+
+  console.log(prfile_all)
 
   return (
     <div className="mt-6">
@@ -58,9 +60,11 @@ const DetailDocument = ({prfile_all}:any) => {
                 </p>
               </div>
             </div>
-            <Link to={`/`} className='mr-[5px] border-[1px] border-[#ddd] text-[12px] p-[3px] inline-block rounded-[4px] hover:text-[#b40000]'>
-              Tải tệp đính kèm <MdOutlineKeyboardDoubleArrowRight className='inline-block align-middle ml-[3px] text-[#b40000]'/>
-            </Link>
+            {prfile_all?.filePath &&
+              <Link to={FormatImage(prfile_all?.filePath)} className='mr-[5px] border-[1px] border-[#ddd] text-[12px] p-[3px] inline-block rounded-[4px] hover:text-[#b40000]'>
+                Tải tệp đính kèm <MdOutlineKeyboardDoubleArrowRight className='inline-block align-middle ml-[3px] text-[#b40000]'/>
+              </Link>
+            }
           </div>
         :
           <div>

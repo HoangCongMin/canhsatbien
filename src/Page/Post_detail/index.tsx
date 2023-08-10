@@ -44,6 +44,8 @@ export default function Post_detail() {
     window.scrollTo(0, 0)
   }, [data.id, data.cart_id])
 
+  console.log(prfile_all);
+
   return (
     <div id='post-detail' className='w-full max-w-screen-2xl'>
       <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center  max-[1250px]:flex-col'>

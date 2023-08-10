@@ -24,7 +24,7 @@ export default function Box_weather({ List_weather }: weathers) {
       </div> */}
 
       <div className='uppercase py-2 border-b-[2.5px] border-[#ffcc00] text-[#191970] font-bold text-center '>
-        <div className='flex'>
+        <div className='flex items-center'>
 
           <img src={Logo} className='w-[16px]' />
           <div className='ml-2'> dự báo thời tiết biển</div>

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Getvichuquyen, GetListCategorySession } from '../../apis/GetHoatDongCSB'
+import { GetAdministrativeDocument } from "../../apis/GetNew";
 import { useParams, Link } from 'react-router-dom'
 import Logo from '../../assets/logo-csb-080730606.png'
 import { FormatImage } from '../../utils/util.type'
@@ -16,11 +17,16 @@ export default function Portal() {
   const { id } = useParams()
   const { data: List_Portal_Item } = useQuery({
     queryKey: ['List_portal_all', [id, query]],
-    queryFn: () => Getvichuquyen(Number(id), Number(query.p))
+    queryFn: () => Getvichuquyen(Number(id), Number(query.p ? query.p : 1))
   })
-
-  const ma = List_Portal_Item?.data?.listItemAll && List_Portal_Item?.data?.listItemAll % 10
-  const mb = List_Portal_Item?.data?.listItemAll && List_Portal_Item?.data?.listItemAll / 10
+  
+  const { data: dataAdministrativeDocument } = useQuery({
+    queryKey: ['AdministrativeDocument', [query, 10]],
+    queryFn: () => GetAdministrativeDocument(Number(query.p ? query.p : 1), 10)
+  })
+  
+  const ma = List_Portal_Item?.data?.id === 17 ? dataAdministrativeDocument?.data.length % 10 : List_Portal_Item?.data?.listItemAll % 10
+  const mb = List_Portal_Item?.data?.id === 17 ? dataAdministrativeDocument?.data.length / 10 : List_Portal_Item?.data?.listItemAll / 10
 
   const handle_Paginate = () => {
     if (ma > 0) {
@@ -30,13 +36,12 @@ export default function Portal() {
   }
   const item = handle_Paginate()
 
-
   return (
     <>
       <div className='w-[77%] max-[1200px]:w-[100%]'>
         <div className='uppercase py-2 border-b-[2.5px] relative pb-7  border-[#d6d6d6] text-[#191970] font-bold '>
-          <p className='border-b-[2.5px]  top-0 pb-3 pl-2	absolute  border-[#ffcc00]'>
-            <span className='ml-2 line-clamp-1'>
+          <p className='border-b-[2.5px]  top-0 pb-3 absolute  border-[#ffcc00]'>
+            <span className='line-clamp-1'>
               <img alt='ok' src={Logo} className='w-[16px] float-left mr-2 mt-[2px]' />
               {List_Portal_Item?.data?.name}
             </span>
@@ -44,7 +49,7 @@ export default function Portal() {
         </div>
         {List_Portal_Item?.data?.id === 17 &&
           <>
-            <AdministrativeDocuments listItems={List_Portal_Item?.data}/>
+            <AdministrativeDocuments PortalItem={List_Portal_Item?.data} dataAdministrativeDocument={dataAdministrativeDocument}/>
           </>
         }
         {List_Portal_Item?.data?.id !== 17 &&
