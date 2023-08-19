@@ -45,12 +45,12 @@ export default function Slide_Media_all({ content, from, media_style, text_media
     return () => clearTimeout(timer)
   }, [currenIndex])
 
-
+  // max-[1250px]:h-[560px] overflow-hidden  max-[875px]:h-[460px] max-[500px]:h-[350px]
   return (
     <div id="slider-media"
       className={classNames(
-        `w-full ${from ? from : ' h-[760px]'
-        } max-[1250px]:h-[560px] overflow-hidden  max-[875px]:h-[460px] max-[500px]:h-[350px] relative bg-cover bg-center ${media_style ? media_style : ''
+        `w-full ${from && from 
+        }  relative bg-cover  bg-center ${media_style ? media_style : ''
         }  duration-500 group`
       )}
     >
@@ -62,7 +62,7 @@ export default function Slide_Media_all({ content, from, media_style, text_media
                 : content && content[currenIndex].img
               })`
           }}
-          className={classNames(`w-full h-full ${from ? 'rounded-none' : 'rounded-2xl'} bg-center bg-cover duration-500`)}
+          className={classNames(`w-full  ${from ? 'rounded-none' : 'rounded-2xl'} bg-center bg-cover duration-500 pt-[66.6667%]`)}
         ></div>
       </Link>
       <div className='hidden group-hover:block  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
@@ -78,7 +78,7 @@ export default function Slide_Media_all({ content, from, media_style, text_media
           } w-full flex flex-col justify-end	p-5 duration-500 bottom-0 left-0 top-0 right-0 max-[1250px]:text-[30px] max-[700px]:text-[20px] 	 text-white  font-bold`
         )}
       >
-        <div className={classNames(`${text_Media_all ? text_Media_all : 'w-full'} mx-auto`)}>{content && content[currenIndex].title}</div>
+        <div className={classNames(`${text_Media_all ? text_Media_all : 'w-full md:text-[18px] lg:text-[20px] sm:text-[12px] text-[12px] line-clamp-2	'} mx-auto`)}>{content && content[currenIndex].title}</div>
       </div>
       {!from && (
         <div className='absolute bottom-[7%] left-[20%] flex w-[100px]  max-[700px]:bottom-[15%] justify-between'>

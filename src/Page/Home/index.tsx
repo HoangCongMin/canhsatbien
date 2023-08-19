@@ -103,7 +103,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className='w-full mt-4 max-[500px]:mt-2 mb-10'>
+    <div className='w-full mt-4  max-[500px]:mt-2 mb-10'>
       <Helmet>
         <meta property='og:title' content='Bộ Tư lệnh Cảnh sát biển Việt Nam.' />
         <meta property='og:description' content='Bộ Tư lệnh Cảnh sát biển Việt Nam.' />
@@ -112,7 +112,7 @@ export default function Home() {
           content='https://canhsatbien.vn/upload/files/setting/20210917/logo-csb-080730606.png?h=100'
         />
       </Helmet>
-      <div className='fixed left-[35%] z-40  w-[33%]   bg-[#fff] '>
+      <div className='fixed left-[35%]  z-40  w-[33%]   bg-[#fff] '>
         {isModelOpen && (
           <>
             {' '}
@@ -149,7 +149,7 @@ export default function Home() {
           </>
         )}
       </div>
-      <div className='w-[80%] m-auto max-w-screen-2xl flex justify-between relative'>
+      <div className='w-[80%] max-[500px]:w-[95%] m-auto max-w-screen-2xl flex justify-between relative'>
         <div className=' w-[50.4%] flex items-center max-[1300px]:hidden bg-white shadow-xl border-[1px] border-[#F6F6F6] rounded-full  '>
           <input
             placeholder='Nhập từ khóa'
@@ -164,7 +164,7 @@ export default function Home() {
           <div className='w-[95%] m-auto flex justify-start h-[100%] max-[1100px]:w-full max-[500px]:justify-end'></div>
         </div>
       </div>
-      <div className='w-[80%] m-auto max-w-screen-2xl flex justify-between mt-7 max-[500px]:mt-0  max-[1300px]:flex-col max-[850px]:flex-col  '>
+      <div className='w-[80%] max-[500px]:w-[95%] m-auto max-w-screen-2xl flex justify-between mt-7 max-[500px]:mt-0  max-[1300px]:flex-col max-[850px]:flex-col  '>
         
         <div className='w-[75%] max-[1300px]:w-full flex justify-between max-[1300px]:flex-col max-[850px]:w-[100%] max-[1100px]:w-[100%] overflow-y-auto'>
           <div className='w-full max-[1300px]:w-full'>
@@ -172,8 +172,7 @@ export default function Home() {
               <div className='w-[68.1%] max-[1300px]:w-[100%] border-r-[1px] max-[850px]:border-none	max-[1100px]:border-none '>
                 
                 <div className='w-[97%]  max-[1100px]:w-full'>
-              
-                  <Slide_Media_all content={List_side?.data} from={'h-[439px] py-0'} />
+                  <Slide_Media_all content={List_side?.data} from={' py-0'} />
                 </div>
               </div>
 
@@ -200,6 +199,7 @@ export default function Home() {
             <div className='w-full'>
               <List_item_all_new />
             </div>
+
             <div className='w-full object-cover relative pt-[20%] m-auto mt-5 shadow-xl'>
               <img
                 className='w-full absolute top-0 left-0 h-full  '
@@ -208,12 +208,13 @@ export default function Home() {
               />
             </div>
 
+
             <div className='w-full m-auto  justify-between flex  max-[1160px]:flex-col'>
               <div className=' w-full flex flex-col max-[1160px]:w-[100%] max-[850px]:flex-col first:pb-4 '>
-             
+              
                 {NewPost_Item_All?.data.map((item: ListCategoryItem) => (
                   <NewPost_Item
-                    class_Custom_layout={'first:pb-7'}
+                    class_Custom_layout={''}
                     class_NewPost_Item={
                       'w-[100%]  max-[850px]:w-[100%] cursor-pointer px-4 pt-2 pb-2 border-[1px] mt-6 border-slate-200	'
                     }
@@ -230,6 +231,7 @@ export default function Home() {
 
         <div className='w-[22%] border-slate-400 max-[1300px]:w-full max-[850px]:w-[100%] max-[1100px]:w-[100%]'>
           <Box_Call_All />
+         
         </div>
       </div>
       <div className='w-[80%] m-auto mt-10 max-w-screen-2xl'>

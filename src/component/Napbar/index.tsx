@@ -63,22 +63,23 @@ export default function Napbar() {
   // BG_Image
   return (
     <div className='w-full bg-white '>
-      <div className='w-[80%] max-w-screen-2xl m-auto cursor-pointer '>
+      <div className='w-[80%] max-[500px]:w-[95%]  max-w-screen-2xl  m-auto cursor-pointer '>
         <Link to={'/'} className='w-full'>
           {/* style={{ backgroundImage: `url(${BG_Image})`}} */}
           <div className='w-full bg-cover'>
             {item_Window <= 500 && (
-              <img className='w-full border-l-[1px]' src={Bg_mobile} />
+             <img className='w-full border-l-[1px]' src={FormatMeida(mobile_mobile?.data[0]?.bannerExtra?.images)} />
             )}
             {item_Window > 500 && (
-              <img className='w-full' src={BG_Image} alt='' />
+             <img className='w-full' src={FormatMeida(banner_top?.data[0]?.bannerExtra?.images)} alt='' />
             )}
             {/* <img className='w-full absolute top-0 left-0 h-full object-cover' src={FormatMeida(banner_top?.data[0]?.bannerExtra?.images)} alt='' /> */}
           </div>
         </Link>
       </div>
       <div className=' object-cover '>
-        <div className='w-[80%] m-auto flex max-w-screen-2xl bg-[#375fae] items-center justify-between border-slate-300'>
+        <div className='w-[80%] max-[500px]:w-[95%]
+         m-auto flex max-w-screen-2xl bg-[#375fae] items-center justify-between border-slate-300'>
           <div className='flex items-center w-[92%] max-[1248px]:w-full pl-[1%]'>
             <div className='w-[3%]  max-[1248px]:hidden'>
               <Link to={'/'}>
@@ -123,7 +124,7 @@ export default function Napbar() {
                 // </Tippy>
               ))}
             </div>
-            <div className='w-[95%] m-auto hidden  max-[1248px]:block  py-3 '>
+            <div className='w-[95%]  m-auto hidden  max-[1248px]:block  py-3 '>
               {!close && (
                 <AiOutlineBars className='text-[#fff] text-[20px] max-[600px]:text-[35px]' onClick={handleClose} />
               )}

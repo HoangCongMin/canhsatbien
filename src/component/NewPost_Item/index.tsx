@@ -73,11 +73,11 @@ export default function NewPost_Item({
       <div className='flex justify-between max-[1000px]:flex-col'>
         
 
-        <div className='mt-4 w-full grid  grid-cols-4  gap-4 max-[900px]:grid-cols-4'>
+        <div className='mt-4 w-full grid  grid-cols-4  gap-4 max-[500px]:gap-0   max-[900px]:grid-cols-4'>
           {itemAll_RelatedNews?.map((item: Featured,i: number) => {
             if (i==0) {
               return (
-                <New_post_icon_Item class_one={'line-clamp-2	'} setStyle={'mt-2'} key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} content={item.introText} handle={handle_Item} />
+                <New_post_icon_Item class_one={'line-clamp-2	mt-4'} item_index={'pt-[68%]'} setStyle={'mt-2'} key={i} newsItem={item} itemAll_id={itemAll_id} title={itemAll_title} name={item.title} id_Item={item.id} content={item.introText} handle={handle_Item} />
               )
             } else {
               return (<>

@@ -47,7 +47,7 @@ export default function Box_Call_All() {
     <div className='sticky top-0 z-30 max-[1100px]:mt-7'>
       <div className='w-full m-auto '>
         <div className='w-full m-auto   '>
-          <div className='uppercase py-1 border-b-[2.5px] relative  max-[1300px]:pb-[1.78rem] border-[#ffcc00] text-[#191970] font-bold '>
+          <div className='uppercase py-1 border-b-[2.5px] relative  max-[1300px]:pb-[0.5rem] border-[#ffcc00] text-[#191970] font-bold '>
               <Link to={'/media/video'} className='line-clamp-1	inline-block	'>
                 <img src={Logo} className='w-[16px] float-left mr-2 mt-[2px]' />
                 Đa Phương Tiện

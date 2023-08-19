@@ -7,6 +7,8 @@ import Title from '../../../Component/Title'
 import Item_catergory from '../../../Component/Item_catergory'
 import { typeData } from '../../../Component/Item_catergory'
 import {Date_Time} from'../../../../../utils/util.type'
+import {useEffect} from'react'
+
 
 export default function Voices_detail() {
   const { id } = useParams()
@@ -30,6 +32,12 @@ export default function Voices_detail() {
     const result_item=style_result.replace(/em/g,"p class='text-[19px] text-center'")
     return result_item
   }
+
+    
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [id])
+
 
 
   return (

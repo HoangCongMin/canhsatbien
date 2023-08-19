@@ -60,8 +60,8 @@ const DetailDocument = ({prfile_all}:any) => {
                 </p>
               </div>
             </div>
-            {prfile_all?.filePath &&
-              <Link to={FormatImage(prfile_all?.filePath)} className='mr-[5px] border-[1px] border-[#ddd] text-[12px] p-[3px] inline-block rounded-[4px] hover:text-[#b40000]'>
+            {prfile_all?.data?.fileUrl &&
+              <Link to={FormatImage(prfile_all?.data?.fileUrl)} className='mr-[5px] border-[1px] border-[#ddd] text-[12px] p-[3px] inline-block rounded-[4px] hover:text-[#b40000]'>
                 Tải tệp đính kèm <MdOutlineKeyboardDoubleArrowRight className='inline-block align-middle ml-[3px] text-[#b40000]'/>
               </Link>
             }

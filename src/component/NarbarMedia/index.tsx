@@ -17,10 +17,10 @@ import { followCursor } from 'tippy.js'
 export default function NarbarMedia() {
   const menu_Media = [
     { icon: BsFillCameraVideoFill, title: 'Video' ,Link:'Video'},
-    { icon: BsFillMicFill, title: 'Radio News',Link:'Radio_News' },
+    { icon: BsFillMicFill, title: 'Podcast',Link:'Radio_News' },
     { icon: MdInsertPhoto, title: 'Photos' ,Link:'Photos'},
-    { icon: AiFillPieChart, title: 'infographics',Link:'Infographics' },
-    { icon: RiVoiceprintFill, title: 'Voices',Link:'Voices' }
+    { icon: AiFillPieChart, title: 'Infographics',Link:'Infographics' },
+    { icon: RiVoiceprintFill, title: 'Longform',Link:'Voices' }
   ]
 
   const [hidden, SetHidden] = useState(false)
@@ -28,7 +28,7 @@ export default function NarbarMedia() {
   const handleClose = () => SetHidden((pre) => !pre)
   return (
     <div className='border-y	py-[3px] border-slate-300	 w-full  '>
-      <div className='w-[80%] m-auto flex justify-between max-w-screen-2xl py-7 items-center relative   '>
+      <div className='w-[80%] max-[500px]:w-[95%] m-auto flex justify-between max-w-screen-2xl py-7 items-center relative   '>
         <div className='flex w-[30%] items-center	 justify-between'>
           <Link to={'/'} className='flex w-[32%] items-center	 bg-[#274c90] rounded-lg  max-[1400px]:hidden'>
             <div className='text-[#fff] py-2 px-2 h-[100%] w-[30%] bg-[orange] rounded-l-lg	'>

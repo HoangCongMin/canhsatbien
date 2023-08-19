@@ -4,7 +4,7 @@ import Box_Call from '../../component/Box_Call'
 import Share from '../../component/Share'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
-import { GetArticleDetail, GetArticleRelate } from '../../apis/GetNew'
+import { GetArticleDetail, GetArticleRelate,ArticleRelate17 } from '../../apis/GetNew'
 
 import { GetBreadCrumb } from '../../apis/GetMeidia'
 
@@ -27,6 +27,11 @@ export default function Post_detail() {
     queryFn: () => GetBreadCrumb(Number(data.cart_id))
   })
 
+  const { data: prfile_all17 } = useQuery({
+    queryKey: ['ProductDetails17', data.id],
+    queryFn: () => ArticleRelate17(data.id as string)
+  })
+
   function handle_String(data: string) {
     const newStr = data.replace(/upload/g, 'https://canhsatbien.vn//upload')
     const index = newStr.indexOf('/https://canhsatbien.vn//upload')
@@ -44,12 +49,12 @@ export default function Post_detail() {
     window.scrollTo(0, 0)
   }, [data.id, data.cart_id])
 
-  console.log(prfile_all);
+  console.log(prfile_all17);
 
   return (
-    <div id='post-detail' className='w-full max-w-screen-2xl'>
+    <div id='post-detail' className='w-full max-w-screen-2xl '>
       <div className='w-full bg-[#F6F6F6] py-3 px-2 flex items-center  max-[1250px]:flex-col'>
-        <div className='flex items-center w-[70%] max-[1250px]:w-full'>
+        <div className='flex items-center w-[70%]  max-[1250px]:w-full'>
           <div className='bg-[#DA251C] h-7 w-1 max-[1250px]:hidden'></div>
           <div className='font-bold ml-2 text-[17px] uppercase mt-[2px] hover:text-[#0066bc] cursor-pointer '>
             {BreadCrumb &&
@@ -104,8 +109,8 @@ export default function Post_detail() {
           </div>
         </>
       }
-      {prfile_all?.data.catId === 17 &&
-        <DetailDocument prfile_all={prfile_all}/>
+      {prfile_all17?.data.catId === 17 &&
+        <DetailDocument prfile_all={prfile_all17}/>
       }
     </div>
   )

@@ -10,7 +10,7 @@ export default function Layout_Media_Page({ children }: mainitem) {
   return (
     <div>
       <NarbarMedia />
-      <div className='flex w-[80%] mt-3 justify-between m-auto max-[1300px]:flex-col max-w-screen-2xl'>
+      <div className='flex w-[80%] max-[500px]:w-[95%] mt-3 justify-between m-auto max-[1300px]:flex-col max-w-screen-2xl'>
         <div className='w-[75%]  max-[1300px]:w-full'>
           {children}
         </div>

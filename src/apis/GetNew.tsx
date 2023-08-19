@@ -10,6 +10,8 @@ export const GetListCategoryItemAll = () => http.get('Home/GetListCategoryItem')
 export const GetListItemNewestAll = () => http.get('Home/GetListItemNewest')
 export const GetListItemFeaturedAll = () => http.get('Home/GetListItemFeatured')
 export const GetArticleDetail = (id: string) => http.get(`Portal/ArticleDetail?itemId=${id}`)
+export const ArticleRelate17 = (id: string) => http.get(`Portal/ArticleRelate17?itemId=${id}`)
+
 export const GetArticleRelate = (CatId: number) => http.get(`Portal/ArticleRelate?CatId=${CatId}&page=10`)
 export const GetListCategoryRightSession = () => http.get('Home/GetListCategoryRightSession')
 export const GetVideo = () => http.get<video>('Layout/GetVideo')

@@ -37,7 +37,7 @@ export default function Fotter() {
 
 
   return (
-    <div className='w-[80%] mt-[3rem] max-w-screen-2xl m-auto bg-[#0066bc] '>
+    <div className='w-[80%] mt-[3rem] max-[500px]:w-[95%] max-w-screen-2xl  m-auto bg-[#0066bc] '>
       <div className='w-full m-auto bg-[#0066bc] '>
         <div className='w-[100%] m-auto  max-w-screen-2xl pt-3'>
           <div className='flex w-[95%] m-auto justify-between items-center max-[1372px]:flex-col text-white font-[Roboto]'>
